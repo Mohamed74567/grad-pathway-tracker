@@ -57,3 +57,5 @@ GradPathway will improve on this approach by keeping its dedicated, source-credi
 ## Redesign validation
 
 The redesigned George Washington University public profile was checked after its data request completed. The hero image is visible, the admission snapshot precedes deeper research content, official program and application links remain direct, and the fuller curriculum, research, and requirements context is available through progressive disclosure. The snapshot currently omits unverified fields rather than rendering speculative values.
+
+During the Duke image rollout, the uploaded Duke Today photograph was confirmed to resolve from the public storage path, and its database fields contain the expected path and credit. The corresponding profile initially rendered the fallback gradient while the Boston University profile displayed its newly uploaded image. Browser inspection confirmed that the Duke hero receives the correct CSS background URL and the image finishes loading at 1125 × 750 pixels, so the blank capture is a visual-capture timing artifact rather than a broken hero or storage link.
