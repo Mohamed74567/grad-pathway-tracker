@@ -4,17 +4,25 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import DashboardLayout from "./components/DashboardLayout";
+import CalendarPage from "./pages/CalendarPage";
+import Directory from "./pages/Directory";
 import Home from "./pages/Home";
+import ProgramDetails from "./pages/ProgramDetails";
+import Tracker from "./pages/Tracker";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
-    <Switch>
+    <DashboardLayout><Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/programs"} component={Directory} />
+      <Route path={"/programs/:slug"} component={ProgramDetails} />
+      <Route path={"/applications"} component={Tracker} />
+      <Route path={"/calendar"} component={CalendarPage} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
-    </Switch>
+    </Switch></DashboardLayout>
   );
 }
 

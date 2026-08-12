@@ -1,0 +1,27 @@
+# Project TODO
+
+- [x] Inspect the uploaded tracker and map existing program and application fields into the upgraded product.
+- [x] Define a provenance-first program record standard with official-source URLs, per-field verification status, and a clear unavailable-data state.
+- [x] Create normalized database tables for programs, sources, user applications, documents, letter-of-recommendation tracking, deadlines, and notes.
+- [x] Build a separate, navigable PhD and Master’s directory with exact status-pipeline labels.
+- [x] Build a robust search and filter experience for degree, subfield, ranking tier, acceptance rate, deadline, location, and funding.
+- [x] Build visual program detail pages with licensed university imagery, official links, source-attributed facts, requirements, and research highlights.
+- [x] Implement My Applications with animated status updates: Researching, Applied, Interview, Offer, Accepted, and Rejected.
+- [x] Implement application checklists for CV, statement of purpose, transcripts, test scores, application fee, writing samples, and up to three letters of recommendation.
+- [x] Implement deadline calendar and urgency styling: red under 30 days, yellow under 60 days, and green over 60 days. Verified in CalendarPage.tsx and the 375px deadline-screen capture.
+- [x] Implement notes and contact-reminder fields for every saved application.
+- [x] Add dashboard analytics for pipeline status, upcoming deadlines, and document completion. Verified in Home.tsx and the 375px overview-screen capture.
+- [ ] Research and triple-check official records before inclusion; mark source-unavailable fields rather than inferring values.
+- [x] Add a maintainable program-import workflow and initially populate verified records.
+- [x] Write and run unit tests for program filters, deadline urgency, status validation, application tracking operations.
+- [x] Verify the responsive user interface, navigation, interaction states, and animation preferences. Captured the overview, directory, tracker, and calendar at 375px; reduced-motion styles are defined in index.css.
+- [x] Add explicit tab navigation between PhD and Master’s program collections.
+- [x] Expose contact and reminder controls in every saved-application workspace.
+- [x] Validate key screens at mobile width and honor reduced-motion preferences. Captured the overview, directory, tracker, and calendar at 375px; index.css disables nonessential animation under reduced-motion preference.
+- [x] Migrate useful user-owned information from the uploaded tracker, including legacy application rows, dates, personal notes, faculty/contact observations, and tracking status, while preserving uncertainty labels on unverified program facts.
+- [ ] Expand source-credited real university campus imagery across verified program detail pages and retain polished fallbacks where an appropriate licensed image is unavailable.
+- [x] Diagnose and correct the verified campus-image rendering issue observed during program-detail validation. Confirmed the detail endpoint returns storage paths and the image proxy resolves to S3; the transient gradient-only capture was a validation timing artifact.
+- [ ] Re-run authenticated detail-page visual checks for updated profiles and implement a concrete image-state fix if any source-credited campus image fails to render in the hero.
+- [ ] Accelerate expansion through parallel official-source research streams without publishing unreconciled facts.
+- [x] Re-run catalog totals, automated tests, production build, and representative visual checks after the accelerated batch. Type check, all seven tests, and production build passed; 375px captures validated overview, directory, tracker, and calendar layouts.
+- [ ] Maintain a documented discovery-only candidate queue derived from the user-provided U.S. News biomedical engineering ranking page or accessible supporting indexes, then independently verify every candidate from official institutional sources before publication.

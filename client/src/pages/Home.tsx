@@ -1,33 +1,16 @@
-import { useAuth } from "@/_core/hooks/useAuth";
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { Link } from "wouter";
+import { trpc } from "@/lib/trpc";
+import { ArrowUpRight, CalendarClock, CheckCircle2, Compass, FileCheck2, GraduationCap } from "lucide-react";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
+const labels: Record<string, string> = { researching: "Researching", applied: "Applied", interview: "Interview", offer: "Offer", accepted: "Accepted", rejected: "Rejected" };
 export default function Home() {
-  // The useAuth hook provides authentication state.
-  // To implement login/logout, call logout(), or start login from an event
-  // handler: onClick={() => startLogin()} (imported from "@/const"). Never call
-  // startLogin() during render (no href={startLogin()}) — it mints a one-time
-  // nonce cookie and must run only at the moment of navigation.
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
+  const { data: applications = [] } = trpc.tracker.applications.list.useQuery();
+  const { data: directory = [] } = trpc.tracker.directory.list.useQuery({});
+  const completedDocuments = applications.flatMap(item => item.documents).filter(document => document.isComplete).length;
+  const totalDocuments = applications.flatMap(item => item.documents).length;
+  const currentDatedDeadlines = applications.flatMap(item => item.deadlines).filter(deadline => deadline.deadlineDate && new Date(`${deadline.deadlineDate}T00:00:00`) >= new Date()).length;
+  const counts = applications.reduce<Record<string, number>>((accumulator, item) => ({ ...accumulator, [item.application.status]: (accumulator[item.application.status] ?? 0) + 1 }), {});
+  return <div className="content-frame page-enter space-y-6"><section className="surface overflow-hidden p-6 sm:p-9"><div className="grid gap-8 lg:grid-cols-[1.35fr_.65fr] lg:items-end"><div><p className="section-kicker">Your graduate pathway</p><h1 className="font-editorial mt-2 max-w-3xl text-4xl font-semibold leading-[.95] tracking-tight text-slate-950 sm:text-6xl">A more deliberate way to choose—and finish—your applications.</h1><p className="mt-5 max-w-2xl text-sm leading-6 text-slate-600">GradPathway separates official program facts from your personal work. Explore evidence-backed records, then move each saved application forward without losing the small details that make it yours.</p><div className="mt-6 flex flex-wrap gap-3"><Link href="/programs" className="inline-flex items-center gap-2 rounded-xl bg-violet-700 px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-violet-200 transition hover:bg-violet-800 active:scale-95">Explore verified programs <ArrowUpRight className="h-4 w-4" /></Link><Link href="/applications" className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700 transition hover:border-violet-200 hover:text-violet-800 active:scale-95">Open my tracker</Link></div></div><div className="rounded-3xl bg-[linear-gradient(145deg,#2f1f65,#6245b2_58%,#36a889)] p-6 text-white shadow-xl shadow-violet-200"><p className="font-mono-ui text-[.65rem] uppercase tracking-[.18em] text-violet-200">Focus today</p><div className="mt-7 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur"><p className="text-3xl font-extrabold">{applications.length}</p><p className="mt-1 text-sm text-violet-100">Applications in progress</p></div><div className="mt-3 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur"><p className="text-3xl font-extrabold">{totalDocuments ? Math.round((completedDocuments / totalDocuments) * 100) : 0}%</p><p className="mt-1 text-sm text-violet-100">Document completion</p></div></div></div></section><section className="grid gap-4 md:grid-cols-3"><Metric icon={<Compass className="h-5 w-5" />} label="Verified records" value={directory.length.toString()} caption="Official sources in the current directory" color="violet" /><Metric icon={<FileCheck2 className="h-5 w-5" />} label="Documents complete" value={`${completedDocuments}/${totalDocuments}`} caption="Across your saved applications" color="teal" /><Metric icon={<CalendarClock className="h-5 w-5" />} label="Current dated deadlines" value={currentDatedDeadlines.toString()} caption="Only current-cycle official dates appear" color="amber" /></section><section className="grid gap-5 lg:grid-cols-[.86fr_1.14fr]"><div className="surface p-6"><p className="section-kicker">Application pipeline</p><h2 className="mt-2 text-xl font-extrabold tracking-tight">Where your applications stand</h2><div className="mt-5 space-y-3">{["researching","applied","interview","offer","accepted","rejected"].map(status => <div key={status} className="flex items-center justify-between rounded-xl bg-slate-50 px-3.5 py-3"><span className="text-sm font-semibold text-slate-700">{labels[status]}</span><span className="font-mono-ui text-sm font-bold text-violet-700">{counts[status] ?? 0}</span></div>)}</div><Link href="/applications" className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-violet-700 hover:text-violet-900">Manage applications <ArrowUpRight className="h-4 w-4" /></Link></div><div className="surface p-6"><p className="section-kicker">How the system protects you</p><h2 className="mt-2 text-xl font-extrabold tracking-tight">No stale guesses hidden in the experience.</h2><div className="mt-5 grid gap-3 sm:grid-cols-3"><Reason icon={<GraduationCap className="h-5 w-5" />} title="Split by degree" text="PhD and Master’s pathways never compete for your attention." /><Reason icon={<CheckCircle2 className="h-5 w-5" />} title="Source-aware" text="A missing official figure appears as unavailable—not made up." /><Reason icon={<CalendarClock className="h-5 w-5" />} title="Cycle-sensitive" text="Historical dates stay out of deadline urgency until renewed." /></div><Link href="/calendar" className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-violet-700 hover:text-violet-900">Review deadline rules <ArrowUpRight className="h-4 w-4" /></Link></div></section></div>;
 }
+function Metric({ icon, label, value, caption, color }: { icon: React.ReactNode; label: string; value: string; caption: string; color: "violet" | "teal" | "amber" }) { const colors = { violet: "bg-violet-50 text-violet-700", teal: "bg-teal-50 text-teal-700", amber: "bg-amber-50 text-amber-700" }; return <section className="surface interactive-card p-5"><div className={`flex h-9 w-9 items-center justify-center rounded-xl ${colors[color]}`}>{icon}</div><p className="mt-5 text-3xl font-extrabold tracking-tight">{value}</p><p className="mt-1 text-sm font-bold text-slate-800">{label}</p><p className="mt-1 text-xs leading-5 text-slate-500">{caption}</p></section>; }
+function Reason({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) { return <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4"><div className="text-teal-600">{icon}</div><h3 className="mt-3 text-sm font-bold">{title}</h3><p className="mt-1 text-xs leading-5 text-slate-600">{text}</p></div>; }
