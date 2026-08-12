@@ -106,13 +106,25 @@ export async function getApplicationsForUser(userId: number) {
     .innerJoin(programs, eq(applications.programId, programs.id))
     .where(eq(applications.userId, userId))
     .orderBy(desc(applications.updatedAt));
-  return Promise.all(rows.map(async row => {
-    const [documents, letters, deadlines] = await Promise.all([
-      db.select().from(applicationDocuments).where(eq(applicationDocuments.applicationId, row.application.id)).orderBy(asc(applicationDocuments.id)),
-      db.select().from(recommenders).where(eq(recommenders.applicationId, row.application.id)).orderBy(asc(recommenders.slot)),
-      db.select().from(programDeadlines).where(eq(programDeadlines.programId, row.program.id)).orderBy(asc(programDeadlines.deadlineDate)),
-    ]);
-    return { ...row, documents, recommenders: letters, deadlines };
+  if (!rows.length) return [];
+  const applicationIds = rows.map(row => row.application.id);
+  const programIds = Array.from(new Set(rows.map(row => row.program.id)));
+  const [allDocuments, allLetters, allDeadlines] = await Promise.all([
+    db.select().from(applicationDocuments).where(inArray(applicationDocuments.applicationId, applicationIds)).orderBy(asc(applicationDocuments.id)),
+    db.select().from(recommenders).where(inArray(recommenders.applicationId, applicationIds)).orderBy(asc(recommenders.slot)),
+    db.select().from(programDeadlines).where(inArray(programDeadlines.programId, programIds)).orderBy(asc(programDeadlines.deadlineDate)),
+  ]);
+  const documentsByApplication = new Map<number, typeof allDocuments>();
+  const lettersByApplication = new Map<number, typeof allLetters>();
+  const deadlinesByProgram = new Map<number, typeof allDeadlines>();
+  for (const document of allDocuments) documentsByApplication.set(document.applicationId, [...(documentsByApplication.get(document.applicationId) ?? []), document]);
+  for (const letter of allLetters) lettersByApplication.set(letter.applicationId, [...(lettersByApplication.get(letter.applicationId) ?? []), letter]);
+  for (const deadline of allDeadlines) deadlinesByProgram.set(deadline.programId, [...(deadlinesByProgram.get(deadline.programId) ?? []), deadline]);
+  return rows.map(row => ({
+    ...row,
+    documents: documentsByApplication.get(row.application.id) ?? [],
+    recommenders: lettersByApplication.get(row.application.id) ?? [],
+    deadlines: deadlinesByProgram.get(row.program.id) ?? [],
   }));
 }
 
@@ -140,7 +152,7 @@ export async function addApplication(userId: number, programId: number) {
   return application;
 }
 
-export async function updateApplication(userId: number, applicationId: number, data: { status?: "researching" | "applied" | "interview" | "offer" | "accepted" | "rejected"; notes?: string; primaryContactName?: string; primaryContactEmail?: string; reminderAt?: string | null; }) {
+export async function updateApplication(userId: number, applicationId: number, data: { status?: "researching" | "applied" | "interview" | "offer" | "accepted" | "rejected"; priority?: "reach" | "match" | "safety" | "undecided"; targetResult?: "pending" | "interview" | "offer" | "accepted" | "rejected" | "waitlisted"; nextAction?: string; notes?: string; primaryContactName?: string; primaryContactEmail?: string; reminderAt?: string | null; }) {
   const db = await getDb();
   if (!db) throw new Error("Database unavailable");
   const owned = await db.select().from(applications).where(and(eq(applications.id, applicationId), eq(applications.userId, userId))).limit(1);

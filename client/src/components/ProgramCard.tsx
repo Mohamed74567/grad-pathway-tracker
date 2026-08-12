@@ -13,6 +13,7 @@ export type DirectoryProgram = {
   fundingStatus: "funded" | "available" | "not_stated" | "not_applicable";
   rankingTier: "q1" | "q2" | "q3" | "not_listed" | null;
   campusImageUrl: string | null;
+  officialUrl: string;
   acceptanceRate?: string | null;
   deadlines?: Array<{ deadlineDate: string | null }>;
 };
@@ -40,6 +41,7 @@ export function ProgramCard({ program, onSave, saved }: { program: DirectoryProg
         </div>
         <div className="mt-auto flex items-center gap-2 pt-5">
           <Link href={`/programs/${program.slug}`} className="inline-flex items-center gap-1.5 text-sm font-bold text-violet-700 hover:text-violet-900">View profile <ExternalLink className="h-3.5 w-3.5" /></Link>
+          <a href={program.officialUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-bold text-slate-500 transition hover:bg-slate-100 hover:text-slate-800">Visit <ExternalLink className="h-3 w-3" /></a>
           {onSave ? <button onClick={() => onSave(program.id)} className="ml-auto inline-flex h-8 items-center gap-1 rounded-full border border-violet-200 bg-violet-50 px-3 text-xs font-bold text-violet-800 transition hover:bg-violet-100 active:scale-95"><BookmarkPlus className="h-3.5 w-3.5" />{saved ? "Saved" : "Track"}</button> : null}
         </div>
       </div>

@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { trpc } from "@/lib/trpc";
 import { matchesDirectorySupplementalFilters } from "../../../shared/directoryFilters";
 import { Filter, Search, SlidersHorizontal } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import { toast } from "sonner";
 
 export default function Directory() {
@@ -17,12 +17,13 @@ export default function Directory() {
   const [tier, setTier] = useState("all");
   const [acceptance, setAcceptance] = useState("all");
   const [deadlineWindow, setDeadlineWindow] = useState("all");
-  const input = useMemo(() => ({ degreeTypes: degree === "all" ? undefined : [degree], subfields: subfield === "all" ? undefined : [subfield], states: state === "all" ? undefined : [state], funding: funding === "all" ? undefined : [funding as "funded" | "available" | "not_stated" | "not_applicable"], tiers: tier === "all" ? undefined : [tier as "q1" | "q2" | "q3" | "not_listed"], search: search || undefined }), [degree, funding, search, state, subfield, tier]);
+  const deferredSearch = useDeferredValue(search);
+  const input = useMemo(() => ({ degreeTypes: degree === "all" ? undefined : [degree], subfields: subfield === "all" ? undefined : [subfield], states: state === "all" ? undefined : [state], funding: funding === "all" ? undefined : [funding as "funded" | "available" | "not_stated" | "not_applicable"], tiers: tier === "all" ? undefined : [tier as "q1" | "q2" | "q3" | "not_listed"], search: deferredSearch.trim() || undefined }), [degree, deferredSearch, funding, state, subfield, tier]);
   const { data: programs = [], isLoading } = trpc.tracker.directory.list.useQuery(input);
-  const { data: facets } = trpc.tracker.directory.facets.useQuery();
+  const { data: facets } = trpc.tracker.directory.facets.useQuery(undefined, { staleTime: 10 * 60_000 });
   const utils = trpc.useUtils();
   const add = trpc.tracker.applications.add.useMutation({ onSuccess: () => { utils.tracker.applications.list.invalidate(); toast.success("Added to My Applications"); }, onError: error => toast.error(error.message) });
-  const { data: applications = [] } = trpc.tracker.applications.list.useQuery();
+  const { data: applications = [] } = trpc.tracker.applications.list.useQuery(undefined, { staleTime: 30_000 });
   const saved = new Set(applications.map(item => item.application.programId));
   const filteredPrograms = programs.filter(program => matchesDirectorySupplementalFilters(program, { acceptanceRange: acceptance as "all" | "under10" | "10to30" | "30plus", deadlineWindowDays: deadlineWindow === "all" ? undefined : Number(deadlineWindow.replace("days", "")) }));
   return <div className="content-frame page-enter space-y-6">

@@ -1,28 +1,33 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { lazy, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import DashboardLayout from "./components/DashboardLayout";
-import CalendarPage from "./pages/CalendarPage";
-import Directory from "./pages/Directory";
-import Home from "./pages/Home";
-import ProgramDetails from "./pages/ProgramDetails";
-import Tracker from "./pages/Tracker";
+
+const CalendarPage = lazy(() => import("./pages/CalendarPage"));
+const Directory = lazy(() => import("./pages/Directory"));
+const Home = lazy(() => import("./pages/Home"));
+const ProgramDetails = lazy(() => import("./pages/ProgramDetails"));
+const Tracker = lazy(() => import("./pages/Tracker"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
-    <DashboardLayout><Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/programs"} component={Directory} />
+    <Switch>
       <Route path={"/programs/:slug"} component={ProgramDetails} />
-      <Route path={"/applications"} component={Tracker} />
-      <Route path={"/calendar"} component={CalendarPage} />
-      <Route path={"/404"} component={NotFound} />
-      <Route component={NotFound} />
-    </Switch></DashboardLayout>
+      <Route>
+        <DashboardLayout><Switch>
+          <Route path={"/"} component={Home} />
+          <Route path={"/programs"} component={Directory} />
+          <Route path={"/applications"} component={Tracker} />
+          <Route path={"/calendar"} component={CalendarPage} />
+          <Route path={"/404"} component={NotFound} />
+          <Route component={NotFound} />
+        </Switch></DashboardLayout>
+      </Route>
+    </Switch>
   );
 }
 
@@ -40,7 +45,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Suspense fallback={<div className="content-frame py-20 text-center text-sm font-medium text-slate-500">Loading workspace…</div>}>
+            <Router />
+          </Suspense>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

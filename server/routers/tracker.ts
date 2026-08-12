@@ -23,6 +23,9 @@ export const trackerRouter = router({
     update: protectedProcedure.input(z.object({
       applicationId: z.number().int().positive(),
       status: applicationStatus.optional(),
+      priority: z.enum(["reach", "match", "safety", "undecided"]).optional(),
+      targetResult: z.enum(["pending", "interview", "offer", "accepted", "rejected", "waitlisted"]).optional(),
+      nextAction: z.string().max(255).optional(),
       notes: z.string().max(10000).optional(),
       primaryContactName: z.string().max(255).optional(),
       primaryContactEmail: z.string().email().max(320).or(z.literal("")).optional(),
