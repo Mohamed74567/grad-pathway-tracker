@@ -43,6 +43,8 @@ export function PersonalBackupPanel({ items, onImported }: { items: any[]; onImp
     try {
       const parsed = JSON.parse(await file.text());
       if (parsed?.schemaVersion !== 1 || parsed?.kind !== "gradpathway-personal-progress" || !Array.isArray(parsed.applications)) throw new Error("This is not a supported GradPathway backup file.");
+      const approved = window.confirm(`Import preview: ${parsed.applications.length} application${parsed.applications.length === 1 ? "" : "s"} will be merged into this personal workspace. Verified program records will not be changed. Continue?`);
+      if (!approved) return;
       for (const candidate of parsed.applications as BackupApplication[]) {
         if (!Number.isInteger(candidate.programId) || !candidate.application || !Array.isArray(candidate.documents) || !Array.isArray(candidate.recommenders)) throw new Error("The backup contains an incomplete application record.");
         await add.mutateAsync({ programId: candidate.programId });
