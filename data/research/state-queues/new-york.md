@@ -9,7 +9,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 | Institution | Published programs | Legacy status | Current provenance status | Next action |
 |---|---:|---|---|---|
 | Columbia University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Audit during wider thin-snapshot work; do not duplicate |
-| Cornell University | Ph.D. Biomedical Engineering | Legacy-listed university | Existing published record | Audit during wider thin-snapshot work; do not duplicate |
+| Cornell University | Ph.D. Biomedical Engineering; M.Eng. Biomedical Engineering | Legacy-listed university | Existing Ph.D.; M.Eng. three-pass verified | Published distinct professional M.Eng.; retain existing Ph.D. for later thin-snapshot audit |
 | New York University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Audit during wider thin-snapshot work; do not duplicate |
 | Stony Brook University | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Existing published records | Retain; audit through the wider link-health process |
 | University at Buffalo | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Existing published records | Retain; audit through the wider link-health process |
@@ -31,6 +31,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 | 4 | Syracuse University Bioengineering Ph.D. and Biomedical Engineering M.S. | Legacy-listed Ph.D. | Completed publication with distinct degree pathways, annual guidance, and source-safe test policy wording | https://ecs.syracuse.edu/academics/biomedical-and-chemical-engineering/programs/bioengineering-doctoral-program |
 | 5 | The City College of New York Biomedical Engineering Ph.D. and M.S. | Discovery candidate | Completed publication; active deadline intentionally left blank where no live official deadline was published | https://www.ccny.cuny.edu/admissions/biomedical-engineering |
 | 6 | New York Institute of Technology Bioengineering M.S. | Discovery candidate | Completed publication with program-specific annual Fall/Spring timing and conditional GRE treatment | https://www.nyit.edu/academics/degrees/bioengineering-ms/admission-requirements/ |
+| 7 | Cornell University Biomedical Engineering M.Eng. | Existing university, missing distinct master’s profile | Completed publication with no-GRE, annual rolling guidance, qualified funding, and credited official Fab Lab imagery | https://www.duffield.cornell.edu/bme/meng/meng-admission-requirements/ |
 | 5 | Additional New York Biomedical Engineering, Bioengineering, Neuroengineering, and related graduate programs | Discovery only | Enumerate after the legacy-priority candidates have been reconciled or explicitly held | Official department and graduate-school sources only |
 
 ## Guardrails
@@ -38,5 +39,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 The original legacy deadlines and fee notes are research leads only; they must never be presented as current facts without a matching live official source. The pre-existing New York profiles remain part of the directory baseline and must be refreshed in place if their current evidence is thin, rather than duplicated.
 
 ## Research notes
+
+Cornell’s current Biomedical Engineering M.Eng. is a distinct one-year, 30-credit professional master’s. Official admissions gives rolling review with May 3 Fall and November 2 Spring guidance, two recommendations, resume, no GRE, and one college-level biology prerequisite. Cornell Engineering describes selective tuition fellowships, GTRS awards, and paid positions, rather than a guarantee. Research sources: https://www.duffield.cornell.edu/bme/meng/meng-admission-requirements/, https://www.duffield.cornell.edu/bme/degree/biomedical-engineering-meng-ithaca-campus-requirements/, and https://www.duffield.cornell.edu/meng/paying-for-your-meng-degree/.
 
 RIT’s official program pages establish a distinct Biomedical and Chemical Engineering Ph.D. and a separate one-year Biomedical Engineering M.S. The doctorate has an explicit doctoral-assistantship statement and higher English-test thresholds than the master’s. The M.S. page provides an annual February 15 Fall priority date followed by rolling review. Research sources: https://www.rit.edu/study/biomedical-and-chemical-engineering-phd and https://www.rit.edu/study/biomedical-engineering-ms.
