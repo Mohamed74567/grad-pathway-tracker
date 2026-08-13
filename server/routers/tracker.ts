@@ -1,6 +1,6 @@
 import { z } from "zod";
 import * as db from "../db";
-import { protectedProcedure, publicProcedure, router } from "../_core/trpc";
+import { publicProcedure, router } from "../_core/trpc";
 
 const applicationStatus = z.enum(["researching", "applied", "interview", "offer", "accepted", "rejected"]);
 
@@ -18,9 +18,9 @@ export const trackerRouter = router({
     bySlug: publicProcedure.input(z.object({ slug: z.string().min(1).max(180) })).query(({ input }) => db.getProgramBySlug(input.slug)),
   }),
   applications: router({
-    list: protectedProcedure.query(({ ctx }) => db.getApplicationsForUser(ctx.user.id)),
-    add: protectedProcedure.input(z.object({ programId: z.number().int().positive() })).mutation(({ ctx, input }) => db.addApplication(ctx.user.id, input.programId)),
-    update: protectedProcedure.input(z.object({
+    list: publicProcedure.query(async () => db.getApplicationsForUser((await db.getPersonalWorkspaceUser()).id)),
+    add: publicProcedure.input(z.object({ programId: z.number().int().positive() })).mutation(async ({ input }) => db.addApplication((await db.getPersonalWorkspaceUser()).id, input.programId)),
+    update: publicProcedure.input(z.object({
       applicationId: z.number().int().positive(),
       status: applicationStatus.optional(),
       priority: z.enum(["reach", "match", "safety", "undecided"]).optional(),
@@ -30,24 +30,24 @@ export const trackerRouter = router({
       primaryContactName: z.string().max(255).optional(),
       primaryContactEmail: z.string().email().max(320).or(z.literal("")).optional(),
       reminderAt: z.string().date().nullable().optional(),
-    })).mutation(({ ctx, input }) => {
+    })).mutation(async ({ input }) => {
       const { applicationId, ...data } = input;
-      return db.updateApplication(ctx.user.id, applicationId, data);
+      return db.updateApplication((await db.getPersonalWorkspaceUser()).id, applicationId, data);
     }),
-    toggleDocument: protectedProcedure.input(z.object({ documentId: z.number().int().positive(), isComplete: z.boolean() })).mutation(({ ctx, input }) => db.toggleApplicationDocument(ctx.user.id, input.documentId, input.isComplete)),
-    addRecommender: protectedProcedure.input(z.object({ applicationId: z.number().int().positive() })).mutation(({ ctx, input }) => db.addRecommender(ctx.user.id, input.applicationId)),
-    updateRecommender: protectedProcedure.input(z.object({
+    toggleDocument: publicProcedure.input(z.object({ documentId: z.number().int().positive(), isComplete: z.boolean() })).mutation(async ({ input }) => db.toggleApplicationDocument((await db.getPersonalWorkspaceUser()).id, input.documentId, input.isComplete)),
+    addRecommender: publicProcedure.input(z.object({ applicationId: z.number().int().positive() })).mutation(async ({ input }) => db.addRecommender((await db.getPersonalWorkspaceUser()).id, input.applicationId)),
+    updateRecommender: publicProcedure.input(z.object({
       recommenderId: z.number().int().positive(),
       name: z.string().max(255).optional(),
       email: z.string().email().max(320).or(z.literal("")).optional(),
       status: z.enum(["not_requested", "requested", "received"]).optional(),
       dueDate: z.string().date().nullable().optional(),
-    })).mutation(({ ctx, input }) => {
+    })).mutation(async ({ input }) => {
       const { recommenderId, ...data } = input;
-      return db.updateRecommender(ctx.user.id, recommenderId, data);
+      return db.updateRecommender((await db.getPersonalWorkspaceUser()).id, recommenderId, data);
     }),
   }),
   legacy: router({
-    list: protectedProcedure.query(({ ctx }) => ctx.user.role === "admin" ? db.getLegacyApplicationRecords() : []),
+    list: publicProcedure.query(() => db.getLegacyApplicationRecords()),
   }),
 });

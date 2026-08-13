@@ -51,6 +51,26 @@ export async function getUserByOpenId(openId: string) {
   return result[0];
 }
 
+const PERSONAL_WORKSPACE_OPEN_ID = "gradpathway-local-personal-workspace";
+
+/** One durable owner record for this intentionally sign-in-free personal workspace. */
+export async function getPersonalWorkspaceUser() {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  await db.insert(users).values({
+    openId: PERSONAL_WORKSPACE_OPEN_ID,
+    name: "Your workspace",
+    loginMethod: "local-personal",
+    role: "admin",
+    lastSignedIn: new Date(),
+  }).onDuplicateKeyUpdate({
+    set: { lastSignedIn: new Date(), name: "Your workspace", loginMethod: "local-personal" },
+  });
+  const record = await db.select().from(users).where(eq(users.openId, PERSONAL_WORKSPACE_OPEN_ID)).limit(1);
+  if (!record[0]) throw new Error("Personal workspace could not be initialized");
+  return record[0];
+}
+
 export type DirectoryFilters = {
   degreeTypes?: Array<"phd" | "masters">;
   subfields?: string[];
