@@ -12,6 +12,11 @@ Michigan is the third state in the systematic directory workflow. The queue begi
 | Wayne State University | Ph.D. and M.S. Biomedical Engineering | Not in uploaded tracker | Three-pass verified | Retain; audit through the wider link-health process |
 | Michigan Technological University | Ph.D. and M.S. Biomedical Engineering | Not in uploaded tracker | Three-pass verified | Completed doctoral refresh, new M.S. publication, and credited BME-building imagery |
 | Michigan State University | Ph.D. and M.S. Biomedical Engineering | Not in uploaded tracker | Three-pass verified | Published from current official BME, College of Engineering, and Graduate School sources |
+| University of Michigan-Dearborn | M.S.E. Bioengineering | Discovery candidate | Three-pass verified | Published from current official Bioengineering, Graduate Admissions, and CECS facilities sources |
+
+## Cohort validation
+
+The August 13, 2026 validation query found **nine** published Michigan profiles. Every profile retained at least five source-field categories at three verification passes, a populated credited campus-image record, and a public program-detail route. This total covers University of Michigan (Ph.D./M.S.), Michigan Technological University (Ph.D./M.S.), Wayne State University (Ph.D./M.S.), Michigan State University (Ph.D./M.S.), and University of Michigan-Dearborn (M.S.E.).
 
 ## Michigan research queue
 
@@ -20,7 +25,8 @@ Michigan is the third state in the systematic directory workflow. The queue begi
 | 1 | University of Michigan Biomedical Engineering Ph.D./M.S. | Ph.D. in uploaded tracker | Completed current admissions/funding/provenance refresh | https://bme.umich.edu/academics/graduate/graduate-admissions/ |
 | 2 | Michigan Technological University Biomedical Engineering Ph.D./M.S. | Existing Ph.D.; M.S. discovered from official sources | Completed current admissions/funding/image refresh and M.S. publication | https://www.mtu.edu/biomedical/graduate/program/ |
 | 3 | Michigan State University Biomedical Engineering Ph.D./M.S. | Discovery candidate | Completed publication | https://engineering.msu.edu/academics/majors-degrees/biomedical-engineering-phd |
-| 3 | Additional Michigan related graduate programs | Discovery only | Enumerate eligible Biomedical Engineering, Bioengineering, Neuroengineering, and adjacent graduate degrees after legacy priority work | Official department and graduate-school sources only |
+| 4 | University of Michigan-Dearborn Bioengineering M.S.E. | Discovery candidate | Completed publication with rolling advisory guidance and credited CECS facility imagery | https://umdearborn.edu/academics/program/bioengineering-mse |
+| 5 | Additional Michigan related graduate programs | Discovery only | Enumerate eligible Biomedical Engineering, Bioengineering, Neuroengineering, and adjacent graduate degrees after legacy priority work | Official department and graduate-school sources only |
 
 ## Guardrails
 
