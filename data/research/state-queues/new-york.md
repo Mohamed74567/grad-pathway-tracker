@@ -15,13 +15,14 @@ New York is the fourth state in the systematic directory workflow. The first res
 | University at Buffalo | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Existing published records | Retain; audit through the wider link-health process |
 | University of Rochester | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Retain; audit through the wider link-health process |
 | Binghamton University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with annual rolling guidance and credited Watson College facility imagery |
+| Rensselaer Polytechnic Institute | Ph.D. and M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with source-backed admissions facts, degree-specific structure, and credited Jonsson Engineering Center imagery |
 
 ## New York research queue
 
 | Priority | Candidate | Legacy status | Research objective | Official discovery seed |
 |---:|---|---|---|---|
 | 1 | Binghamton University Biomedical Engineering Ph.D. and M.S. | Legacy-listed Ph.D. | Completed publication with verified degree-specific structure and qualified funding | https://www.binghamton.edu/biomedical-engineering/graduate/ |
-| 2 | Rensselaer Polytechnic Institute Biomedical Engineering Ph.D. and M.S. pathways | Legacy-listed Ph.D. | Confirm each current standalone graduate degree, active admissions rules, funding distinction, and imagery | https://bme.rpi.edu/graduate |
+| 2 | Rensselaer Polytechnic Institute Biomedical Engineering Ph.D. and M.S. | Legacy-listed Ph.D. | Completed publication; held all expired and non-BME-specific calendar facts out of the planner | https://bme.rpi.edu/programs |
 | 3 | Rochester Institute of Technology Biomedical and Chemical Engineering Ph.D. | Legacy-listed Ph.D. | Confirm whether the interdisciplinary doctoral degree remains eligible and identify related master’s scope without inferring a standalone BME degree | https://www.rit.edu/study/biomedical-and-chemical-engineering-phd |
 | 4 | Syracuse University Bioengineering Ph.D. and any currently offered master’s pathway | Legacy-listed Ph.D. | Confirm current degree identity, admissions policy, funding, and facility imagery | https://ecs.syracuse.edu/academics/biomedical-and-chemical-engineering/programs/bioengineering-doctoral-program |
 | 5 | Additional New York Biomedical Engineering, Bioengineering, Neuroengineering, and related graduate programs | Discovery only | Enumerate after the legacy-priority candidates have been reconciled or explicitly held | Official department and graduate-school sources only |
