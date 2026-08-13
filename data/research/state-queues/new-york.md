@@ -19,6 +19,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 | Rochester Institute of Technology | Ph.D. Biomedical and Chemical Engineering; M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with degree-specific test policies, qualified doctoral funding, annual master’s priority guidance, and credited official lab imagery |
 | Syracuse University | Ph.D. Bioengineering; M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with annual Fall/Spring guidance, qualified scholarship/assistantship treatment, direct application access, and credited official department-laboratory imagery |
 | The City College of New York | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Three-pass verified | Published with source-backed full doctoral support, official language-test thresholds, direct application access, and credited campus imagery |
+| New York Institute of Technology | M.S. Bioengineering | Discovery candidate | Three-pass verified | Published with conditional GRE policy, annual Fall/Spring timing, qualified assistantship treatment, direct application access, and credited laboratory imagery |
 
 ## New York research queue
 
@@ -29,6 +30,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 | 3 | Rochester Institute of Technology Biomedical and Chemical Engineering Ph.D. and Biomedical Engineering M.S. | Legacy-listed Ph.D. | Completed publication; Ph.D. retained without an inferred active-cycle date and M.S. retains annual February 15 priority guidance | https://www.rit.edu/study/biomedical-and-chemical-engineering-phd |
 | 4 | Syracuse University Bioengineering Ph.D. and Biomedical Engineering M.S. | Legacy-listed Ph.D. | Completed publication with distinct degree pathways, annual guidance, and source-safe test policy wording | https://ecs.syracuse.edu/academics/biomedical-and-chemical-engineering/programs/bioengineering-doctoral-program |
 | 5 | The City College of New York Biomedical Engineering Ph.D. and M.S. | Discovery candidate | Completed publication; active deadline intentionally left blank where no live official deadline was published | https://www.ccny.cuny.edu/admissions/biomedical-engineering |
+| 6 | New York Institute of Technology Bioengineering M.S. | Discovery candidate | Completed publication with program-specific annual Fall/Spring timing and conditional GRE treatment | https://www.nyit.edu/academics/degrees/bioengineering-ms/admission-requirements/ |
 | 5 | Additional New York Biomedical Engineering, Bioengineering, Neuroengineering, and related graduate programs | Discovery only | Enumerate after the legacy-priority candidates have been reconciled or explicitly held | Official department and graduate-school sources only |
 
 ## Guardrails
