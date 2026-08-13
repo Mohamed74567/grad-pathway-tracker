@@ -21,3 +21,7 @@ The legacy tracker supplied relevant Pennsylvania Ph.D. seeds for Carnegie Mello
 ## Evidence rules for this queue
 
 Only department, college, graduate-school, university-catalog, or official university news/photography pages qualify for publication. A candidate moves from **research** to **publish** only after program identity, degree structure, and admissions facts are reconciled across three official passes. Application dates without a stated active cycle are saved as annual guidance, not converted into dated planner items. Fee, GRE, English/Duolingo, acceptance, funding, and imagery fields remain blank unless a directly linked official source states them.
+
+## Cohort validation hold
+
+The Pennsylvania scope now contains **15 published profiles** (7 doctoral and 8 master’s) and all 15 have a credited campus image. Carnegie Mellon, Drexel, University of Pennsylvania, and University of Pittsburgh provenance was normalized after current official-source review; Pitt’s official FAQ also supplied its previously missing deadline source category. The next validation pass will confirm that every profile in the cohort meets the five-source-field, three-pass standard before Pennsylvania is marked fully reconciled.
