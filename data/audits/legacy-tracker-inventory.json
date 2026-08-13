@@ -1,0 +1,982 @@
+{
+  "source": "/home/ubuntu/upload/PHDUniTracker.html",
+  "parsedAt": "2026-08-13T10:33:22.963Z",
+  "recordCount": 86,
+  "records": [
+    {
+      "university": "Saint Louise University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://catalog.slu.edu/colleges-schools/science-engineering/biomedical/biomedical-engineering-phd/#text",
+      "deadline": "2025-12-01",
+      "notes": "no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 1
+    },
+    {
+      "university": "Boston University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bu.edu/eng/academics/explore-degree-programs/phd-in-biomedical-engineering/",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 2
+    },
+    {
+      "university": "Clemson University",
+      "program": "PhD in Bioengineering",
+      "website": "https://www.clemson.edu/degrees/bioengineering/grad",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 3
+    },
+    {
+      "university": "Illinois Institute of Technology",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.iit.edu/academics/programs/biomedical-engineering-phd",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 4
+    },
+    {
+      "university": "Tulane University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://sse.tulane.edu/bme/phd-program",
+      "deadline": "2026-01-05",
+      "notes": "no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 5
+    },
+    {
+      "university": "Case Western Reserve University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://case.edu/programs/biomedical-engineering-phd",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 6
+    },
+    {
+      "university": "University of North Carolina",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.unc.edu/graduate/doctor-of-philosophy/",
+      "deadline": "2025-12-01",
+      "notes": "UNC Chapel Hill",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 7
+    },
+    {
+      "university": "University of Wisconsin-Madison",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.wisc.edu/programs/degrees/biomedical-engineering-phd/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 8
+    },
+    {
+      "university": "University of Maine",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://gsbse.umaine.edu/programs/ph-d-biomedical-engineering/",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 9
+    },
+    {
+      "university": "Missouri S&T",
+      "program": "PhD in Bioengineering",
+      "website": "https://chbe.mst.edu/academicprograms/phd-bioeng/",
+      "deadline": "2026-01-15",
+      "notes": "we will waive app fee through attend session, but we need test waive",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 10
+    },
+    {
+      "university": "Rutgers University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.rutgers.edu/doctoral-degree",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 11
+    },
+    {
+      "university": "University of Nebraska-Lincoln",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://graduate.unl.edu/academics/programs/BIOE-PHD/",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 12
+    },
+    {
+      "university": "UT Southwestern Medical Center",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.utsouthwestern.edu/education/graduate-school/programs/biomedical-engineering/",
+      "deadline": "2025-12-01",
+      "notes": "no application fee, need test but still the best program",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 13
+    },
+    {
+      "university": "University of Texas Dallas",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.utdallas.edu/fact-sheets/ecs/phd-biomedical-engineering/#",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 14
+    },
+    {
+      "university": "University of Vermont",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.uvm.edu/cems/ebe/program/phd-biomedical-engineering",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 15
+    },
+    {
+      "university": "University of Texas Arlington",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.uta.edu/academics/programs/biomedical-engineering-phd",
+      "deadline": "2026-02-01",
+      "notes": "need second check",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 16
+    },
+    {
+      "university": "Stevens Institute of Technology",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.stevens.edu/program/biomedical-engineering-phd",
+      "deadline": "2026-01-15",
+      "notes": "we have waived the app fee 26/3/2025 '8AM'",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 17
+    },
+    {
+      "university": "University of Texas San Antonio",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://future.utsa.edu/programs/doctoral/biomedical-engineering#admissions",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 18
+    },
+    {
+      "university": "Arizona State University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://degrees.apps.asu.edu/masters-phd/major/ASU00/ESBIOENPHD/biomedical-engineering-phd#admissionReq",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 19
+    },
+    {
+      "university": "University of New Hampshire",
+      "program": "PhD in Bioengineering",
+      "website": "https://gradschool.unh.edu/program/phd/bioengineering",
+      "deadline": "2026-02-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 20
+    },
+    {
+      "university": "MIT",
+      "program": "PhD in Medical Engineering and Medical Physics",
+      "website": "https://hst.mit.edu/applying-hst/applying-medical-engineering-and-medical-physics-memp-phd-program/phd-admissions-faq",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 21
+    },
+    {
+      "university": "Stanford University",
+      "program": "PhD in Bioengineering",
+      "website": "https://bioengineering.stanford.edu/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 22
+    },
+    {
+      "university": "University of Michigan",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://grok.com/chat/82f2c7e9-b8a3-4cc0-b716-67b61f89b52b",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 23
+    },
+    {
+      "university": "Johns Hopkins University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.jhu.edu/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 24
+    },
+    {
+      "university": "University of Pennsylvania",
+      "program": "PhD in Bioengineering",
+      "website": "https://be.seas.upenn.edu/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 25
+    },
+    {
+      "university": "Penn State University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bulletins.psu.edu/graduate/programs/majors/biomedical-engineering/#studentaidtext",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 26
+    },
+    {
+      "university": "UC San Diego",
+      "program": "PhD in Bioengineering",
+      "website": "https://be.ucsd.edu/",
+      "deadline": "2025-12-04",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 27
+    },
+    {
+      "university": "Northwestern University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.mccormick.northwestern.edu/biomedical/",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 28
+    },
+    {
+      "university": "Washington University in St. Louis",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.wustl.edu/index.html",
+      "deadline": "2025-12-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 29
+    },
+    {
+      "university": "University of Minnesota",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://cse.umn.edu/bme",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 30
+    },
+    {
+      "university": "University of Washington",
+      "program": "PhD in Bioengineering",
+      "website": "https://bioe.uw.edu/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 31
+    },
+    {
+      "university": "Arizona State University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://degrees.apps.asu.edu/masters-phd/major/ASU00/ESBIOENPHD/biomedical-engineering-phd?init=false&nopassive=true",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 32
+    },
+    {
+      "university": "Utah State University",
+      "program": "PhD in Bioengineering",
+      "website": "https://catalog.usu.edu/preview_program.php?catoid=40&poid=40135",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 33
+    },
+    {
+      "university": "Princeton University",
+      "program": "PhD in Bioengineering",
+      "website": "https://bioengineering.princeton.edu/graduate",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 34
+    },
+    {
+      "university": "University of Texas Austin",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.utexas.edu/academics/graduate-program/phd-program",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 35
+    },
+    {
+      "university": "Virginia Commonwealth University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://egr.vcu.edu/departments/biomedical/academics/graduate/",
+      "deadline": "2026-01-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 36
+    },
+    {
+      "university": "Indiana University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://luddy.indianapolis.iu.edu/departments/biomedical-engineering/index.html",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 37
+    },
+    {
+      "university": "Worcester Polytechnic Institute",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.wpi.edu/academics/study/biomedical-engineering-phd",
+      "deadline": "2026-01-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 38
+    },
+    {
+      "university": "University of Kansas",
+      "program": "PhD in Bioengineering",
+      "website": "https://bioengr.ku.edu/",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 39
+    },
+    {
+      "university": "University of Virginia",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.virginia.edu/department/biomedical-engineering/academics/graduate-programs/phd-biomedical-engineering",
+      "deadline": "2025-12-15",
+      "notes": "no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 40
+    },
+    {
+      "university": "Tufts University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.tufts.edu/bme/",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 41
+    },
+    {
+      "university": "Ohio State University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://gpadmissions.osu.edu/programs/program.aspx?prog=0033",
+      "deadline": "2025-11-30",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 42
+    },
+    {
+      "university": "University of Rochester",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.hajim.rochester.edu/bme/graduate/applicants.html",
+      "deadline": "2025-12-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 43
+    },
+    {
+      "university": "Northeastern University",
+      "program": "PhD in Bioengineering",
+      "website": "https://phd.northeastern.edu/program/bioengineering/",
+      "deadline": "2025-12-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 44
+    },
+    {
+      "university": "University of Delaware",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.udel.edu/graduate/",
+      "deadline": "2026-01-05",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 45
+    },
+    {
+      "university": "University of Maryland",
+      "program": "PhD in Bioengineering",
+      "website": "https://academiccatalog.umd.edu/graduate/programs/bioengineering-bioe/#admissionstext",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 46
+    },
+    {
+      "university": "Rice University",
+      "program": "PhD in Bioengineering",
+      "website": "https://bioengineering.rice.edu/",
+      "deadline": "2025-12-31",
+      "notes": "no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 47
+    },
+    {
+      "university": "Cornell University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.cornell.edu/bme",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 48
+    },
+    {
+      "university": "Brown University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.brown.edu/academics/ibeam/academics/graduate-program",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 49
+    },
+    {
+      "university": "George Mason University",
+      "program": "PhD in Bioengineering",
+      "website": "https://catalog.gmu.edu/colleges-schools/engineering-computing/engineering/bioengineering/bioengineering-phd/",
+      "deadline": "2026-01-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 50
+    },
+    {
+      "university": "University of Connecticut",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.uconn.edu/doctoral-degree-program-in-biomedical-engineering/",
+      "deadline": "2026-01-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 51
+    },
+    {
+      "university": "Lehigh University",
+      "program": "PhD in Bioengineering",
+      "website": "https://www2.lehigh.edu/academics/graduate-studies/bioengineering-phd",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 52
+    },
+    {
+      "university": "Vanderbilt University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/#doctor-of-philosophy",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 53
+    },
+    {
+      "university": "Rochester Institute of Technology",
+      "program": "PhD in Biomedical and Chemical Engineering",
+      "website": "https://www.rit.edu/study/biomedical-and-chemical-engineering-phd",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 54
+    },
+    {
+      "university": "Binghamton University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.binghamton.edu/biomedical-engineering/graduate/index.html",
+      "deadline": "2026-01-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 55
+    },
+    {
+      "university": "Caltech",
+      "program": "PhD in Medical Engineering",
+      "website": "https://www.bbe.caltech.edu/academics/Biomedical-Engineering-Programs",
+      "deadline": "2025-12-01",
+      "notes": "Apply Medical Eng.",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 56
+    },
+    {
+      "university": "North Dakota State University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.ndsu.edu/coe/future_students/biomedical_engineering/bme_ms_and_phd/",
+      "deadline": "2026-01-15",
+      "notes": "maybe check app fee and English high acceptance",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 57
+    },
+    {
+      "university": "Purdue University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.purdue.edu/BME/Academics/Graduate",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 58
+    },
+    {
+      "university": "University at Buffalo",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://engineering.buffalo.edu/bme/education/doctoral-program.html",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 59
+    },
+    {
+      "university": "Syracuse University",
+      "program": "PhD in Bioengineering",
+      "website": "https://ecs.syracuse.edu/academics/biomedical-and-chemical-engineering/programs/bioengineering-doctoral-program",
+      "deadline": "2025-12-15",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 60
+    },
+    {
+      "university": "University of Texas at Austin",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.utexas.edu/",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 61
+    },
+    {
+      "university": "Howard University",
+      "program": "PhD in Biomedical & Chemical Engineering",
+      "website": "https://gs.howard.edu/biomedical-chemical-engineering-phd",
+      "deadline": "2025-12-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 62
+    },
+    {
+      "university": "Yale University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://gsas.yale.edu/programs-of-study/biomedical-engineering#admission-requirements",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 63
+    },
+    {
+      "university": "University of Central Florida",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://mae.ucf.edu/bmephd/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 64
+    },
+    {
+      "university": "University of Mississippi",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://catalog.olemiss.edu/engineering/biomedical-engineering/phd-engr-sci/phd-biomed-e",
+      "deadline": "2026-02-01",
+      "notes": "not sure",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 65
+    },
+    {
+      "university": "University of Memphis",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2174&returnto=219",
+      "deadline": "2026-03-01",
+      "notes": "not sure, not recommended",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 66
+    },
+    {
+      "university": "Marquette University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 67
+    },
+    {
+      "university": "Florida International University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.fiu.edu/academics/degrees/",
+      "deadline": "2026-03-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 68
+    },
+    {
+      "university": "University of Dayton",
+      "program": "PhD in Bioengineering",
+      "website": "https://udayton.edu/engineering/departments/chemical_and_materials/bioengineering/index.php",
+      "deadline": "2026-01-15",
+      "notes": "Master but no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 69
+    },
+    {
+      "university": "NJIT University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.njit.edu/academics/major/biomedical-engineering",
+      "deadline": "2025-12-01",
+      "notes": "App fee use GR25",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 70
+    },
+    {
+      "university": "Georgia Tech & Emory University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.gatech.edu/bme/georgia-tech-emory-bme-phd-program",
+      "deadline": "2025-12-01",
+      "notes": "joint program",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 71
+    },
+    {
+      "university": "Columbia University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.columbia.edu/doctoral-program",
+      "deadline": "2025-12-15",
+      "notes": "scholarship: https://worldprojects.columbia.edu/application-information",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 72
+    },
+    {
+      "university": "University of Kentucky",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/biomedical-engineering-graduate",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 73
+    },
+    {
+      "university": "University of Pittsburgh",
+      "program": "PhD in Bioengineering",
+      "website": "https://www.engineering.pitt.edu/departments/bioengineering/programs/graduate/graduate-overview/?",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 74
+    },
+    {
+      "university": "University of Colorado",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.colorado.edu/bme/",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 75
+    },
+    {
+      "university": "University of Utah",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.utah.edu/",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 76
+    },
+    {
+      "university": "University of Houston",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.bme.uh.edu/",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 77
+    },
+    {
+      "university": "Carnegie Mellon University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.cmu.edu/bme/index.html",
+      "deadline": "2025-12-15",
+      "notes": "appfee waived session 7 august",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 78
+    },
+    {
+      "university": "University of Louisville",
+      "program": "PhD in Bioengineering",
+      "website": "https://engineering.louisville.edu/academics/departments/bioengineering/",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 79
+    },
+    {
+      "university": "University of Idaho",
+      "program": "PhD in Bioengineering",
+      "website": "https://www.uidaho.edu/engr/departments/chbe/degrees/be/phd",
+      "deadline": "2026-02-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 80
+    },
+    {
+      "university": "Drexel University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 81
+    },
+    {
+      "university": "Rensselaer Polytechnic Institute",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://bme.rpi.edu/graduate",
+      "deadline": "2026-01-01",
+      "notes": "appfee waived 2 august",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 82
+    },
+    {
+      "university": "Clarkson University",
+      "program": "PhD in Bioscience and Technology",
+      "website": "https://www.clarkson.edu/academics/majors-minors/bioscience-technology-phd",
+      "deadline": "2026-01-15",
+      "notes": "no app fee",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 83
+    },
+    {
+      "university": "Virginia Tech",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.vt.edu/academics/majors/biomedical-engineering.html",
+      "deadline": "2025-12-01",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 84
+    },
+    {
+      "university": "Marquette University",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+      "deadline": "2026-01-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 85
+    },
+    {
+      "university": "University of Tennessee",
+      "program": "PhD in Biomedical Engineering",
+      "website": "https://tickle.utk.edu/biomedical/",
+      "deadline": "2025-12-15",
+      "notes": "",
+      "appStatus": "Not Started",
+      "result": "Pending",
+      "id": 86
+    }
+  ],
+  "emptyWebsiteIds": [
+    81
+  ],
+  "nonOfficialWebsiteIds": [
+    23
+  ],
+  "duplicateGroups": [
+    {
+      "key": "arizona state|phd in biomedical engineering",
+      "ids": [
+        19,
+        32
+      ]
+    },
+    {
+      "key": "texas austin|phd in biomedical engineering",
+      "ids": [
+        35,
+        61
+      ]
+    },
+    {
+      "key": "marquette|phd in biomedical engineering",
+      "ids": [
+        67,
+        85
+      ]
+    }
+  ],
+  "stateHints": [
+    "Arizona State University",
+    "Binghamton University",
+    "Boston University",
+    "Brown University",
+    "Caltech",
+    "Carnegie Mellon University",
+    "Case Western Reserve University",
+    "Clarkson University",
+    "Clemson University",
+    "Columbia University",
+    "Cornell University",
+    "Drexel University",
+    "Florida International University",
+    "George Mason University",
+    "Georgia Tech & Emory University",
+    "Howard University",
+    "Illinois Institute of Technology",
+    "Indiana University",
+    "Johns Hopkins University",
+    "Lehigh University",
+    "MIT",
+    "Marquette University",
+    "Missouri S&T",
+    "NJIT University",
+    "North Dakota State University",
+    "Northeastern University",
+    "Northwestern University",
+    "Ohio State University",
+    "Penn State University",
+    "Princeton University",
+    "Purdue University",
+    "Rensselaer Polytechnic Institute",
+    "Rice University",
+    "Rochester Institute of Technology",
+    "Rutgers University",
+    "Saint Louise University",
+    "Stanford University",
+    "Stevens Institute of Technology",
+    "Syracuse University",
+    "Tufts University",
+    "Tulane University",
+    "UC San Diego",
+    "UT Southwestern Medical Center",
+    "University at Buffalo",
+    "University of Central Florida",
+    "University of Colorado",
+    "University of Connecticut",
+    "University of Dayton",
+    "University of Delaware",
+    "University of Houston",
+    "University of Idaho",
+    "University of Kansas",
+    "University of Kentucky",
+    "University of Louisville",
+    "University of Maine",
+    "University of Maryland",
+    "University of Memphis",
+    "University of Michigan",
+    "University of Minnesota",
+    "University of Mississippi",
+    "University of Nebraska-Lincoln",
+    "University of New Hampshire",
+    "University of North Carolina",
+    "University of Pennsylvania",
+    "University of Pittsburgh",
+    "University of Rochester",
+    "University of Tennessee",
+    "University of Texas Arlington",
+    "University of Texas Austin",
+    "University of Texas Dallas",
+    "University of Texas San Antonio",
+    "University of Texas at Austin",
+    "University of Utah",
+    "University of Vermont",
+    "University of Virginia",
+    "University of Washington",
+    "University of Wisconsin-Madison",
+    "Utah State University",
+    "Vanderbilt University",
+    "Virginia Commonwealth University",
+    "Virginia Tech",
+    "Washington University in St. Louis",
+    "Worcester Polytechnic Institute",
+    "Yale University"
+  ]
+}

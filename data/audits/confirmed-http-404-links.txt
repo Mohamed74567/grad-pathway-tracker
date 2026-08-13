@@ -1,0 +1,67 @@
+      },
+      {
+        "id": 1950001,
+        "slug": "university-alabama-birmingham-biomedical-engineering-phd",
+        "universityName": "University of Alabama at Birmingham",
+        "programName": "Ph.D. in Biomedical Engineering",
+        "degreeType": "phd",
+        "officialUrl": "https://www.uab.edu/engineering/bme/graduate/phd",
+        "applicationUrl": "https://www.uab.edu/graduate/admissions/apply",
+        "linkType": "application",
+        "url": "https://www.uab.edu/graduate/admissions/apply",
+        "status": "http-error",
+        "httpStatus": 404,
+        "finalUrl": "https://www.uab.edu/graduate/admissions/apply"
+      },
+      {
+        "id": 1950002,
+        "slug": "university-alabama-birmingham-biomedical-engineering-ms",
+        "universityName": "University of Alabama at Birmingham",
+        "programName": "M.S. in Biomedical Engineering",
+        "degreeType": "masters",
+        "officialUrl": "https://catalog.uab.edu/graduate/schoolofengineering/biomedical/",
+        "applicationUrl": "https://www.uab.edu/graduate/admissions/apply",
+        "linkType": "application",
+        "url": "https://www.uab.edu/graduate/admissions/apply",
+        "status": "http-error",
+        "httpStatus": 404,
+        "finalUrl": "https://www.uab.edu/graduate/admissions/apply"
+      },
+      {
+        "id": 570001,
+--
+    },
+    {
+      "id": 1950001,
+      "slug": "university-alabama-birmingham-biomedical-engineering-phd",
+      "universityName": "University of Alabama at Birmingham",
+      "programName": "Ph.D. in Biomedical Engineering",
+      "degreeType": "phd",
+      "officialUrl": "https://www.uab.edu/engineering/bme/graduate/phd",
+      "applicationUrl": "https://www.uab.edu/graduate/admissions/apply",
+      "linkType": "application",
+      "url": "https://www.uab.edu/graduate/admissions/apply",
+      "status": "http-error",
+      "httpStatus": 404,
+      "finalUrl": "https://www.uab.edu/graduate/admissions/apply"
+    },
+    {
+      "id": 1950001,
+--
+    },
+    {
+      "id": 1950002,
+      "slug": "university-alabama-birmingham-biomedical-engineering-ms",
+      "universityName": "University of Alabama at Birmingham",
+      "programName": "M.S. in Biomedical Engineering",
+      "degreeType": "masters",
+      "officialUrl": "https://catalog.uab.edu/graduate/schoolofengineering/biomedical/",
+      "applicationUrl": "https://www.uab.edu/graduate/admissions/apply",
+      "linkType": "application",
+      "url": "https://www.uab.edu/graduate/admissions/apply",
+      "status": "http-error",
+      "httpStatus": 404,
+      "finalUrl": "https://www.uab.edu/graduate/admissions/apply"
+    },
+    {
+      "id": 2,
