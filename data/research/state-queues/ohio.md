@@ -24,7 +24,7 @@ Ohio is the second state in the systematic directory workflow. The queue begins 
 | 5 | Cleveland State University Ph.D. in Engineering — Applied Biomedical Engineering specialization | Discovery candidate | Hold for further current admissions-policy research; degree and assistantship structure confirmed | https://engineering.csuohio.edu/chemical/applied-biomedical-engineering-doctoral-program |
 | 6 | Miami University M.Eng. Biomedical Engineering | Discovery candidate | Research and reconcile | https://programs.miamioh.edu/programs/biomedical-engineering-m-eng/ |
 | 7 | Wright State University M.S. Biomedical Engineering | Discovery candidate | Completed publication | https://engineering-computer-science.wright.edu/biomedical-industrial-and-human-factors-engineering/master-of-science-in-biomedical-engineering |
-| 8 | Miami University M.Eng. Biomedical Engineering | Discovery candidate | Hold for fee/GRE/funding reconciliation under Miami University of Ohio sources only; do not use University of Miami sources | https://programs.miamioh.edu/programs/biomedical-engineering-m-eng/ |
+| 8 | Miami University M.Eng. Biomedical Engineering | Discovery candidate | Completed publication under Miami University of Ohio sources only | https://programs.miamioh.edu/programs/biomedical-engineering-m-eng/ |
 
 ## Guardrails
 
