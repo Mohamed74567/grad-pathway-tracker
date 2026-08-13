@@ -52,9 +52,11 @@ export async function getUserByOpenId(openId: string) {
 }
 
 const PERSONAL_WORKSPACE_OPEN_ID = "gradpathway-local-personal-workspace";
+let personalWorkspaceUser: typeof users.$inferSelect | null = null;
 
 /** One durable owner record for this intentionally sign-in-free personal workspace. */
 export async function getPersonalWorkspaceUser() {
+  if (personalWorkspaceUser) return personalWorkspaceUser;
   const db = await getDb();
   if (!db) throw new Error("Database unavailable");
   await db.insert(users).values({
@@ -68,7 +70,8 @@ export async function getPersonalWorkspaceUser() {
   });
   const record = await db.select().from(users).where(eq(users.openId, PERSONAL_WORKSPACE_OPEN_ID)).limit(1);
   if (!record[0]) throw new Error("Personal workspace could not be initialized");
-  return record[0];
+  personalWorkspaceUser = record[0];
+  return personalWorkspaceUser;
 }
 
 export type DirectoryFilters = {
