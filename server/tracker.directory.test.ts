@@ -16,4 +16,10 @@ describe("tracker.directory", () => {
 
     await expect(caller.tracker.directory.bySlug({ slug: "nonexistent-public-record" })).resolves.toBeUndefined();
   });
+
+  it("allows direct access to the single-owner personal application workspace", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    await expect(caller.tracker.applications.list()).resolves.toEqual(expect.any(Array));
+  });
 });
