@@ -15,8 +15,8 @@ The legacy tracker supplied relevant Pennsylvania Ph.D. seeds for Carnegie Mello
 | University of Pennsylvania — Bioengineering Ph.D. / M.S.E. | Published; legacy-listed Ph.D. | Refresh remaining snapshot gaps | https://be.engineering.upenn.edu/doctoral/ | Current-source refresh pending |
 | University of Pittsburgh — Bioengineering Ph.D. / research M.S. | Published; legacy-listed | Completed refresh | https://www.engineering.pitt.edu/departments/bioengineering/programs/graduate/admissions/graduate-admissions/ | Current-source refresh and hero added |
 | Temple University — Bioengineering Ph.D. / MSBioe | Not yet published | Publish after conflict-aware final check | https://engineering.temple.edu/admissions/graduate-admissions | Admissions reconciliation completed; publication queued |
-| University of Pittsburgh — professional M.S. Bioengineering, Neural Engineering focus | Not yet published | Research and publish if degree/admission facts reconcile | https://www.engineering.pitt.edu/departments/bioengineering/research/neuro/neuro/ | Official candidate confirmed |
-| Villanova University — M.S. Biomedical Engineering | Not yet published | Research and publish if degree/admission facts reconcile | https://www.villanova.edu/university/engineering/academic-programs/biomedical/ms-biomedical-engineering.html | Official candidate confirmed |
+| University of Pittsburgh — professional M.S. Bioengineering, Neural Engineering focus | Published | Completed publication | https://www.engineering.pitt.edu/departments/bioengineering/research/neuro/neuro/ | Three-pass verified; qualified fields only |
+| Villanova University — M.S. Biomedical Engineering | Published | Completed publication | https://www.villanova.edu/university/engineering/academic-programs/biomedical/ms-biomedical-engineering.html | Three-pass verified; funding deliberately not stated |
 
 ## Evidence rules for this queue
 
