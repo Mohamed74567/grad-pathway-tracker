@@ -20,9 +20,10 @@ Ohio is the second state in the systematic directory workflow. The queue begins 
 | 1 | Case Western Reserve University Biomedical Engineering Ph.D./M.S. | Ph.D. in uploaded tracker | Completed refresh | https://case.edu/bme/academics/graduate/how-apply |
 | 2 | University of Dayton Bioengineering graduate program | Legacy-listed as Bioengineering Ph.D.; legacy note suggests master’s context | **Hold — not eligible as a distinct current Bioengineering graduate degree.** Official catalog identifies an M.S. in Chemical Engineering that includes bioengineering technical development, while Bioengineering is an undergraduate co-major/course area. | https://catalog.udayton.edu/graduate/schoolofengineering/programsofstudy/chemicalengineering/ |
 | 3 | Ohio University M.S. Biomedical Engineering | Discovery candidate | Completed publication | https://www.ohio.edu/engineering/chemical/graduate/biomedical-engineering |
-| 4 | Cleveland State University M.S. Biomedical Engineering | Discovery candidate | Research and reconcile | https://engineering.csuohio.edu/chemical/master-science-in-biomedical-engineering |
-| 5 | Miami University M.Eng. Biomedical Engineering | Discovery candidate | Research and reconcile | https://programs.miamioh.edu/programs/biomedical-engineering-m-eng/ |
-| 6 | Wright State University M.S. Biomedical Engineering | Discovery candidate | Research and reconcile | https://engineering-computer-science.wright.edu/biomedical-industrial-and-human-factors-engineering/master-of-science-in-biomedical-engineering |
+| 4 | Cleveland State University M.S. Biomedical Engineering | Discovery candidate | Completed publication | https://engineering.csuohio.edu/chemical/master-science-in-biomedical-engineering |
+| 5 | Cleveland State University Ph.D. in Engineering — Applied Biomedical Engineering specialization | Discovery candidate | Hold for further current admissions-policy research; degree and assistantship structure confirmed | https://engineering.csuohio.edu/chemical/applied-biomedical-engineering-doctoral-program |
+| 6 | Miami University M.Eng. Biomedical Engineering | Discovery candidate | Research and reconcile | https://programs.miamioh.edu/programs/biomedical-engineering-m-eng/ |
+| 7 | Wright State University M.S. Biomedical Engineering | Discovery candidate | Research and reconcile | https://engineering-computer-science.wright.edu/biomedical-industrial-and-human-factors-engineering/master-of-science-in-biomedical-engineering |
 
 ## Guardrails
 
