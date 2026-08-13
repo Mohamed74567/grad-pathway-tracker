@@ -3,13 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { Download, Upload } from "lucide-react";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
-
-type BackupApplication = {
-  programId: number;
-  application: Record<string, unknown>;
-  documents: Array<{ documentType: string; label: string; isComplete: boolean }>;
-  recommenders: Array<{ name?: string | null; email?: string | null; status: "not_requested" | "requested" | "received" }>;
-};
+import { PERSONAL_BACKUP_KIND, PERSONAL_BACKUP_SCHEMA_VERSION, type BackupApplication, validatePersonalBackup } from "@shared/personalBackup";
 
 export function PersonalBackupPanel({ items, onImported }: { items: any[]; onImported: () => Promise<unknown> | unknown }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -32,7 +26,7 @@ export function PersonalBackupPanel({ items, onImported }: { items: any[]; onImp
       documents: item.documents.map((document: any) => ({ documentType: document.documentType, label: document.label, isComplete: document.isComplete })),
       recommenders: item.recommenders.map((recommender: any) => ({ name: recommender.name, email: recommender.email, status: recommender.status })),
     }));
-    const payload = { schemaVersion: 1, exportedAt: new Date().toISOString(), kind: "gradpathway-personal-progress", applications };
+    const payload = { schemaVersion: PERSONAL_BACKUP_SCHEMA_VERSION, exportedAt: new Date().toISOString(), kind: PERSONAL_BACKUP_KIND, applications };
     const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));
     const anchor = document.createElement("a"); anchor.href = url; anchor.download = `gradpathway-backup-${new Date().toISOString().slice(0, 10)}.json`; anchor.click(); URL.revokeObjectURL(url);
     toast.success(`Downloaded backup with ${applications.length} application${applications.length === 1 ? "" : "s"}.`);
@@ -41,12 +35,10 @@ export function PersonalBackupPanel({ items, onImported }: { items: any[]; onImp
   const importBackup = async (file: File) => {
     setIsImporting(true);
     try {
-      const parsed = JSON.parse(await file.text());
-      if (parsed?.schemaVersion !== 1 || parsed?.kind !== "gradpathway-personal-progress" || !Array.isArray(parsed.applications)) throw new Error("This is not a supported GradPathway backup file.");
+      const parsed = validatePersonalBackup(JSON.parse(await file.text()));
       const approved = window.confirm(`Import preview: ${parsed.applications.length} application${parsed.applications.length === 1 ? "" : "s"} will be merged into this personal workspace. Verified program records will not be changed. Continue?`);
       if (!approved) return;
       for (const candidate of parsed.applications as BackupApplication[]) {
-        if (!Number.isInteger(candidate.programId) || !candidate.application || !Array.isArray(candidate.documents) || !Array.isArray(candidate.recommenders)) throw new Error("The backup contains an incomplete application record.");
         await add.mutateAsync({ programId: candidate.programId });
       }
       const fresh = await utils.tracker.applications.list.fetch();
