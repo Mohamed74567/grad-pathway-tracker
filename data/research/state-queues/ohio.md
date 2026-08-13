@@ -33,3 +33,7 @@ No legacy deadline, fee-waiver note, or policy is carried forward as fact withou
 ## University of Dayton verification outcome
 
 The uploaded legacy tracker’s “PhD in Bioengineering” seed does **not** correspond to a currently confirmed Bioengineering doctoral program. The official School of Engineering catalog identifies only a Master of Science in Chemical Engineering; its curriculum may include bioengineering coursework and applications, but it is not a graduate Bioengineering degree. The official Bioengineering designation is a co-major at the undergraduate level. Therefore no Dayton profile is published under the tracker’s qualifying graduate-program taxonomy.
+
+## Cohort validation status
+
+The current Ohio cohort contains **10 published profiles**, each with credited real campus imagery and all five source-field categories at three verification passes. The state-wide discovery pass confirmed the currently published group and identified no additional distinct qualifying University of Akron or Kent State biomedical-engineering graduate degree for publication. Cleveland State’s Ph.D. in Engineering — Applied Biomedical Engineering specialization remains intentionally held: the degree, research structure, and conditional Cleveland Clinic research-assistantship pathway are verified, but a current official doctoral admissions-requirements page has not yet provided a safe GRE/fee/English/deadline snapshot. It will be revisited rather than published with inferred facts.
