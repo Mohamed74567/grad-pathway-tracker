@@ -88,3 +88,5 @@
 - [ ] Replace the opportunistic expansion queue with a documented state-by-state workflow: enumerate related biomedical, bioengineering, neuroengineering, and adjacent graduate programs for one state, reconcile and publish eligible profiles, then proceed to the next state.
 - [x] Repair the verified 404 UAB Biomedical Engineering application links using the current official Graduate School online-application page.
 - [x] Refresh legacy-listed Drexel Biomedical Engineering Ph.D. and M.S. admission snapshots with current official direct-application, fee, GRE, English-test, Duolingo, and qualified-funding facts.
+- [x] Refresh legacy-listed University of Pittsburgh Bioengineering Ph.D. and research M.S. snapshots with current optional-GRE, English/Duolingo, and doctoral-funding distinctions, then add a credited official Swanson Engineering hero.
+- [x] Publish legacy-listed Lehigh University Bioengineering Ph.D. after three-pass reconciliation, with source-backed fee/GRE/English/Duolingo/funding facts, annual deadline guidance without an invented cycle date, direct official links, and a credited Rossin College engineering hero.

@@ -31,7 +31,7 @@ export default function ProgramDetails() {
     <section className="surface overflow-hidden">
       <div className="relative h-72 overflow-hidden bg-[linear-gradient(120deg,#33206e,#7356ca_52%,#45b99a)] sm:h-80">
         {program.campusImageUrl ? <img src={program.campusImageUrl} alt={program.campusImageAlt ?? ""} fetchPriority="high" decoding="sync" className="absolute inset-0 h-full w-full object-cover" /> : null}
-        <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(22,12,62,.88)_0%,rgba(34,24,78,.56)_48%,rgba(13,25,48,.2)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(22,12,62,.72)_0%,rgba(34,24,78,.36)_48%,rgba(13,25,48,.08)_100%)]" />
         {program.campusImageCredit ? <span className="absolute right-4 top-4 rounded-full bg-slate-950/45 px-3 py-1.5 text-[0.62rem] font-semibold text-white/90 backdrop-blur-sm">Photo: {program.campusImageCredit}</span> : null}
         <div className="relative flex h-full flex-col justify-end p-6 text-white sm:p-8"><div className="mb-3 flex flex-wrap gap-2"><span className="rounded-full bg-white/18 px-3 py-1 font-mono-ui text-[0.65rem] uppercase tracking-[.15em] backdrop-blur">{degreeLabel}</span><span className="rounded-full bg-white/18 px-3 py-1 font-mono-ui text-[0.65rem] uppercase tracking-[.15em] backdrop-blur">Verified profile</span></div><h1 className="font-editorial max-w-3xl text-4xl font-semibold leading-none tracking-tight sm:text-5xl">{program.universityName}</h1><p className="mt-3 text-base text-white/85">{program.programName}</p></div>
       </div>
