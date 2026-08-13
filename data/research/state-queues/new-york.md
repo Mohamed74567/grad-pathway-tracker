@@ -8,12 +8,12 @@ New York is the fourth state in the systematic directory workflow. The first res
 
 | Institution | Published programs | Legacy status | Current provenance status | Next action |
 |---|---:|---|---|---|
-| Columbia University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Audit during wider thin-snapshot work; do not duplicate |
-| Cornell University | Ph.D. Biomedical Engineering; M.Eng. Biomedical Engineering | Legacy-listed university | Existing Ph.D.; M.Eng. three-pass verified | Published distinct professional M.Eng.; retain existing Ph.D. for later thin-snapshot audit |
-| New York University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Audit during wider thin-snapshot work; do not duplicate |
-| Stony Brook University | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Existing published records | Retain; audit through the wider link-health process |
-| University at Buffalo | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Existing published records | Retain; audit through the wider link-health process |
-| University of Rochester | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Existing published records | Retain; audit through the wider link-health process |
+| Columbia University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Three-pass verified | Completed inherited-profile refresh with current admissions, deadline, funding, and imagery treatment |
+| Cornell University | Ph.D. Biomedical Engineering; M.Eng. Biomedical Engineering | Legacy-listed university | Three-pass verified | Completed distinct M.Eng. publication and inherited Ph.D. refresh |
+| New York University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Three-pass verified | Completed inherited-profile refresh with current admissions, deadline, funding, and imagery treatment |
+| Stony Brook University | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Three-pass verified | Completed inherited-profile refresh with exact live 2027 deadlines and credited research imagery |
+| University at Buffalo | Ph.D. and M.S. Biomedical Engineering | Discovery candidate | Three-pass verified | Completed inherited-profile refresh with rolling-admissions and test-policy treatment |
+| University of Rochester | Ph.D. and M.S. Biomedical Engineering | Legacy-listed university | Three-pass verified | Completed inherited-profile refresh with annual deadline and funding distinctions |
 | Binghamton University | Ph.D. and M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with annual rolling guidance and credited Watson College facility imagery |
 | Rensselaer Polytechnic Institute | Ph.D. and M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with source-backed admissions facts, degree-specific structure, and credited Jonsson Engineering Center imagery |
 | Rochester Institute of Technology | Ph.D. Biomedical and Chemical Engineering; M.S. Biomedical Engineering | Legacy-listed Ph.D. | Three-pass verified | Published with degree-specific test policies, qualified doctoral funding, annual master’s priority guidance, and credited official lab imagery |
@@ -32,7 +32,7 @@ New York is the fourth state in the systematic directory workflow. The first res
 | 5 | The City College of New York Biomedical Engineering Ph.D. and M.S. | Discovery candidate | Completed publication; active deadline intentionally left blank where no live official deadline was published | https://www.ccny.cuny.edu/admissions/biomedical-engineering |
 | 6 | New York Institute of Technology Bioengineering M.S. | Discovery candidate | Completed publication with program-specific annual Fall/Spring timing and conditional GRE treatment | https://www.nyit.edu/academics/degrees/bioengineering-ms/admission-requirements/ |
 | 7 | Cornell University Biomedical Engineering M.Eng. | Existing university, missing distinct master’s profile | Completed publication with no-GRE, annual rolling guidance, qualified funding, and credited official Fab Lab imagery | https://www.duffield.cornell.edu/bme/meng/meng-admission-requirements/ |
-| 5 | Additional New York Biomedical Engineering, Bioengineering, Neuroengineering, and related graduate programs | Discovery only | Enumerate after the legacy-priority candidates have been reconciled or explicitly held | Official department and graduate-school sources only |
+| 8 | Additional New York Biomedical Engineering, Bioengineering, Neuroengineering, and related graduate programs | Discovery only | Continue only after the verified baseline; hold candidates without three-pass official evidence | Official department and graduate-school sources only |
 
 ## Guardrails
 
@@ -48,4 +48,4 @@ RIT’s official program pages establish a distinct Biomedical and Chemical Engi
 
 ## Cohort validation status
 
-The August 13, 2026 validation query found **23 published New York profiles**. **12** initially met the required five-source-category, three-pass, credited-image standard. Columbia’s Ph.D./M.S., NYU Tandon’s Ph.D./M.S., Stony Brook’s Ph.D./M.S., University at Buffalo’s Ph.D./M.S., and University of Rochester’s Ph.D./M.S. have now been refreshed to the standard, increasing the validated subset to **22**. The current state queue remains **not yet complete** because Cornell’s inherited Ph.D. record still requires refresh. The recent Binghamton, RPI, RIT, Syracuse, CCNY, New York Tech, Cornell M.Eng., Columbia, NYU, Stony Brook, University at Buffalo, and University of Rochester records meet the standard.
+The August 13, 2026 validation query found **23 published New York profiles, all 23 fully reconciled**: each profile has at least five source-field categories, three verification passes, a credited image source, a nonempty campus-image URL, and a visible image credit. The published New York baseline is therefore complete. Future New York candidates remain in an evidence hold until their own three-pass reconciliation is complete.
