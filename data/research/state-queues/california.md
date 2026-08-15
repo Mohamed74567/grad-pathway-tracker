@@ -66,3 +66,11 @@ USC Viterbi’s live doctoral application page establishes a Fall 2027 December 
 | University of California, Merced — Bioengineering M.S. | The official [Graduate Division program page](https://graduatedivision.ucmerced.edu/content/bioengineering-ms-phd) confirms a separately awarded research-based M.S. in Bioengineering. | Candidate for degree-specific three-pass reconciliation. |
 | University of California, Merced — Bioengineering Ph.D. | The official [Graduate Division program page](https://graduatedivision.ucmerced.edu/content/bioengineering-ms-phd) confirms a separately awarded research-based Ph.D. in Bioengineering. | Candidate for degree-specific three-pass reconciliation. |
 | University of California, San Diego — Bioengineering M.Eng. | The official [Bioengineering graduate-program page](https://be.ucsd.edu/grad/programs) confirms a distinct M.Eng. alongside existing M.S. and Ph.D. awards. | Candidate for degree-specific three-pass reconciliation; do not infer M.Eng. admissions or funding from the M.S./Ph.D. records. |
+
+## California professional-degree gap candidates — August 15, 2026
+
+| Institution and degree | Official lead | Reconciliation status |
+| --- | --- | --- |
+| University of California, Davis — M.Eng. in Medical Device Development | [UC Davis Biomedical Engineering](https://bme.ucdavis.edu/master-engineering-meng-medical-device-development) identifies a separately awarded nine-month medical-device professional M.Eng. | Pending degree-specific admissions, funding, and image evidence. |
+| University of California, San Diego — M.Eng. with specialization in Medical Device Engineering | [UC San Diego Bioengineering program page](https://be.ucsd.edu/grad/programs) identifies a separately awarded professional M.Eng. M.D.E. | Pending degree-specific reconciliation; do not infer from UCSD’s general M.Eng. record. |
+| University of California, Berkeley and University of California, San Francisco — Master of Translational Medicine | [UC Berkeley/UCSF MTM](https://mtm.berkeley.edu/) identifies a joint one-year translational-medicine degree. | Pending scope and degree-specific evidence review. |
