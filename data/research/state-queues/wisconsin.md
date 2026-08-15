@@ -16,6 +16,14 @@ UW–Madison’s official Ph.D. page establishes 60 total credits, fall December
 
 Both profiles are now refreshed to six source categories at three passes and were visually verified with their retained credited official UW–Madison campus hero.
 
+## Degree-gap candidates discovered August 15, 2026
+
+| Institution and candidate | Official identity evidence | Reconciliation status |
+| --- | --- | --- |
+| University of Wisconsin–Milwaukee — Biomedical Engineering M.S. | [UWM Biomedical Engineering M.S.](https://uwm.edu/engineering/academics/biomedical-engineering-masters/) identifies thesis and non-thesis pathways for working professionals and research-oriented students. | **Published August 15, 2026** — distinct thesis/capstone/comprehensive-exam M.S., annual rolling application guidance, US$75 fee, required GRE, source-safe English treatment, qualified RA/TA availability, direct application, and credited official laboratory imagery. |
+| University of Wisconsin–Milwaukee — Biomedical Engineering Ph.D. | [UWM Biomedical Engineering Ph.D.](https://uwm.edu/engineering/academics/biomedical-engineering-doctoral/) identifies a separate doctoral degree with R1 interdisciplinary research context. | **Published August 15, 2026** — distinct 66-credit dissertation doctorate, annual rolling application guidance, US$75 fee, required GRE, source-safe English treatment, qualified RA/TA availability, direct application, and credited official microscope-laboratory imagery. |
+| University of Wisconsin–Madison — Biomedical Engineering: Biomedical Innovation, Design and Entrepreneurship M.S. | [UW–Madison Biomedical Innovation M.S.](https://pdc.wisc.edu/degrees/biomedical-eng-biomedical-innovation-design-entrepreneurship-ms/) identifies a distinct one-year professional biomedical engineering master’s. | Candidate; reconcile separately from the existing research M.S.; do not borrow admissions or funding facts. |
+
 ## Cohort validation
 
-**Completed August 14, 2026:** all **2 published Wisconsin profiles** now meet the required threshold of at least five source categories, a minimum of three verification passes, and credited official imagery. The validation produced **2 fully reconciled profiles** and **zero exception rows**.
+**Expanded August 15, 2026:** all **4 published Wisconsin profiles** now meet the required threshold of at least five source categories, a minimum of three verification passes, and credited official imagery. The state-wide validation produced **4 fully reconciled profiles** and **zero exception rows**. The new UW–Milwaukee doctoral hero was rechecked after normal image delivery and visibly rendered with its source credit.
