@@ -738,3 +738,7 @@ Reconciled the CCNY Biomedical Engineering M.S. against current departmental and
 ## Wayne State University Biomedical Engineering M.S. and Ph.D. admissions-policy batch — 2026-08-15
 
 Reconciled both Wayne State Biomedical Engineering profiles against current departmental and Graduate School sources. The M.S. now carries the no-GRE policy, current US$50 fee and named waiver window, program-page annual deadline guidance, and qualified shared English/Duolingo baseline. The Ph.D. now presents its no-fee treatment, required GRE component scores, departmental TOEFL/IELTS standards, and March 1 admission/full-funding priority guidance; Duolingo remains blank because the reviewed Ph.D. source names only TOEFL/IELTS. Both retain qualified funding treatment and direct application. Each has five official source categories at three passes with annual deadline coverage; public snapshots and credited heroes visibly render. All 16 Vitest tests and production build pass.
+
+## Bounded published-link audit batch 5 — 2026-08-15
+
+Audited unique published official and application URLs 81–100 using the read-only batch utility with a 45-second outer limit. The batch returned **0** failed or errored URLs, **0** redirects, and **0** repair candidates. No profile data was changed. The result is retained as a reproducible no-action link-quality check rather than inferring any repair from the absence of a response anomaly.
