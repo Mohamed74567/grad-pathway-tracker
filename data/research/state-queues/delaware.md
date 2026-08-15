@@ -37,6 +37,12 @@ University of Delaware’s official graduate pages identify the Biomedical Engin
 
 **Completed August 14, 2026:** the inherited University of Delaware Biomedical Engineering Ph.D. profile now meets the six-source, three-pass, credited-image standard and was visually verified. It preserves annual Fall December 15 priority/February 1 final and exceptional Spring December 1 guidance, US$75 application fee, source-safe blank GRE field, TOEFL/IELTS baseline and no-Duolingo treatment, full RA/TA stipend-and-tuition funding context, direct Graduate College application, and credited official BME Program Finder imagery. The departmental BME M.S. remains unlisted because the official graduate overview says it is planned for the future rather than currently offered.
 
+## University of Delaware Quantitative Systems Pharmacology M.S. — August 15, 2026
+
+The University of Delaware Biomedical Engineering department and College of Engineering identify the **M.S. in Quantitative Systems Pharmacology** as a separately awarded, related biomedical graduate degree launched in Fall 2025. It is eligible under the tracker’s related-field scope because it is awarded through Biomedical Engineering and applies systems biology, pharmacokinetics/pharmacodynamics, computational modeling, and precision-medicine methods to drug development.
+
+**Published August 15, 2026:** separately reconciled 30-credit QSP modeling, pharmacology, communication/ethics, professional-skills, and application-elective curriculum with a 6-credit thesis or industry-internship option; includes the minimum 200-hour internship context. The profile preserves annual Fall January 31 priority/August 18 final guidance, US$75 fee, no-GRE policy, UD TOEFL/IELTS and no-graduate-Duolingo treatment, direct application, qualified graduate funding/financial-aid context, and credited official College of Engineering laboratory imagery. The official US$1,149-per-credit 2026–27 tuition figure is retained in research notes as annualized context and is not generalized in the profile.
+
 ## Cohort validation
 
-**Completed August 14, 2026:** the sole currently published Delaware profile meets the five-category, three-pass, credited-imagery standard with zero validation exceptions. The full regression suite reports 16 passing tests and the production build succeeds.
+**Expanded August 15, 2026:** both **2 published Delaware profiles** meet the five-category, three-pass, credited-imagery standard with zero validation exceptions. The QSP master’s laboratory hero was visibly verified after normal image delivery; all 16 Vitest tests and the production build pass.
