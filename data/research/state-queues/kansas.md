@@ -17,7 +17,7 @@ Enumerate Kansas graduate programs in biomedical engineering, bioengineering, ne
 | Institution and degree family | Degree, admissions, and funding evidence | Reconciliation treatment |
 | --- | --- | --- |
 | University of Kansas Bioengineering Ph.D. and M.S. | [KU Bioengineering graduate-program overview](https://bioengr.ku.edu/bioengineering-graduate-programs-2024-25) confirms Ph.D., M.S., and M.E. awards, Lawrence/KU Medical Center collaboration, and broad translational research. [KU application page](https://bioengr.ku.edu/application) confirms current Fall 2027 December 3 and Spring 2027 October 2 M.S./Ph.D. deadlines, no GRE requirement, three recommendations, 1–2 page statement, CV, and detailed English treatment. [KU funding page](https://bioengr.ku.edu/funding) states that scholarships/fellowships, competitive GTAs, and faculty-linked GRAs are available. [Program handbook](https://bioengr.ku.edu/graduate-program-handbook) confirms that the M.S. requires a thesis and at least 30 total hours, while the Ph.D. requires a dissertation. | Refresh both existing profiles; keep degree-specific master’s thesis and doctoral dissertation distinction. |
-| University of Kansas Bioengineering M.E. | [KU degree overview](https://bioengr.ku.edu/bioengineering-graduate-programs-2024-25) confirms a separate M.E.; [M.E. page](https://bioengr.ku.edu/master-engineering) identifies it as a coursework-only degree. | Candidate for later separate reconciliation; do not infer its admission or funding treatment from M.S./Ph.D. evidence. |
+| University of Kansas Bioengineering M.E. | [KU degree overview](https://bioengr.ku.edu/bioengineering-graduate-programs-2024-25) confirms a separate M.E.; [M.E. page](https://bioengr.ku.edu/master-engineering) identifies it as a coursework-only degree. | **Published August 15, 2026** — separately reconciled 30-credit coursework-only degree with no research/thesis/defense, domestic and international annual timing, direct application, English treatment, no-assistantship funding distinction, and credited official laboratory imagery. |
 | Other Kansas institutions | Initial official search did not identify another separately awarded in-scope BME/BioE/NeuroE graduate degree. | Exclude unless an official degree identity is found. |
 
 ## Required evidence per published profile
@@ -27,3 +27,7 @@ Enumerate Kansas graduate programs in biomedical engineering, bioengineering, ne
 3. Official curriculum or research source.
 4. Official funding treatment, when stated.
 5. Credited official or clearly licensed university imagery.
+
+## Cohort expansion validation
+
+**Expanded August 15, 2026:** all **3 published Kansas profiles** meet the five-category, three-pass, credited-imagery standard with **zero exceptions**. The Bioengineering M.E. hero was visibly confirmed after normal image delivery; all 16 Vitest tests and the production build pass.
