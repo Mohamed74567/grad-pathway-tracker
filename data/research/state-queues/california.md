@@ -58,3 +58,11 @@ UC San Diego’s official Bioengineering admissions pages establish active Fall 
 USC Viterbi’s live doctoral application page establishes a Fall 2027 December 15 deadline, US$120 Fall 2027 fee, Biomedical Engineering no-GRE treatment, English-test options, application materials, and direct graduate-application access. Its master’s application pages establish Spring 2027 September 15 and Fall 2027 December 15 scholarship-priority/January 15 final dates, US$120 fee, 2027 no-GRE treatment, TOEFL/IELTS/PTE/Cambridge C1 Advanced policy, and explicit no-Duolingo treatment. Viterbi funding pages aim to fully fund doctoral students; master’s applicants are eligible for merit-scholarship consideration but research/teaching assistantships are reserved for Ph.D. students. The refreshed profiles use the official BME Facilities page’s credited Instructional Laboratory image.
 
 **Completed August 14, 2026:** the inherited University of Southern California Biomedical Engineering Ph.D. and M.S. now meet the six-source, three-pass, credited-image standard and were visually verified.
+
+## California gap-review candidates — August 15, 2026
+
+| Institution and degree | Official finding | Expansion status |
+| --- | --- | --- |
+| University of California, Merced — Bioengineering M.S. | The official [Graduate Division program page](https://graduatedivision.ucmerced.edu/content/bioengineering-ms-phd) confirms a separately awarded research-based M.S. in Bioengineering. | Candidate for degree-specific three-pass reconciliation. |
+| University of California, Merced — Bioengineering Ph.D. | The official [Graduate Division program page](https://graduatedivision.ucmerced.edu/content/bioengineering-ms-phd) confirms a separately awarded research-based Ph.D. in Bioengineering. | Candidate for degree-specific three-pass reconciliation. |
+| University of California, San Diego — Bioengineering M.Eng. | The official [Bioengineering graduate-program page](https://be.ucsd.edu/grad/programs) confirms a distinct M.Eng. alongside existing M.S. and Ph.D. awards. | Candidate for degree-specific three-pass reconciliation; do not infer M.Eng. admissions or funding from the M.S./Ph.D. records. |
