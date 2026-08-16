@@ -336,3 +336,5 @@
 - [x] Backfill the Wright State University M.S. in Biomedical Engineering admission snapshot only where current official sources support GRE, funding, or other missing facts. Refreshed provenance; current BME sources do not publish a GRE policy or funding commitment, so both remain blank/not stated.
 
 - [x] Backfill Miami University’s M.Eng. in Biomedical Engineering admission snapshot only where current official sources support GRE, funding, deadline, or other missing facts. Added program-page-supported no-GRE treatment and refreshed provenance; no M.Eng.-specific funding commitment is published, so funding remains not stated.
+
+- [x] Backfill Michigan State University Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support an application fee, Duolingo, deadline, funding, or other missing facts. Refreshed current BME and Graduate School provenance; the reviewed pages provide no BME-specific Duolingo policy or fee amount, so those fields remain blank while existing no-GRE, deadline, English, and funding facts stay source-backed.
