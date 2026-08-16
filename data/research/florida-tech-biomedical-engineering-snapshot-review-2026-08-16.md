@@ -20,3 +20,9 @@ Database update applied to UMD IDs 510003 and 510004: current fee, optional GRE,
 ## USD English-policy follow-on
 
 The current USD international graduate page directs applicants to program-specific graduate-catalog requirements and identifies Biomedical Engineering M.S./Ph.D. as STEM OPT-eligible, but does not publish a numeric BME-specific English threshold. USD records therefore retain an explicit current Graduate School-policy routing note rather than an invented score, with GRE, Duolingo, and deadline fields left unasserted where current BME sources do not establish them.
+
+## University of Pittsburgh follow-on review
+
+Current Pitt Bioengineering and Swanson School pages confirm optional GRE submission for Ph.D./Research M.S./professional M.S. routes, current international English minimums of TOEFL 81 before January 21, 2026 or 4.5 on the new scale, IELTS 6.5, and Duolingo 120, with departments allowed to require higher scores. Pitt Bioengineering states all doctoral students are currently supported by research or departmental funds, typically arranged with a faculty advisor. Pitt’s central funding page cautions that admission does not automatically include funding and that M.S. students are generally not considered for funded teaching or research appointments. Current department pages do not publish a numeric application fee or a single general Bioengineering deadline; the professional M.S. page lists December 31 for Fall and June 1 for Spring, but this was not generalized to the research M.S. or Ph.D.
+
+Database update applied to Pitt IDs 330003, 330004, and 2190001: refreshed optional GRE, TOEFL/IELTS/Duolingo thresholds, doctoral funded treatment, and source provenance. Application fees and unsupported general deadlines remain blank.

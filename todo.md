@@ -377,7 +377,7 @@
 
 - [x] Replace the redirected University of Illinois Urbana-Champaign graduate application URL with its current official /admissions/apply-now destination after source verification. Updated both the Bioengineering Ph.D. and thesis M.S. records and recorded the replacement provenance.
 
-- [ ] Backfill Florida Institute of Technology Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support a fee, deadline, GRE, English/Duolingo, funding, or other missing fact.
+- [x] Backfill Florida Institute of Technology Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support a fee, deadline, GRE, English/Duolingo, funding, or other missing fact. Added current US$80 doctoral and US$60 master’s fees, retained source-backed English/Duolingo policy, and left GRE, deadline, and funding unsupported fields safe rather than inferred.
 - [ ] Fix public by-slug profile resolution for Florida Tech records returning “Program not found” despite published database rows
 - [ ] Re-run profile route verification and regression tests after the Florida Tech fix
 - [ ] Continue thin-snapshot ranking and bounded link audit after the fix
