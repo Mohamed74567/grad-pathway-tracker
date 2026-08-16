@@ -362,3 +362,7 @@
 - [x] Backfill Johns Hopkins University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, or other missing fact. Added the current US$75 doctoral fee, optional GRE policy, funded-doctoral status, and annual first-week-of-December guidance; Duolingo remains blank because current degree-specific sources do not state it.
 
 - [x] Backfill Johns Hopkins University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, or other missing fact. Added the current US$75 doctoral fee, optional GRE policy, funded-doctoral status, and annual first-week-of-December guidance; Duolingo remains blank because current degree-specific sources do not state it.
+
+- [x] Backfill Northwestern University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Removed the unsupported US$95 fee amount; retained annual December 1 guidance, no-GRE policy, current English testing, and funded-doctoral status, with Duolingo blank.
+
+- [x] Backfill Northwestern University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Removed the unsupported US$95 fee amount; retained annual December 1 guidance, no-GRE policy, current English testing, and funded-doctoral status, with Duolingo blank.
