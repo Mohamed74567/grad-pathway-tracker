@@ -1240,3 +1240,11 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **M.S.E. verified treatment:** Whiting accepts the Duolingo English Test. A score of **135** is preferred and recommended, not required unless a degree program specifies otherwise; scores are valid for two years. The M.S.E. profile now reflects that qualified source-backed treatment with three-pass provenance.
 
 **Ph.D. source-safe treatment:** The BME Ph.D. is connected to both the School of Medicine and Whiting School. Current School of Medicine graduate admissions material supports TOEFL/IELTS waiver context but does not explicitly state a Duolingo policy for BME. The Ph.D. Duolingo field therefore remains blank rather than importing the Whiting M.S.E. rule across academic units.
+
+## Pennsylvania State University Biomedical Engineering Ph.D. and thesis M.S. — Duolingo policy refresh, August 16, 2026
+
+**Programs:** Ph.D. in Biomedical Engineering (ID 300001) and M.S. in Biomedical Engineering (Thesis) (ID 300002).
+
+**Official source:** [Penn State Biomedical Engineering — How to Apply](https://www.bme.psu.edu/students/graduate/how-to-apply.aspx).
+
+**Verified treatment:** The current program-specific page requires applicable international applicants to submit **TOEFL or IELTS** and publishes its own thresholds and exemption context. Although a general Penn State undergraduate-facing international-admission page lists DET, the Biomedical Engineering graduate page is degree-specific and controls this profile. The two BME profiles now display the qualified no-Duolingo treatment with three-pass provenance rather than borrowing a non-graduate central rule.
