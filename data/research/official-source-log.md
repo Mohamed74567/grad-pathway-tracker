@@ -930,3 +930,11 @@ The bounded five-URL audit returned zero failures or errors. It found one confir
 ## University of Tennessee Knoxville Biomedical Engineering M.S. — August 16, 2026
 
 The current UT Knoxville BME admission-requirements page states that GRE is optional but recommended, requires TOEFL 550 paper or 80 iBT or IELTS 6.5 for applicants needing English evidence, and offers first-time U.S. Ph.D. applicant fee waivers; it does not publish a current fee amount for the M.S. The current Graduate School testing page adds Duolingo 120, revised TOEFL 4.5 with speaking/writing minimums for tests taken after January 21, 2026, and IELTS 6.5 with no band below 6. The Graduate School deadline page states domestic applications may be submitted up to two weeks before the desired term unless the department sets an earlier deadline, and lists international F/J submission and file-completion dates. The M.S. record was refreshed with these facts, two source-labeled annual deadline guidance rows, an evidence-safe blank fee, and three-pass provenance; existing funding availability was retained without upgrading it to a guarantee.
+
+## Link audit offset 150 — August 16, 2026
+
+The bounded five-URL audit found one candidate and no redirects: the Johns Hopkins Biomedical Engineering M.S.E. official program URL returned HTTP 403 to the audit request. The URL remained on the same destination with no not-found or irrelevant redirect signal, so it was not replaced. The result is documented as a source-side access limitation requiring browser/manual confirmation rather than an application-link correction.
+
+## Link audit offset 155 — August 16, 2026
+
+The bounded five-URL audit returned four candidates and no redirects. Johns Hopkins application URLs returned HTTP 403, while the Johns Hopkins graduate-admissions URL and University of Maryland Graduate School application-process URL timed out after five seconds. These are not sufficient evidence of a broken or irrelevant destination; no replacements were made. Manual browser confirmation is required before changing any of these official URLs.

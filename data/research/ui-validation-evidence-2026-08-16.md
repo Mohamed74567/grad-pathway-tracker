@@ -29,3 +29,15 @@ Direct browser navigation rendered both `/programs/famu-fsu-biomedical-engineeri
 ## Thin-snapshot validation: University of Tennessee Knoxville M.S.
 
 Direct browser navigation rendered the refreshed UT Knoxville Biomedical Engineering M.S. profile with the credited Ayres Hall image, domestic deadline guidance, optional-but-recommended GRE policy, Duolingo 120, revised TOEFL/IELTS thresholds, funding-available treatment, direct official application/program links, and no unsupported fee card. The profile was checked on August 16, 2026.
+
+## Link audit manual confirmation: Johns Hopkins M.S.E.
+
+The automated offset-150 audit received HTTP 403 for the Johns Hopkins Biomedical Engineering M.S.E. program URL, but direct browser navigation loaded the official “Master’s Program” page successfully. The page visibly identified the Johns Hopkins Biomedical Engineering master’s program, its course-based and thesis-based routes, candidate requirements, financial-assistance qualifications, and official application navigation. The URL is therefore retained as a valid official destination; no replacement was made.
+
+## Link audit manual confirmation: Johns Hopkins Ph.D. application page
+
+Direct browser navigation to `https://www.bme.jhu.edu/johns-hopkins-biomedical-engineering/apply/` loaded the official Johns Hopkins Biomedical Engineering Apply page. The page explicitly presents separate master’s and Ph.D. application pathways and links the Ph.D. route to the official `applygrad.jhu.edu` destination. The automated HTTP 403 therefore reflects access protection rather than a broken or irrelevant official page; no replacement was made.
+
+## Link audit manual confirmation: University of Maryland Graduate School application process
+
+The offset-155 audit timed out on the legacy UMD application-process URL, but direct browser navigation safely resolved it to the current official `/admissions/application-process/apply-now` page. The page visibly provides the standard Graduate School application portal, application steps, test-score submission, fee payment, and direct graduate application controls. The official destination remains relevant; no replacement was needed because the browser followed an institutional route to the current canonical page.
