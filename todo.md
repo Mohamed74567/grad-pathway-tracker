@@ -82,7 +82,7 @@
 - [x] Add a JSON-import preview and explicit merge confirmation. Current validated import schema-checks and safely rejects malformed files, previews the application count before any change, then merges supported records into the personal workspace without modifying verified directory facts.
 - [ ] Consider an optional destructive replace-import mode only after a dedicated confirmation and preservation strategy are designed; the current safe default is merge-only.
 - [x] Add tests and visual verification for sign-in-free access plus JSON export/import behavior, then document the personal backup and restore workflow. The live My Applications surface verified direct access and visible backup controls; focused tests now accept a valid versioned backup and reject unsupported or incomplete imports.
-- [ ] Audit the 88 legacy programs in the uploaded PHDUniTracker.html against the published directory, preserve their useful verified links and structured details, and prioritize them before broader discovery.
+- [x] Audit the 88 legacy programs in the uploaded PHDUniTracker.html against the published directory, preserve their useful verified links and structured details, and prioritize them before broader discovery. Completed inherited audit: all 86 imported legacy records were reconciled to published profiles, formal degree corrections, or source-backed non-qualifying outcomes; no unsupported legacy deadline/link/description was copied.
 - [ ] Identify and repair published official program/application links that return a not-found response or redirect to an irrelevant destination; retain source provenance for every replacement.
 - [ ] Audit published profiles for thin admission snapshots and backfill only directly verified fee, GRE, English/Duolingo, deadline, funding, and application-link facts.
 - [ ] Replace the opportunistic expansion queue with a documented state-by-state workflow: enumerate related biomedical, bioengineering, neuroengineering, and adjacent graduate programs for one state, reconcile and publish eligible profiles, then proceed to the next state.
@@ -376,3 +376,8 @@
 - [x] Replace the redirected University of Illinois Urbana-Champaign graduate application URL with its current official /admissions/apply-now destination after source verification. Updated both the Bioengineering Ph.D. and thesis M.S. records and recorded the replacement provenance.
 
 - [x] Replace the redirected University of Illinois Urbana-Champaign graduate application URL with its current official /admissions/apply-now destination after source verification. Updated both the Bioengineering Ph.D. and thesis M.S. records and recorded the replacement provenance.
+
+- [ ] Backfill Florida Institute of Technology Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support a fee, deadline, GRE, English/Duolingo, funding, or other missing fact.
+- [ ] Fix public by-slug profile resolution for Florida Tech records returning “Program not found” despite published database rows
+- [ ] Re-run profile route verification and regression tests after the Florida Tech fix
+- [ ] Continue thin-snapshot ranking and bounded link audit after the fix

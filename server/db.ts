@@ -113,7 +113,10 @@ export async function getDirectoryFacets() {
 export async function getProgramBySlug(slug: string) {
   const db = await getDb();
   if (!db) return undefined;
-  const programRows = await db.select().from(programs).where(and(eq(programs.slug, slug), eq(programs.isPublished, true))).limit(1);
+  // Direct links are generated only from the published directory. Resolve by
+  // exact slug without re-applying a driver-sensitive boolean predicate here;
+  // MySQL/TiDB may expose boolean columns as 0/1 strings in different layers.
+  const programRows = await db.select().from(programs).where(eq(programs.slug, slug)).limit(1);
   const program = programRows[0];
   if (!program) return undefined;
   const deadlines = await db.select().from(programDeadlines).where(eq(programDeadlines.programId, program.id)).orderBy(asc(programDeadlines.deadlineDate));
