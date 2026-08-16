@@ -308,3 +308,5 @@
 - [x] Backfill the University of Louisville Bioengineering M.S. admission snapshot only where current official sources support GRE, funding, deadline, or other missing facts. Current official sources support the existing fee and testing cards but do not publish M.S.-specific GRE, deadline, or funding facts; those fields remain blank/not stated and the provenance was refreshed.
 
 - [x] Backfill University of California, Merced Bioengineering M.S. and Ph.D. admission snapshots only where current official sources support Duolingo, funding, deadline, or other missing facts. Added current no-GRE, source-bounded English, no-Duolingo, and qualified funding treatment; no date was asserted while the program is closed and Fall 2027 has not opened.
+
+- [x] Backfill the University of South Dakota Biomedical Engineering Ph.D. admission snapshot only where current official sources support GRE, English/Duolingo, or other missing facts. Current accessible sources support the existing fee and qualified assistantships but not degree-specific GRE, English/Duolingo, or deadline claims; those fields remain blank and assistantship timing was removed from deadline cards.
