@@ -372,3 +372,7 @@
 - [x] Backfill Northwestern University’s M.S. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Added live Winter 2027, Spring 2027, and Fall 2027 dates, retained no-GRE and English-testing facts, represented explicit self-funded treatment as not applicable, removed the unsupported US$95 fee amount, and left Duolingo blank.
 
 - [x] Backfill Saint Louis University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Retained the direct-SLU no-fee policy, current English routing, and funded-doctoral status; removed unsupported broad GRE and Duolingo claims and left deadline blank.
+
+- [x] Replace the redirected University of Illinois Urbana-Champaign graduate application URL with its current official /admissions/apply-now destination after source verification. Updated both the Bioengineering Ph.D. and thesis M.S. records and recorded the replacement provenance.
+
+- [x] Replace the redirected University of Illinois Urbana-Champaign graduate application URL with its current official /admissions/apply-now destination after source verification. Updated both the Bioengineering Ph.D. and thesis M.S. records and recorded the replacement provenance.

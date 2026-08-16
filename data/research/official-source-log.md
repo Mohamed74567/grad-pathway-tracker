@@ -918,3 +918,7 @@ Rechecked Northwestern BME’s M.S. against the current department admissions pa
 ## Saint Louis University Ph.D. in Biomedical Engineering snapshot review — 2026-08-16
 
 Rechecked SLU’s BME Ph.D. against the current degree page, catalog, and Graduate Admission page. The profile now retains the direct SLU graduate application’s **no application fee**, current international English-proficiency routing, and **funded** status because School of Science and Engineering assistantships provide tuition, stipend, and health insurance. The prior broad GRE and Duolingo claims were removed because the current degree-specific page does not state either policy, and no program deadline was found. The public profile visibly renders only the source-backed no-fee, English, and funding cards with credited official Biomedical Engineering imagery.
+
+## University of Illinois Urbana-Champaign application-link correction — 2026-08-16
+
+A bounded read-only link audit found that the former Graduate Admissions application URL, `https://grad.illinois.edu/admissions/apply`, redirects with HTTP 200 to the current official destination, `https://grad.illinois.edu/admissions/apply-now`. Both the Bioengineering Ph.D. and thesis M.S. profiles now store the final official URL directly, and the replacement is recorded as a three-pass source entry. The Notre Dame fetch failure and two Kansas timeouts from the same audit batch remain investigation candidates rather than confirmed broken links.
