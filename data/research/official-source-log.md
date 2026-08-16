@@ -1002,3 +1002,7 @@ The bounded five-URL audit timed out on the University of Nebraska–Lincoln gra
 ## Link audit offset 215 — August 16, 2026
 
 The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.
+
+## Link audit offset 220 — August 16, 2026
+
+The bounded five-URL audit timed out on three University of New Hampshire program pages: Bioengineering M.Eng., Electrical and Computer Engineering Biomedical Engineering Option M.S., and Bioengineering Ph.D. Direct browser validation confirmed the M.Eng. and ECE M.S. pages as live official program destinations with catalog and Apply Now information. The Ph.D. page returned the live official UNH doctoral-program title and program/catalog/application navigation before a later browser screenshot error reset the page. These were not not-found or irrelevant destinations; no URL was replaced.

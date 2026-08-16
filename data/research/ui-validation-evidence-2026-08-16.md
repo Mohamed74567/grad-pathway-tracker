@@ -93,3 +93,9 @@ The offset-205 audit timed out on Montana State’s Bioengineering M.Eng. catalo
 ## Link audit manual confirmation: University of Nebraska–Lincoln
 
 The offset-210 audit timed out on Nebraska’s graduate-application short link. Direct browser navigation resolved it to the University of Nebraska ApplyWeb portal, which presents UNL-specific login and new-account controls. The destination is live and relevant to graduate application intake; no URL replacement was made.
+
+## Link audit manual confirmations: University of New Hampshire M.Eng. and ECE M.S.
+
+The offset-220 audit timed out on UNH’s Bioengineering M.Eng. and Electrical and Computer Engineering Biomedical Engineering Option M.S. program URLs. Direct browser navigation confirmed both live official UNH program pages, with degree, location, curriculum/catalog, departmental, and Apply Now information. Neither URL was broken or irrelevant, so no replacement was made.
+
+The remaining offset-220 Bioengineering Ph.D. URL also returned a live official UNH page title, “Bioengineering, Ph.D. - CEPS, UNH,” with doctoral-program, catalog, application, and Graduate School navigation visible in the browser DOM. The subsequent browser view reset to a blank page after the screenshot upload error, so the confirmation relies on the captured title and rendered interactive elements; no URL replacement was made.
