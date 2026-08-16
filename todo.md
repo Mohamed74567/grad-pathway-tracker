@@ -318,3 +318,5 @@
 - [x] Backfill the Oregon Health & Science University Ph.D. in Biomedical Engineering admission snapshot only where current official sources support an application fee, Duolingo, English-test, deadline, or other missing facts. Refreshed current BME and Graduate Studies provenance; no fee amount or Duolingo policy was stated, so both fields remain blank.
 
 - [x] Backfill the University of Illinois Chicago M.S. in Biomedical Engineering admission snapshot only where current official sources support a deadline, funding, fee, or other missing facts. Added annual February 15 guidance rather than a stale extension date, qualified M.S. funding availability, and the current Fall 2027+ Duolingo policy; fee, GRE, and English facts were reconfirmed.
+
+- [x] Backfill the University of South Carolina Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support an application fee, Duolingo, deadline, or other missing facts. Added the central US$50 fee effective August 1, 2026 and refreshed provenance; BME-specific testing material conflicts with the central Duolingo statement, so both Duolingo fields remain blank.
