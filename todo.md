@@ -292,3 +292,5 @@
 - [x] Verify whether the legacy University of Dayton Bioengineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current catalog and co-major sources confirm no standalone Bioengineering Ph.D.; the lead is documented as non-qualifying and no profile was published.
 
 - [x] Verify whether the legacy Rochester Institute of Technology Biomedical and Chemical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current RIT sources matched the existing profile; its source-backed annual December 15 priority guidance was added and the legacy label is reconciled without duplication.
+
+- [x] Verify whether the legacy University of Miami Biomedical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current official sources matched the existing profile; its December 1 deadline is now correctly stored as annual guidance and the legacy label is reconciled without duplication.
