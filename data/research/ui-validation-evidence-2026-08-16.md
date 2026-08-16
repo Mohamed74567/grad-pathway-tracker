@@ -41,3 +41,7 @@ Direct browser navigation to `https://www.bme.jhu.edu/johns-hopkins-biomedical-e
 ## Link audit manual confirmation: University of Maryland Graduate School application process
 
 The offset-155 audit timed out on the legacy UMD application-process URL, but direct browser navigation safely resolved it to the current official `/admissions/application-process/apply-now` page. The page visibly provides the standard Graduate School application portal, application steps, test-score submission, fee payment, and direct graduate application controls. The official destination remains relevant; no replacement was needed because the browser followed an institutional route to the current canonical page.
+
+## Link audit manual confirmation: Boston University engineering application portal
+
+The offset-160 audit timed out on `https://bu-eng.cas.myliaison.com/`, but direct browser navigation resolved to the live Applicant Login Page at `/applicant-ux/#/login`. The portal visibly offers graduate applicant sign-in, account creation, and password recovery, confirming that it remains a relevant application destination for Boston University Biomedical Engineering. No replacement was made.
