@@ -366,3 +366,7 @@
 - [x] Backfill Northwestern University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Removed the unsupported US$95 fee amount; retained annual December 1 guidance, no-GRE policy, current English testing, and funded-doctoral status, with Duolingo blank.
 
 - [x] Backfill Northwestern University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Removed the unsupported US$95 fee amount; retained annual December 1 guidance, no-GRE policy, current English testing, and funded-doctoral status, with Duolingo blank.
+
+- [x] Backfill Northwestern University’s M.S. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Added live Winter 2027, Spring 2027, and Fall 2027 dates, retained no-GRE and English-testing facts, represented explicit self-funded treatment as not applicable, removed the unsupported US$95 fee amount, and left Duolingo blank.
+
+- [x] Backfill Northwestern University’s M.S. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, GRE, or other missing fact. Added live Winter 2027, Spring 2027, and Fall 2027 dates, retained no-GRE and English-testing facts, represented explicit self-funded treatment as not applicable, removed the unsupported US$95 fee amount, and left Duolingo blank.
