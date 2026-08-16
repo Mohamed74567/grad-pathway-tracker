@@ -342,3 +342,5 @@
 - [x] Backfill Rensselaer Polytechnic Institute’s M.S. in Biomedical Engineering admission snapshot only where current official sources support a deadline, funding, fee, or other missing facts. Refreshed current fee/deadline/funding provenance; master’s dates on the official page are cycle-specific, so no active or annual deadline is asserted, and doctoral funding language is not extended to the M.S.
 
 - [x] Backfill The City College of New York Ph.D. in Biomedical Engineering admission snapshot only where current official sources support an application fee, deadline, funding, or other missing facts. Added current central US$75 fee and explicit annual Fall/limited-Spring guidance; existing GRE, testing, and funded-doctoral facts were reconfirmed without inserting a stale stipend amount.
+
+- [x] Backfill Stony Brook University’s M.S. in Biomedical Engineering admission snapshot only where current official sources support Duolingo, funding, deadline, fee, or other missing facts. Refreshed live Spring 2027/Fall 2027 deadline and provenance data; Duolingo and M.S.-specific funding remain blank/not stated because current sources do not support either claim.
