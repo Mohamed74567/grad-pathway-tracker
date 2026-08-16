@@ -284,3 +284,5 @@
 - [x] Reconcile the next remaining legacy institution-name aliases to their existing verified doctoral profiles and identify the next genuine program gap for official-source research. Reconciled 20 exact doctoral aliases, identified University of Memphis–UTHSC as a genuine gap, and completed its source-safe profile publication.
 
 - [x] Verify whether the legacy University of Memphis Biomedical Engineering Ph.D. remains an active separately awarded doctoral degree and publish it only after current official degree and admission facts reconcile. Current UofM/UTHSC pages confirm the jointly awarded Ph.D.; its profile is published, visibly rendered, and limited to source-qualified admissions facts.
+
+- [x] Verify whether the legacy Howard University Biomedical and Chemical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current Howard sources confirmed the 72-credit Ph.D.; the source-safe profile is published with exact Fall 2027 dates, verified fee/testing policies, qualified funding, and credited imagery.
