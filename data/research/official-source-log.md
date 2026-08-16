@@ -990,3 +990,15 @@ The bounded five-URL audit completed with zero failures, errors, redirects, or c
 ## Michigan State University Biomedical Engineering Ph.D. and M.S. — August 16, 2026
 
 Current MSU BME Ph.D. and M.S. pages confirm no-GRE treatment, December 1 Fall timing, and financial-aid/assistantship consideration. The Graduate School English-competency page gives regular-admission TOEFL, IELTS, and Duolingo standards: TOEFL 80 with stated section minima before January 21, 2026 (or 4.5 under the newer scale), IELTS 6.5 with no subscore below 6.0, and Duolingo 110; departments may set higher scores. The Graduate School Apply page documents fee-waiver pathways but does not publish a current base fee, so the fee fields remain safely blank. The Ph.D. profile was browser-validated with a credited image and official links.
+
+## Link audit offset 205 — August 16, 2026
+
+The bounded five-URL audit timed out on Montana State’s Bioengineering M.Eng. catalog page. Direct browser validation confirmed the current live 2026–2027 official catalog page and its program overview, requirements, learning outcomes, and curriculum. No URL was replaced.
+
+## Link audit offset 210 — August 16, 2026
+
+The bounded five-URL audit timed out on the University of Nebraska–Lincoln graduate application short link. Direct browser validation resolved it to the live UNL ApplyWeb portal with UNL-specific login and new-account controls. The destination is relevant and was not replaced.
+
+## Link audit offset 215 — August 16, 2026
+
+The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.

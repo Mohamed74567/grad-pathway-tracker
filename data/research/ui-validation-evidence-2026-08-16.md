@@ -85,3 +85,11 @@ Direct browser navigation rendered the refreshed West Virginia University Biomed
 ## Thin-snapshot validation: Michigan State University Ph.D.
 
 Direct browser navigation rendered the refreshed Michigan State Biomedical Engineering Ph.D. profile with its credited College of Engineering hero, December 1 Fall-only maximum-consideration guidance, no-GRE policy, current Graduate School TOEFL/IELTS standards, Duolingo 110 regular-admission policy, funding-available treatment, and direct official links. The application fee remains absent from the snapshot because the current official Graduate School page documents waiver pathways but does not publish a current base amount.
+
+## Link audit manual confirmation: Montana State University
+
+The offset-205 audit timed out on Montana State’s Bioengineering M.Eng. catalog URL. Direct browser navigation confirmed a live 2026–2027 official Montana State Academic Catalog page titled “M.Eng. in Bioengineering,” with program overview, requirements, learning outcomes, and curriculum. No URL replacement was made.
+
+## Link audit manual confirmation: University of Nebraska–Lincoln
+
+The offset-210 audit timed out on Nebraska’s graduate-application short link. Direct browser navigation resolved it to the University of Nebraska ApplyWeb portal, which presents UNL-specific login and new-account controls. The destination is live and relevant to graduate application intake; no URL replacement was made.
