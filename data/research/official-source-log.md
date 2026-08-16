@@ -742,3 +742,7 @@ Reconciled both Wayne State Biomedical Engineering profiles against current depa
 ## Bounded published-link audit batch 5 — 2026-08-15
 
 Audited unique published official and application URLs 81–100 using the read-only batch utility with a 45-second outer limit. The batch returned **0** failed or errored URLs, **0** redirects, and **0** repair candidates. No profile data was changed. The result is retained as a reproducible no-action link-quality check rather than inferring any repair from the absence of a response anomaly.
+
+## Marquette–Medical College of Wisconsin Joint Biomedical Engineering Ph.D. legacy-profile publication — 2026-08-16
+
+Published the distinct joint Marquette–Medical College of Wisconsin Biomedical Engineering Ph.D. after reconciling current Marquette, MCW joint-department, MCW admissions, and MCW requirements sources. The profile uses the direct MCW doctoral application, a current US$50 fee with official waiver context, no-GRE treatment because MCW names only Biostatistics Ph.D. as GRE-required, recommended TOEFL 100 / IELTS 6.0 / Duolingo 105 treatment for relevant international applicants, and full-time doctoral stipend plus tuition-reimbursement status. It presents Marquette’s rolling Fall/Spring and financial-aid-priority guidance separately, plus an official credited joint-department image. It has six source categories at three verification passes, two annual guidance records, and a visibly validated public profile. All 16 Vitest tests and production build pass.
