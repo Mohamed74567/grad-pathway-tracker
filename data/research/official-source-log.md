@@ -1214,3 +1214,11 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official sources:** Graduate School [International Applicants](https://sc.edu/study/colleges_schools/graduate_school/apply/international_applicants/) and [Apply](https://sc.edu/study/colleges_schools/graduate_school/apply/), reconciled against the existing Biomedical Engineering degree source.
 
 **Verified treatment:** USC accepts Duolingo at a minimum **120** when English-proficiency evidence is required, subject to its published exemption rules. The Graduate School’s current Apply page also states that its US$50 graduate application fee is reinstated effective August 1, 2026 for each primary application; the previously blank M.E. fee now carries that qualified official amount. All newly recorded facts have three-pass provenance.
+
+## University of South Dakota Biomedical Engineering Ph.D. and M.S. profiles — Duolingo policy refresh, August 16, 2026
+
+**Programs:** Ph.D. in Biomedical Engineering (ID 4410002), M.S. in Biomedical Engineering (ID 4410001), and M.S. in Biomedical Engineering: Medical Product Development & Manufacturing (ID 4410003).
+
+**Official sources:** USD [International Graduate Admissions](https://www.usd.edu/Admissions-and-Aid/International-Admissions/Applying-for-International-Graduate-Admission), reviewed in its expanded Official Proof of English Proficiency section, and the official [Biomedical Engineering graduate program](https://www.usd.edu/Academics/Graduate-Programs/Biomedical-Engineering) page.
+
+**Verified treatment:** USD lists a **Duolingo English Test score of 110 or higher** as one of the international graduate English-proficiency options, with published country-based exemptions. All three Biomedical Engineering profiles now display this source-backed policy and carry three-pass provenance.
