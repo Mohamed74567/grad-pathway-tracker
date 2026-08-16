@@ -291,3 +291,9 @@ Follow-up browser validation loaded the full OHSU Biomedical Engineering Ph.D. p
 ## Source-safe blank confirmation — University of Pittsburgh Bioengineering Research M.S. fee
 
 The current Swanson School of Engineering Graduate Application page loaded with the live EngineeringCAS route and a fee-waiver request path. It did not state a graduate application-fee amount. The Research M.S. profile retains a blank fee rather than presenting an unsupported amount; matching three-pass provenance records this review.
+
+## Admissions snapshot refresh — Colorado State University Bioengineering cohort
+
+Colorado State’s current Graduate School English Proficiency page was extracted from the live official source. It explicitly accepts Duolingo and lists 120 as the clear-admission minimum. The policy was written to the Bioengineering Ph.D., Bioengineering M.S., and Biomedical Engineering M.Eng. profiles with matching three-pass source records; one rendered program profile will be checked in the next UI validation pass.
+
+After correcting an initially mistyped profile route, the verified `colorado-state-bioengineering-ms` public profile loaded fully. The credited official laboratory hero and admission snapshot were visible, including the new Duolingo card: “Accepted: Duolingo English Test 120 minimum for clear admission when English-proficiency evidence is required; documented exemptions apply.” This confirms the current Graduate School policy renders correctly in the public profile.

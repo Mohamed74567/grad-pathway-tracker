@@ -1198,3 +1198,11 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official source:** Swanson School of Engineering [Graduate Application](https://www.engineering.pitt.edu/academics/graduateadmissions/graduate-applications/).
 
 **Source-safe treatment:** The current EngineeringCAS application page supplies the active application path and explains its case-by-case fee-waiver process but does not publish a graduate application-fee amount. The profile’s fee remains blank; no dollar figure was copied from unrelated Pitt programs. A three-pass tuition/fee provenance row now records this qualified review.
+
+## Colorado State University Bioengineering Ph.D./M.S. and Biomedical Engineering M.Eng. — Duolingo policy refresh, August 16, 2026
+
+**Programs:** Ph.D. in Bioengineering (ID 3060001), M.S. in Bioengineering (ID 3060002), and Master of Engineering — Biomedical Engineering Specialization (ID 3090001).
+
+**Official source:** Colorado State Graduate School, [English Proficiency](https://graduateschool.colostate.edu/admissions-resources/english-proficiency/), reconciled against each profile’s established official degree/application sources.
+
+**Verified treatment:** CSU accepts TOEFL, IELTS, Duolingo, and PTE Academic when English evidence is required. Its current clear-admission minimum for Duolingo is **120**. The official exemption pathways are retained. All three profiles now display this source-backed policy with new three-pass provenance.
