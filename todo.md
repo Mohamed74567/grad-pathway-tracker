@@ -280,3 +280,7 @@
 - [x] Determine whether Princeton University awards a separately titled Bioengineering Ph.D. or only supports bioengineering research through other doctoral departments; publish no profile unless the formal award is verified. Official Graduate School and ODBI sources confirmed the separately awarded Bioengineering Ph.D.; the source-safe profile is published and visually verified.
 
 - [x] Verify whether the legacy North Dakota State University Biomedical Engineering Ph.D. lead remains an active, separately awarded doctoral degree; publish only after current official degree and admission facts reconcile. Current NDSU/UND sources confirmed the joint 90-credit Ph.D.; the profile is published with source-safe admissions, annual guidance, shared credited imagery, and visible rendering.
+
+- [x] Reconcile the next remaining legacy institution-name aliases to their existing verified doctoral profiles and identify the next genuine program gap for official-source research. Reconciled 20 exact doctoral aliases, identified University of Memphis–UTHSC as a genuine gap, and completed its source-safe profile publication.
+
+- [x] Verify whether the legacy University of Memphis Biomedical Engineering Ph.D. remains an active separately awarded doctoral degree and publish it only after current official degree and admission facts reconcile. Current UofM/UTHSC pages confirm the jointly awarded Ph.D.; its profile is published, visibly rendered, and limited to source-qualified admissions facts.
