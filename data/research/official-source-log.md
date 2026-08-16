@@ -1006,3 +1006,195 @@ The bounded five-URL audit completed with zero failures, errors, redirects, or c
 ## Link audit offset 220 — August 16, 2026
 
 The bounded five-URL audit timed out on three University of New Hampshire program pages: Bioengineering M.Eng., Electrical and Computer Engineering Biomedical Engineering Option M.S., and Bioengineering Ph.D. Direct browser validation confirmed the M.Eng. and ECE M.S. pages as live official program destinations with catalog and Apply Now information. The Ph.D. page returned the live official UNH doctoral-program title and program/catalog/application navigation before a later browser screenshot error reset the page. These were not not-found or irrelevant destinations; no URL was replaced.
+
+## Link audit offset 230 — August 16, 2026
+
+Rutgers’ graduate application URL timed out in the automated audit. Direct browser navigation followed it to the official Rutgers Salesforce application portal at `rutgers.my.site.com/ApplicantPortal/AppPortalCustom`, titled “2027 Application Portal - Rutgers University.” The destination is relevant for the Rutgers Biomedical Engineering M.S. and Ph.D. applications; no URL replacement was made.
+
+## Link audit offset 235 — August 16, 2026
+
+UNM’s Graduate Studies admissions page and Biomedical Engineering Ph.D. page timed out in the automated audit. Browser validation loaded both official pages: the admissions page provides the graduate Start Your Application route and application guidance, while the BME Ph.D. page provides current doctoral degree requirements and program context. Both destinations remain relevant and were retained without replacement.
+
+## Link audit offset 240 — August 16, 2026
+
+Binghamton’s Biomedical Engineering Ph.D. page and Columbia Engineering’s Biomedical Engineering M.S. page timed out in the automated audit. Browser validation confirmed both as current, live, relevant official program pages with degree-specific content and application navigation. No URL replacement was made.
+
+## Link audit offset 245 — August 16, 2026
+
+The offset-245 batch produced automated timeouts for Columbia Biomedical Engineering Ph.D., Cornell Biomedical Engineering M.Eng., Cornell Biomedical Engineering Ph.D., and Cornell Graduate School Apply Now. Columbia’s Ph.D. URL returned the official Columbia Engineering page title in the browser; Cornell’s M.Eng. URL loaded the current official Meinig School page. No URL replacement was made; remaining Cornell candidates require the next manual checks.
+
+The remaining offset-245 Cornell candidates were manually confirmed. Cornell’s Meinig School Ph.D. page and Graduate School Apply Now page are live, official, relevant destinations with doctoral-program and application content. No URL replacements were made.
+
+## Link audit offset 250 — August 16, 2026
+
+Cornell’s direct ApplyWeb form and New York Tech’s Bioengineering M.S. page timed out in the automated audit. Browser validation confirmed Cornell’s live Cornell-branded CollegeNET applicant login/create-account page and New York Tech’s live official Bioengineering M.S. program page. Both URLs were retained without replacement; NYU candidates remain for the next manual checks.
+
+The remaining offset-250 NYU M.S. program URL returned the official “Biomedical Engineering, M.S. | NYU Tandon School of Engineering” title in the browser. The NYU Tandon application portal produced no visible title or controls during the initial browser navigation, so it remains pending a follow-up inspection; no replacement was made.
+
+A follow-up browser inspection confirmed NYU Tandon’s live official Graduate Application page. It reports the 2026 cycle closed, provides the 2027 notification route, and includes application deadline and requirement sections. It remains the relevant application destination for the Biomedical Engineering M.S. and Ph.D. profiles; no replacement was made.
+
+## Link audit offset 255 — August 16, 2026
+
+RIT’s Biomedical Engineering M.S. page timed out in the automated audit. Browser validation confirmed a live official degree-specific program page with curriculum, admissions, and application navigation. No URL replacement was made.
+
+## Link audit offset 260 — August 16, 2026
+
+Browser validation confirmed RIT’s official admissions portal and Biomedical and Chemical Engineering Ph.D. program page, as well as Stony Brook’s official Biomedical Engineering M.S. page, after automated timeouts. No URL replacement was made. Stony Brook’s graduate application portal remains for the next manual confirmation.
+
+The remaining offset-260 Stony Brook application URL was manually confirmed as the live official Graduate School Application Management portal with deadline, login, and account-creation functions. It was retained without replacement.
+
+## Link audit offset 265 — August 16, 2026
+
+CCNY’s Biomedical Engineering M.S. page and graduate application URL timed out in the automated audit. Browser validation confirmed a current official BME M.S. page with program-specific application navigation and a live official CCNY Graduate Admission page with login/create-account options. Both URLs were retained without replacement.
+
+## Link audit offset 270 — August 16, 2026, partial confirmations
+
+Browser validation confirmed CCNY’s live official Biomedical Engineering Ph.D. page and University at Buffalo’s live official Biomedical Engineering M.S. page after automated timeouts. No URL replacement was made. The remaining University at Buffalo application/Ph.D. and University of Rochester M.S. candidates remain for the next manual checks.
+
+The remaining University at Buffalo offset-270 candidates were manually confirmed: the Graduate School Application Manager and BME Doctoral Program (PhD) page are live, relevant official destinations. No URL replacements were made; University of Rochester M.S. remains for the final check.
+
+The final offset-270 University of Rochester Biomedical Engineering M.S. candidate was manually confirmed as a live, relevant official Hajim School graduate-program page. No URL replacement was made; the offset-270 batch is complete.
+
+## Link audit offset 285 — August 16, 2026
+
+Case Western Reserve’s graduate application URL timed out in the automated audit. Browser validation confirmed the live official Graduate/Professional Program application portal with login and account-creation functions. No URL replacement was made.
+
+## Link audit offset 295 — August 16, 2026, partial confirmations
+
+Ohio State’s legacy graduate application URL resolved to a live official Graduate and Professional Admissions destination, and Cincinnati’s Biomedical Engineering M.S. page loaded as a live official degree-specific page after automated timeouts. No URL replacement was made. Cincinnati’s application portal remains for the next manual check.
+
+The remaining offset-295 University of Cincinnati application URL was manually confirmed as a live official Application Management portal with applicant login and account-creation functions. No URL replacement was made; offset 295 is complete.
+
+## Clean link-audit batches — offsets 275 and 280
+
+Automated five-URL audit batches at offsets 275 and 280 returned no failed, errored, or redirect candidates. No remediation was required.
+
+## Link audit offset 300 — August 16, 2026, partial confirmations
+
+Wright State’s graduate admission route and University of Oklahoma’s Biomedical Engineering graduate-program page timed out in automated checks but loaded as live, relevant official destinations in the browser. No URL replacement was made. OHSU remains for the final manual confirmation.
+
+The final offset-300 OHSU Biomedical Engineering Ph.D. candidate was manually confirmed as a live, relevant official program page with application navigation. No URL replacement was made; the offset-300 batch is complete.
+
+## Link audit offset 305 — August 16, 2026
+
+OHSU’s LiaisonCAS URL timed out in the automated audit. Browser navigation resolved it to the OHSU-branded `ohsu.cas.myliaison.com` centralized application-service destination. The portal shell was blank on follow-up inspection, but the current official OHSU BME Ph.D. page directly links to this route; it was retained without replacement and without claiming a rendered login form.
+
+## Link audit offset 310 — August 16, 2026, partial confirmations
+
+Carnegie Mellon’s graduate application route and Drexel’s Biomedical Engineering M.S. page timed out in automated checks but loaded as live, relevant official destinations in the browser. No URL replacement was made. Drexel’s application portal and Ph.D. page remain for the next manual checks.
+
+The remaining offset-310 Drexel application and Biomedical Engineering Ph.D. URLs were manually confirmed as live, relevant official destinations. No replacements were made; the offset-310 batch is complete.
+
+## Link audit offset 315 — August 16, 2026
+
+Penn State’s Graduate School application URL timed out in the automated audit. Browser validation confirmed the live official Fox Graduate School How to Apply page with account-creation and graduate-application login guidance. No URL replacement was made.
+
+## Link audit offset 320 — August 16, 2026
+
+Temple’s legacy Bioengineering M.S. URL timed out in the automated audit but browser navigation resolved it to the live current official Bioengineering MSBIOE program page with application and curriculum information. No URL replacement was made.
+
+## Link audit offset 325 — August 16, 2026, partial confirmations
+
+Penn’s Bioengineering Ph.D. page and Pitt’s Bioengineering Graduate Academics page timed out in automated checks but loaded as live, relevant official destinations in the browser. No URL replacement was made. Pitt’s application page and Villanova candidates remain for the next manual checks.
+
+The remaining offset-325 Pitt application URL was manually confirmed as a live official Swanson School Graduate Application page with current application, deadline, and fee-waiver guidance. No replacement was made; both Villanova candidates remain for the final checks.
+
+The final offset-325 Villanova Biomedical Engineering M.S. page and graduate application portal were manually confirmed as live, relevant official destinations. No replacements were made; the offset-325 batch is complete.
+
+## Link audit offset 330 — August 16, 2026
+
+Brown’s application-information URL safely redirects within Brown Graduate School to the current official apply page and remains relevant. Clemson’s legacy graduate-application route resolved to the current official Apply to Clemson as a Graduate Student page with portal and application-process guidance. No URL replacement was made.
+
+## Link audit offset 335 — August 16, 2026
+
+University of South Carolina’s ApplyWeb endpoint timed out in automated checks and returned the expected JavaScript-required gate on direct navigation. The subsequent browser inspection was unavailable. The institution-specific `uscgrad` application endpoint was retained without replacement because no not-found or irrelevant destination was confirmed.
+
+## Link audit offset 345 — August 16, 2026
+
+UTHSC’s LiaisonCAS URL timed out in the automated audit. Browser validation confirmed the live UTHSC-branded centralized application-service applicant portal with login, account-creation, and credential-recovery controls. No URL replacement was made.
+
+## Link audit offset 350 — August 16, 2026
+
+Rice’s graduate application URL timed out in the automated audit. Browser validation confirmed the live official Application Management portal with login and account-creation functions. No URL replacement was made.
+
+## Link audit offset 355 — August 16, 2026
+
+UTA’s Biomedical Engineering M.S. page timed out in the automated audit. Browser validation confirmed the live official degree-specific page with admissions, curriculum, and application navigation. No URL replacement was made.
+
+## Link audit offset 365 — August 16, 2026
+
+UT San Antonio’s 2027 LiaisonCAS URL timed out in the automated audit. Browser navigation resolved it to UTSA’s institution-specific `utsa2027.cas.myliaison.com` application-service tenant; a follow-up view kept that official title/URL but rendered a blank shell. It was retained without replacement and without asserting a working login form.
+
+## Link audit offset 370 — August 16, 2026
+
+University of Houston’s legacy Graduate School application route resolved to the current official How to Apply page with ApplyWeb access; University of Utah’s application URL loaded the official Apply page with graduate-student path and graduate-status guidance. No URL replacements were made.
+
+## Link audit offset 375 — August 16, 2026
+
+University of Utah’s Neural Engineering Ph.D. catalog page and Utah State’s School of Graduate Studies admissions page timed out in automated checks but loaded as live, relevant official destinations in the browser. No URL replacements were made.
+
+## Link audit offset 380 — August 16, 2026
+
+UVA’s Biomedical Engineering M.E. page timed out in the automated audit. Browser validation confirmed the live official degree-specific page with program and application navigation. No URL replacement was made.
+
+## Link audit offset 385 — August 16, 2026
+
+UVA’s BME M.S. and BME application pages returned automated 403 responses but loaded as live official degree and application destinations in the browser. No URL replacements were made.
+
+## Link audit offset 390 — August 16, 2026
+
+VCU’s Biomedical Engineering Ph.D. bulletin URL timed out in the automated audit. Browser validation confirmed the live official 2026–27 VCU Bulletin doctoral program page. No URL replacement was made.
+
+## Link audit offset 395 — August 16, 2026, partial confirmation
+
+UW’s Graduate School application URL timed out in automated checks but resolved to the live official Apply Now page with application, status, and fee-waiver guidance. No URL replacement was made. The remaining UW and Washington State candidates require the next manual checks.
+
+The remaining UW offset-395 program checks were qualified: the Pharmaceutical Bioengineering URL produced a browser timeout and was retained pending a successful future check; the UW Bioengineering Ph.D. page loaded as a current official program page with application information. No URL replacement was made. Washington State candidates remain for the next manual checks.
+
+The remaining offset-395 Washington State candidates were manually confirmed: WSU’s official interdisciplinary M.S. Engineering page includes Bioengineering specialization, and EngineeringCAS provides the live multi-cycle account/application workflow. No URL replacements were made. The UW Pharmaceutical Bioengineering timeout remains retained without change.
+
+## Link audit offset 400 — August 16, 2026, partial confirmations
+
+Washington State’s Engineering Science Ph.D. page and West Virginia’s Biomedical Engineering catalog and graduate gateway timed out in automated checks but loaded as live, relevant official destinations in the browser. No URL replacement was made. WVU’s alternate application route and Marquette–MCW remain for final checks.
+
+The remaining offset-400 West Virginia Graduate Admissions and Marquette–MCW joint BME degree pages were manually confirmed as live, relevant official destinations. No replacements were made; the offset-400 batch is complete.
+
+## Link audit offset 405 — August 16, 2026, partial confirmations
+
+UW–Madison’s legacy graduate application route and Marquette’s Graduate School application portal timed out in automated checks but resolved to live official applicant-management destinations in the browser. No URL replacement was made. MCW and UW–Madison program pages remain for final manual checks.
+
+The next offset-405 checks were manually confirmed: MCW’s Application Management portal is live for the joint BME Ph.D. route, and UW–Madison’s Biomedical Engineering Accelerated MS page is a live official degree page. No URL replacements were made. UW–Madison’s Biomedical Innovation, Design and Entrepreneurship M.S. page remains for the final check.
+
+The final offset-405 UW–Madison Biomedical Innovation, Design and Entrepreneurship M.S. page was manually confirmed as a live, relevant official program page. No replacements were made; the offset-405 batch is complete.
+
+## Link audit offset 410 — August 16, 2026, partial confirmations
+
+UW–Madison’s Biomedical Engineering Research M.S. and Graduate School Admissions pages timed out in automated checks but loaded as live, relevant official program/admissions destinations in the browser. No URL replacement was made. UW–Madison Ph.D. and Milwaukee candidates remain for the next manual checks.
+
+The next offset-410 candidates were manually confirmed: UW–Madison’s Biomedical Engineering Ph.D. and UW–Milwaukee’s Engineering M.S. Biomedical Engineering pages are live, relevant official destinations. No URL replacements were made. UW–Milwaukee’s graduate application portal remains for the final check.
+
+The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live official Start Your Graduate School Application portal. No replacement was made; the offset-410 batch is complete.
+
+## Northwestern University Biomedical Engineering M.S. and Ph.D. — Duolingo policy refresh, August 16, 2026
+
+**Programs:** M.S. in Biomedical Engineering (ID 390004) and Ph.D. in Biomedical Engineering (ID 390003).
+
+**Official source:** Northwestern The Graduate School, [Test Scores](https://www.tgs.northwestern.edu/admission/application-procedures/application-requirements/test-scores.html), reconciled against the corresponding official BME M.S. and Ph.D. admissions pages.
+
+**Verified treatment:** TGS lists TOEFL, IELTS Academic, and MET as the accepted English-proficiency tests and explicitly states that it does **not** accept Duolingo or TOEFL Essentials. Both BME profiles now display the source-backed, non-inferred no-Duolingo policy. The new source records use three verification passes and retain the current BME admissions pages as the degree-context cross-check.
+
+## Oregon Health & Science University Biomedical Engineering Ph.D. — Duolingo policy refresh, August 16, 2026
+
+**Program:** Ph.D. in Biomedical Engineering (ID 1800001).
+
+**Official sources:** OHSU School of Medicine Graduate Studies [Admissions](https://www.ohsu.edu/school-of-medicine/graduate-studies/admissions), reconciled against [Biomedical Engineering Ph.D. Admissions](https://www.ohsu.edu/school-of-medicine/biomedical-engineering/admissions).
+
+**Verified treatment:** Graduate Studies specifies that relevant foreign applicants must take either TOEFL or IELTS, with published waiver pathways. The BME Ph.D. page independently repeats the TOEFL-or-IELTS treatment and waiver context. The profile now shows the evidence-safe no-Duolingo treatment rather than leaving a source-resolved policy blank. A three-pass source record preserves the central-policy and degree-context reconciliation.
+
+## University of Pittsburgh Bioengineering Research M.S. — application-fee review, August 16, 2026
+
+**Program:** M.S. in Bioengineering (Research Thesis) (ID 330004).
+
+**Official source:** Swanson School of Engineering [Graduate Application](https://www.engineering.pitt.edu/academics/graduateadmissions/graduate-applications/).
+
+**Source-safe treatment:** The current EngineeringCAS application page supplies the active application path and explains its case-by-case fee-waiver process but does not publish a graduate application-fee amount. The profile’s fee remains blank; no dollar figure was copied from unrelated Pitt programs. A three-pass tuition/fee provenance row now records this qualified review.

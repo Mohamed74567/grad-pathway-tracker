@@ -18,14 +18,14 @@ The audit covered every published program row in the GradPathway directory. For 
 | Missing fee field | 39 | Requires thin-snapshot review or explicit source-safe blank treatment |
 | Missing GRE field | 45 | Requires thin-snapshot review or explicit source-safe blank treatment |
 | Missing English field | 0 | All published profiles now have a source-backed English-policy field or qualified program-specific guidance |
-| Missing Duolingo field | 67 | Requires thin-snapshot review; absence is not a claim of non-acceptance |
+| Missing Duolingo field | 62 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D. and OHSU Ph.D. were refreshed from current official sources. |
 | Funding marked not stated | 38 | Requires source review or documented non-commitment |
 | No deadline row | 47 | Requires deadline review or documented absence of a current program deadline |
 
 ## Conclusion
 
-The directory-wide provenance gate is satisfied for all 297 published profiles: no published profile is missing a three-pass identity, program-context, or image source, and all published profiles have a direct application URL. The English-policy remediation pass is now complete with zero published profiles missing English treatment. The remaining quality work is not a provenance failure; it is the separate thin-admission-snapshot queue shown above. Those fields must be backfilled only from current official sources, and unsupported facts must remain blank or explicitly not stated.
+The directory-wide provenance gate is satisfied for all 297 published profiles: no published profile is missing a three-pass identity, program-context, or image source, and all published profiles have a direct application URL. The English-policy remediation pass is now complete with zero published profiles missing English treatment. The full 419-URL official-link audit is also complete; source-side timeouts, access controls, and institution-owned redirects were manually distinguished from confirmed broken destinations before any replacement. The remaining quality work is not a provenance failure; it is the separate thin-admission-snapshot queue shown above. Those fields must be backfilled only from current official sources, and unsupported facts must remain blank or explicitly not stated.
 
 ## Remediation order
 
-The next audit passes should prioritize fee and deadline rows, followed by GRE, funding, and Duolingo coverage. Link audits must distinguish a confirmed not-found response from a redirect, timeout, or source-side blocking response before any replacement is made. No external ranking or discovery page is used as an institutional admissions source.
+The next audit passes should prioritize fee and deadline rows, followed by GRE, funding, and the remaining Duolingo coverage. The completed link audit remains documented for future rechecks: a confirmed not-found response must be distinguished from a redirect, timeout, or source-side blocking response before any replacement. No external ranking or discovery page is used as an institutional admissions source.
