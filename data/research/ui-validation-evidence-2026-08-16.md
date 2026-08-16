@@ -45,3 +45,7 @@ The offset-155 audit timed out on the legacy UMD application-process URL, but di
 ## Link audit manual confirmation: Boston University engineering application portal
 
 The offset-160 audit timed out on `https://bu-eng.cas.myliaison.com/`, but direct browser navigation resolved to the live Applicant Login Page at `/applicant-ux/#/login`. The portal visibly offers graduate applicant sign-in, account creation, and password recovery, confirming that it remains a relevant application destination for Boston University Biomedical Engineering. No replacement was made.
+
+## Thin-snapshot validation: Brown University Sc.M.
+
+The current Brown Graduate School International Applicants page explicitly states that it does not accept the Duolingo English proficiency test, names TOEFL and IELTS as accepted tests, and describes five years of guaranteed doctoral support. The companion language-proficiency page lists a TOEFL total of 90 before January 21, 2026 or 4.5 on the revised scale afterward, with an IELTS recommended minimum overall band score of 7. Direct browser navigation then rendered the refreshed Brown Biomedical Engineering Sc.M. profile with its credited School of Engineering laboratory hero, April 15 BME fall guidance, optional GRE, no-Duolingo policy, revised English thresholds, funding-available treatment, direct official links, and no unsupported fee card.
