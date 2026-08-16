@@ -61,3 +61,23 @@ Direct browser navigation rendered the refreshed University of Oklahoma Biomedic
 ## Thin-snapshot validation: WPI M.S.
 
 Direct browser navigation rendered the refreshed WPI Biomedical Engineering M.S. profile with its credited laboratory hero, rolling annual Fall-only funding-consideration guidance, US$70 fee, no-GRE treatment, master’s TOEFL/IELTS/Duolingo thresholds, funding-available treatment, and official program/application links.
+
+## Link audit manual confirmations: Michigan State and University of Michigan
+
+The offset-180 audit timed out on the Michigan State Graduate School Apply page and the University of Michigan BME Graduate page. Direct browser navigation confirmed that Michigan State’s page is a live official graduate application gateway with an explicit Apply Here control, program contacts, domestic/international instructions, and application portal. The University of Michigan BME page also loaded as a live official graduate hub with Ph.D., Master’s, admissions, financial-support, and direct M.S. program links. Neither candidate was broken or irrelevant, so no URL replacement was made.
+
+## Link audit manual confirmations: University of Michigan and UM-Dearborn
+
+The offset-185 audit timed out on University of Michigan’s ApplyWeb application URL, the BME Ph.D. page, and UM-Dearborn’s Bioengineering M.S.E. program/application pages. Direct browser navigation confirmed that ApplyWeb reaches a live U-M graduate login/create-account portal; the BME Ph.D. page is a live official doctoral-program destination; and both UM-Dearborn pages are live, relevant official resources. The UM-Dearborn application page also confirms direct graduate admission, a US$60 fee, limited waivers, and degree-specific criteria/deadline links. None of the audited URLs was replaced.
+
+## Link audit manual confirmations: University of Minnesota
+
+The offset-190 audit timed out on University of Minnesota Biomedical Engineering master’s/application pages and the Medical Device Innovation M.S. page. The master’s page returned the live official UMN title in the browser, and its saved rendered HTML confirmed the official Master’s Program page. Direct browser navigation to the BME How to Apply page confirmed official M.S./Ph.D. application instructions, a December 1 deadline, a limited fee-waiver pathway, and the online application link. The Medical Device Innovation M.S. page also loaded as a live official TLI program page with curriculum, admissions, deadlines, funding, and Apply Now controls. No URL was replaced.
+
+## Link audit manual confirmations: University of Minnesota Ph.D. and Mississippi State
+
+The offset-195 audit returned a 403 for the University of Minnesota Biomedical Engineering Ph.D. page and timeouts for the University’s graduate application gateway and Mississippi State’s graduate application portal. Direct browser navigation showed that the UMN Ph.D. page is a live official doctoral-program page with application, financial-support, faculty, research, and December 1 links. The UMN application URL resolved to a live Graduate Application Management page with account-access and account-creation controls. Mississippi State’s URL reached its official Graduate School SpamFireWall page, demonstrating source-side bot protection rather than a confirmed not-found or irrelevant destination; no replacement was made.
+
+## Thin-snapshot validation: West Virginia University Ph.D.
+
+Direct browser navigation rendered the refreshed West Virginia University Biomedical Engineering Ph.D. profile with its credited Statler College hero, January 15 / August 15 priority guidance, US$75 fee, no-GRE policy, current WVU TOEFL/IELTS/TOEFL Essentials/PTE rules, Duolingo 105 policy, funded doctoral status, and direct official program/application links.

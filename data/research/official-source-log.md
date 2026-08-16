@@ -958,3 +958,27 @@ The current OU Stephenson BME graduate page confirms M.S. thesis/non-thesis and 
 ## Link audit offset 175 — August 16, 2026
 
 The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.
+
+## Link audit offset 180 — August 16, 2026
+
+The bounded five-URL audit timed out on the Michigan State Graduate School Apply page and the University of Michigan BME Graduate page. Direct browser validation confirmed both are live, relevant official destinations: Michigan State provides the graduate application portal and instructions, while Michigan BME provides the graduate hub with Ph.D., master’s, admission, support, and M.S. program links. Neither URL was replaced.
+
+## Link audit offset 185 — August 16, 2026
+
+The bounded five-URL audit timed out on University of Michigan ApplyWeb and BME Ph.D. destinations and UM-Dearborn’s Bioengineering M.S.E. program/application pages. Direct browser validation confirmed all four are live, relevant official destinations. ApplyWeb provided a U-M graduate login/create-account portal; the BME Ph.D. page is current; and the UM-Dearborn application page provides direct graduate admission, current US$60 fee context, limited waivers, and criteria/deadline links. No URL was replaced.
+
+## Link audit offset 190 — August 16, 2026
+
+The bounded five-URL audit timed out on University of Minnesota Biomedical Engineering M.S./application pages and the Medical Device Innovation M.S. page. Manual validation confirmed each destination is live and relevant. The BME application page explicitly supports regular M.S./Ph.D. applications, states a December 1 deadline and limited fee-waiver pathway, and links to the online application. The Medical Device Innovation page exposes program, admissions, funding, deadlines, and Apply Now controls. No URL was replaced.
+
+## Link audit offset 195 — August 16, 2026
+
+The bounded five-URL audit returned a 403 for University of Minnesota BME Ph.D. and timeouts for UMN’s graduate application gateway and Mississippi State’s application portal. Direct browser validation confirmed the UMN Ph.D. and graduate application pages are live official destinations. Mississippi State responded with an official Graduate School SpamFireWall challenge, which is source-side bot protection rather than evidence of a broken or irrelevant destination. No URL was replaced.
+
+## West Virginia University Biomedical Engineering Ph.D. — August 16, 2026
+
+The current WVU Chemical and Biomedical Engineering graduate page confirms no GRE, January 15 Fall/August 15 Spring priority guidance, and full doctoral tuition waiver plus a competitive stipend. Current Graduate Admissions sources establish the US$75 international application fee and English proficiency minima: TOEFL iBT 79 through January 2026 or 4.0 afterward, IELTS 6.5, TOEFL Essentials 9.0, Duolingo 105, or PTE 53; programs may set higher scores. The profile now reflects those facts and was browser-validated with credited imagery and direct official links.
+
+## English-policy remediation milestone — August 16, 2026
+
+After the Brown, Oklahoma, WPI, and West Virginia updates, the directory-wide audit confirms zero published profiles missing English-policy treatment. Remaining source-safe admissions work concerns fee, GRE, Duolingo, funding, and deadline fields.
