@@ -946,3 +946,11 @@ Current Brown Engineering and Graduate School sources confirm optional GRE treat
 ## Link audit offset 165 — August 16, 2026
 
 The bounded five-URL audit returned a fetch failure for the Northeastern Bioengineering Ph.D. official page and a timeout for an MIT Biological Engineering Ph.D. official URL. Direct browser validation confirmed the Northeastern page is live and relevant. The MIT URL safely resolved to its current official Graduate Program page, which confirms the annual departmental Ph.D. admission route. Neither candidate was a not-found or irrelevant destination, so no replacement was made.
+
+## Link audit offset 170 — August 16, 2026
+
+The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.
+
+## University of Oklahoma Biomedical Engineering Ph.D. and M.S. — August 16, 2026
+
+The current OU Stephenson BME graduate page confirms M.S. thesis/non-thesis and direct-entry Ph.D. pathways, no-GRE policy, three references, Fall December 1 and Spring September 1 application deadlines for national and international applicants, and case-by-case Spring admissions. The current Graduate College international-applicant page states that DET is accepted beginning Summer 2026 at 130 overall with 115 reviewed-subsection minima, but identifies Biomedical Engineering among programs requiring higher English scores; the records therefore preserve that explicit qualification instead of inventing a BME-specific score. Existing source-backed fee and funding treatments were retained. The M.S. profile was browser-validated with credited Gallogly Hall imagery, direct official links, deadlines, GRE, fee, English, Duolingo, and funding facts.
