@@ -278,3 +278,5 @@
 - [x] Reconcile the next batch of already-published legacy biomedical-program labels to their verified directory counterparts, retaining a documented candidate queue for any genuine gaps. Reconciled 14 exact published-doctorate matches, then escalated Princeton as a genuine gap rather than treating it as an alias.
 
 - [x] Determine whether Princeton University awards a separately titled Bioengineering Ph.D. or only supports bioengineering research through other doctoral departments; publish no profile unless the formal award is verified. Official Graduate School and ODBI sources confirmed the separately awarded Bioengineering Ph.D.; the source-safe profile is published and visually verified.
+
+- [x] Verify whether the legacy North Dakota State University Biomedical Engineering Ph.D. lead remains an active, separately awarded doctoral degree; publish only after current official degree and admission facts reconcile. Current NDSU/UND sources confirmed the joint 90-credit Ph.D.; the profile is published with source-safe admissions, annual guidance, shared credited imagery, and visible rendering.
