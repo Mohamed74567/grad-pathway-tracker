@@ -288,3 +288,5 @@
 - [x] Verify whether the legacy Howard University Biomedical and Chemical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current Howard sources confirmed the 72-credit Ph.D.; the source-safe profile is published with exact Fall 2027 dates, verified fee/testing policies, qualified funding, and credited imagery.
 
 - [x] Verify whether the legacy University of Mississippi Biomedical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current Ole Miss sources corrected the label to the formal Engineering Science Ph.D. with Biomedical Engineering emphasis; the source-safe profile is published and visually verified.
+
+- [x] Verify whether the legacy University of Dayton Bioengineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current catalog and co-major sources confirm no standalone Bioengineering Ph.D.; the lead is documented as non-qualifying and no profile was published.
