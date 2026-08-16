@@ -25,3 +25,7 @@ Direct browser navigation to `/programs/unc-chapel-hill-biomedical-engineering-p
 ## Newly published profile validation: FAMU-FSU College of Engineering
 
 Direct browser navigation rendered both `/programs/famu-fsu-biomedical-engineering-ms` and `/programs/famu-fsu-biomedical-engineering-phd`. The M.S. profile visibly showed the official FAMU-FSU College of Engineering image credit, Fall July 1 / Spring November 1 / Summer March 1 deadline guidance, qualified US$30 FAMU-versus-FSU fee wording, master’s GRE waiver through Fall 2026, university-specific Duolingo scores, English-test policy, and official program/application links. The Ph.D. profile visibly showed the same credited image, qualified fee wording, a source-backed GRE-waiver request policy rather than an invented universal exemption, university-specific Duolingo scores, English-test policy, official links, and no unsupported deadline card.
+
+## Thin-snapshot validation: University of Tennessee Knoxville M.S.
+
+Direct browser navigation rendered the refreshed UT Knoxville Biomedical Engineering M.S. profile with the credited Ayres Hall image, domestic deadline guidance, optional-but-recommended GRE policy, Duolingo 120, revised TOEFL/IELTS thresholds, funding-available treatment, direct official application/program links, and no unsupported fee card. The profile was checked on August 16, 2026.
