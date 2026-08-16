@@ -81,3 +81,7 @@ The offset-195 audit returned a 403 for the University of Minnesota Biomedical E
 ## Thin-snapshot validation: West Virginia University Ph.D.
 
 Direct browser navigation rendered the refreshed West Virginia University Biomedical Engineering Ph.D. profile with its credited Statler College hero, January 15 / August 15 priority guidance, US$75 fee, no-GRE policy, current WVU TOEFL/IELTS/TOEFL Essentials/PTE rules, Duolingo 105 policy, funded doctoral status, and direct official program/application links.
+
+## Thin-snapshot validation: Michigan State University Ph.D.
+
+Direct browser navigation rendered the refreshed Michigan State Biomedical Engineering Ph.D. profile with its credited College of Engineering hero, December 1 Fall-only maximum-consideration guidance, no-GRE policy, current Graduate School TOEFL/IELTS standards, Duolingo 110 regular-admission policy, funding-available treatment, and direct official links. The application fee remains absent from the snapshot because the current official Graduate School page documents waiver pathways but does not publish a current base amount.

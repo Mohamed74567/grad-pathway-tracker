@@ -982,3 +982,11 @@ The current WVU Chemical and Biomedical Engineering graduate page confirms no GR
 ## English-policy remediation milestone — August 16, 2026
 
 After the Brown, Oklahoma, WPI, and West Virginia updates, the directory-wide audit confirms zero published profiles missing English-policy treatment. Remaining source-safe admissions work concerns fee, GRE, Duolingo, funding, and deadline fields.
+
+## Link audit offset 200 — August 16, 2026
+
+The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.
+
+## Michigan State University Biomedical Engineering Ph.D. and M.S. — August 16, 2026
+
+Current MSU BME Ph.D. and M.S. pages confirm no-GRE treatment, December 1 Fall timing, and financial-aid/assistantship consideration. The Graduate School English-competency page gives regular-admission TOEFL, IELTS, and Duolingo standards: TOEFL 80 with stated section minima before January 21, 2026 (or 4.5 under the newer scale), IELTS 6.5 with no subscore below 6.0, and Duolingo 110; departments may set higher scores. The Graduate School Apply page documents fee-waiver pathways but does not publish a current base fee, so the fee fields remain safely blank. The Ph.D. profile was browser-validated with a credited image and official links.
