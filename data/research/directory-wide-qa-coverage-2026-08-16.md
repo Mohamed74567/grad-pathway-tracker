@@ -18,7 +18,7 @@ The audit covered every published program row in the GradPathway directory. For 
 | Missing fee field | 38 | Requires thin-snapshot review or explicit source-safe blank treatment. University of South Carolina Biomedical Engineering M.E. now uses the current qualified Graduate School fee source. |
 | Missing GRE field | 45 | Requires thin-snapshot review or explicit source-safe blank treatment |
 | Missing English field | 0 | All published profiles now have a source-backed English-policy field or qualified program-specific guidance |
-| Missing Duolingo field | 53 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D., OHSU Ph.D., Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng., University of South Carolina’s Biomedical Engineering Ph.D./M.S./M.E., and University of South Dakota’s Biomedical Engineering Ph.D. plus two M.S. profiles were refreshed from current official sources. |
+| Missing Duolingo field | 52 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D., OHSU Ph.D., Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng., University of South Carolina’s Biomedical Engineering Ph.D./M.S./M.E., University of South Dakota’s Biomedical Engineering Ph.D. plus two M.S. profiles, and Johns Hopkins BME M.S.E. were refreshed from current official sources. Johns Hopkins BME Ph.D. remains blank because its School of Medicine materials do not publish an explicit DET policy. |
 | Funding marked not stated | 38 | Requires source review or documented non-commitment |
 | No deadline row | 47 | Requires deadline review or documented absence of a current program deadline |
 

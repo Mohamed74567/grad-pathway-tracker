@@ -1222,3 +1222,21 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official sources:** USD [International Graduate Admissions](https://www.usd.edu/Admissions-and-Aid/International-Admissions/Applying-for-International-Graduate-Admission), reviewed in its expanded Official Proof of English Proficiency section, and the official [Biomedical Engineering graduate program](https://www.usd.edu/Academics/Graduate-Programs/Biomedical-Engineering) page.
 
 **Verified treatment:** USD lists a **Duolingo English Test score of 110 or higher** as one of the international graduate English-proficiency options, with published country-based exemptions. All three Biomedical Engineering profiles now display this source-backed policy and carry three-pass provenance.
+
+## Utah State University Biological Engineering graduate profiles — Duolingo review held source-safe, August 16, 2026
+
+**Profiles reviewed:** Biological Engineering Ph.D., M.S., and M.E. (IDs 3480001–3480003).
+
+**Current official sources:** School of Graduate Studies [Graduate Admissions Policies & Procedures](https://gradschool.usu.edu/admissions/policies) and Biological Engineering [Graduate Admissions](https://engineering.usu.edu/bce/students/graduate/graduate-admissions).
+
+**Outcome:** No Duolingo statement was published in the current extracted policy text. The central policy’s current approved-exam list names TOEFL, IELTS, MET, and Cambridge; the departmental page separately names TOEFL, IELTS, and PTE. A search index snippet referenced an apparent historical DET 105 note, but the live policy text did not substantiate it. To avoid conflicting or stale guidance, the three profiles retain blank Duolingo treatment pending an explicit current official policy.
+
+## Johns Hopkins Biomedical Engineering M.S.E. and Ph.D. — Duolingo treatment review, August 16, 2026
+
+**Programs:** M.S.E. in Biomedical Engineering (ID 240002) and Ph.D. in Biomedical Engineering (ID 240001).
+
+**M.S.E. official source:** Whiting School [English Proficiency Policy and Test Waiver Eligibility](https://engineering.jhu.edu/admissions/graduate-admissions/full-time-programs/how-to-apply/international-students/english-proficiency-policy-test-waiver-eligibility/), reconciled against the M.S.E. full-time engineering application route.
+
+**M.S.E. verified treatment:** Whiting accepts the Duolingo English Test. A score of **135** is preferred and recommended, not required unless a degree program specifies otherwise; scores are valid for two years. The M.S.E. profile now reflects that qualified source-backed treatment with three-pass provenance.
+
+**Ph.D. source-safe treatment:** The BME Ph.D. is connected to both the School of Medicine and Whiting School. Current School of Medicine graduate admissions material supports TOEFL/IELTS waiver context but does not explicitly state a Duolingo policy for BME. The Ph.D. Duolingo field therefore remains blank rather than importing the Whiting M.S.E. rule across academic units.
