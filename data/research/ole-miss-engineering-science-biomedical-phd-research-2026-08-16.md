@@ -1,0 +1,16 @@
+# University of Mississippi Engineering Science Ph.D. — Biomedical Engineering Emphasis — 2026-08-16
+
+## Degree-identity reconciliation
+
+| Source | Verified current fact |
+| --- | --- |
+| [Ole Miss Biomedical Engineering, Ph.D.](https://olemiss.edu/programs/engr/biomedical-engineering-phd/) | The marketing page confirms a doctoral Biomedical Engineering offering, but explicitly identifies the formal award as a **Ph.D. in Engineering Science with a Biomedical Engineering emphasis**. It lists 54 required credits and describes advanced theory, hands-on research, and a dissertation. |
+| [Ole Miss School of Engineering graduate programs](https://engineering.olemiss.edu/academics-admissions/graduate-programs/) | Independently confirms that Biomedical Engineering is an emphasis within the Engineering Science graduate degree, with a Biomedical Engineering graduate coordinator. |
+| [Ole Miss Graduate School application process](https://gradschool.olemiss.edu/academics-and-admissions/admissions/) | Confirms the central online application route, US$60 non-refundable fee, current no-GRE treatment for Biomedical Engineering, and submission routes for TOEFL, IELTS, and Duolingo. It does not establish a biomedical-engineering-specific English minimum or a Duolingo threshold. |
+| [Ole Miss Graduate Program Deadlines and GPCs](https://gradschool.olemiss.edu/academics-and-admissions/prospective-students/deadlines-npc/) | Current School of Engineering table lists Biomedical Engineering **Ph.D.** guidance: April 1 for Fall and October 1 for Spring, with Dr. Nikki Reinemann as graduate program coordinator. The active page is accordion-based; dates are stored as annual guidance rather than unverified cycle-specific planner dates. |
+| [Ole Miss international graduate admissions](https://olemiss.edu/global/international-students-oge/international-student-admissions/graduate-admissions-international/) | Central current policy states that departmental graduate assistantships include tuition waivers and stipends, are department-available, and are often limited. This supports an `available`, not guaranteed, funding treatment. |
+| [Ole Miss Biomedical Engineering doctoral page image](https://olemiss.edu/programs/engr/biomedical-engineering-phd/) | The live official program page provides a clear biomedical laboratory photograph of a researcher using a handheld lab device; use it with visible Ole Miss Biomedical Engineering credit after durable project upload. |
+
+## Publication guardrails
+
+The legacy label “Ph.D. in Biomedical Engineering” is **not** the formal degree title. If published, the directory record must use the source-accurate title **Ph.D. in Engineering Science — Biomedical Engineering Emphasis** while retaining “Biomedical Engineering” as the subfield. Current sources support the no-GRE policy, US$60 application fee, direct Ole Miss application, annual Fall April 1 and Spring October 1 guidance, and qualified assistantship availability. Keep numeric English and Duolingo thresholds blank because the current central page establishes submission routes but not Biomedical Engineering-specific minimums. Prepare a credited official biomedical laboratory image before publication.
