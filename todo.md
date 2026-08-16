@@ -334,3 +334,5 @@
 - [x] Backfill the University of Pittsburgh Professional M.S. in Bioengineering — Neural Engineering Focus admission snapshot only where current official sources support an application fee, funding, deadline, or other missing facts. Corrected annual Fall guidance from December 1 to the current degree-specific December 31 source; fee and funding remain blank/not stated because no specific current claim is published.
 
 - [x] Backfill the Wright State University M.S. in Biomedical Engineering admission snapshot only where current official sources support GRE, funding, or other missing facts. Refreshed provenance; current BME sources do not publish a GRE policy or funding commitment, so both remain blank/not stated.
+
+- [x] Backfill Miami University’s M.Eng. in Biomedical Engineering admission snapshot only where current official sources support GRE, funding, deadline, or other missing facts. Added program-page-supported no-GRE treatment and refreshed provenance; no M.Eng.-specific funding commitment is published, so funding remains not stated.
