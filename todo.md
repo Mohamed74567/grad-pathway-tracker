@@ -290,3 +290,5 @@
 - [x] Verify whether the legacy University of Mississippi Biomedical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current Ole Miss sources corrected the label to the formal Engineering Science Ph.D. with Biomedical Engineering emphasis; the source-safe profile is published and visually verified.
 
 - [x] Verify whether the legacy University of Dayton Bioengineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current catalog and co-major sources confirm no standalone Bioengineering Ph.D.; the lead is documented as non-qualifying and no profile was published.
+
+- [x] Verify whether the legacy Rochester Institute of Technology Biomedical and Chemical Engineering Ph.D. remains an active separately awarded doctoral degree; publish it only after current official degree and admission facts reconcile. Current RIT sources matched the existing profile; its source-backed annual December 15 priority guidance was added and the legacy label is reconciled without duplication.
