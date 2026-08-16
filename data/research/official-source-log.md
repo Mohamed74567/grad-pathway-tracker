@@ -954,3 +954,7 @@ The bounded five-URL audit completed with zero failures, errors, redirects, or c
 ## University of Oklahoma Biomedical Engineering Ph.D. and M.S. — August 16, 2026
 
 The current OU Stephenson BME graduate page confirms M.S. thesis/non-thesis and direct-entry Ph.D. pathways, no-GRE policy, three references, Fall December 1 and Spring September 1 application deadlines for national and international applicants, and case-by-case Spring admissions. The current Graduate College international-applicant page states that DET is accepted beginning Summer 2026 at 130 overall with 115 reviewed-subsection minima, but identifies Biomedical Engineering among programs requiring higher English scores; the records therefore preserve that explicit qualification instead of inventing a BME-specific score. Existing source-backed fee and funding treatments were retained. The M.S. profile was browser-validated with credited Gallogly Hall imagery, direct official links, deadlines, GRE, fee, English, Duolingo, and funding facts.
+
+## Link audit offset 175 — August 16, 2026
+
+The bounded five-URL audit completed with zero failures, errors, redirects, or candidates. No profile link changes were needed.

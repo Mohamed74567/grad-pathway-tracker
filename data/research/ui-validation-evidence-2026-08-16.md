@@ -53,3 +53,11 @@ The current Brown Graduate School International Applicants page explicitly state
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.
+
+## Thin-snapshot validation: University of Oklahoma M.S.
+
+Direct browser navigation rendered the refreshed University of Oklahoma Biomedical Engineering M.S. profile with the credited Gallogly Hall hero, current December 1 Fall / September 1 Spring guidance, US$50 domestic and US$100 international fee treatment, no-GRE policy, qualified Graduate College English and DET information, funding-available treatment, and official program/application links.
+
+## Thin-snapshot validation: WPI M.S.
+
+Direct browser navigation rendered the refreshed WPI Biomedical Engineering M.S. profile with its credited laboratory hero, rolling annual Fall-only funding-consideration guidance, US$70 fee, no-GRE treatment, master’s TOEFL/IELTS/Duolingo thresholds, funding-available treatment, and official program/application links.
