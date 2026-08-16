@@ -922,3 +922,7 @@ Rechecked SLU’s BME Ph.D. against the current degree page, catalog, and Gradua
 ## University of Illinois Urbana-Champaign application-link correction — 2026-08-16
 
 A bounded read-only link audit found that the former Graduate Admissions application URL, `https://grad.illinois.edu/admissions/apply`, redirects with HTTP 200 to the current official destination, `https://grad.illinois.edu/admissions/apply-now`. Both the Bioengineering Ph.D. and thesis M.S. profiles now store the final official URL directly, and the replacement is recorded as a three-pass source entry. The Notre Dame fetch failure and two Kansas timeouts from the same audit batch remain investigation candidates rather than confirmed broken links.
+
+## Link audit offset 145 — August 16, 2026
+
+The bounded five-URL audit returned zero failures or errors. It found one confirmed HTTP-to-HTTPS redirect: Tulane University Biomedical Engineering Ph.D. and M.S. application URLs previously used `http://applygrad.tulane.edu/apply/`; both records were normalized to the canonical `https://applygrad.tulane.edu/apply/` destination. The redirect was relevant and safe, not a not-found or irrelevant destination. The replacement was recorded with three-pass audit provenance on both program records.
