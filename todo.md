@@ -322,3 +322,5 @@
 - [x] Backfill the University of South Carolina Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support an application fee, Duolingo, deadline, or other missing facts. Added the central US$50 fee effective August 1, 2026 and refreshed provenance; BME-specific testing material conflicts with the central Duolingo statement, so both Duolingo fields remain blank.
 
 - [x] Backfill the University of Arkansas M.S. in Biomedical Engineering admission snapshot only where current official sources support a deadline, Duolingo, funding, or other missing facts. Refreshed provenance; current sources still do not establish a BME-specific deadline or Duolingo policy, so both fields remain blank.
+
+- [x] Backfill the University of Tennessee, Knoxville Biomedical Engineering Ph.D. and M.S. admission snapshots only where current official sources support an application fee, deadline, Duolingo, or other missing facts. Refreshed provenance and removed the broad M.S. Duolingo claim because degree-specific BME requirements supersede the central policy; no BME-specific application date or M.S. fee was found.
