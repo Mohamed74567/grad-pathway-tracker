@@ -354,3 +354,5 @@
 - [x] Backfill the University of Maryland, College Park M.S. in Bioengineering admission snapshot only where current official sources support GRE, Duolingo, deadline, funding, fee, or other missing facts. Updated to the current US$90 fee and removed cycle-specific 2025/2026 timing rather than converting it into annual guidance; GRE remains optional, Duolingo blank, and funding not stated.
 
 - [x] Backfill the University of California, Irvine M.S. in Biomedical Engineering admission snapshot only where current official sources support GRE, Duolingo, deadline, funding, fee, or other missing facts. Refreshed live Fall 2027 BME deadline and provenance data; current degree-specific sources support the existing no-GRE, fee, and TOEFL/IELTS facts but not Duolingo or M.S. funding.
+
+- [x] Backfill the University of Florida Ph.D. in Biomedical Engineering admission snapshot only where current official sources support GRE, Duolingo, deadline, funding, fee, or other missing facts. Added clearly labeled annual December 5 doctoral priority guidance and refreshed funding provenance; current sources do not state a Duolingo option, so that field remains blank.
