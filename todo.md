@@ -358,3 +358,7 @@
 - [x] Backfill the University of Florida Ph.D. in Biomedical Engineering admission snapshot only where current official sources support GRE, Duolingo, deadline, funding, fee, or other missing facts. Added clearly labeled annual December 5 doctoral priority guidance and refreshed funding provenance; current sources do not state a Duolingo option, so that field remains blank.
 
 - [x] Backfill the Rochester Institute of Technology M.S. in Biomedical Engineering admission snapshot only where current official sources support an application fee or other missing fact. Added the current US$65 RIT graduate application fee and refreshed fee/deadline provenance; existing GRE, Duolingo, English-testing, and not-stated funding treatment remain source-backed.
+
+- [x] Backfill Johns Hopkins University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, or other missing fact. Added the current US$75 doctoral fee, optional GRE policy, funded-doctoral status, and annual first-week-of-December guidance; Duolingo remains blank because current degree-specific sources do not state it.
+
+- [x] Backfill Johns Hopkins University’s Ph.D. in Biomedical Engineering admission snapshot only where current official sources support a fee, deadline, funding, or other missing fact. Added the current US$75 doctoral fee, optional GRE policy, funded-doctoral status, and annual first-week-of-December guidance; Duolingo remains blank because current degree-specific sources do not state it.
