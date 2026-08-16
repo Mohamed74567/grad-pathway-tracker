@@ -15,10 +15,10 @@ The audit covered every published program row in the GradPathway directory. For 
 | Missing three-pass description/program source | 0 | Every published profile has program-context provenance |
 | Missing three-pass image source | 0 | Every published profile has machine-verifiable image provenance |
 | Missing application URL | 0 | Every published profile has a direct application destination |
-| Missing fee field | 39 | Requires thin-snapshot review or explicit source-safe blank treatment |
+| Missing fee field | 38 | Requires thin-snapshot review or explicit source-safe blank treatment. University of South Carolina Biomedical Engineering M.E. now uses the current qualified Graduate School fee source. |
 | Missing GRE field | 45 | Requires thin-snapshot review or explicit source-safe blank treatment |
 | Missing English field | 0 | All published profiles now have a source-backed English-policy field or qualified program-specific guidance |
-| Missing Duolingo field | 59 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D., OHSU Ph.D., and Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng. were refreshed from current official sources. |
+| Missing Duolingo field | 56 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D., OHSU Ph.D., Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng., and University of South Carolina’s Biomedical Engineering Ph.D./M.S./M.E. were refreshed from current official sources. |
 | Funding marked not stated | 38 | Requires source review or documented non-commitment |
 | No deadline row | 47 | Requires deadline review or documented absence of a current program deadline |
 

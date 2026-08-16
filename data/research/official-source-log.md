@@ -1206,3 +1206,11 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official source:** Colorado State Graduate School, [English Proficiency](https://graduateschool.colostate.edu/admissions-resources/english-proficiency/), reconciled against each profile’s established official degree/application sources.
 
 **Verified treatment:** CSU accepts TOEFL, IELTS, Duolingo, and PTE Academic when English evidence is required. Its current clear-admission minimum for Duolingo is **120**. The official exemption pathways are retained. All three profiles now display this source-backed policy with new three-pass provenance.
+
+## University of South Carolina Biomedical Engineering Ph.D./M.S./M.E. — Duolingo and fee refresh, August 16, 2026
+
+**Programs:** Ph.D. in Biomedical Engineering (ID 1980001), M.S. in Biomedical Engineering (ID 1980002), and M.E. in Biomedical Engineering (ID 3720005).
+
+**Official sources:** Graduate School [International Applicants](https://sc.edu/study/colleges_schools/graduate_school/apply/international_applicants/) and [Apply](https://sc.edu/study/colleges_schools/graduate_school/apply/), reconciled against the existing Biomedical Engineering degree source.
+
+**Verified treatment:** USC accepts Duolingo at a minimum **120** when English-proficiency evidence is required, subject to its published exemption rules. The Graduate School’s current Apply page also states that its US$50 graduate application fee is reinstated effective August 1, 2026 for each primary application; the previously blank M.E. fee now carries that qualified official amount. All newly recorded facts have three-pass provenance.
