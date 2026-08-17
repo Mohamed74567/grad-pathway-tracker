@@ -82,6 +82,10 @@ Two immediate public-profile captures showed the intentional “Loading verified
 
 Direct browser validation rendered the University of Akron M.S. in Biomedical Engineering with its official department laboratory image and university credit. The loaded profile exposed the separate M.S.E. and coursework-only M.B.E. switcher, no-application-fee treatment, domestic/international lead-time guidance, M.S.E.-specific TOEFL iBT 96 threshold, qualified funding, and no unsupported GRE or Duolingo card.
 
+## University of Toledo degree-family validation
+
+Direct browser validation rendered the University of Toledo joint Biomedical Engineering Ph.D. with credited official laboratory imagery, the sibling Bioengineering M.S. switcher, direct College of Graduate Studies application, central US$45 domestic / US$75 international fee, rolling priority guidance, and qualified funding. No GRE, numeric English-test, or Duolingo card was shown because the current program-specific sources do not establish those facts.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

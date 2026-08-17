@@ -464,6 +464,28 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Toledo’s fee, priority-date, and qualified-funding treatment for both degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const ms = await caller.tracker.directory.bySlug({ slug: "university-toledo-bioengineering-ms" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-toledo-biomedical-engineering-phd" });
+
+    for (const program of [ms, phd]) {
+      expect(program?.applicationFeeDisplay).toBe("US$45 domestic / US$75 international non-refundable");
+      expect(program?.applicationUrl).toBe("https://www.utoledo.edu/graduate/apply/");
+      expect(program?.fundingStatus).toBe("available");
+      expect(program?.grePolicy).toBeNull();
+      expect(program?.englishTestPolicy).toBeNull();
+      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.campusImageCredit).toContain("The University of Toledo");
+      expect(program?.deadlines[0]?.deadlineLabel).toContain("Fall Jan. 15");
+    }
+
+    expect(phd?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "university-toledo-bioengineering-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
