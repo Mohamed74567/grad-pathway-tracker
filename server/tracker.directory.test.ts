@@ -699,6 +699,7 @@ describe("tracker.directory", () => {
     expect(program?.applicationFeeDisplay).toContain("US$70 IMPACT program application");
     expect(program?.fundingStatus).toBe("not_applicable");
     expect(program?.grePolicy).toBeNull();
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 105");
     expect(program?.deadlines[0]?.deadlineLabel).toContain("December 15");
     expect(program?.campusImageCredit).toContain("Arizona State University");
     expect(program?.degreeOptions).toEqual(expect.arrayContaining([
