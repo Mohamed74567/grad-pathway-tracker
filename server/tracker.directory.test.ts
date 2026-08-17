@@ -99,7 +99,8 @@ describe("tracker.directory", () => {
       expect(program?.applicationUrl).toBe("https://experience.latech.edu/apply");
       expect(program?.fundingStatus).toBe("available");
       expect(program?.grePolicy).toBeNull();
-      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.duolingoPolicy).toContain("Duolingo English Test 105");
+      expect(program?.duolingoPolicy).toContain("less than two years old");
       expect(program?.campusImageCredit).toContain("Louisiana Tech University");
     }
 
