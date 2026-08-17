@@ -623,6 +623,22 @@ describe("tracker.directory", () => {
     expect(program?.admissionFactsSourceUrl).toContain("calstate.edu/apply/california-residency-for-tuition-purposes/Pages/graduate-students");
   });
 
+  it("returns Penn State’s distinct one-year non-thesis BME M.S. with no inferred assistantship", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "penn-state-biomedical-engineering-one-year-nonthesis-ms" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$65 U.S. applicants");
+    expect(program?.fundingStatus).toBe("not_applicable");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_contact", destinationUrl: "mailto:gradfeewaivers@engr.psu.edu" }),
+    ]));
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "penn-state-biomedical-engineering-thesis-ms", degreeType: "masters" }),
+      expect.objectContaining({ slug: "penn-state-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
