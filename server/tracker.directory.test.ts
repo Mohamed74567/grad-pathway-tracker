@@ -144,6 +144,16 @@ describe("tracker.directory", () => {
     expect(program?.englishTestPolicy).toContain("revised scale");
   });
 
+  it("returns Johns Hopkins BME Ph.D. with Whiting School’s source-bounded DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "johns-hopkins-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toContain("DET 135");
+    expect(program?.duolingoPolicy).toContain("unless the degree program states otherwise");
+    expect(program?.englishTestPolicy).toContain("DET");
+  });
+
   it("returns UNR’s qualified Ph.D. fee-support contact without generalizing it to the master’s path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
