@@ -213,6 +213,24 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Ohio State’s confirmed BME fees and conditional central waiver path for both degrees", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "ohio-state-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "ohio-state-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$60 domestic / US$70 international");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gpadmissions.osu.edu/grad/apply-online.html",
+          details: expect.stringContaining("does not issue fee waivers directly"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

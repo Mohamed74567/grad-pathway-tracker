@@ -373,3 +373,7 @@ Direct browser inspection of University of Central Florida Biomedical Engineerin
 ## Michigan State multiple-guidance validation
 
 A first browser check surfaced that multiple same-type waiver forms shared a source page but only one was retained, revealing that the earlier uniqueness key was too coarse. After the reviewed non-destructive migration changed uniqueness to each resource destination and the verified records were restored, a second check of Michigan State Biomedical Engineering Ph.D. visibly rendered all three separate official paths: Ph.D.-only BTAA FreeApp, McNair Scholars, and targeted-conference/event forms. The admission snapshot correctly leaves the base fee blank rather than claiming an unverified amount.
+
+## Ohio State central-waiver validation
+
+Direct browser inspection of The Ohio State University Biomedical Engineering Ph.D. profile confirmed the current US$60 domestic / US$70 international fee, Ph.D./M.S. degree-family switcher, and the application-based Graduate Admissions waiver panel. The panel visibly states that BME itself does not issue fee waivers and confines the action to the published conditional central process, including the 10-day processing allowance.
