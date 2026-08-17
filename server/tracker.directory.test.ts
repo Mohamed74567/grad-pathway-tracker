@@ -342,12 +342,12 @@ describe("tracker.directory", () => {
     ]));
   });
 
-  it("keeps OHSU BME’s unverified base fee blank while returning its conditional Graduate Studies waiver request", async () => {
+  it("returns OHSU BME’s verified US$70 fee and conditional Graduate Studies waiver request", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
     const program = await caller.tracker.directory.bySlug({ slug: "ohsu-biomedical-engineering-phd" });
 
-    expect(program?.applicationFeeDisplay).toBeNull();
+    expect(program?.applicationFeeDisplay).toBe("US$70 processing fee per program");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_contact",
