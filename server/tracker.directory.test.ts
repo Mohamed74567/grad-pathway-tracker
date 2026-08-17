@@ -656,6 +656,21 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns the joint UT Health San Antonio–UTSA Biomedical Engineering M.S. with the Ph.D. switcher", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "ut-health-san-antonio-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$50 domestic / US$90 international per application (non-refundable)");
+    expect(program?.grePolicy).toBe("Not required");
+    expect(program?.englishTestPolicy).toContain("TOEFL 79");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines[0]?.deadlineLabel).toContain("Fall deadline June 1");
+    expect(program?.campusImageCredit).toBe("UT Health San Antonio Biomedical Engineering");
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "ut-san-antonio-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
