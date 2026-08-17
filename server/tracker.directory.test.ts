@@ -200,13 +200,14 @@ describe("tracker.directory", () => {
     const doctorate = await caller.tracker.directory.bySlug({ slug: "michigan-state-biomedical-engineering-phd" });
     const masters = await caller.tracker.directory.bySlug({ slug: "michigan-state-biomedical-engineering-ms" });
 
-    expect(doctorate?.applicationFeeDisplay).toBeNull();
+    expect(doctorate?.applicationFeeDisplay).toBe("US$75");
     expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({ destinationUrl: "https://btaa.org/students/freeapp/introduction" }),
       expect.objectContaining({ destinationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfdow943ldTIaORuDlL4bSUqNY8lX_zBukaQ1MBPGktUGfkAQ/viewform" }),
       expect.objectContaining({ destinationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeiT7dvtqfGaIGMbecfOirT9fg0r9ORLjHJ0obl94uQuexjvg/viewform" }),
     ]));
     expect(doctorate?.applicationGuidance).toHaveLength(3);
+    expect(masters?.applicationFeeDisplay).toBe("US$75");
     expect(masters?.applicationGuidance).toHaveLength(2);
     expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
       expect.objectContaining({ destinationUrl: "https://btaa.org/students/freeapp/introduction" }),

@@ -58,6 +58,10 @@ The Brown Biomedical Engineering Ph.D. profile first displayed a transient loadi
 
 Direct browser navigation rendered the jointly awarded University of Memphis–UTHSC Biomedical Engineering Ph.D. with a credited department laboratory hero, the UTHSC Liaison application route, and a visible “No application fee” card. The profile did not render a waiver card because the official UTHSC application pathway already carries no base application fee.
 
+## Michigan State fee and waiver validation
+
+Michigan State’s Biomedical Engineering Ph.D. profile first showed a transient loading capture, then fully rendered the credited College of Engineering hero, direct degree-family switcher, official US$75 Graduate School fee, and all three conditional doctoral waiver resources. The BTAA FreeApp, targeted-event, and McNair cards remained separately visible, with the doctoral-only BTAA limitation preserved.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.
