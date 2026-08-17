@@ -88,6 +88,26 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Louisiana Tech’s verified Biomedical Engineering Ph.D. and Biomedical-track M.S.E. family", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "louisiana-tech-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "louisiana-tech-engineering-mse-biomedical-track" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$40 non-refundable");
+      expect(program?.applicationUrl).toBe("https://experience.latech.edu/apply");
+      expect(program?.fundingStatus).toBe("available");
+      expect(program?.grePolicy).toBeNull();
+      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.campusImageCredit).toContain("Louisiana Tech University");
+    }
+
+    expect(doctorate?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "louisiana-tech-engineering-mse-biomedical-track", degreeType: "masters" }),
+    ]));
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

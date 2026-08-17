@@ -70,6 +70,10 @@ Direct browser navigation rendered the University of Utah Biomedical Engineering
 
 Direct browser navigation rendered the RIT Biomedical and Chemical Engineering Ph.D. with its credited laboratory hero, visible US$65 non-refundable fee, and an eligibility-limited Graduate Admissions card. The panel preserves the automatic current/alumni and military routes and directs all other applicants to Graduate Admissions rather than offering an unsupported general waiver.
 
+## Louisiana Tech degree-family validation
+
+Louisiana Tech’s Biomedical Engineering Ph.D. first displayed the intentional loading surface, then fully rendered its official Biomedical Engineering laboratory hero and Emerald McIntyre credit. The loaded detail showed the direct graduate application, US$40 non-refundable fee, qualified funding treatment, safe English-policy wording, and a degree switcher to the distinct Biomedical Engineering track within the M.S.E.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

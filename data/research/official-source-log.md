@@ -1402,3 +1402,29 @@ Current [University of Utah Graduate Admissions](https://admissions.utah.edu/app
 ## Rochester Institute of Technology Biomedical and Chemical Engineering Ph.D. fee review, August 17, 2026
 
 The official [RIT Graduate Application Instructions](https://www.rit.edu/admissions/graduate/application-instructions) require a non-refundable US$65 graduate application fee. Current RIT students and alumni are exempt after submitting the application. The official [Graduate FAQ](https://www.rit.edu/admissions/graduate/faq) adds an automatic waiver for veterans and active-duty service members and directs other graduate waiver questions to an admissions counselor or gradinfo@rit.edu. The [Biomedical and Chemical Engineering Ph.D. page](https://www.rit.edu/study/biomedical-and-chemical-engineering-phd) confirms it uses RIT's graduate application. This source-backed fee and only these published waiver routes apply to the Ph.D. profile.
+
+## University of Wyoming Chemical Engineering bioengineering-pathway fee review, August 17, 2026
+
+Current official Chemical Engineering and Graduate Admissions pages confirm the M.S. and Ph.D. pathways, but do not state a current application-fee amount or a pathway-specific fee waiver. An older-style international-admissions search result cited a US$50 fee, but the current page itself does not publish that amount. Therefore both Chemical Engineering bioengineering-pathway profiles retain blank fee fields and receive no waiver card rather than importing a stale or program-inapplicable amount.
+
+## University of Pittsburgh Swanson Bioengineering fee review, August 17, 2026
+
+The current Swanson School application and catalog sources confirm that a non-refundable application fee exists for Bioengineering Ph.D., Research M.S., and professional M.S. paths, but do not publish the dollar amount. The current school waiver page continues to state that waiver requests are decided case-by-case based on qualifications and financial need, are not guaranteed, and require unofficial transcripts plus a CV/resume. All three Pittsburgh fee fields therefore remain blank; existing qualified waiver guidance remains appropriate and no fee amount is inferred.
+
+## Washington State University Bioengineering-pathway fee review, August 17, 2026
+
+The Voiland School confirms that both Bioengineering-pathway records use EngineeringCAS. Current Graduate School material lists a US$100 fee only for applications managed by the Graduate School, while it explicitly directs program-managed applications to program-specific requirements. The public EngineeringCAS portal requires account creation and does not display a Washington State program-specific fee. Therefore both WSU fee fields remain blank; applying the central US$100 amount would be unsupported for these program-managed EngineeringCAS paths.
+
+## Scope audit check, August 17, 2026
+
+A live published-record query for titles containing “Biological Engineering” returned zero rows. The directory continues to exclude standalone Biological Engineering degrees; only titles meeting the agreed Biomedical Engineering, Bioengineering, Neuroengineering, Medical Device Engineering, or directly medical-device-related scope may be added.
+
+## Louisiana Tech University Biomedical Engineering Ph.D. and Biomedical-track M.S.E., August 17, 2026
+
+**Published profiles:** Ph.D. in Biomedical Engineering and M.S. in Engineering — Biomedical Engineering Track, Louisiana Tech University, Ruston, Louisiana.
+
+**Pass 1 — degree identity and scope:** Louisiana Tech's current Biomedical Engineering Ph.D. degree page confirms the in-scope doctoral degree. Its current Engineering M.S.E. page explicitly offers a Biomedical Engineering specialization within the M.S. in Engineering; the published master’s title preserves that track distinction rather than implying a standalone BME M.S.
+
+**Pass 2 — admissions, fee, deadlines, and funding:** The current Graduate Admissions page identifies the direct first-time graduate application at https://experience.latech.edu/apply and its quarterly preferred dates. The Finance page states a US$40 non-refundable fee for each US or international graduate application. The Graduate Financial Assistance page qualifies research and teaching assistantships as competitive and funding-dependent. Current source material does not publish a degree-specific GRE requirement, Duolingo policy, or numeric English threshold, so those facts are not invented.
+
+**Pass 3 — presentation provenance:** The shared credited hero is an official Louisiana Tech Biomedical Engineering laboratory photograph, credited in embedded image metadata to Emerald McIntyre/Louisiana Tech University. It was uploaded to managed storage and paired with an image-source row for each degree profile.
