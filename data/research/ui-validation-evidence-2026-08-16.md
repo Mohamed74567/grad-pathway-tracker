@@ -50,6 +50,10 @@ The offset-160 audit timed out on `https://bu-eng.cas.myliaison.com/`, but direc
 
 The current Brown Graduate School International Applicants page explicitly states that it does not accept the Duolingo English proficiency test, names TOEFL and IELTS as accepted tests, and describes five years of guaranteed doctoral support. The companion language-proficiency page lists a TOEFL total of 90 before January 21, 2026 or 4.5 on the revised scale afterward, with an IELTS recommended minimum overall band score of 7. Direct browser navigation then rendered the refreshed Brown Biomedical Engineering Sc.M. profile with its credited School of Engineering laboratory hero, April 15 BME fall guidance, optional GRE, no-Duolingo policy, revised English thresholds, funding-available treatment, direct official links, and no unsupported fee card.
 
+## Brown doctoral fee and waiver validation
+
+The Brown Biomedical Engineering Ph.D. profile first displayed a transient loading capture. Its loaded state confirmed the doctoral-only US$75 fee, direct degree-family switcher, and Graduate School needs-based waiver card. Validation also surfaced a duplicated Brown waiver card that was consolidated into the existing verified guidance record before checkpointing.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

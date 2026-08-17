@@ -337,6 +337,34 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("keeps Brown BME’s verified US$75 fee and needs-based waiver on the doctoral path only", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const [doctoral, scm, meng] = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-scm" }),
+      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-meng" }),
+    ]);
+
+    expect(doctoral?.applicationFeeDisplay).toBe("US$75");
+    expect(doctoral?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://apply.graduateschool.brown.edu/apply/",
+        details: expect.stringContaining("documented financial need"),
+        details: expect.stringContaining("Additional Information"),
+      }),
+    ]));
+    expect(scm?.applicationFeeDisplay).toBeNull();
+    expect(meng?.applicationFeeDisplay).toBeNull();
+    expect(scm?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
+    ]));
+    expect(meng?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
