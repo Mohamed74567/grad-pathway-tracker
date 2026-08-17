@@ -1,6 +1,6 @@
 # Directory-wide QA coverage report
 
-**Audit date:** August 16, 2026
+**Audit date:** August 17, 2026
 
 ## Scope and method
 
@@ -10,21 +10,21 @@ The audit covered every published program row in the GradPathway directory. For 
 
 | Audit measure | Result | Interpretation |
 |---|---:|---|
-| Published profiles | 297 | Current published directory size |
+| Published profiles | 289 | Current published directory size after removal of eight out-of-scope standalone Biological Engineering records |
 | Missing three-pass identity source | 0 | Every published profile has identity provenance |
 | Missing three-pass description/program source | 0 | Every published profile has program-context provenance |
 | Missing three-pass image source | 0 | Every published profile has machine-verifiable image provenance |
 | Missing application URL | 0 | Every published profile has a direct application destination |
 | Missing fee field | 38 | Requires thin-snapshot review or explicit source-safe blank treatment. University of South Carolina Biomedical Engineering M.E. now uses the current qualified Graduate School fee source. |
-| Missing GRE field | 45 | Requires thin-snapshot review or explicit source-safe blank treatment |
+| Missing GRE field | 42 | Requires thin-snapshot review or explicit source-safe blank treatment |
 | Missing English field | 0 | All published profiles now have a source-backed English-policy field or qualified program-specific guidance |
-| Missing Duolingo field | 48 | Requires thin-snapshot review; absence is not a claim of non-acceptance. Northwestern M.S./Ph.D., OHSU Ph.D., Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng., University of South Carolina’s Biomedical Engineering Ph.D./M.S./M.E., University of South Dakota’s Biomedical Engineering Ph.D. plus two M.S. profiles, Johns Hopkins BME M.S.E., Penn State’s BME Ph.D./thesis M.S., and UC Irvine’s BME M.S./Ph.D. were refreshed from current official sources. Johns Hopkins BME Ph.D. remains blank because its School of Medicine materials do not publish an explicit DET policy. |
+| Missing Duolingo field | 39 | Requires thin-snapshot review; absence is not a claim of non-acceptance. The completed cohorts include Northwestern M.S./Ph.D., OHSU Ph.D., Colorado State’s Bioengineering Ph.D./M.S. plus Biomedical Engineering M.Eng., University of South Carolina’s Biomedical Engineering Ph.D./M.S./M.E., University of South Dakota’s Biomedical Engineering Ph.D. plus two M.S. profiles, Johns Hopkins BME M.S.E., Penn State’s BME Ph.D./thesis M.S., UC Irvine’s BME M.S./Ph.D., Stony Brook BME M.S./Ph.D., and Texas A&M BME M.S./Ph.D. Johns Hopkins BME Ph.D. remains blank because its School of Medicine materials do not publish an explicit DET policy. |
 | Funding marked not stated | 38 | Requires source review or documented non-commitment |
-| No deadline row | 47 | Requires deadline review or documented absence of a current program deadline |
+| No deadline row | 46 | Requires deadline review or documented absence of a current program deadline |
 
 ## Conclusion
 
-The directory-wide provenance gate is satisfied for all 297 published profiles: no published profile is missing a three-pass identity, program-context, or image source, and all published profiles have a direct application URL. The English-policy remediation pass is now complete with zero published profiles missing English treatment. The full 419-URL official-link audit is also complete; source-side timeouts, access controls, and institution-owned redirects were manually distinguished from confirmed broken destinations before any replacement. The remaining quality work is not a provenance failure; it is the separate thin-admission-snapshot queue shown above. Those fields must be backfilled only from current official sources, and unsupported facts must remain blank or explicitly not stated.
+The directory-wide provenance gate is satisfied for all 289 published profiles: no published profile is missing a three-pass identity, program-context, or image source, and all published profiles have a direct application URL. The English-policy remediation pass is complete with zero published profiles missing English treatment. The full 419-URL official-link audit is also complete; source-side timeouts, access controls, and institution-owned redirects were manually distinguished from confirmed broken destinations before any replacement. The current source-backed application-help layer covers eight profiles with fee-waiver information and one profile with verified cross-degree consideration. The remaining quality work is not a provenance failure; it is the separate thin-admission-snapshot queue shown above. Those fields must be backfilled only from current official sources, and unsupported facts must remain blank or explicitly not stated.
 
 ## Remediation order
 

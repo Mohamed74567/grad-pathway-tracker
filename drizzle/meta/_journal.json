@@ -50,6 +50,20 @@
       "when": 1786564455214,
       "tag": "0006_workable_fallen_one",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1786964727260,
+      "tag": "0007_reflective_moondragon",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1786964923060,
+      "tag": "0008_loud_kulan_gath",
+      "breakpoints": true
     }
   ]
 }

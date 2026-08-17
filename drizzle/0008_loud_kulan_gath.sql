@@ -1,0 +1,1 @@
+ALTER TABLE `programApplicationGuidance` MODIFY COLUMN `guidanceType` enum('fee_waiver_code','fee_waiver_contact','fee_waiver_session','fee_waiver_form','cross_degree_consideration') NOT NULL;

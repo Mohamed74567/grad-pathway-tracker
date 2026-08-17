@@ -1256,3 +1256,39 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official source:** UC Irvine Biomedical Engineering [Admission Requirements](https://engineering.uci.edu/dept/bme/graduate/prospective/admission-requirements), cross-checked against current Graduate Division application guidance.
 
 **Verified treatment:** The BME graduate page explicitly permits **TOEFL or IELTS** and sets BME-specific higher thresholds with waiver context. The current UCI Graduate Division page also defines approved graduate English tests as TOEFL or IELTS. Both BME profiles now carry the qualified no-Duolingo treatment with three-pass source provenance.
+
+## Stony Brook University Biomedical Engineering M.S. and Ph.D. — Duolingo policy refresh, August 17, 2026
+
+**Programs:** M.S. in Biomedical Engineering (ID 1350002) and Ph.D. in Biomedical Engineering (ID 1350001).
+
+**Official sources:** [Stony Brook Graduate School International Student Requirements](https://www.stonybrook.edu/grad/life-at-sbu/international-students.html) and the BME [How to Apply](https://www.stonybrook.edu/commcms/bme/graduate/admissions.php) page.
+
+**Verified treatment:** The central Graduate School page expressly states that **Duolingo will no longer be accepted after Spring 2025**. The BME page corroborates current degree-specific TOEFL/IELTS thresholds, exemptions, no-GRE treatment, and doctoral funding context. Both BME profiles now show the source-backed no-Duolingo policy with three-pass provenance.
+
+## Scope correction — Biological Engineering records removed, August 17, 2026
+
+At the owner’s explicit direction, standalone **Biological Engineering** degree records were removed from the published directory because that title falls outside the tracker’s intended Biomedical Engineering, Bioengineering, Neuroengineering, and directly medical-device-related scope. The eight removed records were MIT; University of Hawaiʻi at Mānoa; University of Idaho (Ph.D., M.S., M.Engr.); and Utah State University (Ph.D., M.S., M.E.). A database check confirmed that none had a saved personal application, so the removal did not delete or orphan user progress. This scope rule applies prospectively to discovery and publication.
+
+## Ohio University Biomedical Engineering M.S. — fee-waiver guidance source set, August 17, 2026
+
+The current official [Biomedical Engineering M.S. page](https://www.ohio.edu/engineering/chemical/graduate/biomedical-engineering) states that applicants with good English scores and B.S. grades are entitled to an application-fee waiver without a financial-hardship claim, and directs them to contact **Doug Goetz** at `goetzd@ohio.edu` to receive it. The central [Graduate Degree-Seeking Application](https://www.ohio.edu/graduate/apply/degree-seeking) page corroborates that programs may offer case-by-case waivers and separately documents the McNair Scholars email-request process before payment. These support a program-specific official fee-waiver contact card and a central McNair waiver-request card; neither source publishes an active public waiver code or admissions-session requirement.
+
+## University of Florida Biomedical Engineering Ph.D. — cross-degree and fee-waiver guidance, August 17, 2026
+
+The current official [UF BME Graduate Admissions page](https://bme.ufl.edu/admissions/graduate-admissions/) explicitly states that **Ph.D. applicants are automatically considered for the master’s program**, so they do not need to apply to both; it also explains that all MS/ME applications enter one master’s pool. The same official page publishes a **Fall 2026 Ph.D. Fee Waiver Application** link. Both records were added to the new application-guidance table with three verification passes, scoped only to the BME Ph.D. profile and preserving the M.S. profile’s separate admissions facts.
+
+## Virginia Commonwealth University Biomedical Engineering M.S./Ph.D. — fee-waiver guidance, August 17, 2026
+
+VCU College of Engineering’s current [Graduate Admissions FAQ](https://egr.vcu.edu/future-students/graduate/faq/) directs graduate applicants to its official **Application Fee Waiver Request form**, specifies that approved waivers appear in the application portal within five business days, and states that email and duplicate requests are not considered. The form was added as source-backed fee-waiver guidance to both published VCU Biomedical Engineering M.S. and Ph.D. profiles with three verification passes.
+
+## University of Pittsburgh Swanson Bioengineering profiles — fee-waiver guidance, August 17, 2026
+
+The current official [Swanson School Graduate Applications page](https://www.engineering.pitt.edu/academics/graduateadmissions/graduate-applications/) confirms that application fee-waiver requests are reviewed case by case on qualifications and financial need, that unofficial transcripts plus a CV/résumé are needed, and that approval is not an admission offer. Its official request form was added to the published Bioengineering Ph.D., research M.S., and professional neural-engineering M.S. profiles with three verification passes.
+
+## University of Virginia Biomedical Engineering M.S./M.E./Ph.D. — no-fee policy validation, August 17, 2026
+
+The current [UVA BME application page](https://engineering.virginia.edu/department/biomedical-engineering/apply/apply-bme) and [UVA Engineering graduate admissions FAQ](https://engineering.virginia.edu/graduate-study/future-grad-students/graduate-admission/graduate-admissions-frequently-asked-questions) both confirm that there is **no application fee for 2027 admission** to UVA Engineering graduate programs, with no code required. All three published UVA BME records already carry this source-backed no-fee fact, so no conditional fee-waiver panel was added.
+
+## Texas A&M Biomedical Engineering M.S./Ph.D. — Duolingo policy, August 17, 2026
+
+The current [Texas A&M Engineering language-requirements page](https://engineering.tamu.edu/admissions-and-aid/graduate-admissions/language-requirements.html) identifies TOEFL or IELTS as the English evidence for applicable international engineering applicants. The current [BME Graduate Admissions page](https://engineering.tamu.edu/biomedical/admissions-and-aid/graduate-admissions/index.html) directs BME applicants to this Engineering requirement. Because the official department/college requirement identifies only TOEFL and IELTS, both published BME M.S. and Ph.D. records now show a source-backed no-Duolingo treatment without inventing a score threshold.

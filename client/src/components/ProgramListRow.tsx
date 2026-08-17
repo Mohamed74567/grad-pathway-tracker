@@ -17,6 +17,7 @@ export type DirectoryListProgram = {
   duolingoPolicy?: string | null;
   admissionFactsSourceLabel?: string | null;
   admissionFactsSourceUrl?: string | null;
+  degreeOfferings?: Array<"phd" | "masters">;
   deadlines?: Array<{ deadlineDate: Date | string | null; deadlineLabel?: string | null; academicCycle?: string | null }>;
 };
 
@@ -37,9 +38,10 @@ function signalText(value: string | null | undefined, fallback: string) {
 
 export function ProgramListRow({ program, onSave, saved }: { program: DirectoryListProgram; onSave?: (id: number) => void; saved?: boolean }) {
   const degreeLabel = program.degreeType === "phd" ? "PhD" : "Master’s";
+  const offersBothDegrees = program.degreeOfferings?.includes("phd") && program.degreeOfferings?.includes("masters");
   return <article className="program-list-row surface group grid gap-4 p-4 sm:p-5 lg:grid-cols-[minmax(18rem,1.6fr)_minmax(9rem,.75fr)_minmax(14rem,1.1fr)_minmax(9rem,.65fr)_auto] lg:items-center">
     <div className="min-w-0">
-      <div className="flex flex-wrap items-center gap-2"><span className={`rounded-full px-2.5 py-1 font-mono-ui text-[0.61rem] font-bold uppercase tracking-[.14em] ${program.degreeType === "phd" ? "bg-violet-100 text-violet-800" : "bg-teal-100 text-teal-800"}`}>{degreeLabel}</span><span className="font-mono-ui text-[0.61rem] uppercase tracking-wide text-slate-400">{program.subfield}</span></div>
+      <div className="flex flex-wrap items-center gap-2"><span className={`rounded-full px-2.5 py-1 font-mono-ui text-[0.61rem] font-bold uppercase tracking-[.14em] ${program.degreeType === "phd" ? "bg-violet-100 text-violet-800" : "bg-teal-100 text-teal-800"}`}>{degreeLabel}</span>{offersBothDegrees ? <span className="rounded-full bg-slate-100 px-2.5 py-1 font-mono-ui text-[0.61rem] font-bold uppercase tracking-[.11em] text-slate-600">Offers PhD + Master’s</span> : null}<span className="font-mono-ui text-[0.61rem] uppercase tracking-wide text-slate-400">{program.subfield}</span></div>
       <h2 className="mt-2 truncate text-base font-extrabold tracking-tight text-slate-950 sm:text-lg">{program.universityName}</h2>
       <p className="mt-0.5 truncate text-sm text-slate-600">{program.programName}</p>
       <p className="mt-2 flex items-center gap-1 text-xs text-slate-500"><MapPin className="h-3.5 w-3.5 text-violet-500" />{program.city}, {program.state}</p>

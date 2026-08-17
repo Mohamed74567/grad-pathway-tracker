@@ -36,6 +36,13 @@ export const sourceFields = [
   "ranking",
   "image",
 ] as const;
+export const applicationGuidanceTypes = [
+  "fee_waiver_code",
+  "fee_waiver_contact",
+  "fee_waiver_session",
+  "fee_waiver_form",
+  "cross_degree_consideration",
+] as const;
 export const applicationStatuses = ["researching", "applied", "interview", "offer", "accepted", "rejected"] as const;
 export const documentTypes = ["cv", "statement", "transcript", "test_scores", "application_fee", "writing_sample", "other"] as const;
 export const recommenderStatuses = ["not_requested", "requested", "received"] as const;
@@ -98,6 +105,28 @@ export const programSources = mysqlTable(
     notes: text("notes"),
   },
   table => [uniqueIndex("program_source_field_url_idx").on(table.programId, table.field, table.sourceUrl)],
+);
+
+/**
+ * Optional application help appears only when a university explicitly
+ * publishes a waiver code, waiver form, eligible admissions session, or a
+ * cross-degree consideration relationship.
+ */
+export const programApplicationGuidance = mysqlTable(
+  "programApplicationGuidance",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    programId: int("programId").notNull(),
+    guidanceType: mysqlEnum("guidanceType", applicationGuidanceTypes).notNull(),
+    title: varchar("title", { length: 255 }).notNull(),
+    details: text("details"),
+    destinationUrl: varchar("destinationUrl", { length: 1024 }),
+    sourceUrl: varchar("sourceUrl", { length: 1024 }).notNull(),
+    sourceTitle: varchar("sourceTitle", { length: 255 }).notNull(),
+    verificationPasses: int("verificationPasses").default(1).notNull(),
+    checkedAt: timestamp("checkedAt").defaultNow().notNull(),
+  },
+  table => [uniqueIndex("program_guidance_type_url_idx").on(table.programId, table.guidanceType, table.sourceUrl)],
 );
 
 export const programDeadlines = mysqlTable("programDeadlines", {

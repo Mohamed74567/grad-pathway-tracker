@@ -327,3 +327,21 @@ A full-page managed preview loaded the Penn State Biomedical Engineering thesis 
 UCI’s live Biomedical Engineering Admission Requirements page was extracted from the official source. It gives the degree-specific TOEFL-or-IELTS acceptance rule, BME thresholds, and waiver context; the current Graduate Division page corroborates TOEFL/IELTS as its approved graduate tests. The M.S. and Ph.D. now present source-backed no-Duolingo treatment with matching three-pass provenance. One public profile will be visually checked in the next validation pass.
 
 A full-page managed preview loaded the UC Irvine Biomedical Engineering M.S. profile with a credited official laboratory hero. The admission snapshot visibly displayed: “Not accepted: UC Irvine Biomedical Engineering requires TOEFL or IELTS for applicable international applicants; documented waiver rules apply.” It also showed the current February 1, 2027 M.S. deadline and qualified fee treatment, confirming that the degree-specific English-policy update renders accurately.
+
+## Admissions snapshot refresh — Stony Brook Biomedical Engineering M.S. and Ph.D.
+
+The current Stony Brook Graduate School international-requirements page was extracted from the official source. It explicitly states that Duolingo is no longer accepted after Spring 2025; the BME graduate admissions page corroborates degree-specific TOEFL/IELTS standards. Both BME records were updated with three-pass provenance. One public profile will be visually checked in the next validation pass.
+
+A full-page managed preview loaded the Stony Brook Biomedical Engineering M.S. profile with credited official imagery. Its admission snapshot visibly displayed: “Not accepted: Stony Brook no longer accepts Duolingo for graduate admission after Spring 2025; TOEFL/IELTS and published exemptions apply.” This confirms the directly stated Graduate School policy renders correctly with the related English-test card and official links.
+
+## Application guidance validation — Ohio University Biomedical Engineering M.S.
+
+A full-page managed preview loaded the Ohio University Biomedical Engineering M.S. profile with the existing source-attributed admission snapshot and a new **Fee-waiver help** panel. The panel visibly rendered two official cards: the program-specific departmental waiver request with its official source, and the McNair Scholars request path with its official Graduate College source. The cards link only to the documented official contact/information routes; no waiver code or session requirement is implied.
+
+## University-level degree grouping and pathway validation
+
+Direct browser inspection of the loaded University of Miami Biomedical Engineering M.S. profile confirmed the new university-level degree selector lists separate Ph.D., BME M.S., and Neural Engineering M.S. options; the selected degree retains its own application route and admissions snapshot. Direct browser inspection of the loaded University of Florida Biomedical Engineering Ph.D. profile confirmed the selector lists Ph.D. and M.S. options, while the source-backed **Application pathway** panel states that a UF BME Ph.D. application is automatically considered for the master’s program. The same loaded view showed the official Fall 2026 Ph.D. fee-waiver application link in **Fee-waiver help**.
+
+## Fee-waiver guidance validation
+
+Direct browser inspection confirmed that the University of Pittsburgh Bioengineering Ph.D. profile renders the Swanson School case-by-case fee-waiver request with its financial-need, transcript, résumé, and non-admission qualifications. Direct browser inspection also confirmed that the Brown Biomedical Engineering Ph.D. profile renders the Graduate School needs-based request instructions, shows the required supporting-material qualification, and exposes the official application destination; its degree selector retains separate M.Eng. and Sc.M. records.

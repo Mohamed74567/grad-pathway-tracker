@@ -5,6 +5,7 @@ import {
   applicationDocuments,
   InsertUser,
   legacyApplicationRecords,
+  programApplicationGuidance,
   programDeadlines,
   programs,
   recommenders,
@@ -98,8 +99,22 @@ export async function getDirectoryPrograms(filters: DirectoryFilters = {}) {
   }
   const records = await db.select().from(programs).where(and(...conditions)).orderBy(asc(programs.universityName), asc(programs.degreeType));
   if (records.length === 0) return [];
-  const deadlines = await db.select().from(programDeadlines).where(inArray(programDeadlines.programId, records.map(record => record.id)));
-  return records.map(record => ({ ...record, deadlines: deadlines.filter(deadline => deadline.programId === record.id) }));
+  const [deadlines, degreeRows] = await Promise.all([
+    db.select().from(programDeadlines).where(inArray(programDeadlines.programId, records.map(record => record.id))),
+    db.select({ universityName: programs.universityName, department: programs.department, degreeType: programs.degreeType })
+      .from(programs)
+      .where(eq(programs.isPublished, true)),
+  ]);
+  const degreeOfferingsByDepartment = new Map<string, Array<"phd" | "masters">>();
+  for (const item of degreeRows) {
+    const key = `${item.universityName}::${item.department}`;
+    degreeOfferingsByDepartment.set(key, Array.from(new Set([...(degreeOfferingsByDepartment.get(key) ?? []), item.degreeType])));
+  }
+  return records.map(record => ({
+    ...record,
+    deadlines: deadlines.filter(deadline => deadline.programId === record.id),
+    degreeOfferings: degreeOfferingsByDepartment.get(`${record.universityName}::${record.department}`) ?? [record.degreeType],
+  }));
 }
 
 export async function getDirectoryFacets() {
@@ -119,8 +134,15 @@ export async function getProgramBySlug(slug: string) {
   const programRows = await db.select().from(programs).where(eq(programs.slug, slug)).limit(1);
   const program = programRows[0];
   if (!program) return undefined;
-  const deadlines = await db.select().from(programDeadlines).where(eq(programDeadlines.programId, program.id)).orderBy(asc(programDeadlines.deadlineDate));
-  return { ...program, deadlines };
+  const [deadlines, degreeOptions, applicationGuidance] = await Promise.all([
+    db.select().from(programDeadlines).where(eq(programDeadlines.programId, program.id)).orderBy(asc(programDeadlines.deadlineDate)),
+    db.select({ id: programs.id, slug: programs.slug, programName: programs.programName, degreeType: programs.degreeType, officialUrl: programs.officialUrl, applicationUrl: programs.applicationUrl })
+      .from(programs)
+      .where(and(eq(programs.universityName, program.universityName), eq(programs.department, program.department), eq(programs.isPublished, true)))
+      .orderBy(asc(programs.degreeType), asc(programs.programName)),
+    db.select().from(programApplicationGuidance).where(eq(programApplicationGuidance.programId, program.id)).orderBy(asc(programApplicationGuidance.guidanceType)),
+  ]);
+  return { ...program, deadlines, degreeOptions, applicationGuidance };
 }
 
 export async function getApplicationsForUser(userId: number) {
