@@ -74,6 +74,10 @@ Direct browser navigation rendered the RIT Biomedical and Chemical Engineering P
 
 Louisiana Tech’s Biomedical Engineering Ph.D. first displayed the intentional loading surface, then fully rendered its official Biomedical Engineering laboratory hero and Emerald McIntyre credit. The loaded detail showed the direct graduate application, US$40 non-refundable fee, qualified funding treatment, safe English-policy wording, and a degree switcher to the distinct Biomedical Engineering track within the M.S.E.
 
+## North Carolina A&T Bioengineering M.S. validation
+
+Two immediate public-profile captures showed the intentional “Loading verified record…” state for the newly published North Carolina A&T Bioengineering M.S. record. After a fresh development-service session, the loaded profile rendered the official Bioengineering laboratory hero with North Carolina A&T credit, US$60 fee, general-deadline caveat, central TOEFL/IELTS/PTE and Duolingo treatment, qualified funding, direct application link, and no unsupported GRE claim.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

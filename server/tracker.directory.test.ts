@@ -428,6 +428,20 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns North Carolina A&T’s verified Bioengineering M.S. admission snapshot", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "north-carolina-at-bioengineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$60");
+    expect(program?.applicationUrl).toBe("https://aggieadmissions.ncat.edu/graduateadmissions");
+    expect(program?.englishTestPolicy).toContain("TOEFL iBT 80");
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 115");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.campusImageCredit).toContain("North Carolina A&T State University");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

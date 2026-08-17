@@ -1428,3 +1428,19 @@ A live published-record query for titles containing “Biological Engineering”
 **Pass 2 — admissions, fee, deadlines, and funding:** The current Graduate Admissions page identifies the direct first-time graduate application at https://experience.latech.edu/apply and its quarterly preferred dates. The Finance page states a US$40 non-refundable fee for each US or international graduate application. The Graduate Financial Assistance page qualifies research and teaching assistantships as competitive and funding-dependent. Current source material does not publish a degree-specific GRE requirement, Duolingo policy, or numeric English threshold, so those facts are not invented.
 
 **Pass 3 — presentation provenance:** The shared credited hero is an official Louisiana Tech Biomedical Engineering laboratory photograph, credited in embedded image metadata to Emerald McIntyre/Louisiana Tech University. It was uploaded to managed storage and paired with an image-source row for each degree profile.
+
+## North Carolina A&T State University M.S. in Bioengineering preliminary reconciliation, August 17, 2026
+
+The current official [M.S. in Bioengineering page](https://www.ncat.edu/coe/departments/cbbe/graduate-program/ms-bioengineering.php) confirms a two-year, in-scope master’s program for science or engineering bachelor’s graduates, focused on biomaterials/biomechanics and bioimaging/biosignals/biosensors. The current [Graduate Admission Application Instructions](https://www.ncat.edu/admissions/graduate/admission-requirements.php) provide the central application at https://aggieadmissions.ncat.edu/graduateadmissions, a US$60 application fee, and graduate English baselines of TOEFL iBT 80, IELTS 6.0, PTE 75, or Duolingo 115 when evidence is required. The source also confirms online application materials, recommendations, transcripts, and competitive departmental evaluation. Funding, program-specific GRE policy, deadline details, and official image provenance still require separate review before publication.
+
+**Funding and deadlines update:** The College of Engineering’s current financial-support page says GRAs are available to M.S. and Ph.D. students but depend on faculty research areas and grant/funding status; GTAs depend on academic background and course-content familiarity. The central admissions page publishes general dates: Fall Jan. 15 priority funding, May 15 international, and July 1 domestic; Spring Sept. 15 international and Nov. 1 domestic; Summer Apr. 1 domestic if available. These are central general deadlines, so any profile must preserve the stated program-specific caveat.
+
+## North Carolina A&T State University M.S. in Bioengineering publication, August 17, 2026
+
+**Published profile:** M.S. in Bioengineering, Department of Chemical, Biological and Bioengineering, North Carolina A&T State University, Greensboro, North Carolina.
+
+**Pass 1 — identity and scope:** The current official M.S. page confirms a two-year Bioengineering master’s, in scope under the agreed Bioengineering category. The record retains its exact M.S. title and does not claim the newly approved future doctorate is currently an admitting program.
+
+**Pass 2 — admissions and funding:** Central Graduate Admissions publishes the direct application portal, US$60 fee, general annual semester deadlines, and TOEFL/IELTS/PTE/Duolingo baselines. The College of Engineering page qualifies both GRA and GTA availability; research assistantships are funding- and faculty-dependent. No current program-specific GRE requirement is stated, so GRE remains blank.
+
+**Pass 3 — image:** The program page provides the displayed Bioengineering laboratory photo. It is uploaded to managed storage with a visible North Carolina A&T State University credit and a matching three-pass image-source record.
