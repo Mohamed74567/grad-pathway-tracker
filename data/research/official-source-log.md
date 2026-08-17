@@ -1484,3 +1484,13 @@ The existing joint M.S. and Ph.D. profiles were refreshed rather than duplicated
 ## University of Oklahoma Biomedical Engineering M.S. and Ph.D. refresh, August 17, 2026
 
 Current Stephenson BME catalog pages confirm the active M.S. (thesis and non-thesis) and Ph.D. degree structures. The current OU Graduate College Apply page confirms the central US$50 U.S. citizen/permanent-resident / US$100 international fee and explicitly says the Graduate College does not offer application-fee waivers; applicants may check an academic unit separately. Existing profile fee wording is retained, no unsupported waiver card is added, and admission-source attribution now points to the current page. Existing no-GRE, English/DET caveat, funding, direct-application, and imagery facts remain source-backed.
+
+## University of Mississippi M.S. in Engineering Science — Biomedical Engineering Emphasis, August 17, 2026
+
+**Published profile:** University of Mississippi M.S. in Engineering Science with Biomedical Engineering emphasis, Oxford, Mississippi.
+
+**Pass 1 — identity and program scope:** The current official degree page confirms the 30-credit Engineering Science M.S. with a Biomedical Engineering emphasis and distinct coursework, non-thesis project, and thesis routes.
+
+**Pass 2 — admissions:** The Graduate School publishes the direct application URL, US$60 non-refundable processing fee, Biomedical Engineering’s no-GRE status, and Fall April 1 / Spring October 1 deadline guidance. Current central material accepts TOEFL, IELTS, and Duolingo score submissions when required, but it does not confirm a Biomedical Engineering-specific numeric English or Duolingo threshold; those fields therefore remain qualified rather than numeric.
+
+**Pass 3 — funding, waiver, and image:** University source states departmental assistantships with tuition waivers and stipends are available but often limited. The current Graduate School FAQ confines fee waivers to Ronald McNair Scholars; the profile does not promise wider waiver categories. The official M.S. laboratory image was uploaded to managed storage with visible University of Mississippi Biomedical Engineering credit and image provenance.

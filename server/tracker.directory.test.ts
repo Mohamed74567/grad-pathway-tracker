@@ -545,6 +545,27 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Mississippi’s verified Biomedical Engineering M.S. snapshot", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "ole-miss-engineering-science-biomedical-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$60 non-refundable");
+    expect(program?.applicationUrl).toBe("https://gradapply.olemiss.edu/apply/");
+    expect(program?.grePolicy).toContain("Not required");
+    expect(program?.englishTestPolicy).toContain("no Biomedical Engineering-specific minimum confirmed");
+    expect(program?.deadlines[0]?.deadlineLabel).toContain("Fall April 1");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.campusImageCredit).toContain("University of Mississippi Biomedical Engineering");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://gradschool.olemiss.edu/academics-and-admissions/faq/",
+        details: expect.stringContaining("only Ronald McNair Scholars"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
