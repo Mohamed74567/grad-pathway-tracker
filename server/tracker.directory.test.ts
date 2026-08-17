@@ -124,6 +124,24 @@ describe("tracker.directory", () => {
     expect(program?.englishTestPolicy).toContain("revised scale");
   });
 
+  it("returns UNR’s qualified Ph.D. fee-support contact without generalizing it to the master’s path", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-nevada-reno-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-nevada-reno-biomedical-engineering-ms" });
+
+    expect(doctorate?.applicationFeeDisplay).toBe("US$60 domestic / US$95 international");
+    expect(doctorate?.grePolicy).toContain("Official sources conflict");
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:bparvin@unr.edu",
+        details: expect.stringContaining("GRE quantitative 165"),
+      }),
+    ]));
+    expect(masters?.applicationGuidance).toEqual([]);
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

@@ -357,3 +357,7 @@ Direct browser inspection of Southern Illinois University Carbondale Biomedical 
 ## Rose-Hulman application-source validation
 
 Direct browser inspection of Rose-Hulman’s current Graduate Studies Application Requirements page confirmed the current US$75 application fee, February 1 deadline, complete-application funding consideration, and graduate-specific TOEFL/IELTS thresholds. Its institution-linked RHIT Graduate Application route resolves to the live EngineeringCAS portal, which exposes currently open application-cycle account-creation paths. These sources support the newly researched Biomedical Engineering M.S. candidate; no undergraduate English-policy page was used for graduate facts.
+
+## UNM and UNR current-policy validation
+
+Direct browser inspection of the University of New Mexico Biomedical Engineering Ph.D. profile confirmed the refreshed central Graduate/International Admissions policy renders the graduate TOEFL iBT 79/revised-scale 4.5, IELTS 6.5, and DET 105 treatment alongside its existing M.S. sibling option and dated official deadlines; no fee-waiver panel appears. Direct browser inspection of the University of Nevada, Reno Biomedical Engineering Ph.D. profile confirmed current US$60 domestic/US$95 international fee treatment, an explicit current-source GRE conflict notice, DET 115 policy, Ph.D.-only high-qualification fee-support contact, and M.S. degree-family option render visibly.
