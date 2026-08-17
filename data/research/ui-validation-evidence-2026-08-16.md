@@ -90,6 +90,10 @@ Direct browser validation rendered the University of Toledo joint Biomedical Eng
 
 The University of Delaware Biomedical Engineering Ph.D. initially revealed two identical doctoral choices, exposing an inherited duplicate record. The duplicate was consolidated into the established stable profile with no saved personal applications to migrate. A follow-up loaded-state validation showed a single Ph.D. profile, the current US$75 fee, December 15 priority / February 1 final guidance, qualified funding, credited official laboratory image, and the Graduate College’s restricted fee-waiver categories without a general-waiver promise.
 
+## NDSU–UND joint Biomedical Engineering validation
+
+Direct browser validation rendered the joint University of North Dakota–North Dakota State University Biomedical Engineering Ph.D. with its sibling M.S. switcher, updated official NDSU laboratory hero, US$35 non-refundable fee, central TOEFL/IELTS/Duolingo thresholds, qualified funding treatment, and restricted Graduate School waiver request. The panel names only McNair, military/veteran, and Native American categories and explicitly does not promise a general waiver.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

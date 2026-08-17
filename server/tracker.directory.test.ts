@@ -507,6 +507,29 @@ describe("tracker.directory", () => {
     expect(program?.campusImageCredit).toContain("University of Delaware");
   });
 
+  it("returns the refreshed joint NDSU–UND BME fee and limited Graduate School waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const ms = await caller.tracker.directory.bySlug({ slug: "und-ndsu-biomedical-engineering-ms" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "und-ndsu-biomedical-engineering-phd" });
+
+    for (const program of [ms, phd]) {
+      expect(program?.applicationFeeDisplay).toBe("US$35 non-refundable");
+      expect(program?.applicationUrl).toContain("ndsugrad.my.site.com");
+      expect(program?.englishTestPolicy).toContain("TOEFL iBT 71");
+      expect(program?.duolingoPolicy).toContain("105");
+      expect(program?.grePolicy).toBeNull();
+      expect(program?.campusImageCredit).toContain("North Dakota State University");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:ndsu.grad.school@ndsu.edu",
+          details: expect.stringContaining("No general waiver is promised"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
