@@ -612,6 +612,17 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("shows Cal Poly BME M.S. with the CSU graduate application fee without an ineligible waiver claim", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "cal-poly-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$70 non-refundable per CSU campus");
+    expect(program?.applicationUrl).toContain("calstate.edu");
+    expect(program?.grePolicy).toBe("Not required");
+    expect(program?.applicationGuidance).toEqual([]);
+    expect(program?.admissionFactsSourceUrl).toContain("calstate.edu/apply/california-residency-for-tuition-purposes/Pages/graduate-students");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

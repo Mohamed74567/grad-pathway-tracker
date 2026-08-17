@@ -1508,3 +1508,7 @@ The existing University of Vermont BME M.S. and Ph.D. profiles were refreshed ra
 **Pass 2 — admissions:** Current Graduate Admissions pages confirm the direct application portal, US$60 non-refundable fee, rolling domestic review, international closing dates, January 15 Fall and October 1 Spring funding priorities, and central TOEFL/IELTS/PTE thresholds. Program-specific requirements state that GRE is required but waived (though strongly recommended) for cumulative baccalaureate GPA above 3.00. No degree-specific Duolingo rule was published, so it remains blank.
 
 **Pass 3 — funding and image:** The official assistantships page lists both BMEBT degrees for limited competitive graduate assistantships and tells applicants to contact the Graduate Program Director. Current program imagery was uploaded to managed storage with visible UMass Dartmouth Biomedical Engineering and Biotechnology credit. No official graduate fee-waiver opportunity was located, so no waiver card was added.
+
+## Cal Poly San Luis Obispo Biomedical Engineering M.S. fee refresh, August 17, 2026
+
+Cal Poly Biomedical Engineering confirms that external M.S. applicants apply through Cal State Apply, with the program’s current February 1 external deadline and no-GRE policy retained. The CSU Graduate Students page currently states a US$70 non-refundable application fee for each CSU campus. The separate Cal State Apply fee-waiver policy explicitly excludes graduate and credential applicants, so the profile shows the fee but does not add a waiver card or imply eligibility.

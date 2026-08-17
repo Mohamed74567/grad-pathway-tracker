@@ -110,6 +110,10 @@ The first University of Vermont Ph.D. validation exposed an absent master’s sw
 
 Direct browser validation rendered the UMass Dartmouth Biomedical Engineering and Biotechnology Ph.D. with the separate M.S. switcher, credited official laboratory image, direct graduate application, US$60 non-refundable fee, conditional GRE treatment, rolling domestic and international timeline, qualified assistantship treatment, and no Duolingo or fee-waiver claim where the reviewed degree-specific sources did not establish one.
 
+## Cal Poly San Luis Obispo graduate-fee remediation validation
+
+The registered public detail route is `/programs/cal-poly-biomedical-engineering-ms`; a legacy `/program/...` path correctly returns the application’s 404 page. The initial registered-route capture showed the intentional loading state before the asynchronous detail query settled. The program-detail regression caller then returned the updated record and asserted its US$70 non-refundable per-CSU-campus fee, Cal State Apply application route, no-GRE policy, official CSU graduate-fee source, and no fee-waiver card. The absence of a waiver card is deliberate because the current CSU policy explicitly excludes graduate applicants from Cal State Apply application-fee waivers.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.
