@@ -142,6 +142,23 @@ describe("tracker.directory", () => {
     expect(masters?.applicationGuidance).toEqual([]);
   });
 
+  it("returns Duke’s cycle-sensitive Graduate School fee-waiver steps for both BME degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "duke-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "duke-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradschool.duke.edu/admissions/application-instructions/application-fee/",
+          details: expect.stringContaining("not issuing waivers for the current cycle"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
