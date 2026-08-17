@@ -671,6 +671,27 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Stanford’s distinct Bioengineering M.S. with source-bounded funding and waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "stanford-bioengineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$125 per graduate-program application (non-refundable)");
+    expect(program?.grePolicy).toBe("Not required");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual([]);
+    expect(program?.campusImageCredit).toBe("Stanford School of Engineering");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://gradadmissions.stanford.edu/fee-waiver-request-form",
+        details: expect.stringContaining("not guaranteed"),
+      }),
+    ]));
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "stanford-bioengineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
