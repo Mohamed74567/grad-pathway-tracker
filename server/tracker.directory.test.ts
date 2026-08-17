@@ -392,6 +392,22 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns RIT’s US$65 doctoral fee and eligibility-limited graduate waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "rit-biomedical-chemical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$65 non-refundable");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:gradinfo@rit.edu",
+        details: expect.stringContaining("veterans or active-duty service members"),
+        details: expect.stringContaining("no general waiver is promised"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
