@@ -692,6 +692,21 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns ASU’s distinct IMPACT medical-technology M.S. with source-bounded funding", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "arizona-state-impact-medical-patient-care-technologies-ms" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$70 IMPACT program application");
+    expect(program?.fundingStatus).toBe("not_applicable");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.deadlines[0]?.deadlineLabel).toContain("December 15");
+    expect(program?.campusImageCredit).toContain("Arizona State University");
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "arizona-state-biomedical-engineering-ms", degreeType: "masters" }),
+      expect.objectContaining({ slug: "arizona-state-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
