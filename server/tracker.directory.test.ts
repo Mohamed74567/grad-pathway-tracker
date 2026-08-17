@@ -743,6 +743,22 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Saint Louis University’s distinct Biomedical Engineering M.S. with its Ph.D. sibling and source-safe admissions fields", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "saint-louis-university-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("No application fee through the direct SLU graduate application");
+    expect(program?.applicationUrl).toBe("https://gradapply.slu.edu/apply/");
+    expect(program?.duolingoPolicy).toContain("110");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.deadlines).toEqual([]);
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.campusImageCredit).toBe("Saint Louis University Biomedical Engineering");
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "saint-louis-university-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
