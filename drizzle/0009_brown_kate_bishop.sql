@@ -1,0 +1,2 @@
+ALTER TABLE `programApplicationGuidance` DROP INDEX `program_guidance_type_url_idx`;--> statement-breakpoint
+ALTER TABLE `programApplicationGuidance` ADD CONSTRAINT `program_guidance_type_destination_idx` UNIQUE(`programId`,`guidanceType`,`destinationUrl`);

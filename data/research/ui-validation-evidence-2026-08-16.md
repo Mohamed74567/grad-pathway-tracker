@@ -369,3 +369,7 @@ Direct browser inspection of Duke Biomedical Engineering Ph.D. confirmed the Gra
 ## UCF and Case Western source-qualified fee guidance validation
 
 Direct browser inspection of University of Central Florida Biomedical Engineering Ph.D. confirmed the US$30 Graduate Studies fee and the CECS Ph.D.-only waiver panel. Direct browser inspection of Case Western Reserve Biomedical Engineering Ph.D. confirmed its US$50 non-refundable fee, current no-Duolingo policy, linked M.S. sibling option, and source-qualified hardship panel. The Case Western card is visibly restricted to a program-specific pre-submission inquiry for severe financial hardship and explicitly states that a waiver is neither shared nor guaranteed.
+
+## Michigan State multiple-guidance validation
+
+A first browser check surfaced that multiple same-type waiver forms shared a source page but only one was retained, revealing that the earlier uniqueness key was too coarse. After the reviewed non-destructive migration changed uniqueness to each resource destination and the verified records were restored, a second check of Michigan State Biomedical Engineering Ph.D. visibly rendered all three separate official paths: Ph.D.-only BTAA FreeApp, McNair Scholars, and targeted-conference/event forms. The admission snapshot correctly leaves the base fee blank rather than claiming an unverified amount.

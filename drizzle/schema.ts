@@ -126,7 +126,7 @@ export const programApplicationGuidance = mysqlTable(
     verificationPasses: int("verificationPasses").default(1).notNull(),
     checkedAt: timestamp("checkedAt").defaultNow().notNull(),
   },
-  table => [uniqueIndex("program_guidance_type_url_idx").on(table.programId, table.guidanceType, table.sourceUrl)],
+  table => [uniqueIndex("program_guidance_type_destination_idx").on(table.programId, table.guidanceType, table.destinationUrl)],
 );
 
 export const programDeadlines = mysqlTable("programDeadlines", {
