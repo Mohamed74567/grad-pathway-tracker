@@ -759,6 +759,28 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns SDSU’s Bioengineering M.S. and joint doctoral pathways without merging their admissions rules", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "san-diego-state-bioengineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "san-diego-state-joint-engineering-science-bioengineering-phd" });
+
+    expect(masters?.applicationFeeDisplay).toBe("US$70 non-refundable Cal State Apply fee");
+    expect(masters?.duolingoPolicy).toContain("105");
+    expect(masters?.fundingStatus).toBe("not_stated");
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_contact", destinationUrl: "mailto:admissions@sdsu.edu" }),
+    ]));
+
+    expect(doctorate?.applicationFeeDisplay).toContain("UC San Diego JDP application fee waived");
+    expect(doctorate?.grePolicy).toContain("Not required");
+    expect(doctorate?.duolingoPolicy).toBe("Not accepted for the Engineering Joint Doctoral Program.");
+    expect(doctorate?.fundingStatus).toBe("available");
+    expect(doctorate?.deadlines[0]?.deadlineLabel).toContain("December 1, 2026");
+    expect(doctorate?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "san-diego-state-bioengineering-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
