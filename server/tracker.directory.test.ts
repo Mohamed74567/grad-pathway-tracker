@@ -74,6 +74,20 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns the separately verified SIU Biomedical Engineering doctorate with its master’s sibling option", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "southern-illinois-university-carbondale-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 115");
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        degreeType: "masters",
+        slug: "southern-illinois-university-carbondale-biomedical-engineering-ms",
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
