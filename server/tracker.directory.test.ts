@@ -114,6 +114,16 @@ describe("tracker.directory", () => {
     expect(program?.campusImageCredit).toContain("Rose-Hulman");
   });
 
+  it("returns UNM’s current graduate English and Duolingo policy for Biomedical Engineering", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-new-mexico-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toContain("105 minimum");
+    expect(program?.englishTestPolicy).toContain("TOEFL iBT 79");
+    expect(program?.englishTestPolicy).toContain("revised scale");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
