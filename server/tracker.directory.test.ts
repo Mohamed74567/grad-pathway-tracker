@@ -154,6 +154,16 @@ describe("tracker.directory", () => {
     expect(program?.englishTestPolicy).toContain("DET");
   });
 
+  it("returns Cleveland State Biomedical Engineering M.S. with the current central DET minimum", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "cleveland-state-biomedical-engineering-ms" });
+
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 110");
+    expect(program?.duolingoPolicy).toContain("at least 95 in each section");
+    expect(program?.duolingoPolicy).toContain("program-specific requirements may apply");
+  });
+
   it("returns the University of Alabama’s separately verified Biomedical Engineering M.S. with bounded fee exemptions", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
