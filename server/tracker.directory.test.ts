@@ -590,6 +590,28 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UMass Dartmouth’s verified BMEBT M.S. and Ph.D. family without an inferred Duolingo policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const ms = await caller.tracker.directory.bySlug({ slug: "umass-dartmouth-biomedical-engineering-biotechnology-ms" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "umass-dartmouth-biomedical-engineering-biotechnology-phd" });
+
+    for (const program of [ms, phd]) {
+      expect(program?.applicationFeeDisplay).toBe("US$60 non-refundable");
+      expect(program?.applicationUrl).toContain("apply.umassd.edu");
+      expect(program?.grePolicy).toContain("waived");
+      expect(program?.englishTestPolicy).toContain("TOEFL iBT 72");
+      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.fundingStatus).toBe("available");
+      expect(program?.applicationGuidance).toEqual([]);
+      expect(program?.campusImageCredit).toContain("University of Massachusetts Dartmouth Biomedical Engineering and Biotechnology");
+    }
+
+    expect(phd?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "umass-dartmouth-biomedical-engineering-biotechnology-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

@@ -106,6 +106,10 @@ Direct browser validation rendered the University of Mississippi M.S. in Enginee
 
 The first University of Vermont Ph.D. validation exposed an absent master’s switcher caused by inconsistent family metadata. After alignment, the loaded profile correctly rendered both Ph.D. and M.S. choices, each with their own official fact snapshot. The doctoral profile also showed the US$65 fee and Graduate College’s explicit case-by-case waiver request, including its 48-business-hour review expectation and no-guarantee boundary.
 
+## UMass Dartmouth Biomedical Engineering and Biotechnology validation
+
+Direct browser validation rendered the UMass Dartmouth Biomedical Engineering and Biotechnology Ph.D. with the separate M.S. switcher, credited official laboratory image, direct graduate application, US$60 non-refundable fee, conditional GRE treatment, rolling domestic and international timeline, qualified assistantship treatment, and no Duolingo or fee-waiver claim where the reviewed degree-specific sources did not establish one.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

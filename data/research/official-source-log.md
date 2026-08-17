@@ -1498,3 +1498,13 @@ Current Stephenson BME catalog pages confirm the active M.S. (thesis and non-the
 ## University of Vermont Biomedical Engineering M.S. and Ph.D. refresh, August 17, 2026
 
 The existing University of Vermont BME M.S. and Ph.D. profiles were refreshed rather than duplicated. Current Graduate College materials confirm the US$65 master’s/doctoral fee, BME rolling Fall/Spring admissions with January 1 and October 1 funding-priority dates, and no-GRE requirement. The Graduate College’s current fee-waiver process is intentionally represented as a case-by-case in-application request: documented hardship, enumerated bridge/affinity programs and events, eligible MSI degree candidates, active-duty/honorably discharged service members, specified UVM affiliates, and certain fellowship-backed international applicants may qualify. The source does not promise approval, so both profiles use a constrained guidance card rather than a generic waiver claim.
+
+## University of Massachusetts Dartmouth Biomedical Engineering and Biotechnology M.S. and Ph.D., August 17, 2026
+
+**Published profiles:** University of Massachusetts Dartmouth M.S. and Ph.D. in Biomedical Engineering and Biotechnology, a joint UMass System program shared with Boston, Lowell, and Worcester/UMass Medical.
+
+**Pass 1 — identity and program scope:** The current UMass Dartmouth degree page confirms both active M.S. and Ph.D. paths, their joint-system structure, interdisciplinary biomedical/biotechnology focus, and distinct curricular requirements.
+
+**Pass 2 — admissions:** Current Graduate Admissions pages confirm the direct application portal, US$60 non-refundable fee, rolling domestic review, international closing dates, January 15 Fall and October 1 Spring funding priorities, and central TOEFL/IELTS/PTE thresholds. Program-specific requirements state that GRE is required but waived (though strongly recommended) for cumulative baccalaureate GPA above 3.00. No degree-specific Duolingo rule was published, so it remains blank.
+
+**Pass 3 — funding and image:** The official assistantships page lists both BMEBT degrees for limited competitive graduate assistantships and tells applicants to contact the Graduate Program Director. Current program imagery was uploaded to managed storage with visible UMass Dartmouth Biomedical Engineering and Biotechnology credit. No official graduate fee-waiver opportunity was located, so no waiver card was added.
