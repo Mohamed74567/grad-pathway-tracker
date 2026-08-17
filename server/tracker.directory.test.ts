@@ -176,6 +176,24 @@ describe("tracker.directory", () => {
     expect(masters?.applicationGuidance).toEqual([]);
   });
 
+  it("returns Case Western’s source-qualified hardship inquiry for both BME degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "case-western-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "case-western-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$50 non-refundable");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:bmestudentaffairs@case.edu",
+          details: expect.stringContaining("not guaranteed"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

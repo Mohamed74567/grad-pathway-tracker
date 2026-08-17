@@ -365,3 +365,7 @@ Direct browser inspection of the University of New Mexico Biomedical Engineering
 ## Duke and UCF fee-waiver panel validation
 
 Direct browser inspection of Duke Biomedical Engineering Ph.D. confirmed the Graduate School’s conditional fee-waiver panel names the restricted U.S. citizen/permanent-resident eligibility, in-application request sequence, limited capacity, and current-cycle availability caveat. Direct browser inspection of University of Central Florida Biomedical Engineering Ph.D. confirmed the refreshed US$30 non-refundable fee and CECS Ph.D.-only Early Action/Honors Program waiver panel render alongside the M.S. sibling option; the panel does not claim the doctoral opportunity applies to the master’s path.
+
+## UCF and Case Western source-qualified fee guidance validation
+
+Direct browser inspection of University of Central Florida Biomedical Engineering Ph.D. confirmed the US$30 Graduate Studies fee and the CECS Ph.D.-only waiver panel. Direct browser inspection of Case Western Reserve Biomedical Engineering Ph.D. confirmed its US$50 non-refundable fee, current no-Duolingo policy, linked M.S. sibling option, and source-qualified hardship panel. The Case Western card is visibly restricted to a program-specific pre-submission inquiry for severe financial hardship and explicitly states that a waiver is neither shared nor guaranteed.
