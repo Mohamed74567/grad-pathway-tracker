@@ -248,6 +248,24 @@ describe("tracker.directory", () => {
     expect(masters?.applicationGuidance).toEqual([]);
   });
 
+  it("returns University of Kansas Bioengineering fees and a conditional central waiver request for both degrees", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-kansas-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-kansas-bioengineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$65 domestic / US$100 international");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gograd.ku.edu/register/appfee_waiver",
+          details: expect.stringContaining("only some programs review"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

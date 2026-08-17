@@ -381,3 +381,7 @@ Direct browser inspection of The Ohio State University Biomedical Engineering Ph
 ## Northwestern cycle-sensitive waiver-status validation
 
 Direct browser inspection of Northwestern Biomedical Engineering Ph.D. confirmed the US$95 non-refundable fee, current no-Duolingo policy, degree-family switcher, and the Graduate School waiver-status card. The panel visibly preserves the published statement that the cited prior cycle reached its allocation maximum and tells the applicant to check future criteria rather than suggesting that a waiver is currently obtainable.
+
+## University of Kansas conditional-request validation
+
+Direct browser inspection of University of Kansas Bioengineering Ph.D. confirmed the current US$65 domestic / US$100 international fee, Ph.D./M.S./M.Eng. degree-family options, and central Graduate Admissions waiver request panel. The panel correctly says that only some programs review requests, requires Bioengineering selection before submission, and avoids representing a conditional university workflow as a department-funded promise.
