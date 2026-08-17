@@ -45,6 +45,35 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns the current UConn Duolingo policy and fee-waiver contact guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-connecticut-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 110");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        sourceUrl: "https://grad.uconn.edu/admissions/fee-waiver-policy/",
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
+  it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-hawaii-manoa-molecular-biosciences-bioengineering-phd" });
+
+    expect(program?.programName).toBe("Ph.D. in Molecular Biosciences and Bioengineering");
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        degreeType: "masters",
+        slug: "university-of-hawaii-manoa-molecular-biosciences-bioengineering-ms",
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

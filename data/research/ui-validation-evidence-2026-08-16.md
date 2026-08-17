@@ -345,3 +345,7 @@ Direct browser inspection of the loaded University of Miami Biomedical Engineeri
 ## Fee-waiver guidance validation
 
 Direct browser inspection confirmed that the University of Pittsburgh Bioengineering Ph.D. profile renders the Swanson School case-by-case fee-waiver request with its financial-need, transcript, résumé, and non-admission qualifications. Direct browser inspection also confirmed that the Brown Biomedical Engineering Ph.D. profile renders the Graduate School needs-based request instructions, shows the required supporting-material qualification, and exposes the official application destination; its degree selector retains separate M.Eng. and Sc.M. records.
+
+## UConn policy and UH Mānoa MBBE doctoral validation
+
+Direct browser inspection of UConn Biomedical Engineering Ph.D. confirmed the loaded public detail view shows the 110 Duolingo policy, official Graduate School fee-waiver guidance, a credited hero, and degree switching to the separate M.S. profile. Direct browser inspection of the newly published UH Mānoa Molecular Biosciences and Bioengineering Ph.D. confirmed the in-scope doctoral profile loads with its own official application, annual Fall/Spring deadline guidance, source-backed fee/GRE/English/funding cards, a separate M.S. degree option, and a visibly rendered credited UH Mānoa Life Sciences Building hero.
