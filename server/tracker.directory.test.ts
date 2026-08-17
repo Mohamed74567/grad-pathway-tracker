@@ -724,6 +724,24 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Illinois Tech’s Medical Devices and Biomaterials M.S. with current-student waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "illinois-tech-medical-devices-biomaterials-ms" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$100 graduate application fee");
+    expect(program?.grePolicy).toContain("Required: composite 300");
+    expect(program?.englishTestPolicy).toContain("TOEFL iBT 80");
+    expect(program?.duolingoPolicy).toBe("Duolingo English Test 115");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.campusImageCredit).toBe("Illinois Institute of Technology Biomedical Engineering");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        details: expect.stringContaining("current students and alumni"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
