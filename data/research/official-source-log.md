@@ -1248,3 +1248,11 @@ The final offset-410 UW–Milwaukee ApplyGrad candidate redirects to the live of
 **Official source:** [Penn State Biomedical Engineering — How to Apply](https://www.bme.psu.edu/students/graduate/how-to-apply.aspx).
 
 **Verified treatment:** The current program-specific page requires applicable international applicants to submit **TOEFL or IELTS** and publishes its own thresholds and exemption context. Although a general Penn State undergraduate-facing international-admission page lists DET, the Biomedical Engineering graduate page is degree-specific and controls this profile. The two BME profiles now display the qualified no-Duolingo treatment with three-pass provenance rather than borrowing a non-graduate central rule.
+
+## University of California, Irvine Biomedical Engineering M.S. and Ph.D. — Duolingo policy refresh, August 16, 2026
+
+**Programs:** M.S. in Biomedical Engineering (ID 1260002) and Ph.D. in Biomedical Engineering (ID 1260001).
+
+**Official source:** UC Irvine Biomedical Engineering [Admission Requirements](https://engineering.uci.edu/dept/bme/graduate/prospective/admission-requirements), cross-checked against current Graduate Division application guidance.
+
+**Verified treatment:** The BME graduate page explicitly permits **TOEFL or IELTS** and sets BME-specific higher thresholds with waiver context. The current UCI Graduate Division page also defines approved graduate English tests as TOEFL or IELTS. Both BME profiles now carry the qualified no-Duolingo treatment with three-pass source provenance.
