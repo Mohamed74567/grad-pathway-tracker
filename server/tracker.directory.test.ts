@@ -154,6 +154,24 @@ describe("tracker.directory", () => {
     expect(program?.englishTestPolicy).toContain("DET");
   });
 
+  it("returns the University of Alabama’s separately verified Biomedical Engineering M.S. with bounded fee exemptions", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-alabama-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$65 U.S. citizen/permanent resident; US$80 international");
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 120");
+    expect(program?.fundingStatus).toBe("not_stated");
+    expect(program?.deadlines).toEqual([]);
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:gradschool@ua.edu",
+        details: expect.stringContaining("This is not a general fee waiver"),
+      }),
+    ]));
+  });
+
   it("returns UNR’s qualified Ph.D. fee-support contact without generalizing it to the master’s path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
