@@ -639,6 +639,23 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Missouri’s verified Neural Engineering-focused Electrical Engineering M.S.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-missouri-electrical-engineering-neural-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$75 U.S. citizens/permanent residents");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.campusImageCredit).toBe("Mizzou Engineering");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://gradschool.missouri.edu/admissions/apply/application-fees/",
+        details: expect.stringContaining("Missouri-resident"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
