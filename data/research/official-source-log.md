@@ -1444,3 +1444,13 @@ The current official [M.S. in Bioengineering page](https://www.ncat.edu/coe/depa
 **Pass 2 — admissions and funding:** Central Graduate Admissions publishes the direct application portal, US$60 fee, general annual semester deadlines, and TOEFL/IELTS/PTE/Duolingo baselines. The College of Engineering page qualifies both GRA and GTA availability; research assistantships are funding- and faculty-dependent. No current program-specific GRE requirement is stated, so GRE remains blank.
 
 **Pass 3 — image:** The program page provides the displayed Bioengineering laboratory photo. It is uploaded to managed storage with a visible North Carolina A&T State University credit and a matching three-pass image-source record.
+
+## The University of Akron Biomedical Engineering M.S.E. and M.B.E., August 17, 2026
+
+**Published profiles:** M.S. in Biomedical Engineering (M.S.E.) and Master of Biomedical Engineering (M.B.E.), Department of Biomedical Engineering, The University of Akron, Akron, Ohio.
+
+**Pass 1 — degree identity:** The current official Graduate Bulletin confirms distinct Biomedical Engineering M.S.E. and coursework-only M.B.E. paths. The M.S.E. record preserves its thesis/non-thesis structure; the M.B.E. record preserves its coursework-only professional structure.
+
+**Pass 2 — admissions, fee, deadlines, funding:** The current Graduate Admissions page states there is no application or confirmation fee, provides the official graduate application entry route, advises domestic applicants to apply six weeks and international applicants six months before enrollment, and cautions that departments may set internal deadlines. The Bulletin provides the path-specific TOEFL iBT minima (96 M.S.E.; 79 M.B.E.) and no program-specific GRE or Duolingo policy, so those fields remain blank. The current funding page says full-time graduate students may receive 20-hour teaching or research assistantships covering tuition and providing stipends; no award is promised.
+
+**Pass 3 — image:** A current official Department of Biomedical Engineering laboratory image was uploaded to managed storage for both profiles with a visible University of Akron credit and matching three-pass image-source records.

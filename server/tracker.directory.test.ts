@@ -442,6 +442,28 @@ describe("tracker.directory", () => {
     expect(program?.campusImageCredit).toContain("North Carolina A&T State University");
   });
 
+  it("returns University of Akron’s distinct Biomedical Engineering M.S.E. and M.B.E. paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const mse = await caller.tracker.directory.bySlug({ slug: "university-akron-biomedical-engineering-mse" });
+    const mbe = await caller.tracker.directory.bySlug({ slug: "university-akron-biomedical-engineering-mbe" });
+
+    for (const program of [mse, mbe]) {
+      expect(program?.applicationFeeDisplay).toBe("No application fee");
+      expect(program?.applicationUrl).toBe("https://www.uakron.edu/admissions/apply.dot");
+      expect(program?.fundingStatus).toBe("available");
+      expect(program?.grePolicy).toBeNull();
+      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.campusImageCredit).toContain("The University of Akron");
+    }
+
+    expect(mse?.englishTestPolicy).toContain("TOEFL iBT 96");
+    expect(mbe?.englishTestPolicy).toContain("TOEFL iBT 79");
+    expect(mse?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "university-akron-biomedical-engineering-mbe", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
