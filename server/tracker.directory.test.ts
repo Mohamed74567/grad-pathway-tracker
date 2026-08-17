@@ -530,6 +530,21 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Oklahoma’s current central fee and no-central-waiver treatment for both BME degrees", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const ms = await caller.tracker.directory.bySlug({ slug: "university-oklahoma-biomedical-engineering-ms" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-oklahoma-biomedical-engineering-phd" });
+
+    for (const program of [ms, phd]) {
+      expect(program?.applicationFeeDisplay).toContain("US$50 U.S. citizen/permanent resident; US$100 international");
+      expect(program?.admissionFactsSourceUrl).toBe("https://www.ou.edu/gradcollege/apply.html");
+      expect(program?.applicationGuidance).toEqual([]);
+      expect(program?.grePolicy).toContain("Not required");
+      expect(program?.campusImageCredit).toContain("University of Oklahoma");
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
