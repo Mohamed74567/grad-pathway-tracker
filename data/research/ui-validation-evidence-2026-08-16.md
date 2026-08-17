@@ -349,3 +349,7 @@ Direct browser inspection confirmed that the University of Pittsburgh Bioenginee
 ## UConn policy and UH Mānoa MBBE doctoral validation
 
 Direct browser inspection of UConn Biomedical Engineering Ph.D. confirmed the loaded public detail view shows the 110 Duolingo policy, official Graduate School fee-waiver guidance, a credited hero, and degree switching to the separate M.S. profile. Direct browser inspection of the newly published UH Mānoa Molecular Biosciences and Bioengineering Ph.D. confirmed the in-scope doctoral profile loads with its own official application, annual Fall/Spring deadline guidance, source-backed fee/GRE/English/funding cards, a separate M.S. degree option, and a visibly rendered credited UH Mānoa Life Sciences Building hero.
+
+## SIU and George Mason application-guidance validation
+
+Direct browser inspection of Southern Illinois University Carbondale Biomedical Engineering Ph.D. confirmed its separate doctoral profile loads with the M.S. sibling switcher, source-backed US$65 fee, GRE requirement, Duolingo 115 policy, qualified funding card, and credited official BME laboratory hero. Direct browser inspection of George Mason Bioengineering Ph.D. confirmed the newly normalized Fall 2027 fee-waiver panel renders only the department’s published eligibility: submit the official initial form before starting the application and by November 15, 2026; the linked form and source page are visibly available.

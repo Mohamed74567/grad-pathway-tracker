@@ -88,6 +88,21 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "george-mason-bioengineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://masongrad.my.salesforce-sites.com/form/?formid=217762",
+        details: expect.stringContaining("November 15, 2026"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
