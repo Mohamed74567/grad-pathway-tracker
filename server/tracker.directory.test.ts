@@ -172,6 +172,22 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Florida Atlantic’s source-safe Biomedical Engineering M.S. with annual deadlines and qualified assistantship availability", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "florida-atlantic-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBeNull();
+    expect(program?.grePolicy).toBe("Not required.");
+    expect(program?.duolingoPolicy).toContain("Duolingo 110");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ deadlineLabel: "Fall: July 1" }),
+      expect.objectContaining({ deadlineLabel: "Spring: November 1" }),
+      expect.objectContaining({ deadlineLabel: "Summer: April 1" }),
+    ]));
+  });
+
   it("returns UNR’s qualified Ph.D. fee-support contact without generalizing it to the master’s path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
