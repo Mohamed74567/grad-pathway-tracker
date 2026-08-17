@@ -707,6 +707,23 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$75 U.S. citizens/permanent residents");
+    expect(program?.grePolicy).toBe("Not required");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.campusImageCredit).toBe("University of Michigan Biomedical Engineering");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://rackham.umich.edu/admissions/applying/application-fee-and-payment/",
+        details: expect.stringContaining("Student Aid Index"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
