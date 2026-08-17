@@ -102,6 +102,10 @@ Direct browser validation rendered the University of Oklahoma Biomedical Enginee
 
 Direct browser validation rendered the University of Mississippi M.S. in Engineering Science with Biomedical Engineering emphasis with the existing Ph.D. sibling switcher, credited official laboratory hero, US$60 non-refundable fee, no-GRE policy, Fall April 1 / Spring October 1 guidance, and limited funding treatment. The fee-waiver panel names Ronald McNair Scholars only and does not promise a broader pathway.
 
+## University of Vermont fee-waiver and degree-family validation
+
+The first University of Vermont Ph.D. validation exposed an absent master’s switcher caused by inconsistent family metadata. After alignment, the loaded profile correctly rendered both Ph.D. and M.S. choices, each with their own official fact snapshot. The doctoral profile also showed the US$65 fee and Graduate College’s explicit case-by-case waiver request, including its 48-business-hour review expectation and no-guarantee boundary.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

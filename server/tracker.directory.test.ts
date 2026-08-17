@@ -566,6 +566,30 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Vermont’s case-by-case fee-waiver process for both BME degrees", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const ms = await caller.tracker.directory.bySlug({ slug: "university-vermont-biomedical-engineering-ms" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-vermont-biomedical-engineering-phd" });
+
+    for (const program of [ms, phd]) {
+      expect(program?.applicationFeeDisplay).toBe("US$65");
+      expect(program?.grePolicy).toContain("No GRE required");
+      expect(program?.deadlines[0]?.deadlineLabel).toContain("January 1");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://www.uvm.edu/graduate/how-apply",
+          details: expect.stringContaining("Approval is not guaranteed"),
+        }),
+      ]));
+    }
+
+    expect(phd?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "university-vermont-biomedical-engineering-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
