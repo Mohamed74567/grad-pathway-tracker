@@ -1462,3 +1462,17 @@ The current official UToledo program pages confirm two in-scope, distinct gradua
 Official program pages state M.S. students are eligible for teaching/research assistantships, fellowships, and tuition scholarships; Ph.D. students may apply for teaching/research assistantships and University or other fellowships. Current program-specific GRE, numeric English-test, Duolingo, and fee-waiver policies remain unconfirmed and must remain blank or not stated unless another current, path-specific official source is identified. The 2026 College Policies PDF is not text-extractable through the available reader and is not used for numeric test-policy claims.
 
 **Publication outcome:** Published the Bioengineering M.S. and joint Biomedical Engineering Ph.D. with the central US$45 domestic / US$75 international non-refundable fee, rolling admission, current Fall Jan. 15/Spring Oct. 1/Summer Jan. 15 priority dates, direct Graduate Application route, qualified funding availability, and credited official laboratory imagery. GRE, numeric English-test, Duolingo, and fee-waiver fields remain blank because reviewed current program-specific sources do not establish a publishable policy.
+
+## University of Tennessee, Knoxville Biomedical Engineering M.S. fee review, August 17, 2026
+
+Current official BME admissions material confirms that the department’s fee-waiver code is limited to eligible first-time Ph.D. applicants who are U.S. citizens or permanent residents; it does not apply to the M.S. path. The current BME M.S. and Graduate School pages confirm the degree, tests, optional/recommended GRE treatment, and deadline framework but do not publish a current M.S.-applicable application-fee amount. Earlier US$60 references are not sufficient to update the M.S. profile. The M.S. fee therefore remains source-safely blank and no doctoral-only waiver card is copied to it.
+
+## University of Delaware Biomedical Engineering Ph.D., August 17, 2026
+
+**Published profile:** Ph.D. in Biomedical Engineering, University of Delaware, Newark, Delaware.
+
+**Pass 1 — active degree and scope:** The current BME Ph.D. page explicitly says that the program currently offers the Ph.D. and plans to offer an M.S. in the future. Only the active Ph.D. is published; no M.S. is inferred from conflicting or older catalog listings.
+
+**Pass 2 — admissions and funding:** The current BME page confirms a December 15 funding-priority deadline and February 1 final deadline, with exceptional Spring consideration by December 1; it also documents competitive, qualified assistantship pathways. Graduate Admissions confirms the current US$75 application fee. GRE and Duolingo remain blank; English language is described only as current Graduate College requirements, without importing an unverified numeric threshold.
+
+**Pass 3 — waiver and image:** The Graduate College page lists fee-waiver categories and in-application documentation workflow; it also says departments may be able to pay fees but does not promise that outcome. The current official Graduate Program Finder image was uploaded to managed storage, visibly credited, and recorded as image provenance.

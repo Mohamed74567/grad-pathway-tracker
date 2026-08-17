@@ -86,6 +86,10 @@ Direct browser validation rendered the University of Akron M.S. in Biomedical En
 
 Direct browser validation rendered the University of Toledo joint Biomedical Engineering Ph.D. with credited official laboratory imagery, the sibling Bioengineering M.S. switcher, direct College of Graduate Studies application, central US$45 domestic / US$75 international fee, rolling priority guidance, and qualified funding. No GRE, numeric English-test, or Duolingo card was shown because the current program-specific sources do not establish those facts.
 
+## University of Delaware Ph.D. and duplicate-consolidation validation
+
+The University of Delaware Biomedical Engineering Ph.D. initially revealed two identical doctoral choices, exposing an inherited duplicate record. The duplicate was consolidated into the established stable profile with no saved personal applications to migrate. A follow-up loaded-state validation showed a single Ph.D. profile, the current US$75 fee, December 15 priority / February 1 final guidance, qualified funding, credited official laboratory image, and the Graduate College’s restricted fee-waiver categories without a general-waiver promise.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

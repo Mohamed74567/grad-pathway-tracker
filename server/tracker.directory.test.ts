@@ -486,6 +486,27 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Delaware’s active BME Ph.D. with restricted fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-of-delaware-biomedical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$75");
+    expect(program?.applicationUrl).toBe("https://grad.udel.edu/apply/");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.duolingoPolicy).toBeNull();
+    expect(program?.deadlines[0]?.deadlineLabel).toContain("December 15");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://www.udel.edu/academics/colleges/grad/prospective-students/grad-admissions/",
+        details: expect.stringContaining("No general waiver is promised"),
+      }),
+    ]));
+    expect(program?.campusImageCredit).toContain("University of Delaware");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
