@@ -361,3 +361,7 @@ Direct browser inspection of Rose-Hulman’s current Graduate Studies Applicatio
 ## UNM and UNR current-policy validation
 
 Direct browser inspection of the University of New Mexico Biomedical Engineering Ph.D. profile confirmed the refreshed central Graduate/International Admissions policy renders the graduate TOEFL iBT 79/revised-scale 4.5, IELTS 6.5, and DET 105 treatment alongside its existing M.S. sibling option and dated official deadlines; no fee-waiver panel appears. Direct browser inspection of the University of Nevada, Reno Biomedical Engineering Ph.D. profile confirmed current US$60 domestic/US$95 international fee treatment, an explicit current-source GRE conflict notice, DET 115 policy, Ph.D.-only high-qualification fee-support contact, and M.S. degree-family option render visibly.
+
+## Duke and UCF fee-waiver panel validation
+
+Direct browser inspection of Duke Biomedical Engineering Ph.D. confirmed the Graduate School’s conditional fee-waiver panel names the restricted U.S. citizen/permanent-resident eligibility, in-application request sequence, limited capacity, and current-cycle availability caveat. Direct browser inspection of University of Central Florida Biomedical Engineering Ph.D. confirmed the refreshed US$30 non-refundable fee and CECS Ph.D.-only Early Action/Honors Program waiver panel render alongside the M.S. sibling option; the panel does not claim the doctoral opportunity applies to the master’s path.

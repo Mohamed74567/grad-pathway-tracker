@@ -159,6 +159,23 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UCF’s base fee for both BME degrees but CECS waiver guidance only for the Ph.D.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-central-florida-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-central-florida-biomedical-engineering-ms" });
+
+    expect(doctorate?.applicationFeeDisplay).toBe("US$30 non-refundable");
+    expect(masters?.applicationFeeDisplay).toBe("US$30 non-refundable");
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        details: expect.stringContaining("Ph.D.-only"),
+      }),
+    ]));
+    expect(masters?.applicationGuidance).toEqual([]);
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
