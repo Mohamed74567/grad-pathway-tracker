@@ -393,3 +393,7 @@ Direct browser inspection of Temple University Bioengineering Ph.D. confirmed th
 ## Purdue multiple-waiver validation
 
 An initial Purdue profile capture occurred during the route’s brief loading state, but the returned record content contained the updated details. A follow-up inspection confirmed full rendering of the Professional M.S. in Biomedical Engineering profile, including its credited laboratory hero, three degree-family options, US$60 domestic / US$75 international fee, and two distinct fee-waiver cards: the economic-hardship contact and the cycle-dated Virtual Graduate Showcase path.
+
+## University of Maine fee-category validation
+
+An initial University of Maine profile capture also occurred during a short loading state, while the loaded record content contained the updated details. A follow-up inspection confirmed full rendering of the M.S. in Biomedical Engineering profile with its credited program image, US$65 fee, and the narrow Graduate School waiver card listing only IRT, McNair, military-family, and University of Maine System alumni categories.

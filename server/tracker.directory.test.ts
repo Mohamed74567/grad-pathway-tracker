@@ -305,6 +305,22 @@ describe("tracker.directory", () => {
     expect(program?.applicationGuidance).toHaveLength(2);
   });
 
+  it("returns University of Maine BME’s US$65 fee and listed Graduate School waiver categories", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-of-maine-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$65");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:graduate@maine.edu",
+        details: expect.stringContaining("IRT Scholars"),
+        details: expect.stringContaining("University of Maine System alumni"),
+      }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
