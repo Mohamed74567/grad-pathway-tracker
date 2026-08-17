@@ -103,6 +103,17 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Rose-Hulman’s separately verified Biomedical Engineering M.S. with source-safe testing treatment", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "rose-hulman-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$75");
+    expect(program?.duolingoPolicy).toBeNull();
+    expect(program?.englishTestPolicy).toContain("TOEFL iBT total 94");
+    expect(program?.campusImageCredit).toContain("Rose-Hulman");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

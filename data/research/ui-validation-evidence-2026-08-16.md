@@ -353,3 +353,7 @@ Direct browser inspection of UConn Biomedical Engineering Ph.D. confirmed the lo
 ## SIU and George Mason application-guidance validation
 
 Direct browser inspection of Southern Illinois University Carbondale Biomedical Engineering Ph.D. confirmed its separate doctoral profile loads with the M.S. sibling switcher, source-backed US$65 fee, GRE requirement, Duolingo 115 policy, qualified funding card, and credited official BME laboratory hero. Direct browser inspection of George Mason Bioengineering Ph.D. confirmed the newly normalized Fall 2027 fee-waiver panel renders only the department’s published eligibility: submit the official initial form before starting the application and by November 15, 2026; the linked form and source page are visibly available.
+
+## Rose-Hulman application-source validation
+
+Direct browser inspection of Rose-Hulman’s current Graduate Studies Application Requirements page confirmed the current US$75 application fee, February 1 deadline, complete-application funding consideration, and graduate-specific TOEFL/IELTS thresholds. Its institution-linked RHIT Graduate Application route resolves to the live EngineeringCAS portal, which exposes currently open application-cycle account-creation paths. These sources support the newly researched Biomedical Engineering M.S. candidate; no undergraduate English-policy page was used for graduate facts.
