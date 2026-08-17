@@ -188,6 +188,28 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of New Haven Biomedical Engineering M.S. with its master’s-specific funding and current-student/alumni fee waiver boundary", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-new-haven-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$50 non-refundable");
+    expect(program?.grePolicy).toBe("Not required.");
+    expect(program?.duolingoPolicy).toContain("105 minimum");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:graduate@newhaven.edu",
+        details: expect.stringContaining("does not establish a general fee waiver"),
+      }),
+    ]));
+    expect(program?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ applicantType: "domestic", deadlineLabel: expect.stringContaining("March 1") }),
+      expect.objectContaining({ applicantType: "international", deadlineLabel: "Fall: May 1 priority" }),
+    ]));
+  });
+
   it("returns UNR’s qualified Ph.D. fee-support contact without generalizing it to the master’s path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
