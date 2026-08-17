@@ -266,6 +266,24 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Temple Bioengineering’s fee and the restricted domestic Graduate School waiver contact", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "temple-university-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "temple-university-bioengineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$60 non-refundable");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:colleen.baillie@temple.edu",
+          details: expect.stringContaining("program-director documentation"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

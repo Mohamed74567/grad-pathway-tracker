@@ -385,3 +385,7 @@ Direct browser inspection of Northwestern Biomedical Engineering Ph.D. confirmed
 ## University of Kansas conditional-request validation
 
 Direct browser inspection of University of Kansas Bioengineering Ph.D. confirmed the current US$65 domestic / US$100 international fee, Ph.D./M.S./M.Eng. degree-family options, and central Graduate Admissions waiver request panel. The panel correctly says that only some programs review requests, requires Bioengineering selection before submission, and avoids representing a conditional university workflow as a department-funded promise.
+
+## Temple restricted-domestic waiver validation
+
+Direct browser inspection of Temple University Bioengineering Ph.D. confirmed the current US$60 non-refundable fee, Ph.D./M.S. degree-family switcher, current GRE/Duolingo snapshot, and Graduate School waiver contact. The panel visibly limits eligibility to U.S. applicants with program-director documentation from the named initiatives and does not imply a universal fee waiver.
