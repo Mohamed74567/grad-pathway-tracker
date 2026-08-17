@@ -54,6 +54,10 @@ The current Brown Graduate School International Applicants page explicitly state
 
 The Brown Biomedical Engineering Ph.D. profile first displayed a transient loading capture. Its loaded state confirmed the doctoral-only US$75 fee, direct degree-family switcher, and Graduate School needs-based waiver card. Validation also surfaced a duplicated Brown waiver card that was consolidated into the existing verified guidance record before checkpointing.
 
+## University of Memphis–UTHSC no-fee validation
+
+Direct browser navigation rendered the jointly awarded University of Memphis–UTHSC Biomedical Engineering Ph.D. with a credited department laboratory hero, the UTHSC Liaison application route, and a visible “No application fee” card. The profile did not render a waiver card because the official UTHSC application pathway already carries no base application fee.
+
 ## Link audit manual confirmations: Northeastern and MIT
 
 The offset-165 audit produced a fetch failure for Northeastern’s Bioengineering Ph.D. page and a timeout for MIT Biological Engineering’s older Ph.D. URL. Direct browser navigation confirmed that Northeastern’s page is a live official “PhD in Bioengineering” page with admissions and application controls. The MIT URL resolved to the current official `/graduate-program/` page, which states that MIT BE offers a graduate Ph.D. and accepts applications through its annual departmental process. Neither result was treated as a broken or irrelevant destination, and no URL was replaced.

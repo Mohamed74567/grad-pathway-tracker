@@ -340,11 +340,9 @@ describe("tracker.directory", () => {
   it("keeps Brown BME’s verified US$75 fee and needs-based waiver on the doctoral path only", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
-    const [doctoral, scm, meng] = await Promise.all([
-      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-phd" }),
-      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-scm" }),
-      caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-meng" }),
-    ]);
+    const doctoral = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-phd" });
+    const scm = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-scm" });
+    const meng = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-meng" });
 
     expect(doctoral?.applicationFeeDisplay).toBe("US$75");
     expect(doctoral?.applicationGuidance).toEqual(expect.arrayContaining([
@@ -363,6 +361,16 @@ describe("tracker.directory", () => {
     expect(meng?.applicationGuidance).not.toEqual(expect.arrayContaining([
       expect.objectContaining({ guidanceType: "fee_waiver_form" }),
     ]));
+  });
+
+  it("uses the UTHSC-hosted joint-program pathway’s official no-application-fee treatment for Memphis–UTHSC BME Ph.D.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "memphis-uthsc-biomedical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toBe("No application fee");
+    expect(program?.applicationUrl).toBe("https://uthsc.liaisoncas.com/applicant-ux/#/login");
+    expect(program?.admissionFactsSourceUrl).toBe("https://www.uthsc.edu/graduate-health-sciences/programs/");
   });
 
   it("allows direct access to the single-owner personal application workspace", async () => {
