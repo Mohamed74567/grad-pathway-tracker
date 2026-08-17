@@ -284,6 +284,27 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Purdue Professional BME fees plus distinct hardship and showcase waiver paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-professional-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$60 domestic / US$75 international");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:gradinfo@purdue.edu",
+        details: expect.stringContaining("economic hardship"),
+      }),
+      expect.objectContaining({
+        guidanceType: "fee_waiver_session",
+        destinationUrl: "https://engineering.purdue.edu/Engr/Academics/Graduate/graduate-showcase/Fee-Waiver",
+        details: expect.stringContaining("October 12, 2026"),
+      }),
+    ]));
+    expect(program?.applicationGuidance).toHaveLength(2);
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
