@@ -781,6 +781,28 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UTEP’s separate Biomedical Engineering M.S. and Ph.D. with source-bounded shared policy evidence", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "utep-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "utep-biomedical-engineering-phd" });
+
+    expect(masters?.applicationFeeDisplay).toContain("US$45");
+    expect(masters?.applicationFeeDisplay).toContain("US$80");
+    expect(masters?.grePolicy).toBe("Optional; scores may be considered as part of review.");
+    expect(masters?.duolingoPolicy).toContain("110");
+    expect(masters?.fundingStatus).toBe("not_stated");
+    expect(masters?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ deadlineLabel: "Fall 2027 final deadline: June 30, 2027" }),
+    ]));
+
+    expect(doctorate?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ deadlineLabel: "Fall 2027 final deadline: July 1, 2027" }),
+    ]));
+    expect(doctorate?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "utep-biomedical-engineering-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
