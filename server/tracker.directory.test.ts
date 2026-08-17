@@ -231,6 +231,23 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Northwestern’s US$95 fee for both degrees and the cycle-sensitive TGS status only for Ph.D.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "northwestern-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "northwestern-biomedical-engineering-ms" });
+
+    expect(doctorate?.applicationFeeDisplay).toBe("US$95 non-refundable");
+    expect(masters?.applicationFeeDisplay).toBe("US$95 non-refundable");
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        details: expect.stringContaining("maximum waiver allocation"),
+      }),
+    ]));
+    expect(masters?.applicationGuidance).toEqual([]);
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

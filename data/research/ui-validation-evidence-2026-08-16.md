@@ -377,3 +377,7 @@ A first browser check surfaced that multiple same-type waiver forms shared a sou
 ## Ohio State central-waiver validation
 
 Direct browser inspection of The Ohio State University Biomedical Engineering Ph.D. profile confirmed the current US$60 domestic / US$70 international fee, Ph.D./M.S. degree-family switcher, and the application-based Graduate Admissions waiver panel. The panel visibly states that BME itself does not issue fee waivers and confines the action to the published conditional central process, including the 10-day processing allowance.
+
+## Northwestern cycle-sensitive waiver-status validation
+
+Direct browser inspection of Northwestern Biomedical Engineering Ph.D. confirmed the US$95 non-refundable fee, current no-Duolingo policy, degree-family switcher, and the Graduate School waiver-status card. The panel visibly preserves the published statement that the cited prior cycle reached its allocation maximum and tells the applicant to check future criteria rather than suggesting that a waiver is currently obtainable.
