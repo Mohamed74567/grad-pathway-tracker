@@ -374,6 +374,24 @@ describe("tracker.directory", () => {
     expect(program?.admissionFactsSourceUrl).toBe("https://www.uthsc.edu/graduate-health-sciences/programs/");
   });
 
+  it("applies Utah’s central graduate fee and documented McNair waiver to BME and Neural Engineering degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const biomedicalDoctorate = await caller.tracker.directory.bySlug({ slug: "university-utah-biomedical-engineering-phd" });
+    const neuralMasters = await caller.tracker.directory.bySlug({ slug: "university-utah-neural-engineering-ms" });
+
+    for (const program of [biomedicalDoctorate, neuralMasters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$55 domestic / US$65 international");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://admissions.utah.edu/apply/graduate-students/",
+          details: expect.stringContaining("McNair Scholars"),
+        }),
+      ]));
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
