@@ -397,3 +397,7 @@ An initial Purdue profile capture occurred during the route’s brief loading st
 ## University of Maine fee-category validation
 
 An initial University of Maine profile capture also occurred during a short loading state, while the loaded record content contained the updated details. A follow-up inspection confirmed full rendering of the M.S. in Biomedical Engineering profile with its credited program image, US$65 fee, and the narrow Graduate School waiver card listing only IRT, McNair, military-family, and University of Maine System alumni categories.
+
+## OHSU source-safe blank-fee validation
+
+An initial OHSU profile capture occurred during a short loading state while the record content already reflected the new guidance. A follow-up inspection confirmed full rendering of the Biomedical Engineering Ph.D. profile with no invented application-fee card and the visible School of Medicine Graduate Studies waiver panel, including the five-business-day request window, funding limitation, and non-guarantee.
