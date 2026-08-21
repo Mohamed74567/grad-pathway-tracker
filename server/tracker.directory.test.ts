@@ -1002,6 +1002,17 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Iowa Biomedical Engineering degree paths with the central DET baseline and BME TOEFL caveat", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-iowa-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-iowa-biomedical-engineering-phd" });
+
+    for (const program of [masters, doctorate]) {
+      expect(program?.duolingoPolicy).toBe("Iowa Graduate Admissions: DET 120+; BME publishes TOEFL 85 but no separate DET cutoff. DET admits require on-campus EPE.");
+      expect(program?.englishTestPolicy).toContain("TOEFL iBT 85");
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
