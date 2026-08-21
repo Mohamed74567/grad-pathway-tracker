@@ -543,6 +543,7 @@ describe("tracker.directory", () => {
     ]));
     expect(scm?.applicationFeeDisplay).toBeNull();
     expect(meng?.applicationFeeDisplay).toBeNull();
+    expect(meng?.duolingoPolicy).toBe("Duolingo is not listed on Brown Graduate School’s current TOEFL-or-IELTS proficiency policy.");
     expect(scm?.applicationGuidance).not.toEqual(expect.arrayContaining([
       expect.objectContaining({ guidanceType: "fee_waiver_form" }),
     ]));
