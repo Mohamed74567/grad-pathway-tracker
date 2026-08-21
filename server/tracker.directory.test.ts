@@ -1052,6 +1052,13 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toBe("UNL Graduate Studies: DET 120 for test dates through Dec. 31, 2026; scores valid two years. Departments may require more; low writing may require ESL 887.");
   });
 
+  it("returns UNLV Biomedical Engineering M.S. with the current all-colleges DET standard", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-nevada-las-vegas-biomedical-engineering-ms" });
+
+    expect(program?.duolingoPolicy).toBe("UNLV Graduate College: DET 105 minimum with no band below 100; scores must be under two years old at application.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
