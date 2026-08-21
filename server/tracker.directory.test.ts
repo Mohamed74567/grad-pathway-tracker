@@ -833,6 +833,7 @@ describe("tracker.directory", () => {
     expect(program?.applicationFeeDisplay).toBe("US$50 domestic / US$90 international per application (non-refundable)");
     expect(program?.grePolicy).toBe("Not required");
     expect(program?.englishTestPolicy).toContain("TOEFL 79");
+    expect(program?.duolingoPolicy).toBe("UT Health San Antonio GSBS: Duolingo 115; score must be less than two years old at application.");
     expect(program?.fundingStatus).toBe("available");
     expect(program?.deadlines[0]?.deadlineLabel).toContain("Fall deadline June 1");
     expect(program?.campusImageCredit).toBe("UT Health San Antonio Biomedical Engineering");
