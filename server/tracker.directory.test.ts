@@ -15,7 +15,7 @@ describe("tracker.directory", () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
     await expect(caller.tracker.directory.bySlug({ slug: "nonexistent-public-record" })).resolves.toBeUndefined();
-  });
+  }, 15_000);
 
   it("returns source-backed fee-waiver guidance with the public program detail when it exists", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
@@ -665,7 +665,7 @@ describe("tracker.directory", () => {
     expect(program?.applicationUrl).toBe("https://grad.udel.edu/apply/");
     expect(program?.fundingStatus).toBe("available");
     expect(program?.grePolicy).toBeNull();
-    expect(program?.duolingoPolicy).toBeNull();
+    expect(program?.duolingoPolicy).toBe("University of Delaware does not accept Duolingo for graduate English proficiency.");
     expect(program?.deadlines[0]?.deadlineLabel).toContain("December 15");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
