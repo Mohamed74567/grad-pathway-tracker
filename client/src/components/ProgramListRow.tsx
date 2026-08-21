@@ -17,6 +17,7 @@ export type DirectoryListProgram = {
   duolingoPolicy?: string | null;
   admissionFactsSourceLabel?: string | null;
   admissionFactsSourceUrl?: string | null;
+  hasFeeWaiverGuidance?: boolean;
   degreeOfferings?: Array<"phd" | "masters">;
   deadlines?: Array<{ deadlineDate: Date | string | null; deadlineLabel?: string | null; academicCycle?: string | null }>;
 };

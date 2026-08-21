@@ -31,6 +31,14 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("labels fee-waiver help in the directory only for degree paths with verified official waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await caller.tracker.directory.list({});
+
+    expect(programs.find(program => program.slug === "stanford-bioengineering-ms")?.hasFeeWaiverGuidance).toBe(true);
+    expect(programs.find(program => program.slug === "arizona-state-biomedical-engineering-phd")?.hasFeeWaiverGuidance).toBe(false);
+  });
+
   it("returns an explicit official cross-degree consideration notice only for the applicable degree path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

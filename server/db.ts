@@ -99,12 +99,19 @@ export async function getDirectoryPrograms(filters: DirectoryFilters = {}) {
   }
   const records = await db.select().from(programs).where(and(...conditions)).orderBy(asc(programs.universityName), asc(programs.degreeType));
   if (records.length === 0) return [];
-  const [deadlines, degreeRows] = await Promise.all([
+  const [deadlines, degreeRows, waiverRows] = await Promise.all([
     db.select().from(programDeadlines).where(inArray(programDeadlines.programId, records.map(record => record.id))),
     db.select({ universityName: programs.universityName, department: programs.department, degreeType: programs.degreeType })
       .from(programs)
       .where(eq(programs.isPublished, true)),
+    db.select({ programId: programApplicationGuidance.programId })
+      .from(programApplicationGuidance)
+      .where(and(
+        inArray(programApplicationGuidance.programId, records.map(record => record.id)),
+        inArray(programApplicationGuidance.guidanceType, ["fee_waiver_code", "fee_waiver_contact", "fee_waiver_session", "fee_waiver_form"]),
+      )),
   ]);
+  const waiverProgramIds = new Set(waiverRows.map(row => row.programId));
   const degreeOfferingsByDepartment = new Map<string, Array<"phd" | "masters">>();
   for (const item of degreeRows) {
     const key = `${item.universityName}::${item.department}`;
@@ -114,6 +121,7 @@ export async function getDirectoryPrograms(filters: DirectoryFilters = {}) {
     ...record,
     deadlines: deadlines.filter(deadline => deadline.programId === record.id),
     degreeOfferings: degreeOfferingsByDepartment.get(`${record.universityName}::${record.department}`) ?? [record.degreeType],
+    hasFeeWaiverGuidance: waiverProgramIds.has(record.id),
   }));
 }
 
