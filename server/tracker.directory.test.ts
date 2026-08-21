@@ -1045,6 +1045,13 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Nebraska Biomedical Engineering Ph.D. with the current Graduate Studies DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-nebraska-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toBe("UNL Graduate Studies: DET 120 for test dates through Dec. 31, 2026; scores valid two years. Departments may require more; low writing may require ESL 887.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

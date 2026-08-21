@@ -21,6 +21,10 @@ The current BMEBT program page confirms the joint 31-credit M.S., Biomedical Sci
 
 The current BMEBT application page states a US$75 EngineeringCAS fee, two recommendations for master’s applicants, a qualified-candidate GRE-waiver possibility, and TOEFL/IELTS requirements for international applicants. The catalog retains a GRE 294 expectation and TOEFL iBT 79 minimum. Rather than choose between conflicting current official GRE treatments or manufacture a DET policy, the profile exposes the conflict, states both English-source boundaries, and leaves Duolingo blank.
 
+### Subsequent Duolingo recheck
+
+On 2026-08-21, the current [Interdisciplinary Programs in Biomedical Engineering & Biotechnology admissions page](https://www.uml.edu/grad/process/idp-requirements.aspx) was re-read. It is the published record’s own EngineeringCAS application route and expressly states that international applicants must submit **TOEFL or IELTS** scores. Although the Francis College of Engineering page lists DET 115 for its own applicants, that page is not the governing BMEBT interdisciplinary route. The BMEBT M.S. Duolingo field therefore remains blank; the profile must not inherit a college-specific DET rule that its direct official admissions page does not list.
+
 ## Sources
 
 1. [UMass Lowell Ph.D. in Biomedical Engineering](https://www.uml.edu/engineering/biomedical/programs/graduate/doctoral.aspx)
