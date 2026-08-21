@@ -153,6 +153,21 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toContain("less than two years old");
   });
 
+  it("returns the University of North Texas Biomedical Engineering M.S. with thesis-path-only qualified funding", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "university-north-texas-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$75 non-refundable");
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 100");
+    expect(program?.grePolicy).toContain("Required unless eligible");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ applicantType: "domestic", deadlineLabel: expect.stringContaining("Fall Aug. 15") }),
+      expect.objectContaining({ applicantType: "international", deadlineLabel: "Fall Aug. 15; Spring Dec. 1" }),
+    ]));
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
