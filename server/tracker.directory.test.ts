@@ -1020,6 +1020,13 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Minnesota Medical Device Innovation M.S. with the Graduate School’s cycle-specific DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-minnesota-medical-device-innovation-ms" });
+
+    expect(program?.duolingoPolicy).toBe("UMN Graduate School: DET 115 overall/writing/reading through Summer 2027; 120 effective Fall 2027. Scores valid two years; program may require more.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
