@@ -143,6 +143,16 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Purdue’s Professional BME M.S. with the program-adopted current OGSPS DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-professional-ms" });
+
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 115 overall");
+    expect(program?.duolingoPolicy).toContain("115 in each integrated subscore");
+    expect(program?.duolingoPolicy).toContain("less than two years old");
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
