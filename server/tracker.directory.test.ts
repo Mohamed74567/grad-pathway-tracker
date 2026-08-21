@@ -168,6 +168,23 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns the joint University of Memphis–UTHSC Biomedical Engineering M.S. with its own source-safe admission facts", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "memphis-uthsc-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBeNull();
+    expect(program?.duolingoPolicy).toContain("no current numeric M.S. minimum");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ deadlineLabel: "Fall: May 15" }),
+    ]));
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "memphis-uthsc-biomedical-engineering-phd", degreeType: "phd" }),
+      expect.objectContaining({ slug: "memphis-uthsc-biomedical-engineering-ms", degreeType: "masters" }),
+    ]));
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
