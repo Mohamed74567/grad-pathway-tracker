@@ -645,7 +645,7 @@ describe("tracker.directory", () => {
       expect(program?.fundingStatus).toBe("available");
       expect(program?.grePolicy).toBeNull();
       expect(program?.englishTestPolicy).toBeNull();
-      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.duolingoPolicy).toBe("Official sources conflict: Graduate School lists DET 110; College of Engineering lists Duolingo 105 for engineering admission.");
       expect(program?.campusImageCredit).toContain("The University of Toledo");
       expect(program?.deadlines[0]?.deadlineLabel).toContain("Fall Jan. 15");
     }
