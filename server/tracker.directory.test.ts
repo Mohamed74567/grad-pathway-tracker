@@ -820,6 +820,7 @@ describe("tracker.directory", () => {
     expect(program?.applicationFeeDisplay).toContain("US$75 U.S. citizens/permanent residents");
     expect(program?.fundingStatus).toBe("available");
     expect(program?.grePolicy).toBeNull();
+    expect(program?.duolingoPolicy).toBe("Mizzou Graduate School: Duolingo 115; score valid two years. Programs may require higher scores.");
     expect(program?.campusImageCredit).toBe("Mizzou Engineering");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
