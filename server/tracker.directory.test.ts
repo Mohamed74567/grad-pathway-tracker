@@ -1035,6 +1035,16 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toBe("UC Davis Medical Device Development: Duolingo 115 minimum. Sole-DET admits must take TOEP; further English testing/coursework may follow.");
   });
 
+  it("returns the UMass joint BMEBT degree family with the UMass Dartmouth-hosted Duolingo policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "umass-joint-biomedical-engineering-biotechnology-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "umass-joint-biomedical-engineering-biotechnology-phd" });
+
+    for (const program of [masters, doctorate]) {
+      expect(program?.duolingoPolicy).toBe("UMass Dartmouth-hosted application policy: most programs accept Duolingo 95; confirm BMEBT program-specific requirements.");
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
