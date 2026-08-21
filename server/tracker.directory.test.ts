@@ -443,6 +443,7 @@ describe("tracker.directory", () => {
 
     for (const program of [doctorate, masters]) {
       expect(program?.applicationFeeDisplay).toBe("US$65 domestic / US$100 international");
+      expect(program?.duolingoPolicy).toBe("Not accepted by current KU Graduate Admissions for English proficiency.");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
