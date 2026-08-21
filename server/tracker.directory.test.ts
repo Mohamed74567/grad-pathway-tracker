@@ -764,7 +764,7 @@ describe("tracker.directory", () => {
     ]));
   });
 
-  it("returns UMass Dartmouth’s verified BMEBT M.S. and Ph.D. family without an inferred Duolingo policy", async () => {
+  it("returns UMass Dartmouth’s verified BMEBT M.S. and Ph.D. family with the qualified Graduate School Duolingo policy", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
     const ms = await caller.tracker.directory.bySlug({ slug: "umass-dartmouth-biomedical-engineering-biotechnology-ms" });
@@ -775,7 +775,7 @@ describe("tracker.directory", () => {
       expect(program?.applicationUrl).toContain("apply.umassd.edu");
       expect(program?.grePolicy).toContain("waived");
       expect(program?.englishTestPolicy).toContain("TOEFL iBT 72");
-      expect(program?.duolingoPolicy).toBeNull();
+      expect(program?.duolingoPolicy).toBe("UMass Dartmouth Graduate School: most programs accept Duolingo 95; confirm BMEBT program-specific requirements.");
       expect(program?.fundingStatus).toBe("available");
       expect(program?.applicationGuidance).toEqual([]);
       expect(program?.campusImageCredit).toContain("University of Massachusetts Dartmouth Biomedical Engineering and Biotechnology");
