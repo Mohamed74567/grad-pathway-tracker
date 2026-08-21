@@ -889,6 +889,7 @@ describe("tracker.directory", () => {
 
     expect(program?.applicationFeeDisplay).toContain("US$75 U.S. citizens/permanent residents");
     expect(program?.grePolicy).toBe("Not required");
+    expect(program?.duolingoPolicy).toBe("Duolingo is not listed among Rackham and BME’s stated graduate English-proficiency tests.");
     expect(program?.fundingStatus).toBe("available");
     expect(program?.campusImageCredit).toBe("University of Michigan Biomedical Engineering");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
