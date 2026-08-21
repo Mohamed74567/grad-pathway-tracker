@@ -109,6 +109,27 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Texas Tech’s distinct Bioengineering M.S. with source-safe blank fee and funding treatment", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "texas-tech-bioengineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBeNull();
+    expect(program?.grePolicy).toBeNull();
+    expect(program?.fundingStatus).toBe("not_stated");
+    expect(program?.duolingoPolicy).toContain("Duolingo English Test 100");
+    expect(program?.deadlines).toEqual(expect.arrayContaining([
+      expect.objectContaining({ applicantType: "domestic", deadlineLabel: expect.stringContaining("Fall Jun. 1") }),
+      expect.objectContaining({ applicantType: "international", deadlineLabel: expect.stringContaining("Jan. 15") }),
+    ]));
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        details: expect.stringContaining("not a general fee waiver"),
+      }),
+    ]));
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
