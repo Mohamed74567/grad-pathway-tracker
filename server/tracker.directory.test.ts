@@ -153,6 +153,19 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toContain("less than two years old");
   });
 
+  it("applies Purdue BME’s current OGSPS DET wording to thesis M.S. and Ph.D. paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const thesisMasters = await caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-ms-thesis" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-phd" });
+
+    for (const program of [thesisMasters, doctorate]) {
+      expect(program?.duolingoPolicy).toContain("Duolingo English Test 115 overall");
+      expect(program?.duolingoPolicy).toContain("115 in each integrated subscore");
+      expect(program?.duolingoPolicy).toContain("less than two years old");
+      expect(program?.duolingoPolicy).toContain("Programs may set higher requirements");
+    }
+  });
+
   it("returns the University of North Texas Biomedical Engineering M.S. with thesis-path-only qualified funding", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
@@ -899,6 +912,7 @@ describe("tracker.directory", () => {
   it("returns Saint Louis University’s distinct Biomedical Engineering M.S. with its Ph.D. sibling and source-safe admissions fields", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "saint-louis-university-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "saint-louis-university-biomedical-engineering-phd" });
 
     expect(program?.applicationFeeDisplay).toBe("No application fee through the direct SLU graduate application");
     expect(program?.applicationUrl).toBe("https://gradapply.slu.edu/apply/");
@@ -910,6 +924,7 @@ describe("tracker.directory", () => {
     expect(program?.degreeOptions).toEqual(expect.arrayContaining([
       expect.objectContaining({ slug: "saint-louis-university-biomedical-engineering-phd", degreeType: "phd" }),
     ]));
+    expect(doctorate?.duolingoPolicy).toBe("SLU baseline: Duolingo 110; graduate programs may set higher minimums.");
   });
 
   it("returns SDSU’s Bioengineering M.S. and joint doctoral pathways without merging their admissions rules", async () => {
