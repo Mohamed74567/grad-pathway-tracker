@@ -961,4 +961,18 @@ describe("tracker.directory", () => {
 
     await expect(caller.tracker.applications.list()).resolves.toEqual(expect.any(Array));
   });
+
+  it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
+
+    expect(program?.programName).toBe("Ph.D. in Engineering, Biomedical Engineering");
+    expect(program?.applicationFeeDisplay).toBe("US$75");
+    expect(program?.applicationUrl).toContain("EngineeringCAS2027");
+    expect(program?.grePolicy).toBe("Required for Ph.D. applicants.");
+    expect(program?.duolingoPolicy).toBe("DET 115+ when English proficiency is required.");
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual([]);
+    expect(program?.campusImageCredit).toContain("UMass Lowell Biomedical Engineering & Biotechnology Program");
+  });
 });
