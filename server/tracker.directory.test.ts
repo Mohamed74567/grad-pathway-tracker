@@ -990,4 +990,19 @@ describe("tracker.directory", () => {
     expect(program?.deadlines).toEqual([]);
     expect(program?.campusImageCredit).toContain("UMass Lowell Biomedical Engineering & Biotechnology Program");
   });
+
+  it("returns UMass Lowell’s distinct joint BMEBT master’s profile without resolving conflicting official GRE evidence", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-biotechnology-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$75");
+    expect(program?.grePolicy).toContain("Official sources conflict");
+    expect(program?.englishTestPolicy).toContain("TOEFL or IELTS");
+    expect(program?.duolingoPolicy).toBeNull();
+    expect(program?.fundingStatus).toBe("available");
+    expect(program?.deadlines).toEqual([]);
+    expect(program?.degreeOptions).toEqual(expect.arrayContaining([
+      expect.objectContaining({ slug: "umass-lowell-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
 });
