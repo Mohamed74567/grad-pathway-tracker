@@ -1028,6 +1028,13 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toBe("UMN Graduate School: DET 115 overall/writing/reading through Summer 2027; 120 effective Fall 2027. Scores valid two years; program may require more.");
   });
 
+  it("returns UC Davis Medical Device Development M.Eng. with its directly stated Duolingo requirement", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "uc-davis-medical-device-development-meng" });
+
+    expect(program?.duolingoPolicy).toBe("UC Davis Medical Device Development: Duolingo 115 minimum. Sole-DET admits must take TOEP; further English testing/coursework may follow.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
