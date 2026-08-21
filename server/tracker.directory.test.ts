@@ -992,6 +992,16 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toBe("UT Austin Graduate School accepts DET 115 overall; consult Biomedical Engineering for any preferred test.");
   });
 
+  it("returns University of Kentucky Biomedical Engineering degree paths with the Graduate School DET baseline", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-kentucky-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-kentucky-biomedical-engineering-phd" });
+
+    for (const program of [masters, doctorate]) {
+      expect(program?.duolingoPolicy).toBe("UK Graduate School: Duolingo 115; score may be evaluated by an ESL professional.");
+    }
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
