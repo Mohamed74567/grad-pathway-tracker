@@ -985,6 +985,13 @@ describe("tracker.directory", () => {
     expect(osu?.duolingoPolicy).toContain("GTA funding review is case by case");
   });
 
+  it("returns UT Austin Biomedical Engineering Ph.D. with the current Graduate School DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "ut-austin-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toBe("UT Austin Graduate School accepts DET 115 overall; consult Biomedical Engineering for any preferred test.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
