@@ -971,6 +971,17 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UTA and Oregon State profiles with source-bounded current central Duolingo policies", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const uta = await caller.tracker.directory.bySlug({ slug: "ut-arlington-biomedical-engineering-phd" });
+    const osu = await caller.tracker.directory.bySlug({ slug: "oregon-state-bioengineering-meng" });
+
+    expect(uta?.duolingoPolicy).toBe("UTA central graduate baseline: Duolingo 100; programs may require or prefer higher English scores.");
+    expect(osu?.duolingoPolicy).toContain("Duolingo 110 with subscores");
+    expect(osu?.duolingoPolicy).toContain("programs may require higher scores");
+    expect(osu?.duolingoPolicy).toContain("GTA funding review is case by case");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
