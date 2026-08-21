@@ -130,6 +130,19 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Stanford Bioengineering M.S. and Ph.D. with the current central no-DET policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const masters = await caller.tracker.directory.bySlug({ slug: "stanford-bioengineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "stanford-bioengineering-phd" });
+
+    for (const program of [masters, doctorate]) {
+      expect(program?.duolingoPolicy).toContain("not listed as an accepted");
+      expect(program?.englishTestPolicy).toContain("TOEFL iBT or IELTS Academic");
+      expect(program?.englishTestPolicy).toContain("programs may set higher minimums");
+    }
+  });
+
   it("returns George Mason’s time-bounded official Bioengineering Ph.D. fee-waiver form", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
