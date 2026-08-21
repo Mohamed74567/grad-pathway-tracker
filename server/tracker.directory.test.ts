@@ -1059,6 +1059,13 @@ describe("tracker.directory", () => {
     expect(program?.duolingoPolicy).toBe("UNLV Graduate College: DET 105 minimum with no band below 100; scores must be under two years old at application.");
   });
 
+  it("returns University of Tennessee Knoxville Biomedical Engineering Ph.D. with the Graduate School DET baseline", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-tennessee-knoxville-biomedical-engineering-phd" });
+
+    expect(program?.duolingoPolicy).toBe("UT Knoxville Graduate School: DET 120 overall; scores valid two years. Programs may require more rigorous English standards.");
+  });
+
   it("allows direct access to the single-owner personal application workspace", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
