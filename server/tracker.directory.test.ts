@@ -66,12 +66,16 @@ describe("tracker.directory", () => {
     const program = await caller.tracker.directory.bySlug({ slug: "university-hawaii-manoa-molecular-biosciences-bioengineering-phd" });
 
     expect(program?.programName).toBe("Ph.D. in Molecular Biosciences and Bioengineering");
+    expect(program?.duolingoPolicy).toContain("DET 90");
+    expect(program?.duolingoPolicy).toContain("GTA standard is DET 135");
     expect(program?.degreeOptions).toEqual(expect.arrayContaining([
       expect.objectContaining({
         degreeType: "masters",
         slug: "university-of-hawaii-manoa-molecular-biosciences-bioengineering-ms",
       }),
     ]));
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-of-hawaii-manoa-molecular-biosciences-bioengineering-ms" });
+    expect(masters?.duolingoPolicy).toBe("UH Mānoa Graduate Division: DET 90; programs may vary. Scores valid two years; GTA standard is DET 135 with Listening 135/Speaking 145.");
   });
 
   it("returns the separately verified SIU Biomedical Engineering doctorate with its master’s sibling option", async () => {
