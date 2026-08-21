@@ -620,12 +620,14 @@ describe("tracker.directory", () => {
       expect(program?.applicationUrl).toBe("https://www.uakron.edu/admissions/apply.dot");
       expect(program?.fundingStatus).toBe("available");
       expect(program?.grePolicy).toBeNull();
-      expect(program?.duolingoPolicy).toBeNull();
       expect(program?.campusImageCredit).toContain("The University of Akron");
     }
 
     expect(mse?.englishTestPolicy).toContain("TOEFL iBT 96");
     expect(mbe?.englishTestPolicy).toContain("TOEFL iBT 79");
+    expect(mse?.duolingoPolicy).toContain("Duolingo 115");
+    expect(mse?.duolingoPolicy).toContain("higher TOEFL rule but no separate DET cutoff");
+    expect(mbe?.duolingoPolicy).toBe("UA central baseline: Duolingo 115; departments may set higher standards.");
     expect(mse?.degreeOptions).toEqual(expect.arrayContaining([
       expect.objectContaining({ slug: "university-akron-biomedical-engineering-mbe", degreeType: "masters" }),
     ]));
