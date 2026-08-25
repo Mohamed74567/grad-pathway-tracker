@@ -1639,6 +1639,24 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Rochester Biomedical Engineering degree paths with the qualified case-by-case waiver contact", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-rochester-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-rochester-biomedical-engineering-ms" }),
+    ]);
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "https://www.rochester.edu/college/gradstudies/support-resources/coordinators.html",
+          details: expect.stringContaining("case by case"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
