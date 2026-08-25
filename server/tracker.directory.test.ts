@@ -915,6 +915,47 @@ describe("tracker.directory", () => {
     expect(directory.find(program => program.slug === "georgia-tech-bioengineering-phd")?.hasFeeWaiverGuidance).toBe(true);
   });
 
+  it("returns University of Washington Bioengineering degree paths with the qualified Graduate School fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-washington-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-washington-master-applied-bioengineering" }),
+      caller.tracker.directory.bySlug({ slug: "university-washington-master-pharmaceutical-bioengineering" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.uw.edu/prospective-students/how-to-apply/application-fee-waivers/",
+          details: expect.stringContaining("seven days"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
+  it("returns UC San Diego Bioengineering degree paths with the department-endorsed Graduate Division fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "uc-san-diego-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "uc-san-diego-bioengineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "uc-san-diego-bioengineering-meng" }),
+      caller.tracker.directory.bySlug({ slug: "uc-san-diego-bioengineering-meng-medical-device" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.ucsd.edu/admissions/requirements/application-fee-and-fee-waiver/",
+          details: expect.stringContaining("only available waiver routes"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
