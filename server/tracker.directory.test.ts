@@ -1564,6 +1564,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Binghamton Biomedical Engineering degree paths with the qualified Graduate Admissions fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "binghamton-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "binghamton-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://www.binghamton.edu/admissions/graduate/apply/application-fee-waivers.html",
+          details: expect.stringContaining("2–3 business days"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
