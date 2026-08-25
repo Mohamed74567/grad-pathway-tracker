@@ -351,7 +351,8 @@ describe("tracker.directory", () => {
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://gradschool.duke.edu/admissions/application-instructions/application-fee/",
-          details: expect.stringContaining("not issuing waivers for the current cycle"),
+          details: expect.stringContaining("first-come-first-served"),
+          verificationPasses: 3,
         }),
       ]));
     }
@@ -1222,6 +1223,25 @@ describe("tracker.directory", () => {
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://gsas.yale.edu/admissions/phdmasters-application-process/application-fees-fee-waivers",
           details: expect.stringContaining("any citizenship"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
+  it("returns Duke Biomedical Engineering degree paths with the qualified Graduate School fee-waiver request", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "duke-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "duke-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradschool.duke.edu/admissions/application-instructions/application-fee/",
+          details: expect.stringContaining("first-come-first-served"),
           verificationPasses: 3,
         }),
       ]));
