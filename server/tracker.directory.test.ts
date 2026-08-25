@@ -1492,6 +1492,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Rutgers Biomedical Engineering degree paths with the qualified central Graduate Admissions fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "rutgers-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "rutgers-biomedical-engineering-thesis-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradstudy.rutgers.edu/apply/application-guidelines",
+          details: expect.stringContaining("Project 1000"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
