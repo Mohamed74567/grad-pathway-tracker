@@ -1335,6 +1335,35 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("keeps Illinois Bioengineering's doctoral departmental waiver distinct from the shared central eligibility route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "uiuc-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "uiuc-bioengineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.illinois.edu/admissions/application-instructions/completing-your-graduate-application",
+          details: expect.stringContaining("qualifying domestic applicants"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://bioengineering.illinois.edu/admissions/graduate/phd",
+        details: expect.stringContaining("November 15"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://bioengineering.illinois.edu/admissions/graduate/phd",
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
