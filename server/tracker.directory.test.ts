@@ -956,6 +956,44 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of New Hampshire degree paths with qualified Graduate School waiver eligibility", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const [phd, ms, meng, ece] = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "unh-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "unh-bioengineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "unh-bioengineering-meng" }),
+      caller.tracker.directory.bySlug({ slug: "unh-ece-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of [phd, ms, meng, ece]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradschool.unh.edu/admissions/apply",
+          details: expect.stringContaining("McNair Scholars"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+
+    for (const program of [ms, meng, ece]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradschool.unh.edu/academics/accelerated-masters-program",
+          details: expect.stringContaining("3.2 GPA"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+
+    expect(phd?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://gradschool.unh.edu/academics/accelerated-masters-program",
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
