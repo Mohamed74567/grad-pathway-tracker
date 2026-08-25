@@ -994,6 +994,27 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UW–Madison Biomedical Engineering degree paths with the qualified Graduate School fee-grant route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "uw-madison-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "uw-madison-biomedical-engineering-research-ms" }),
+      caller.tracker.directory.bySlug({ slug: "uw-madison-biomedical-innovation-design-entrepreneurship-ms" }),
+      caller.tracker.directory.bySlug({ slug: "uw-madison-biomedical-engineering-accelerated-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.wisc.edu/apply/fee-grant/",
+          details: expect.stringContaining("five business days"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
