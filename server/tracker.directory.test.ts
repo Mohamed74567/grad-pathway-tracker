@@ -1074,6 +1074,30 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Minnesota Biomedical Engineering M.S. and Ph.D. with their limited department-only fee-waiver request", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const [phd, ms, medicalDevice] = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-minnesota-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-minnesota-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-minnesota-medical-device-innovation-ms" }),
+    ]);
+
+    for (const program of [phd, ms]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://forms.gle/4WwKYYUTDzMEP7pi7",
+          details: expect.stringContaining("limited number"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+
+    expect(medicalDevice?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ destinationUrl: "https://forms.gle/4WwKYYUTDzMEP7pi7" }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
