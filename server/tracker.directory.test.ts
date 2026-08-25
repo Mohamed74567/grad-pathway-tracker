@@ -1118,6 +1118,26 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Rice Bioengineering’s direct doctoral fee waiver without extending it to the Master of Bioengineering", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const [phd, masters] = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "rice-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "rice-master-bioengineering" }),
+    ]);
+
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://bioengineering.rice.edu/academics",
+        details: expect.stringContaining("waived for Ph.D. applicants"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ destinationUrl: "https://bioengineering.rice.edu/academics" }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
