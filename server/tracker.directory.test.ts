@@ -1467,6 +1467,31 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Virginia Tech–Wake Forest Biomedical Engineering degree paths with the central and limited program fee-waiver routes", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "virginia-tech-wake-forest-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "virginia-tech-wake-forest-biomedical-engineering-ms-thesis" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://graduateschool.vt.edu/admissions/tuition-and-costs/Application_Fees.html",
+          details: expect.stringContaining("financial need alone does not qualify"),
+          verificationPasses: 3,
+        }),
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "https://bme.vt.edu/graduate/biomedical/admissions/fee-waivers.html",
+          details: expect.stringContaining("limited number"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
