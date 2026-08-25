@@ -1447,6 +1447,26 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UVA Biomedical Engineering degree paths with the current Engineering-wide no-fee policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-virginia-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-virginia-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-virginia-biomedical-engineering-me" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://engineering.virginia.edu/graduate-study/future-grad-students/graduate-admission/graduate-admissions-frequently-asked-questions",
+          details: expect.stringContaining("2027 admission cycle"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
