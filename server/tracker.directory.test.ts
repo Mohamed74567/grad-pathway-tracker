@@ -1098,6 +1098,26 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Pittsburgh Bioengineering degree paths with the qualified Swanson fee-waiver request", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-pittsburgh-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-pittsburgh-bioengineering-research-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-pittsburgh-bioengineering-neural-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://www.engineering.pitt.edu/academics/graduateadmissions/graduate-applications/",
+          details: expect.stringContaining("case by case"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
