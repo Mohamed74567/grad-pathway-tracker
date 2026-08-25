@@ -1583,6 +1583,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Stevens Biomedical Engineering degree paths with the Graduate Admissions event-attendee fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "stevens-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "stevens-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          destinationUrl: "https://www.stevens.edu/admission-aid/graduate-admissions/graduate-events-and-open-houses",
+          details: expect.stringContaining("all graduate-event attendees"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
