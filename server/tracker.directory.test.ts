@@ -1035,6 +1035,26 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Colorado State Bioengineering degree paths with the qualified Graduate School fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "colorado-state-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "colorado-state-bioengineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "colorado-state-master-engineering-biomedical-specialization" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://graduateschool.colostate.edu/skip-the-application-fee/",
+          details: expect.stringContaining("Financial hardship alone is not eligible"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
