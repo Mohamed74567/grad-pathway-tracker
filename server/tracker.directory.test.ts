@@ -1267,6 +1267,34 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("keeps Cornell Biomedical Engineering fee-waiver guidance distinct for the doctoral and professional-master's paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "cornell-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "cornell-biomedical-engineering-meng" });
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://gradschool.cornell.edu/application-fee-waiver-instructions/",
+        details: expect.stringContaining("fully funded doctoral or research-master’s programs"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.duffield.cornell.edu/bme/meng/meng-faqs/",
+        details: expect.stringContaining("extreme financial hardship"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://gradschool.cornell.edu/application-fee-waiver-instructions/",
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
