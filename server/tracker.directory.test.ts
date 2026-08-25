@@ -1602,6 +1602,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns GW Biomedical Engineering degree paths with the qualified Engineering fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "george-washington-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "george-washington-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          destinationUrl: "https://graduate.engineering.gwu.edu/admissions-information-sessions",
+          details: expect.stringContaining("U.S. Armed Forces"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
