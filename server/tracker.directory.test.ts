@@ -1422,6 +1422,31 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("keeps UAB Neuroengineering's limited doctoral fee-waiver route separate from its Biomedical Engineering paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const neuroengineering = await caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-neuroengineering-phd" });
+    const biomedicalPaths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-ms" }),
+    ]);
+
+    expect(neuroengineering?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.uab.edu/engineering/home/neuroengineering",
+        details: expect.stringContaining("first-come, first-served"),
+        verificationPasses: 3,
+      }),
+    ]));
+    for (const program of biomedicalPaths) {
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          destinationUrl: "https://www.uab.edu/engineering/home/neuroengineering",
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
