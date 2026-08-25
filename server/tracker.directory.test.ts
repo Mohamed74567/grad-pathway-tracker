@@ -1055,6 +1055,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns University of Iowa Biomedical Engineering degree paths with the qualified Graduate Admissions fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-iowa-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-iowa-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.admissions.uiowa.edu/graduate-fee-waiver",
+          details: expect.stringContaining("FAFSA alone is insufficient"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
