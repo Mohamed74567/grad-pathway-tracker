@@ -1544,6 +1544,26 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns WPI Biomedical Engineering degree paths with the qualified Graduate School fee-waiver contact", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "wpi-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "wpi-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "wpi-biomedical-engineering-meng" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:grad@wpi.edu",
+          details: expect.stringContaining("does not state eligibility categories"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
