@@ -1621,6 +1621,24 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns WashU Biomedical Engineering degree paths with the qualified McKelvey fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "washington-university-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "washington-university-biomedical-engineering-ms" }),
+    ]);
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          destinationUrl: "https://engineering.washu.edu/academics/graduate-admissions/recruitment-schedule.html",
+          details: expect.stringContaining("Admissions Cram Session"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
