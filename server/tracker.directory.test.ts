@@ -1190,6 +1190,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Penn Bioengineering degree paths with Penn Engineering’s eligibility-limited automatic fee waiver", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-pennsylvania-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-pennsylvania-bioengineering-mse" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradadm.engineering.upenn.edu/how-to-apply/",
+          details: expect.stringContaining("proven low-income background"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
