@@ -1511,6 +1511,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UC Irvine Biomedical Engineering degree paths with the qualified Graduate Division fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "uc-irvine-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "uc-irvine-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.uci.edu/admissions/application-fee-fee-waivers/",
+          details: expect.stringContaining("DACA/AB540"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
