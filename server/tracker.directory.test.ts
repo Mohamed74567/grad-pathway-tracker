@@ -892,6 +892,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Georgia Tech degree paths with qualified Institute-level fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "georgia-tech-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "georgia-tech-bioengineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "georgia-tech-master-biomedical-innovation-development" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.gatech.edu/admissions/application-fee-waivers",
+          details: expect.stringContaining("home school"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+
+    const directory = await caller.tracker.directory.list({});
+    expect(directory.find(program => program.slug === "georgia-tech-bioengineering-phd")?.hasFeeWaiverGuidance).toBe(true);
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
