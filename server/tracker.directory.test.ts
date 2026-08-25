@@ -1402,6 +1402,26 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns USC Biomedical Engineering and Medical Device Engineering degree paths with the qualified Graduate Admission fee-waiver request", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-southern-california-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-southern-california-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "usc-medical-device-diagnostic-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradadm.usc.edu/tools-resources/fee-waivers/",
+          details: expect.stringContaining("3–4 business days"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
