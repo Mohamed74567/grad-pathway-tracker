@@ -1315,6 +1315,26 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UC Berkeley Bioengineering and Translational Medicine degree paths with the qualified Graduate Division fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "uc-berkeley-ucsf-joint-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "uc-berkeley-bioengineering-meng" }),
+      caller.tracker.directory.bySlug({ slug: "uc-berkeley-ucsf-master-translational-medicine" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.berkeley.edu/admissions/application-process/fee-waiver/",
+          details: expect.stringContaining("Student Aid Index"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
