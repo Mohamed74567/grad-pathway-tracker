@@ -1138,6 +1138,25 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Maryland Bioengineering degree paths with the qualified Graduate School fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-maryland-bioengineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-maryland-bioengineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://gradschool.umd.edu/feewaiverinformation",
+          details: expect.stringContaining("10–15 business days"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
