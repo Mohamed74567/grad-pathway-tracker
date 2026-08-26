@@ -594,3 +594,5 @@
 - [x] Re-audit University of Minnesota Biomedical Engineering M.S./Ph.D. fee-waiver coverage against the current BME application page. Existing shared form entries remain accurate for the November 9 request deadline, November 13 decision date, December 1 application deadline, limited-number scope, and degree separation; no duplicate update was made.
 
 - [x] Re-audit University of Utah Biomedical Engineering M.S./Ph.D. waiver coverage. Confirmed the domestic Ph.D.-only code CE2021BIMEPHD and separate McNair route remain accurate; preserved M.S. fee treatment without copying the doctoral code and documented the degree boundary.
+
+- [x] Add UNC Chapel Hill Biomedical Engineering Ph.D. central Graduate School fee-waiver guidance with ten eligibility groups, in-application form workflow, documentation requirement, deadline boundary, and three-pass provenance; no unsupported M.S. transfer.

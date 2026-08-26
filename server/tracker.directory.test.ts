@@ -2459,6 +2459,20 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UNC Chapel Hill Biomedical Engineering Ph.D. with the central Graduate School fee-waiver workflow", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "unc-chapel-hill-biomedical-engineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://gradschool.unc.edu/admissions/feewaiver/",
+        details: expect.stringContaining("ten published groups"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
