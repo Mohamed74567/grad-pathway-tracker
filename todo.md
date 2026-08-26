@@ -614,3 +614,5 @@
 - [x] Add and validate NYU Tandon Biomedical Engineering M.S./Ph.D. financial-hardship fee-waiver contact guidance. Both degree profiles have separate verified entries with the US$90 non-refundable and non-guaranteed boundaries; 159 tests, production build, and public Ph.D. profile validation passed.
 
 - [x] Reconcile Clemson Bioengineering’s published Ph.D., M.Eng., and M.S. profiles. Current official Clemson sources state there is no graduate application fee, so no waiver guidance was added; the existing no-fee treatment and degree boundaries were retained.
+
+- [x] Reconcile Northeastern Bioengineering’s published fee treatment. Retained the Ph.D. US$100 fee with no unsupported waiver route; recorded the M.S. automatic no-fee policy only for Fall 2026/Spring 2027 and did not project it to Fall 2027.
