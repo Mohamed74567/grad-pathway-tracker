@@ -2552,6 +2552,21 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns North Carolina A&T Bioengineering M.S. with Graduate College fee-waiver contact guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "north-carolina-at-bioengineering-ms" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        title: "Graduate College fee-waiver availability contact",
+        destinationUrl: "mailto:grad@ncat.edu",
+        details: expect.stringContaining("before paying"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Montana State Bioengineering M.S. with McNair-only fee-waiver contact guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "montana-state-bioengineering-ms" });

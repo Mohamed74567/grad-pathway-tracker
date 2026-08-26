@@ -716,3 +716,8 @@
 - [x] Correct Montana State’s program mapping to verified program ID 4470001 and remove the orphaned guessed-ID row.
 - [x] Add and pass Montana State regression coverage; focused directory suite reached 166 passing tests with the extended timeout.
 - [x] Record Montana State official-source evidence and continue the fee-waiver queue.
+
+- [x] Add North Carolina A&T Bioengineering M.S. Graduate College fee-waiver contact guidance, preserving the US$60 non-refundable fee, pre-payment contact requirement, no-refund boundary, and no-public-code limitation.
+- [x] Keep the route M.S.-specific and exclude the dated 2026 social promotion, undergraduate NACAC/ACT waivers, and unrelated tuition policies from the published guidance.
+- [x] Add and pass North Carolina A&T regression coverage; focused directory suite reached 167 passing tests with the extended timeout.
+- [x] Record North Carolina A&T official-source evidence and continue the fee-waiver queue.
