@@ -191,6 +191,26 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns George Mason Bioengineering's Fall 2027 doctoral fee-waiver form route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "george-mason-bioengineering-phd" });
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://masongrad.my.salesforce-sites.com/form/?formid=217762",
+        details: expect.stringContaining("November 15, 2026"),
+        verificationPasses: 3,
+      }),
+    ]));
+    // The directory currently has no George Mason Bioengineering M.S. profile;
+    // do not imply that the department's Fall 2027 doctoral form applies to one.
+    expect(doctorate?.degreeOptions).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ degreeType: "masters" }),
+    ]));
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
