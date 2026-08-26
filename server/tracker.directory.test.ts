@@ -1831,6 +1831,25 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Penn State Biomedical Engineering Ph.D. and thesis M.S. with the qualified Engineering recruitment-program fee-waiver contact", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "penn-state-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "penn-state-biomedical-engineering-thesis-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:gradfeewaivers@engr.psu.edu",
+          details: expect.stringContaining("Center for Engineering Outreach & Inclusion"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
