@@ -211,6 +211,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns University of Oklahoma Biomedical Engineering's documented fee-waiver request for its M.S. and Ph.D. paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-oklahoma-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-oklahoma-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:npalmeter@ou.edu",
+          details: expect.stringContaining("November 15 for fall and August 15 for spring"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          details: expect.stringContaining("does not list a code, a decision timeline"),
+        }),
+      ]));
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
@@ -866,7 +889,7 @@ describe("tracker.directory", () => {
     }
   });
 
-  it("returns University of Oklahoma’s current central fee and no-central-waiver treatment for both BME degrees", async () => {
+  it("returns University of Oklahoma’s current central fee and department-level request for both BME degrees", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
     const ms = await caller.tracker.directory.bySlug({ slug: "university-oklahoma-biomedical-engineering-ms" });
@@ -875,7 +898,12 @@ describe("tracker.directory", () => {
     for (const program of [ms, phd]) {
       expect(program?.applicationFeeDisplay).toContain("US$50 U.S. citizen/permanent resident; US$100 international");
       expect(program?.admissionFactsSourceUrl).toBe("https://www.ou.edu/gradcollege/apply.html");
-      expect(program?.applicationGuidance).toEqual([]);
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          title: "University of Oklahoma Biomedical Engineering application-fee-waiver request",
+          destinationUrl: "mailto:npalmeter@ou.edu",
+        }),
+      ]));
       expect(program?.grePolicy).toContain("Not required");
       expect(program?.campusImageCredit).toContain("University of Oklahoma");
     }
