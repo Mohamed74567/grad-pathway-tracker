@@ -157,6 +157,19 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Clemson Bioengineering doctoral and master’s paths with no application fee", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "clemson-bioengineering-phd" });
+    const meng = await caller.tracker.directory.bySlug({ slug: "clemson-biomedical-engineering-meng" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "clemson-bioengineering-ms" });
+
+    for (const program of [doctorate, meng, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("No application fee");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
