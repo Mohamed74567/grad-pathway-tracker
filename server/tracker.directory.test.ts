@@ -306,6 +306,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Tufts School of Engineering’s qualified Biomedical Engineering fee-waiver route without importing GSAS-only NESCAC benefits", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "tufts-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "tufts-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:gradadmissions@tufts.edu",
+          details: expect.stringContaining("AmeriCorps volunteers"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          details: expect.stringContaining("NESCAC benefits are explicitly Graduate School of Arts and Sciences only"),
+        }),
+      ]));
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
