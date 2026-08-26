@@ -678,3 +678,8 @@
 - [x] Add and pass Caltech regression coverage; focused directory suite reached 160 passing tests with the extended timeout.
 - [x] Record Caltech official-source evidence and conservative wording in official-source-log.md.
 - [x] Continue the official-source fee-waiver queue after Caltech.
+
+- [x] Re-audit Cal Poly San Luis Obispo Biomedical Engineering M.S. fee treatment from current department, catalog, and university aid sources; preserve the US$70 CSU application fee and empty application-guidance state because no actual BME application-fee waiver route is published.
+- [x] Explicitly exclude Cal Poly tuition waivers, assistantships, and general aid language from application-fee-waiver guidance unless a current BME-specific route is published.
+- [x] Confirm existing Cal Poly regression coverage protects the no-ineligible-waiver boundary and record the official-source decision.
+- [x] Continue the official-source fee-waiver queue after Cal Poly.
