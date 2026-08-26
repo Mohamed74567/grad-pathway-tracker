@@ -2510,6 +2510,23 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns NYU Tandon Biomedical Engineering M.S. and Ph.D. with financial-hardship fee-waiver contact guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "nyu-tandon-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "nyu-tandon-biomedical-engineering-ms" }),
+    ]);
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:engineering.gradinfo@nyu.edu",
+          details: expect.stringContaining("financial hardship"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });

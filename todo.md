@@ -610,3 +610,5 @@
 - [x] Add and validate UF Biomedical Engineering M.S. College of Engineering fee-waiver form guidance. The entry is M.S.-only, selected-applicant and non-guaranteed, with the Ph.D. interest-form/code route explicitly excluded; 157 tests, production build, and public profile validation passed.
 
 - [x] Add and validate Texas A&M Biomedical Engineering M.S./Ph.D. selected-faculty fee-waiver coupon guidance. Each degree has its own verified entry with no automatic approval or invented code; 158 tests, production build, and public Ph.D. profile validation passed.
+
+- [x] Add and validate NYU Tandon Biomedical Engineering M.S./Ph.D. financial-hardship fee-waiver contact guidance. Both degree profiles have separate verified entries with the US$90 non-refundable and non-guaranteed boundaries; 159 tests, production build, and public Ph.D. profile validation passed.
