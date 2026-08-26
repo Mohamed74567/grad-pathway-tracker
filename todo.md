@@ -726,3 +726,8 @@
 - [x] Keep Princeton guidance on the published Bioengineering Ph.D. only; do not create a separate route for the incidental M.A. or transfer it to unrelated master’s programs.
 - [x] Add and pass Princeton regression coverage; focused directory suite reached 168 passing tests with the extended timeout.
 - [x] Record Princeton official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit Northwestern Biomedical Engineering Ph.D. and M.S. fee treatment against current BME and Graduate School pages; update the Ph.D. guidance to the limited 2025–2026/2026–2027 cycle-sensitive TGS criteria and preserve the M.S. empty guidance state.
+- [x] Preserve Northwestern’s Ph.D.-only scope, U.S.-citizen/permanent-resident boundary, first-come/first-served limitation, and September 2026 criteria-refresh warning without inventing a code or claiming international eligibility.
+- [x] Update and pass Northwestern regression coverage; focused directory suite remains at 168 passing tests with the extended timeout.
+- [x] Record Northwestern official-source evidence and continue the fee-waiver queue.

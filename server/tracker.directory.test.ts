@@ -739,7 +739,7 @@ describe("tracker.directory", () => {
     expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
-        details: expect.stringContaining("maximum waiver allocation"),
+        details: expect.stringContaining("limited number of waivers"),
       }),
     ]));
     expect(masters?.applicationGuidance).toEqual([]);
