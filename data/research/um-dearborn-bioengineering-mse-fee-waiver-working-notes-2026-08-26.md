@@ -1,0 +1,7 @@
+# University of Michigan-Dearborn Bioengineering MSE fee-waiver review — August 26, 2026
+
+UM-Dearborn’s current official Application Fee Waivers page states that waivers are first-come, first-served and must be requested after starting the application but before paying the US$60 fee or submitting the application. The approved categories are: U.S. military active duty/veteran/reservist or spouse/dependent; current Fulbright or McNair Scholar; U.S. citizens or legal permanent residents demonstrating extreme financial need; current UM-Dearborn students and alumni; UM-Dearborn employees; applicants from countries with SWIFT banking sanctions; and attendees of an eligible recruitment event. The page links the Graduate Application Fee Waiver Request Form, says approved applicants receive a coupon code by email, places the code in the application’s Additional Information section, and states approval can take five business days. Recruitment-event attendees receive a code two business days after the event and cannot request it beforehand.
+
+The official Bioengineering MSE page confirms the published in-scope program. This route is added only to the published MSE profile; no Ph.D. profile is in the current cohort. No automatic approval is implied, and paid fees are not refundable or retroactively waived.
+
+Sources: https://umdearborn.edu/admissions-aid/graduate-applicants/planning-graduate-school/application-fee-waivers ; https://umdearborn.edu/admissions-aid/graduate-applicants/apply-graduate-student ; https://umdearborn.edu/academics/program/bioengineering-mse

@@ -2544,6 +2544,18 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UM-Dearborn Bioengineering MSE with documented fee-waiver request form guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-dearborn-bioengineering-mse" });
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://umdearborn.edu/admissions-aid/graduate-applicants/planning-graduate-school/application-fee-waivers",
+        details: expect.stringContaining("first-come, first-served"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
   it("returns Miami University Biomedical Engineering M.Eng. with limited-category waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "miami-university-biomedical-engineering-meng" });

@@ -634,3 +634,5 @@
 - [x] Reconcile Wright State Biomedical Engineering M.S. fee treatment. Retained the official US$40 graduate application fee and no waiver guidance because no current graduate BME route is published.
 
 - [x] Add and validate Miami University Biomedical Engineering M.Eng. limited-category fee-waiver contact guidance with strict eligibility language; 161 tests passed with extended timeout, production build succeeded, and public-profile validation passed.
+
+- [x] Add and validate UM-Dearborn Bioengineering MSE fee-waiver form guidance with documented categories, timing, coupon-code workflow, and no-refund limits; 162 tests passed with extended timeout, production build succeeded, and public-profile validation passed.
