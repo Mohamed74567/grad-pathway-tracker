@@ -2544,6 +2544,25 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Rochester Biomedical Engineering M.S. and Ph.D. case-by-case waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-rochester-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-rochester-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toContain("US$70");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          title: "Graduate application-fee waiver request",
+          details: expect.stringMatching(/case by case[\s\S]*all required materials[\s\S]*not guaranteed/),
+          sourceUrl: "https://www.rochester.edu/college/gradstudies/admissions/faq.html",
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns UCF CECS fee-waiver opportunities only on the Biomedical Engineering Ph.D. path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "university-central-florida-biomedical-engineering-phd" });

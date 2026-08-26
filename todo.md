@@ -663,3 +663,8 @@
 - [x] Record UCF official-source findings and the decision not to misclassify CECS open-house registration as a fee-waiver session route.
 - [x] Keep UCF fee guidance at verificationPasses = 3 and preserve source-linked degree separation.
 - [x] Continue the official-source queue after UCF rather than asserting directory completion.
+
+- [x] Add Rochester Biomedical Engineering M.S. and Ph.D. case-by-case application-fee waiver contact guidance from the current Graduate Admissions FAQ, preserving the US$70 fee, completed-application requirement, non-guaranteed approval, and separate degree records.
+- [x] Add Rochester degree-separated regression coverage; focused directory suite passed with 159 tests using the extended timeout.
+- [x] Record Rochester’s official source URLs and explicitly avoid inferring automatic categories, codes, forms, or deadline-specific waiver claims.
+- [x] Continue the fee-waiver queue after Rochester rather than asserting completion.
