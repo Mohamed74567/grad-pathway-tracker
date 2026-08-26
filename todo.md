@@ -590,3 +590,5 @@
 - [x] Reconcile Illinois Bioengineering’s current M.S./Ph.D. waiver pages. Confirmed the departmental route is explicitly doctoral in substance despite its repeated block on the M.S. page; retained it only on the Ph.D. profile and preserved the M.S. central route, with the official conflict documented.
 
 - [x] Re-audit UIC Biomedical Engineering M.S./Ph.D. departmental waiver evidence. Recorded the official Fall 2026-only doctoral deadline and M.S. information-session/deadline routes, but did not add expired dates as current guidance; existing central waiver entries remain degree-separated.
+
+- [x] Re-audit University of Minnesota Biomedical Engineering M.S./Ph.D. fee-waiver coverage against the current BME application page. Existing shared form entries remain accurate for the November 9 request deadline, November 13 decision date, December 1 application deadline, limited-number scope, and degree separation; no duplicate update was made.
