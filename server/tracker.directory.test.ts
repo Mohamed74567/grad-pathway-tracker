@@ -1723,6 +1723,20 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Delaware Quantitative Systems Pharmacology M.S. with the qualified Graduate Admissions fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-delaware-quantitative-systems-pharmacology-ms" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.udel.edu/academics/colleges/grad/prospective-students/programs/quantitative-systems-pharmacology/",
+        details: expect.stringContaining("Bridge to the Doctorate"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
