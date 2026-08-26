@@ -112,6 +112,28 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Northeastern's current College of Engineering fee waiver for Bioengineering M.S. only", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "northeastern-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "northeastern-bioengineering-ms" });
+
+    expect(masters?.applicationFeeDisplay).toBe("Waived for new MS applicants for Fall 2026 and Spring 2027");
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://coe.northeastern.edu/academics-experiential-learning/graduate-school-of-engineering/graduate-admissions/",
+        details: expect.stringContaining("Fall 2026 and Spring 2027"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(doctorate?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        title: "Northeastern Engineering master’s application-fee waiver",
+      }),
+    ]));
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
