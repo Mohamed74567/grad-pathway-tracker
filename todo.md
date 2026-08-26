@@ -642,3 +642,4 @@
 - [x] Add and validate NJIT Biomedical Engineering M.S./joint Ph.D. military-veteran fee-waiver guidance with no-separate-application workflow and published eligibility boundary.
 - [x] Reconcile University of Arizona Biomedical Engineering M.S./Ph.D. fee treatment from current BME and Graduate College sources; retained the US$90 fee and central no-waiver policy without importing unrelated departmental routes.
 - [x] Reconcile Drexel Biomedical Engineering M.S./Ph.D. fee treatment from current School of Engineering and BME sources; documented the no-waiver versus academic-partner conflict and retained conservative no-transfer treatment.
+- [x] Reconcile UT Southwestern Biomedical Engineering Ph.D. fee treatment from current Graduate School and BME sources; recorded the official no-application-fee status and added no unnecessary waiver guidance.

@@ -2544,6 +2544,16 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves UT Southwestern Biomedical Engineering PhD no-fee treatment without adding waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "ut-southwestern-biomedical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toMatch(/no application fee/i);
+    expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: expect.stringMatching(/^fee_waiver_/) }),
+    ]));
+  });
+
   it("preserves Drexel Biomedical Engineering fee treatment when School of Engineering waiver pages conflict", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "drexel-biomedical-engineering-phd" });

@@ -2128,3 +2128,6 @@ The official UA BME Graduate Admissions page states that BME graduate admissions
 
 ## Drexel University Biomedical Engineering M.S./Ph.D. fee review, August 26, 2026
 Drexel’s current School of Engineering graduate admission guidelines state that no fee waivers are offered for School of Engineering graduate programs, including M.S. and doctoral programs. The separate Engineering master’s page says students at schools with an academic-partner agreement receive an application-fee waiver, creating an unresolved central-versus-M.S.-page conflict. Drexel’s Biomedical Engineering page confirms both M.S. and Ph.D. availability and the application page states a US$65 fee. Because the applicable academic-partner list and conflict were not reconciled to the BME profile, no waiver guidance was added to either degree; unrelated Drexel college policies were excluded.
+
+## UT Southwestern Medical Center Biomedical Engineering Ph.D. fee review, August 26, 2026
+UT Southwestern’s current Graduate School admissions page states there is no application fee. The official Basic Sciences Ph.D. admissions page explicitly includes Biomedical Engineering and repeats that there is no application fee; the BME Ph.D. program page confirms full tuition and fee coverage after admission. Because applicants do not pay an application fee, no fee-waiver guidance was added.
