@@ -2544,6 +2544,22 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Howard Biomedical & Chemical Engineering Ph.D. session-based waiver guidance with the central-policy boundary", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "howard-biomedical-chemical-engineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_session",
+        title: "Graduate School information sessions may provide fee-waiver eligibility",
+        destinationUrl: "https://gs.howard.edu/admissions/upcoming-information-sessions",
+        sourceUrl: "https://gs.howard.edu/admissions/upcoming-information-sessions",
+        details: expect.stringMatching(/may be eligible[\s\S]*not guaranteed[\s\S]*does not offer application fee waivers/),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Caltech Medical Engineering Ph.D. fee-waiver form guidance without inventing an M.S. path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "caltech-medical-engineering-phd" });

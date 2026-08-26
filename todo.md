@@ -687,3 +687,8 @@
 - [x] Re-audit Carnegie Mellon Biomedical Engineering M.S.-Research and Ph.D. fee treatment against current BME admissions, FAQ, practicum, and aid pages; retain the CMU-student no-fee route only on the M.S. profile and preserve the Ph.D. fee-required boundary.
 - [x] Confirm existing CMU regression coverage protects the M.S.-only exception and Ph.D. separation at three-pass provenance.
 - [x] Record the CMU official-source reconciliation and continue the fee-waiver queue.
+
+- [x] Add Howard Biomedical & Chemical Engineering Ph.D. session-based fee-waiver guidance from the current Graduate School information-session page, preserving the central no-waiver conflict, non-guaranteed eligibility, and absence of an invented code or registration URL.
+- [x] Correct the initial Howard program-ID mapping before validation; remove the orphaned guessed-ID row and attach the verified route to program ID 4830001.
+- [x] Add and pass Howard regression coverage; focused directory suite reached 161 passing tests with the extended timeout.
+- [x] Record Howard’s official-source reconciliation and continue the fee-waiver queue.
