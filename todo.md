@@ -637,3 +637,4 @@
 
 - [x] Add and validate UM-Dearborn Bioengineering MSE fee-waiver form guidance with documented categories, timing, coupon-code workflow, and no-refund limits; 162 tests passed with extended timeout, production build succeeded, and public-profile validation passed.
 - [x] Add and validate RIT Biomedical Engineering M.S. current-student/alumni fee exemption with standard-fee boundary; focused directory suite (147 tests) passed with extended timeout and production build succeeded.
+- [x] Reconcile Syracuse Biomedical Engineering M.S./Bioengineering Ph.D. fee treatment from current ECS sources; retained the official US$75 fee and added no unsupported waiver route across either degree.

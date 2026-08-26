@@ -2544,6 +2544,19 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves Syracuse Biomedical Engineering fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "syracuse-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "syracuse-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toContain("US$75");
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({ guidanceType: expect.stringMatching(/^fee_waiver_/) }),
+      ]));
+    }
+  });
+
   it("returns RIT Biomedical Engineering MS with current-student and alumni fee exemption", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "rit-biomedical-engineering-ms" });
