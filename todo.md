@@ -697,3 +697,7 @@
 - [x] Exclude unrelated FIU undergraduate-to-graduate, medical, tuition, and funding waiver references from the BME M.S. application-fee decision.
 - [x] Add and pass FIU regression coverage; focused directory suite reached 162 passing tests with the extended timeout.
 - [x] Record FIU official-source evidence and continue the fee-waiver queue.
+
+- [x] Add Georgia Tech institute-level application-fee waiver request guidance separately to the joint Biomedical Engineering Ph.D. and M.S. profiles, preserving required documentation, deadline timing, one-waiver-per-cycle, 5–10-business-day decision, home-school routing, and international hardship limits.
+- [x] Add and pass Georgia Tech–Emory regression coverage on both degree paths; focused directory suite reached 163 passing tests with the extended timeout.
+- [x] Record the Georgia Tech–Emory official-source reconciliation and continue the fee-waiver queue.

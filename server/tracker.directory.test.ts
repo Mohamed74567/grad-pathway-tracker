@@ -2552,6 +2552,26 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Georgia Tech-Emory Biomedical Engineering fee-waiver request guidance on both degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "georgia-tech-emory-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "georgia-tech-emory-ms-biomedical-engineering" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          title: "Georgia Tech graduate application-fee waiver request",
+          destinationUrl: "https://grad.gatech.edu/admissions/application-fee-waivers",
+          details: expect.stringMatching(/qualifying programs[\s\S]*required documentation[\s\S]*home school[\s\S]*not automatic/),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Howard Biomedical & Chemical Engineering Ph.D. session-based waiver guidance with the central-policy boundary", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "howard-biomedical-chemical-engineering-phd" });
