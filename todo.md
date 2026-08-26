@@ -578,3 +578,5 @@
 - [x] Audit University of Houston Biomedical Engineering M.S. and Ph.D. fee-waiver coverage from the current department admissions page. Retained no waiver guidance because the department explicitly marks its application fee as non-waivable; preserved existing fee amounts rather than importing conflicting catalog values.
 
 - [x] Add University at Buffalo Biomedical Engineering Ph.D. fee-waiver contact guidance from current official BME and Graduate School sources. Added the program-coordination route with U.S. residency, financial-need/qualifying-program eligibility, documentation, and deferral boundaries; added a regression test. Validation: 154 Vitest tests passed and production build succeeded.
+
+- [x] Audit Michigan Technological University Biomedical Engineering Ph.D. fee treatment from current Graduate School sources. Confirmed the application is free and that only international applicants pay a separate US$10 processing fee; no unsupported waiver guidance was added and no processing-fee waiver was inferred.
