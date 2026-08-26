@@ -701,3 +701,8 @@
 - [x] Add Georgia Tech institute-level application-fee waiver request guidance separately to the joint Biomedical Engineering Ph.D. and M.S. profiles, preserving required documentation, deadline timing, one-waiver-per-cycle, 5–10-business-day decision, home-school routing, and international hardship limits.
 - [x] Add and pass Georgia Tech–Emory regression coverage on both degree paths; focused directory suite reached 163 passing tests with the extended timeout.
 - [x] Record the Georgia Tech–Emory official-source reconciliation and continue the fee-waiver queue.
+
+- [x] Add Purdue Engineering Virtual Graduate Showcase fee-waiver session guidance separately to the published Biomedical Engineering Ph.D., thesis M.S., and professional M.S. profiles, preserving the October 12, 2026 survey deadline, 2–3-day verification, one-application limit, manual email-confirmation route, and OGSPS authority boundary.
+- [x] Resolve the existing global guidance-destination uniqueness constraint safely with official-page anchors for the new Ph.D. and thesis-M.S. records; preserve the existing professional-M.S. route.
+- [x] Correct and pass Purdue regression coverage; focused directory suite reached 164 passing tests with the extended timeout.
+- [x] Record Purdue official-source evidence and continue the fee-waiver queue.

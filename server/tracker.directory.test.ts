@@ -2552,6 +2552,33 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Purdue BME showcase fee-waiver guidance on each published degree path", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const slugs = [
+      "purdue-biomedical-engineering-phd",
+      "purdue-biomedical-engineering-ms-thesis",
+      "purdue-biomedical-engineering-professional-ms",
+    ];
+    const programs = await Promise.all(slugs.map(slug => caller.tracker.directory.bySlug({ slug })));
+
+    for (const [index, program] of programs.entries()) {
+      const expectedGuidance = index < 2
+        ? expect.objectContaining({
+            guidanceType: "fee_waiver_session",
+            title: "Purdue Engineering Virtual Graduate Showcase fee-waiver route",
+            destinationUrl: expect.stringMatching(/Fee-Waiver#bme-/),
+            details: expect.stringMatching(/at least 10 questions[\s\S]*October 12, 2026[\s\S]*one application only[\s\S]*gradinfo@purdue\.edu/),
+            verificationPasses: 3,
+          })
+        : expect.objectContaining({
+            guidanceType: "fee_waiver_session",
+            title: expect.stringMatching(/Purdue Engineering Virtual Graduate Showcase/),
+            verificationPasses: 3,
+          });
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([expectedGuidance]));
+    }
+  });
+
   it("returns Georgia Tech-Emory Biomedical Engineering fee-waiver request guidance on both degree paths", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const paths = await Promise.all([
