@@ -658,3 +658,8 @@
 - [x] 2026-08-26 broader thin-snapshot, link-liveness, and fee-waiver queues remain tracked in their original unchecked TODO items.
 
 - [x] 2026-08-26 checkpoint preparation after QA artifact creation.
+
+- [x] Re-audit University of Central Florida Biomedical Engineering M.S./Ph.D. fee treatment from current CECS and UCF sources. Preserved the existing Ph.D.-only Early Action and Honors waiver guidance with November 1 and January 15 Fall deadlines, retained the M.S. US$30 fee without copied doctoral guidance, and added regression coverage for the boundary.
+- [x] Record UCF official-source findings and the decision not to misclassify CECS open-house registration as a fee-waiver session route.
+- [x] Keep UCF fee guidance at verificationPasses = 3 and preserve source-linked degree separation.
+- [x] Continue the official-source queue after UCF rather than asserting directory completion.

@@ -2544,6 +2544,25 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UCF CECS fee-waiver opportunities only on the Biomedical Engineering Ph.D. path", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-central-florida-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-central-florida-biomedical-engineering-ms" });
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        title: "CECS Ph.D. application-fee waiver opportunities",
+        details: expect.stringMatching(/Ph\.D\.-only[\s\S]*November 1[\s\S]*January 15/),
+        sourceUrl: "https://grad.cecs.ucf.edu/prospective-students/applying/",
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ title: "CECS Ph.D. application-fee waiver opportunities" }),
+    ]));
+  });
+
   it("returns Tulane Biomedical Engineering M.S. and Ph.D. with no application fee", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "tulane-university-biomedical-engineering-phd" });
