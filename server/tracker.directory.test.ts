@@ -2544,6 +2544,19 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Tulane Biomedical Engineering M.S. and Ph.D. with no application fee", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "tulane-university-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "tulane-university-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("No application fee");
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({ guidanceType: expect.stringMatching(/^fee_waiver_/) }),
+      ]));
+    }
+  });
+
   it("preserves Cincinnati Biomedical Engineering fee treatment under the CEAS no-waiver policy", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "university-cincinnati-biomedical-engineering-phd" });

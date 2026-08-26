@@ -646,3 +646,4 @@
 - [x] Add and validate UTSA Biomedical Engineering Ph.D. McNair-only fee-waiver form guidance with the official no-general-waiver boundary and three-pass provenance.
 - [x] Add and validate New York Tech Bioengineering M.S. advisor-issued fee-waiver guidance with the official US$50 fee and non-automatic boundary.
 - [x] Reconcile University of Cincinnati Biomedical Engineering M.S./Ph.D. fee treatment against current CEAS and university admissions sources; retained the CEAS no-waiver boundary without transferring the conflicting central military statement.
+- [x] Reconcile Tulane Biomedical Engineering M.S./Ph.D. fee treatment from current SSE and BME sources; retained the official no-application-fee status and added no unnecessary waiver guidance.

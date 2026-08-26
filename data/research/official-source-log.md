@@ -2140,3 +2140,6 @@ New York Tech’s current Graduate Admissions Catalog lists a US$50 non-refundab
 
 ## University of Cincinnati Biomedical Engineering M.S./Ph.D. fee review, August 26, 2026
 The official College of Engineering and Applied Science graduate FAQ states that CEAS does not offer application fee waivers. The current university graduate FAQ’s active-duty/veteran waiver statement was not transferred because the CEAS-specific page expressly states no waivers for the college that houses Biomedical Engineering. The BME M.S. and Ph.D. pages confirm both in-scope degree paths. No waiver guidance was added to either profile.
+
+## Tulane University Biomedical Engineering M.S./Ph.D. fee review, August 26, 2026
+Tulane School of Science and Engineering’s current graduate admissions page states that it does not charge application fees for Ph.D., M.S., or graduate certificate programs. The BME graduate page separately confirms no application fee for the Ph.D. and lists the current M.S. and Ph.D. offerings; the BME application checklist confirms degree-specific deadlines and the online application. Both published BME profiles retain the official no-application-fee treatment and no waiver guidance was added.
