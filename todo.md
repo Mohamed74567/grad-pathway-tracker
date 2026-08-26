@@ -608,3 +608,5 @@
 - [x] Re-audit Northwestern Biomedical Engineering M.S. fee-waiver evidence. The current BME page delegates waivers to The Graduate School, whose 2025–26 allocation is exhausted and whose 2026–27 criteria are pending; no current M.S.-applicable route was verified, so no guidance was added or copied from the Ph.D.
 
 - [x] Add and validate UF Biomedical Engineering M.S. College of Engineering fee-waiver form guidance. The entry is M.S.-only, selected-applicant and non-guaranteed, with the Ph.D. interest-form/code route explicitly excluded; 157 tests, production build, and public profile validation passed.
+
+- [x] Add and validate Texas A&M Biomedical Engineering M.S./Ph.D. selected-faculty fee-waiver coupon guidance. Each degree has its own verified entry with no automatic approval or invented code; 158 tests, production build, and public Ph.D. profile validation passed.

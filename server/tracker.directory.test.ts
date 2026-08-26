@@ -2493,6 +2493,23 @@ describe("tracker.directory", () => {
       }),
     ]));
   });
+  it("returns Texas A&M Biomedical Engineering M.S. and Ph.D. with selected-faculty coupon guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "texas-am-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "texas-am-biomedical-engineering-ms" }),
+    ]);
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_code",
+          destinationUrl: "mailto:bmengradadvising@tamu.edu",
+          details: expect.stringContaining("selected applicants"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
