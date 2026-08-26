@@ -2554,6 +2554,20 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves University of Arkansas Biomedical Engineering fee treatment without an unsupported new-degree waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-arkansas-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-arkansas-biomedical-engineering-phd" }),
+    ]);
+
+    for (const program of programs) {
+      expect(program?.applicationFeeDisplay).toContain("US$60 domestic");
+      expect(program?.applicationFeeDisplay).toContain("US$75 international");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("returns SIU Carbondale Biomedical Engineering M.S. and Ph.D. with limited McNair/Fulbright fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const programs = await Promise.all([

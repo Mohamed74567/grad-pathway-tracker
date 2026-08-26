@@ -746,3 +746,8 @@
 - [x] Exclude UTEP resident-tuition military waivers, doctoral tuition remission, assistantships, and third-party claims from application-fee guidance.
 - [x] Strengthen and pass UTEP regression coverage for the empty M.S./Ph.D. guidance boundary; focused directory suite remains at 170 passing tests with the extended timeout.
 - [x] Record UTEP official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit University of Arkansas Biomedical Engineering M.S. and Ph.D. fee treatment against current Graduate School, College of Engineering, catalog, and international admissions sources; preserve the published US$60 domestic / US$75 international non-refundable fee displays and empty guidance state.
+- [x] Exclude recent College of Engineering social-media event promotions, returning-student/readmission exceptions, senior-citizen tuition waivers, and unrelated online/undergraduate claims from new degree-seeking BME guidance.
+- [x] Add and pass University of Arkansas regression coverage; focused directory suite reached 171 passing tests with the extended timeout.
+- [x] Record University of Arkansas official-source evidence and continue the fee-waiver queue.
