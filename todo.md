@@ -568,3 +568,5 @@
 - [x] Reconcile Carnegie Mellon Biomedical Engineering’s student-only fee waiver from the official BME M.S. admissions page. Added it only to the published M.S. profile, explicitly excluded the Ph.D. and non-CMU applicants, added degree-separation regression coverage, and validated 153 Vitest tests plus the production build. Browser validation was unavailable for this pass.
 
 - [x] Re-audit Duke Biomedical Engineering M.S. and Ph.D. fee-waiver guidance against the current Graduate School application-fee page. Existing degree-specific entries remain accurate and complete; no duplicate or unsupported update was made. Source review retained strict central-policy scope.
+
+- [x] Re-audit Georgia Tech Biomedical Engineering waiver coverage. Confirmed the current Institute-level route and retained it on standalone Georgia Tech Bioengineering M.S./Ph.D. profiles; did not transfer it to joint Georgia Tech–Emory BME records because the official FAQ makes waiver administration home-school dependent and the joint records lack a reconciled home-school route.
