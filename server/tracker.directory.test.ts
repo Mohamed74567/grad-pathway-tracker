@@ -2078,6 +2078,22 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Carnegie Mellon Biomedical Engineering M.S. with the CMU-student-only waiver while keeping the Ph.D. separate", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "carnegie-mellon-biomedical-engineering-ms-research" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "carnegie-mellon-biomedical-engineering-phd" });
+
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://www.cmu.edu/bme/Admissions/practicum_ms.html",
+        details: expect.stringContaining("all CMU students regardless"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(phd?.applicationGuidance.some((guide) => guide.destinationUrl === "https://www.cmu.edu/bme/Admissions/practicum_ms.html")).toBe(false);
+  });
+
   it("returns Delaware Biomedical Engineering Ph.D. with the qualified Graduate Admissions fee-waiver contact route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const phd = await caller.tracker.directory.bySlug({ slug: "university-of-delaware-biomedical-engineering-phd" });
