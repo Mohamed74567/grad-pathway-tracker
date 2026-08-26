@@ -600,3 +600,5 @@
 - [x] Re-audit Johns Hopkins Biomedical Engineering M.S.E./Ph.D. fee-waiver evidence. Documented the Ph.D. referral to School of Medicine central options and the M.S. page’s stale Fall 2025 waiver sentence alongside its current Fall 2027 deadline; added no unsupported current-cycle guidance.
 
 - [x] Re-audit Virginia Tech–Wake Forest Biomedical Engineering M.S. and Ph.D. waiver coverage. Existing profiles already carry the shared Graduate School request route and BME departmental contact route; verified 5–7 business-day timing, pre-submission approval, no-refund, category, and no-reuse boundaries with no duplicate update.
+
+- [x] Re-audit Washington University in St. Louis Biomedical Engineering M.S./Ph.D. fee-waiver session coverage. Existing shared session entries remain accurate for current WashU student/employee and eligible-session routes, the Admissions Cram Session exclusion, and no-code/no-guarantee boundaries; closed 2025–26 master’s session dates were not promoted as current Fall 2027 guidance.
