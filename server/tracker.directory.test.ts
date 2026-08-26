@@ -1812,6 +1812,25 @@ describe("tracker.directory", () => {
     expect(masters?.applicationGuidance.some((guide) => guide.guidanceType.startsWith("fee_waiver_"))).toBe(false);
   });
 
+  it("returns Purdue Biomedical Engineering Ph.D. and thesis M.S. with the current virtual-showcase fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "purdue-biomedical-engineering-ms-thesis" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          destinationUrl: "https://engineering.purdue.edu/Engr/Academics/Graduate/graduate-showcase",
+          details: expect.stringContaining("October 12, 2026"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
