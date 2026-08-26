@@ -2544,6 +2544,23 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Caltech Medical Engineering Ph.D. fee-waiver form guidance without inventing an M.S. path", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "caltech-medical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$100");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Graduate Studies fee-waiver request form",
+        destinationUrl: "https://gradoffice.caltech.edu/admissions/applyonline",
+        sourceUrl: "https://gradoffice.caltech.edu/admissions/faq-applicants",
+        details: expect.stringMatching(/limited number[\s\S]*financial need[\s\S]*payment options[\s\S]*not guaranteed/),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Rochester Biomedical Engineering M.S. and Ph.D. case-by-case waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "university-rochester-biomedical-engineering-phd" });

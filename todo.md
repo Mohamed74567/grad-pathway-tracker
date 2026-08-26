@@ -668,3 +668,13 @@
 - [x] Add Rochester degree-separated regression coverage; focused directory suite passed with 159 tests using the extended timeout.
 - [x] Record Rochester’s official source URLs and explicitly avoid inferring automatic categories, codes, forms, or deadline-specific waiver claims.
 - [x] Continue the fee-waiver queue after Rochester rather than asserting completion.
+
+- [x] Re-audit Boston University Biomedical Engineering Ph.D., M.S., and M.Eng. fee-waiver coverage against current College of Engineering and degree pages; existing shared Engineering request entries remain accurate at three-pass provenance, with no new unsupported degree-specific route added.
+- [x] Confirm current BU Fall 2027 deadline boundaries in the audit log without changing the established waiver destination or inferring automatic approval.
+- [x] Continue the official-source fee-waiver queue after Boston University.
+
+- [x] Add Caltech Medical Engineering Ph.D. limited fee-waiver form guidance from current Graduate Studies sources, preserving the US$100 fee, financial-need or qualifying-affiliation limits, payment-options workflow, individual review, and no-guarantee boundary.
+- [x] Keep Caltech’s waiver route Ph.D.-only because the Medical Engineering source says students are not normally admitted toward a standalone M.S.; no unsupported M.S. policy was created.
+- [x] Add and pass Caltech regression coverage; focused directory suite reached 160 passing tests with the extended timeout.
+- [x] Record Caltech official-source evidence and conservative wording in official-source-log.md.
+- [x] Continue the official-source fee-waiver queue after Caltech.
