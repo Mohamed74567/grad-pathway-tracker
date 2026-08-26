@@ -612,3 +612,5 @@
 - [x] Add and validate Texas A&M Biomedical Engineering M.S./Ph.D. selected-faculty fee-waiver coupon guidance. Each degree has its own verified entry with no automatic approval or invented code; 158 tests, production build, and public Ph.D. profile validation passed.
 
 - [x] Add and validate NYU Tandon Biomedical Engineering M.S./Ph.D. financial-hardship fee-waiver contact guidance. Both degree profiles have separate verified entries with the US$90 non-refundable and non-guaranteed boundaries; 159 tests, production build, and public Ph.D. profile validation passed.
+
+- [x] Reconcile Clemson Bioengineering’s published Ph.D., M.Eng., and M.S. profiles. Current official Clemson sources state there is no graduate application fee, so no waiver guidance was added; the existing no-fee treatment and degree boundaries were retained.
