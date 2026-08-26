@@ -1468,6 +1468,17 @@ describe("tracker.directory", () => {
         }),
       ]));
     }
+
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSde2mfwIvtb5jFKd7ZQj7k65WIoPLJSwfVtwkux49-Nu5CqTg/viewform",
+          details: expect.stringContaining("December 15, 2025"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
   });
 
   it("returns UT Austin Biomedical Engineering Ph.D. with the qualified Graduate School fee-waiver route", async () => {
