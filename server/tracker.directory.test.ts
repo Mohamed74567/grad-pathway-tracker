@@ -256,6 +256,18 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Wayne State Biomedical Engineering’s shared 2026–27 application-fee-waiver window", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "wayne-state-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "wayne-state-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$50 application fee waived for Spring/Summer/Fall 2026 and Winter 2027 applicants.");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
