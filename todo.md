@@ -566,3 +566,5 @@
 - [x] Reconcile the University of Maryland, College Park Bioengineering M.S. and Ph.D. fee-waiver route from current Fischell Department and Graduate School sources. Added the direct request-form route separately to both profiles, retained Fall 2026 preferred/complete dates and 10–15-business-day processing guidance, and validated 152 Vitest tests, production build, and the loaded Ph.D. profile. No dates were generalized beyond the published cycle.
 
 - [x] Reconcile Carnegie Mellon Biomedical Engineering’s student-only fee waiver from the official BME M.S. admissions page. Added it only to the published M.S. profile, explicitly excluded the Ph.D. and non-CMU applicants, added degree-separation regression coverage, and validated 153 Vitest tests plus the production build. Browser validation was unavailable for this pass.
+
+- [x] Re-audit Duke Biomedical Engineering M.S. and Ph.D. fee-waiver guidance against the current Graduate School application-fee page. Existing degree-specific entries remain accurate and complete; no duplicate or unsupported update was made. Source review retained strict central-policy scope.
