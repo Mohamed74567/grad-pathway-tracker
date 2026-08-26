@@ -53,17 +53,25 @@ describe("tracker.directory", () => {
     ]));
   });
 
-  it("returns the current UConn Duolingo policy and fee-waiver contact guidance", async () => {
+  it("returns UConn's current Duolingo policy and the narrow internal BME M.S.-to-Ph.D. fee-waiver exception", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
     const program = await caller.tracker.directory.bySlug({ slug: "university-connecticut-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-connecticut-biomedical-engineering-ms" });
 
     expect(program?.duolingoPolicy).toContain("Duolingo English Test 110");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
-        guidanceType: "fee_waiver_contact",
-        sourceUrl: "https://grad.uconn.edu/admissions/fee-waiver-policy/",
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://grad.uconn.edu/admissions/application-fee-waivers/",
+        details: expect.stringContaining("after completing a UConn BME M.S."),
         verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://grad.uconn.edu/admissions/application-fee-waivers/",
+        title: "UConn BME internal M.S.-to-Ph.D. application-fee exception",
       }),
     ]));
   });
