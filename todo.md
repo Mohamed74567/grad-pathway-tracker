@@ -711,3 +711,8 @@
 - [x] Exclude MSU freshmen NACAC/ACT/SAT waiver language and tuition exemptions from the graduate BME application-fee decision.
 - [x] Add and pass Mississippi State regression coverage; focused directory suite reached 165 passing tests with the extended timeout.
 - [x] Record Mississippi State official-source evidence and continue the fee-waiver queue.
+
+- [x] Add Montana State Bioengineering M.S. McNair-only fee-waiver contact guidance, preserving the general no-waiver/deferred/refund boundary, Graduate School contact route, and no-public-code limitation.
+- [x] Correct Montana State’s program mapping to verified program ID 4470001 and remove the orphaned guessed-ID row.
+- [x] Add and pass Montana State regression coverage; focused directory suite reached 166 passing tests with the extended timeout.
+- [x] Record Montana State official-source evidence and continue the fee-waiver queue.

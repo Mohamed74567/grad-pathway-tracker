@@ -2552,6 +2552,21 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Montana State Bioengineering M.S. with McNair-only fee-waiver contact guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "montana-state-bioengineering-ms" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        title: "McNair scholar graduate application-fee waiver contact",
+        destinationUrl: "mailto:gradschool@montana.edu",
+        details: expect.stringContaining("McNair scholar"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("preserves Mississippi State Biomedical Engineering M.S. fee treatment without an unsupported waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "mississippi-state-biomedical-engineering-ms" });
