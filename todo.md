@@ -626,3 +626,5 @@
 - [x] Close the UT Dallas Biomedical Engineering M.S. counterpart review under the same department-level conflict boundary; no central waiver policy was transferred without BME confirmation.
 
 - [x] Reconcile University of South Carolina Biomedical Engineering Ph.D. and M.Eng. fee treatment. Retained the reinstated US$50 paid fee and no-waiver guidance because the Graduate School does not grant individual waiver requests and no BME exception is published.
+
+- [x] Reconcile Villanova Biomedical Engineering M.S. fee treatment. Retained the no-application-fee status from the current College of Engineering source; no unnecessary waiver guidance was added.
