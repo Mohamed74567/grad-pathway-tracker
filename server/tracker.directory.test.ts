@@ -76,6 +76,24 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Dartmouth Engineering's qualified fee-waiver route for Biomedical Engineering doctoral and M.Eng. paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "dartmouth-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "dartmouth-biomedical-engineering-meng" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://graduate.dartmouth.edu/admissions/applying-dartmouth/fee-waiver-criteria",
+          details: expect.stringContaining("GRE fee-reduction voucher"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
