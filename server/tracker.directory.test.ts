@@ -170,6 +170,27 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns VCU Engineering's Biomedical Engineering fee-waiver request for the M.S. only", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "virginia-commonwealth-university-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "virginia-commonwealth-university-biomedical-engineering-ms" });
+
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://forms.gle/D3HkHrNaVvgH6cVM6",
+        details: expect.stringContaining("within five business days"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(doctorate?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        title: "VCU Engineering Biomedical Engineering M.S. fee-waiver request",
+      }),
+    ]));
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
