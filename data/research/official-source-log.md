@@ -2137,3 +2137,6 @@ UTSA’s current Graduate Admissions page states that graduate applicants pay a 
 
 ## New York Institute of Technology Bioengineering M.S. fee-waiver expansion, August 26, 2026
 New York Tech’s current Graduate Admissions Catalog lists a US$50 non-refundable graduate application fee and states that the fee may be waived with an official waiver from the applicant’s college advisor or a New York Tech advisor. The current 2026–27 Bioengineering M.S. catalog confirms the in-scope medical-device-focused degree and separately lists the US$50 fee. The guidance added to the M.S. profile is advisor-issued and non-automatic; no universal code or unsupported doctoral transfer was added.
+
+## University of Cincinnati Biomedical Engineering M.S./Ph.D. fee review, August 26, 2026
+The official College of Engineering and Applied Science graduate FAQ states that CEAS does not offer application fee waivers. The current university graduate FAQ’s active-duty/veteran waiver statement was not transferred because the CEAS-specific page expressly states no waivers for the college that houses Biomedical Engineering. The BME M.S. and Ph.D. pages confirm both in-scope degree paths. No waiver guidance was added to either profile.

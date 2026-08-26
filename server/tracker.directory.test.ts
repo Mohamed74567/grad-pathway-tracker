@@ -2544,6 +2544,20 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves Cincinnati Biomedical Engineering fee treatment under the CEAS no-waiver policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-cincinnati-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-cincinnati-biomedical-engineering-ms" });
+
+    expect(doctorate).toBeDefined();
+    expect(masters).toBeDefined();
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({ guidanceType: expect.stringMatching(/^fee_waiver_/) }),
+      ]));
+    }
+  });
+
   it("returns New York Tech Bioengineering MS with advisor-issued fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "new-york-tech-bioengineering-ms" });
