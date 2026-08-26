@@ -2344,6 +2344,8 @@ describe("tracker.directory", () => {
     expect(doctorate?.degreeOptions).toEqual(expect.arrayContaining([
       expect.objectContaining({ slug: "utep-biomedical-engineering-ms", degreeType: "masters" }),
     ]));
+    expect(masters?.applicationGuidance).toEqual([]);
+    expect(doctorate?.applicationGuidance).toEqual([]);
   });
 
   it("returns UTA and Oregon State profiles with source-bounded current central Duolingo policies", async () => {

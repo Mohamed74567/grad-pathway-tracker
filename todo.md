@@ -741,3 +741,8 @@
 - [x] Maintain the same official route on both degree paths only because the SIU BME catalog lists both under the same Graduate School application framework; do not generalize it to ordinary applicants.
 - [x] Add and pass SIU Carbondale regression coverage; focused directory suite reached 170 passing tests with the extended timeout.
 - [x] Record SIU Carbondale official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit UTEP Biomedical Engineering M.S. and Ph.D. fee treatment against current Graduate School and BME sources; preserve US$45 domestic/permanent-resident/Mexican-national and US$80 international fee displays with empty waiver guidance.
+- [x] Exclude UTEP resident-tuition military waivers, doctoral tuition remission, assistantships, and third-party claims from application-fee guidance.
+- [x] Strengthen and pass UTEP regression coverage for the empty M.S./Ph.D. guidance boundary; focused directory suite remains at 170 passing tests with the extended timeout.
+- [x] Record UTEP official-source evidence and continue the fee-waiver queue.
