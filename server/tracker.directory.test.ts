@@ -234,6 +234,30 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Ole Miss's McNair-only Biomedical Engineering doctoral fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "ole-miss-engineering-science-biomedical-phd" });
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        title: "Ronald McNair application-fee waiver",
+        destinationUrl: "https://gradschool.olemiss.edu/academics-and-admissions/faq/",
+        sourceUrl: "https://gradschool.olemiss.edu/academics-and-admissions/faq/",
+        details: expect.stringContaining("Ronald McNair Scholars are the only"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        details: expect.stringContaining("US$60 non-refundable fee"),
+      }),
+    ]));
+    // The single guidance record must not be broadened into a second category or route.
+    expect(doctorate?.applicationGuidance).toHaveLength(1);
+  });
+
   it("returns Vanderbilt Engineering's qualified Fall 2027 Biomedical Engineering Ph.D. fee-waiver contact without transferring it to the no-fee M.S.", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
