@@ -592,3 +592,5 @@
 - [x] Re-audit UIC Biomedical Engineering M.S./Ph.D. departmental waiver evidence. Recorded the official Fall 2026-only doctoral deadline and M.S. information-session/deadline routes, but did not add expired dates as current guidance; existing central waiver entries remain degree-separated.
 
 - [x] Re-audit University of Minnesota Biomedical Engineering M.S./Ph.D. fee-waiver coverage against the current BME application page. Existing shared form entries remain accurate for the November 9 request deadline, November 13 decision date, December 1 application deadline, limited-number scope, and degree separation; no duplicate update was made.
+
+- [x] Re-audit University of Utah Biomedical Engineering M.S./Ph.D. waiver coverage. Confirmed the domestic Ph.D.-only code CE2021BIMEPHD and separate McNair route remain accurate; preserved M.S. fee treatment without copying the doctoral code and documented the degree boundary.
