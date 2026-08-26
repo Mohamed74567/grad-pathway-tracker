@@ -736,3 +736,8 @@
 - [x] Use official-page anchors to satisfy the global guidance-destination uniqueness constraint without changing the official destination.
 - [x] Add and pass Oregon State–University of Oregon regression coverage across all three degree paths; focused directory suite reached 169 passing tests with the extended timeout.
 - [x] Record Oregon State–University of Oregon official-source evidence and continue the fee-waiver queue.
+
+- [x] Add SIU Carbondale Graduate School McNair/Fulbright proof-contact guidance separately to the Biomedical Engineering M.S. and Ph.D. profiles, preserving the US$65 non-refundable fee, direct-proof requirement, central no-waiver conflict, no-public-code limitation, and no-guarantee wording.
+- [x] Maintain the same official route on both degree paths only because the SIU BME catalog lists both under the same Graduate School application framework; do not generalize it to ordinary applicants.
+- [x] Add and pass SIU Carbondale regression coverage; focused directory suite reached 170 passing tests with the extended timeout.
+- [x] Record SIU Carbondale official-source evidence and continue the fee-waiver queue.

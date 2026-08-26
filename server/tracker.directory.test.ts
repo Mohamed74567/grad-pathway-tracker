@@ -2552,6 +2552,26 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns SIU Carbondale Biomedical Engineering M.S. and Ph.D. with limited McNair/Fulbright fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "southern-illinois-university-carbondale-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "southern-illinois-university-carbondale-biomedical-engineering-phd" }),
+    ]);
+
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          title: "McNair or Fulbright fee-waiver proof contact",
+          destinationUrl: "mailto:gradschl@siu.edu",
+          details: expect.stringContaining("McNair and Fulbright Scholars"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Oregon State–University of Oregon Bioengineering fee-waiver guidance on all three published degree paths", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const slugs = [
