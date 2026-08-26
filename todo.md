@@ -572,3 +572,5 @@
 - [x] Re-audit Georgia Tech Biomedical Engineering waiver coverage. Confirmed the current Institute-level route and retained it on standalone Georgia Tech Bioengineering M.S./Ph.D. profiles; did not transfer it to joint Georgia Tech–Emory BME records because the official FAQ makes waiver administration home-school dependent and the joint records lack a reconciled home-school route.
 
 - [x] Audit the published Lehigh University Bioengineering Ph.D. profile against the current official BioE admissions guidelines. Retained the US$50 non-refundable fee and no waiver guidance because no application-fee route is published; correctly separated English-proficiency waivers and the December 15 funding deadline from fee waivers. No published Lehigh M.S. profile was present to modify.
+
+- [x] Audit University of Arizona Biomedical Engineering M.S. and Ph.D. fee-waiver coverage from current BME and Graduate College sources. Retained no waiver guidance because the Graduate College says it does not waive application fees and BME publishes no exception; excluded unrelated department waiver forms and preserved degree separation.
