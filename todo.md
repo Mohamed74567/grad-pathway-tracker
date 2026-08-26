@@ -622,3 +622,5 @@
 - [x] Reconcile UT Dallas Bioengineering’s published fee-waiver boundary. Retained no waiver guidance because the current BME page explicitly says the department does not offer waivers, despite broader central UTD categories; no central policy was transferred without BME confirmation.
 
 - [x] Reconcile CU Boulder Biomedical Engineering M.S. and Ph.D. fee-waiver coverage. Retained the existing Fall 2027 Ph.D.-only guidance and documented the explicit official M.S. exclusion; no cross-degree policy transfer was made.
+
+- [x] Close the UT Dallas Biomedical Engineering M.S. counterpart review under the same department-level conflict boundary; no central waiver policy was transferred without BME confirmation.
