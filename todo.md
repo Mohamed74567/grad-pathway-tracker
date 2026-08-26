@@ -630,3 +630,5 @@
 - [x] Reconcile Villanova Biomedical Engineering M.S. fee treatment. Retained the no-application-fee status from the current College of Engineering source; no unnecessary waiver guidance was added.
 
 - [x] Reconcile Cleveland State Biomedical Engineering M.S. fee treatment. Documented conflicting/ambiguous official waiver wording and retained existing treatment without adding an unsupported graduate BME route.
+
+- [x] Reconcile Wright State Biomedical Engineering M.S. fee treatment. Retained the official US$40 graduate application fee and no waiver guidance because no current graduate BME route is published.
