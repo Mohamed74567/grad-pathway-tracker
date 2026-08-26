@@ -570,3 +570,5 @@
 - [x] Re-audit Duke Biomedical Engineering M.S. and Ph.D. fee-waiver guidance against the current Graduate School application-fee page. Existing degree-specific entries remain accurate and complete; no duplicate or unsupported update was made. Source review retained strict central-policy scope.
 
 - [x] Re-audit Georgia Tech Biomedical Engineering waiver coverage. Confirmed the current Institute-level route and retained it on standalone Georgia Tech Bioengineering M.S./Ph.D. profiles; did not transfer it to joint Georgia Tech–Emory BME records because the official FAQ makes waiver administration home-school dependent and the joint records lack a reconciled home-school route.
+
+- [x] Audit the published Lehigh University Bioengineering Ph.D. profile against the current official BioE admissions guidelines. Retained the US$50 non-refundable fee and no waiver guidance because no application-fee route is published; correctly separated English-proficiency waivers and the December 15 funding deadline from fee waivers. No published Lehigh M.S. profile was present to modify.
