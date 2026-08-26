@@ -2544,6 +2544,19 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves University of Arizona Biomedical Engineering fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-arizona-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-arizona-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toContain("US$90");
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({ guidanceType: expect.stringMatching(/^fee_waiver_/) }),
+      ]));
+    }
+  });
+
   it("returns NJIT Biomedical Engineering M.S. and joint Ph.D. with shared military/veteran fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "njit-biomedical-engineering-phd" });

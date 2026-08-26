@@ -640,3 +640,4 @@
 - [x] Reconcile Syracuse Biomedical Engineering M.S./Bioengineering Ph.D. fee treatment from current ECS sources; retained the official US$75 fee and added no unsupported waiver route across either degree.
 - [x] Reconcile CCNY Biomedical Engineering M.S./Ph.D. fee treatment against current central and BME sources; documented the central veteran exception versus department-level doctoral conflict and retained conservative no-transfer treatment.
 - [x] Add and validate NJIT Biomedical Engineering M.S./joint Ph.D. military-veteran fee-waiver guidance with no-separate-application workflow and published eligibility boundary.
+- [x] Reconcile University of Arizona Biomedical Engineering M.S./Ph.D. fee treatment from current BME and Graduate College sources; retained the US$90 fee and central no-waiver policy without importing unrelated departmental routes.
