@@ -1796,6 +1796,22 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns CU Boulder Biomedical Engineering’s qualified Fall 2027 doctoral fee-waiver without copying it to the M.S.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const phd = await caller.tracker.directory.bySlug({ slug: "cu-boulder-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "cu-boulder-biomedical-engineering-ms" });
+
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://www.colorado.edu/engineering/admissions/graduate-students/graduate-application-fee-waiver",
+        details: expect.stringContaining("November 15, 2026"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance.some((guide) => guide.guidanceType.startsWith("fee_waiver_"))).toBe(false);
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
