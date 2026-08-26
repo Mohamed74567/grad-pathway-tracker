@@ -1705,6 +1705,24 @@ describe("tracker.directory", () => {
     expect(masters?.applicationGuidance.some((guide) => guide.guidanceType.startsWith("fee_waiver_"))).toBe(false);
   });
 
+  it("returns Rensselaer Biomedical Engineering degree paths with the qualified Graduate Admissions fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "rpi-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "rpi-biomedical-engineering-ms" }),
+    ]);
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:gradadmissions@rpi.edu",
+          details: expect.stringContaining("non-matriculating"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
