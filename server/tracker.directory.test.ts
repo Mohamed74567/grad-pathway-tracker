@@ -329,6 +329,18 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UAB Biomedical Engineering’s shared domestic complete-by-priority application-fee treatment", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("Domestic: free when complete by the November 30 priority deadline; US$50 after. International: US$60.");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
