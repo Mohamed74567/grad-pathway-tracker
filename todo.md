@@ -731,3 +731,8 @@
 - [x] Preserve Northwestern’s Ph.D.-only scope, U.S.-citizen/permanent-resident boundary, first-come/first-served limitation, and September 2026 criteria-refresh warning without inventing a code or claiming international eligibility.
 - [x] Update and pass Northwestern regression coverage; focused directory suite remains at 168 passing tests with the extended timeout.
 - [x] Record Northwestern official-source evidence and continue the fee-waiver queue.
+
+- [x] Add OSU Graduate Education fee-waiver form guidance separately to the joint Bioengineering Ph.D., joint M.S., and OSU M.Eng. profiles, preserving domestic financial-need documentation, listed scholar programs, one-application limit, two-week recommendation, portal-decision workflow, non-refundable-fee boundary, and international no-waiver rule.
+- [x] Use official-page anchors to satisfy the global guidance-destination uniqueness constraint without changing the official destination.
+- [x] Add and pass Oregon State–University of Oregon regression coverage across all three degree paths; focused directory suite reached 169 passing tests with the extended timeout.
+- [x] Record Oregon State–University of Oregon official-source evidence and continue the fee-waiver queue.

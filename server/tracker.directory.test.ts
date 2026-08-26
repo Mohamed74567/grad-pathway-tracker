@@ -2552,6 +2552,28 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Oregon State–University of Oregon Bioengineering fee-waiver guidance on all three published degree paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const slugs = [
+      "oregon-state-university-of-oregon-bioengineering-phd",
+      "oregon-state-university-of-oregon-bioengineering-ms",
+      "oregon-state-bioengineering-meng",
+    ];
+    const programs = await Promise.all(slugs.map(slug => caller.tracker.directory.bySlug({ slug })));
+
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          title: "OSU Graduate Education application-fee waiver request",
+          destinationUrl: expect.stringMatching(/graduate-application-fee-waivers#/),
+          details: expect.stringContaining("one fee-waiver request"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns Princeton Bioengineering Ph.D. with the Graduate School fee-waiver request route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "princeton-bioengineering-phd" });
