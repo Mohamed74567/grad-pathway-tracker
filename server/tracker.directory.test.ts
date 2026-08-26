@@ -1737,6 +1737,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UIC Biomedical Engineering degree paths with the qualified central fee-waiver route while keeping Research Engagement doctoral-only", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-illinois-chicago-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-illinois-chicago-biomedical-engineering-ms" });
+
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://admissions.uic.edu/graduate-professional/application-process/application-fee-waivers",
+        details: expect.stringContaining("Research Engagement Program"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://admissions.uic.edu/graduate-professional/application-process/application-fee-waivers",
+        details: expect.stringContaining("not represented for this M.S. path"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
