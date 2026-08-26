@@ -134,6 +134,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UC Riverside's qualified domestic Bioengineering fee-waiver request with current allocation limits", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "uc-riverside-bioengineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "uc-riverside-bioengineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://graduate.ucr.edu/fee-waivers",
+          details: expect.stringContaining("financial-hardship fee waivers have been allocated for the 2026–27 cycle"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          details: expect.stringContaining("International applicants are not eligible"),
+        }),
+      ]));
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
