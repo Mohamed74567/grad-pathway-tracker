@@ -2131,3 +2131,6 @@ Drexel’s current School of Engineering graduate admission guidelines state tha
 
 ## UT Southwestern Medical Center Biomedical Engineering Ph.D. fee review, August 26, 2026
 UT Southwestern’s current Graduate School admissions page states there is no application fee. The official Basic Sciences Ph.D. admissions page explicitly includes Biomedical Engineering and repeats that there is no application fee; the BME Ph.D. program page confirms full tuition and fee coverage after admission. Because applicants do not pay an application fee, no fee-waiver guidance was added.
+
+## UT San Antonio Biomedical Engineering Ph.D. fee-waiver expansion, August 26, 2026
+UTSA’s current Graduate Admissions page states that graduate applicants pay a non-refundable processing fee ($50 domestic/$90 international) and that there are no general graduate-level fee waivers, except that approved McNair program waiver forms may be provided by the applicant’s institution McNair office. The current UTSA Biomedical Engineering Ph.D. page confirms the in-scope joint doctoral program and its non-refundable-fee requirement. The McNair-only form route was added to the Ph.D. profile with no broader hardship, veteran, code, or session waiver inferred.

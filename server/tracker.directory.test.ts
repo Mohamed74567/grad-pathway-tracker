@@ -2544,6 +2544,21 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UTSA Biomedical Engineering PhD with McNair-only fee-waiver form guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "ut-san-antonio-biomedical-engineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://future.utsa.edu/graduate/admissions/",
+        details: expect.stringContaining("approved McNair program waiver forms"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(program?.applicationGuidance?.[0]?.details).toContain("no general graduate-level fee waivers");
+  });
+
   it("preserves UT Southwestern Biomedical Engineering PhD no-fee treatment without adding waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "ut-southwestern-biomedical-engineering-phd" });
