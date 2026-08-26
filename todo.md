@@ -596,3 +596,5 @@
 - [x] Re-audit University of Utah Biomedical Engineering M.S./Ph.D. waiver coverage. Confirmed the domestic Ph.D.-only code CE2021BIMEPHD and separate McNair route remain accurate; preserved M.S. fee treatment without copying the doctoral code and documented the degree boundary.
 
 - [x] Add UNC Chapel Hill Biomedical Engineering Ph.D. central Graduate School fee-waiver guidance with ten eligibility groups, in-application form workflow, documentation requirement, deadline boundary, and three-pass provenance; no unsupported M.S. transfer.
+
+- [x] Re-audit Johns Hopkins Biomedical Engineering M.S.E./Ph.D. fee-waiver evidence. Documented the Ph.D. referral to School of Medicine central options and the M.S. page’s stale Fall 2025 waiver sentence alongside its current Fall 2027 deadline; added no unsupported current-cycle guidance.
