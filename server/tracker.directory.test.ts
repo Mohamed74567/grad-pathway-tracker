@@ -2049,6 +2049,20 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Delaware Biomedical Engineering Ph.D. with the qualified Graduate Admissions fee-waiver contact route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-of-delaware-biomedical-engineering-phd" });
+
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.udel.edu/academics/colleges/grad/prospective-students/grad-admissions/",
+        details: expect.stringContaining("Ronald E. McNair"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UIC Biomedical Engineering degree paths with the qualified central fee-waiver route while keeping Research Engagement doctoral-only", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const phd = await caller.tracker.directory.bySlug({ slug: "university-illinois-chicago-biomedical-engineering-phd" });
