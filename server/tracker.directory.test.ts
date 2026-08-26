@@ -581,8 +581,18 @@ describe("tracker.directory", () => {
     const biomedicalDoctorate = await caller.tracker.directory.bySlug({ slug: "university-utah-biomedical-engineering-phd" });
     const neuralMasters = await caller.tracker.directory.bySlug({ slug: "university-utah-neural-engineering-ms" });
 
+    expect(biomedicalDoctorate?.applicationFeeDisplay).toBe("US$0 domestic Ph.D. / US$65 international Ph.D.");
+    expect(biomedicalDoctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_code",
+        destinationUrl: "https://www.bme.utah.edu/prospective-graduate-students/",
+        details: expect.stringContaining("CE2021BIMEPHD"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(neuralMasters?.applicationFeeDisplay).toBe("US$55 domestic / US$65 international");
+
     for (const program of [biomedicalDoctorate, neuralMasters]) {
-      expect(program?.applicationFeeDisplay).toBe("US$55 domestic / US$65 international");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
