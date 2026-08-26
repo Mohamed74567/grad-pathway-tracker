@@ -94,6 +94,24 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Stony Brook's qualified Graduate School fee-waiver route for Biomedical Engineering doctoral and master’s paths", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "stony-brook-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "stony-brook-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://www.stonybrook.edu/grad/admissions/apply-graduate-programs.html",
+          details: expect.stringContaining("DD Form 214"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
