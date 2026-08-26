@@ -624,3 +624,5 @@
 - [x] Reconcile CU Boulder Biomedical Engineering M.S. and Ph.D. fee-waiver coverage. Retained the existing Fall 2027 Ph.D.-only guidance and documented the explicit official M.S. exclusion; no cross-degree policy transfer was made.
 
 - [x] Close the UT Dallas Biomedical Engineering M.S. counterpart review under the same department-level conflict boundary; no central waiver policy was transferred without BME confirmation.
+
+- [x] Reconcile University of South Carolina Biomedical Engineering Ph.D. and M.Eng. fee treatment. Retained the reinstated US$50 paid fee and no-waiver guidance because the Graduate School does not grant individual waiver requests and no BME exception is published.
