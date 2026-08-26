@@ -2473,6 +2473,26 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UF Biomedical Engineering M.S. with College of Engineering fee-waiver form and keeps the Ph.D. route separate", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const [masters, doctorate] = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-florida-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-florida-biomedical-engineering-phd" }),
+    ]);
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://www.eng.ufl.edu/graduate/mswaiver/",
+        details: expect.stringContaining("only for selected applicants"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(doctorate?.applicationGuidance ?? []).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        destinationUrl: "https://www.eng.ufl.edu/graduate/mswaiver/",
+      }),
+    ]));
+  });
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });

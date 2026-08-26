@@ -606,3 +606,5 @@
 - [x] Re-audit Virginia Commonwealth University Biomedical Engineering M.S./Ph.D. fee-waiver form coverage. Existing degree-separated entries match the current official form URL, no-email rule, five-business-day portal timing, denial boundary, and no-duplicate-request rule; no duplicate update was made.
 
 - [x] Re-audit Northwestern Biomedical Engineering M.S. fee-waiver evidence. The current BME page delegates waivers to The Graduate School, whose 2025–26 allocation is exhausted and whose 2026–27 criteria are pending; no current M.S.-applicable route was verified, so no guidance was added or copied from the Ph.D.
+
+- [x] Add and validate UF Biomedical Engineering M.S. College of Engineering fee-waiver form guidance. The entry is M.S.-only, selected-applicant and non-guaranteed, with the Ph.D. interest-form/code route explicitly excluded; 157 tests, production build, and public profile validation passed.
