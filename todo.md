@@ -751,3 +751,8 @@
 - [x] Exclude recent College of Engineering social-media event promotions, returning-student/readmission exceptions, senior-citizen tuition waivers, and unrelated online/undergraduate claims from new degree-seeking BME guidance.
 - [x] Add and pass University of Arkansas regression coverage; focused directory suite reached 171 passing tests with the extended timeout.
 - [x] Record University of Arkansas official-source evidence and continue the fee-waiver queue.
+
+- [x] Add UGA Graduate School qualifying-program fee-waiver form guidance to the published Biomedical Engineering Ph.D. profile, preserving the US$75 first-application / US$25 additional-application fees, supporting-document requirement, one-time cycle limit, cancellation risk for ineligible requests, and non-refundable/no-processing boundary.
+- [x] Keep UGA guidance Ph.D.-only because the reviewed official UGA BME degree page publishes the doctoral program and does not establish a separate BME M.S. application route; no unsupported M.S. transfer was made.
+- [x] Add and pass UGA regression coverage; focused directory suite reached 172 passing tests with the extended timeout.
+- [x] Record UGA official-source evidence and continue the fee-waiver queue.

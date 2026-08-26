@@ -2554,6 +2554,22 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UGA Biomedical Engineering Ph.D. with limited qualifying-program fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-georgia-biomedical-engineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Graduate School qualifying-program fee-waiver request",
+        destinationUrl: "https://grad.uga.edu/admissions/application-fee/",
+        details: expect.stringContaining("qualifying programs"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(program?.applicationFeeDisplay).toContain("US$75 first application");
+  });
+
   it("preserves University of Arkansas Biomedical Engineering fee treatment without an unsupported new-degree waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const programs = await Promise.all([
