@@ -1689,6 +1689,22 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns UT Knoxville Biomedical Engineering’s qualified doctoral-only fee-waiver code without copying it to the M.S.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const phd = await caller.tracker.directory.bySlug({ slug: "university-tennessee-knoxville-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-tennessee-knoxville-biomedical-engineering-ms" });
+
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_code",
+        destinationUrl: "https://tickle.utk.edu/bme/academics/graduate/admission-requirements/",
+        details: expect.stringContaining("first-time Ph.D. applicants"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance.some((guide) => guide.guidanceType.startsWith("fee_waiver_"))).toBe(false);
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
