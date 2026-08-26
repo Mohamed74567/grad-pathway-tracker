@@ -706,3 +706,8 @@
 - [x] Resolve the existing global guidance-destination uniqueness constraint safely with official-page anchors for the new Ph.D. and thesis-M.S. records; preserve the existing professional-M.S. route.
 - [x] Correct and pass Purdue regression coverage; focused directory suite reached 164 passing tests with the extended timeout.
 - [x] Record Purdue official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit Mississippi State University Biomedical Engineering M.S. against current BME and Graduate School sources; preserve the US$60 domestic / US$80 international non-refundable fee and empty guidance state because no graduate BME-specific waiver route is published.
+- [x] Exclude MSU freshmen NACAC/ACT/SAT waiver language and tuition exemptions from the graduate BME application-fee decision.
+- [x] Add and pass Mississippi State regression coverage; focused directory suite reached 165 passing tests with the extended timeout.
+- [x] Record Mississippi State official-source evidence and continue the fee-waiver queue.

@@ -2552,6 +2552,14 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves Mississippi State Biomedical Engineering M.S. fee treatment without an unsupported waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "mississippi-state-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$60 domestic; US$80 international");
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("returns Purdue BME showcase fee-waiver guidance on each published degree path", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const slugs = [
