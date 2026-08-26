@@ -721,3 +721,8 @@
 - [x] Keep the route M.S.-specific and exclude the dated 2026 social promotion, undergraduate NACAC/ACT waivers, and unrelated tuition policies from the published guidance.
 - [x] Add and pass North Carolina A&T regression coverage; focused directory suite reached 167 passing tests with the extended timeout.
 - [x] Record North Carolina A&T official-source evidence and continue the fee-waiver queue.
+
+- [x] Add Princeton Bioengineering Ph.D. Graduate School fee-waiver request guidance, preserving the US$90 nonrefundable fee, financial-hardship documentation, listed-program and recruiting-event limits, in-application workflow, two-business-day request deadline, 2–3-business-day decision window, and no-pay-before-decision rule.
+- [x] Keep Princeton guidance on the published Bioengineering Ph.D. only; do not create a separate route for the incidental M.A. or transfer it to unrelated master’s programs.
+- [x] Add and pass Princeton regression coverage; focused directory suite reached 168 passing tests with the extended timeout.
+- [x] Record Princeton official-source evidence and continue the fee-waiver queue.

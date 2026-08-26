@@ -2552,6 +2552,21 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Princeton Bioengineering Ph.D. with the Graduate School fee-waiver request route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "princeton-bioengineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Graduate School fee-waiver request in application",
+        destinationUrl: "https://gradschool.princeton.edu/admission-onboarding/prepare/application-fee",
+        details: expect.stringContaining("two business days before the department deadline"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns North Carolina A&T Bioengineering M.S. with Graduate College fee-waiver contact guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "north-carolina-at-bioengineering-ms" });
