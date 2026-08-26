@@ -1107,6 +1107,14 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves FIU Biomedical Engineering M.S. fee treatment without an unsupported waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "florida-international-university-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$30 application fee");
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("shows Cal Poly BME M.S. with the CSU graduate application fee without an ineligible waiver claim", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "cal-poly-biomedical-engineering-ms" });
