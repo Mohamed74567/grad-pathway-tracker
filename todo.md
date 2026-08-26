@@ -618,3 +618,5 @@
 - [x] Reconcile Northeastern Bioengineering’s published fee treatment. Retained the Ph.D. US$100 fee with no unsupported waiver route; recorded the M.S. automatic no-fee policy only for Fall 2026/Spring 2027 and did not project it to Fall 2027.
 
 - [x] Add and validate UT Arlington Biomedical Engineering M.S./Ph.D. department-request fee-waiver code guidance. Separate degree entries preserve the official exclusions and no-guarantee boundary; 160 tests passed with extended timeout, production build succeeded, and public Ph.D. profile validation passed.
+
+- [x] Reconcile UT Dallas Bioengineering’s published fee-waiver boundary. Retained no waiver guidance because the current BME page explicitly says the department does not offer waivers, despite broader central UTD categories; no central policy was transferred without BME confirmation.
