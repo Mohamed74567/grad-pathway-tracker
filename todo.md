@@ -580,3 +580,5 @@
 - [x] Add University at Buffalo Biomedical Engineering Ph.D. fee-waiver contact guidance from current official BME and Graduate School sources. Added the program-coordination route with U.S. residency, financial-need/qualifying-program eligibility, documentation, and deferral boundaries; added a regression test. Validation: 154 Vitest tests passed and production build succeeded.
 
 - [x] Audit Michigan Technological University Biomedical Engineering Ph.D. fee treatment from current Graduate School sources. Confirmed the application is free and that only international applicants pay a separate US$10 processing fee; no unsupported waiver guidance was added and no processing-fee waiver was inferred.
+
+- [x] Re-audit University of Washington Bioengineering fee-waiver coverage against current department and Graduate School sources. Existing Ph.D. and master’s profile entries remain accurate for the central route; no duplicate or unsupported degree-level transfer was made.
