@@ -683,3 +683,7 @@
 - [x] Explicitly exclude Cal Poly tuition waivers, assistantships, and general aid language from application-fee-waiver guidance unless a current BME-specific route is published.
 - [x] Confirm existing Cal Poly regression coverage protects the no-ineligible-waiver boundary and record the official-source decision.
 - [x] Continue the official-source fee-waiver queue after Cal Poly.
+
+- [x] Re-audit Carnegie Mellon Biomedical Engineering M.S.-Research and Ph.D. fee treatment against current BME admissions, FAQ, practicum, and aid pages; retain the CMU-student no-fee route only on the M.S. profile and preserve the Ph.D. fee-required boundary.
+- [x] Confirm existing CMU regression coverage protects the M.S.-only exception and Ph.D. separation at three-pass provenance.
+- [x] Record the CMU official-source reconciliation and continue the fee-waiver queue.
