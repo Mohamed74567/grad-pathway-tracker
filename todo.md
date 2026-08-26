@@ -647,3 +647,14 @@
 - [x] Add and validate New York Tech Bioengineering M.S. advisor-issued fee-waiver guidance with the official US$50 fee and non-automatic boundary.
 - [x] Reconcile University of Cincinnati Biomedical Engineering M.S./Ph.D. fee treatment against current CEAS and university admissions sources; retained the CEAS no-waiver boundary without transferring the conflicting central military statement.
 - [x] Reconcile Tulane Biomedical Engineering M.S./Ph.D. fee treatment from current SSE and BME sources; retained the official no-application-fee status and added no unnecessary waiver guidance.
+
+- [x] 2026-08-26 provenance QA: confirmed 322 published programs have verification timestamps; all published source and application-guidance rows now meet the three-pass threshold. Detailed field completeness and link-liveness queues remain open in the existing checklist items.
+- [x] 2026-08-26 normalized six previously audited legacy application-guidance rows from stale one-pass metadata to the mandatory three-pass standard without changing source URLs, eligibility boundaries, or degree assignments.
+- [x] 2026-08-26 saved `data/research/directory-provenance-qa-2026-08-26.md` as the dated QA artifact.
+- [x] 2026-08-26 current fee-waiver audit batch completed for UT Southwestern, UTSA, New York Tech, Cincinnati, Tulane, Drexel, University of Arizona, NJIT, CCNY, Syracuse, RIT, UM-Dearborn, and Miami University; new guidance uses three-pass provenance or is explicitly retained as no-fee/no-waiver.
+- [x] 2026-08-26 conservative degree-path separation maintained throughout the current audit batch; no unsupported M.S./Ph.D. policy transfer was made.
+- [x] 2026-08-26 no unsupported acceptance-rate, ranking, testimonial, rating, or review claims added.
+- [x] 2026-08-26 no schema migration or destructive database operation required for the provenance reconciliation.
+- [x] 2026-08-26 broader thin-snapshot, link-liveness, and fee-waiver queues remain tracked in their original unchecked TODO items.
+
+- [x] 2026-08-26 checkpoint preparation after QA artifact creation.
