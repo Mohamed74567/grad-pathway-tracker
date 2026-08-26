@@ -2544,6 +2544,19 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns RIT Biomedical Engineering MS with current-student and alumni fee exemption", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "rit-biomedical-engineering-ms" });
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.rit.edu/admissions/graduate/application-instructions",
+        details: expect.stringContaining("current RIT students and RIT alumni"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UM-Dearborn Bioengineering MSE with documented fee-waiver request form guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-dearborn-bioengineering-mse" });
