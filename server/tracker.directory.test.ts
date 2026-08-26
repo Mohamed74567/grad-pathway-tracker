@@ -1987,6 +1987,24 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Kentucky Biomedical Engineering degree paths with the shared Director of Graduate Studies fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-kentucky-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-kentucky-biomedical-engineering-ms" }),
+    ]);
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "mailto:bmedgs@uky.edu",
+          details: expect.stringContaining("Director of Graduate Studies"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns UNL Biomedical Engineering Ph.D. with the qualified department-contact fee-waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-nebraska-biomedical-engineering-phd" });
