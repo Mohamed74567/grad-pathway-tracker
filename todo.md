@@ -576,3 +576,5 @@
 - [x] Audit University of Arizona Biomedical Engineering M.S. and Ph.D. fee-waiver coverage from current BME and Graduate College sources. Retained no waiver guidance because the Graduate College says it does not waive application fees and BME publishes no exception; excluded unrelated department waiver forms and preserved degree separation.
 
 - [x] Audit University of Houston Biomedical Engineering M.S. and Ph.D. fee-waiver coverage from the current department admissions page. Retained no waiver guidance because the department explicitly marks its application fee as non-waivable; preserved existing fee amounts rather than importing conflicting catalog values.
+
+- [x] Add University at Buffalo Biomedical Engineering Ph.D. fee-waiver contact guidance from current official BME and Graduate School sources. Added the program-coordination route with U.S. residency, financial-need/qualifying-program eligibility, documentation, and deferral boundaries; added a regression test. Validation: 154 Vitest tests passed and production build succeeded.

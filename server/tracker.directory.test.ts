@@ -2428,6 +2428,19 @@ describe("tracker.directory", () => {
     await expect(caller.tracker.applications.list()).resolves.toEqual(expect.any(Array));
   });
 
+  it("returns University at Buffalo Biomedical Engineering Ph.D. with the program-coordinated fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-buffalo-biomedical-engineering-phd" });
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://www.buffalo.edu/grad/explore/admissions/faq.html",
+        details: expect.stringContaining("work with their academic program"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
