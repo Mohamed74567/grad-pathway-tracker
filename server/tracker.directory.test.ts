@@ -1675,6 +1675,20 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UNL Biomedical Engineering Ph.D. with the qualified department-contact fee-waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-nebraska-biomedical-engineering-phd" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:gbashford2@unl.edu",
+        details: expect.stringContaining("McNair Scholars"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns Michigan’s AMPED medical-product engineering M.Eng. with limited Rackham waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-michigan-amped-meng" });
