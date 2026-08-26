@@ -582,3 +582,5 @@
 - [x] Audit Michigan Technological University Biomedical Engineering Ph.D. fee treatment from current Graduate School sources. Confirmed the application is free and that only international applicants pay a separate US$10 processing fee; no unsupported waiver guidance was added and no processing-fee waiver was inferred.
 
 - [x] Re-audit University of Washington Bioengineering fee-waiver coverage against current department and Graduate School sources. Existing Ph.D. and master’s profile entries remain accurate for the central route; no duplicate or unsupported degree-level transfer was made.
+
+- [x] Add USF Biomedical Engineering M.S. and Ph.D. financial-hardship application-fee-waiver form guidance from the current official Office of Admissions source. Added separate degree records, direct form link, nonrefundable-fee and no-guarantee boundaries, regression coverage, and validated the public Ph.D. profile.

@@ -2428,6 +2428,24 @@ describe("tracker.directory", () => {
     await expect(caller.tracker.applications.list()).resolves.toEqual(expect.any(Array));
   });
 
+  it("returns USF Biomedical Engineering M.S. and Ph.D. with the financial-hardship fee-waiver form", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-south-florida-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-south-florida-biomedical-engineering-ms" }),
+    ]);
+    for (const program of paths) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://www.usf.edu/admissions/documents/adm-application-fee-waiver-re-fill.pdf",
+          details: expect.stringContaining("financial hardship"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("returns University at Buffalo Biomedical Engineering Ph.D. with the program-coordinated fee-waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-buffalo-biomedical-engineering-phd" });
