@@ -1,0 +1,7 @@
+# CU Boulder Biomedical Engineering fee-waiver review — August 26, 2026
+
+The current official CU Boulder BME Graduate Admissions page states that PhD applicants who are U.S. citizens or permanent residents with at least a 3.4 GPA automatically receive an application-fee waiver if they submit by November 15 at 11:59 p.m. MST. It separately states that international applicants may email bme@colorado.edu after submitting a complete application for competitive consideration, with availability varying by year, and that fee waivers are not offered to MS applicants.
+
+The current CU Engineering fee-waiver page confirms the Fall 2027 route: qualifying PhD applicants must be U.S. citizens/permanent residents, apply to a College of Engineering and Applied Science PhD, have at least a 3.4 undergraduate GPA, meet department requirements, and submit by November 15, 2026 at 11:59 p.m. MST. The waiver is automatic with no code; applicants should allow 24–48 hours after submission and contact gradadm@colorado.edu if it does not appear. Existing Ph.D. guidance matches this route. No waiver guidance is added to the published M.S. profile because the BME page explicitly excludes MS applicants.
+
+Sources: https://www.colorado.edu/bme/graduate-admissions-0 ; https://www.colorado.edu/engineering/admissions/graduate-students/graduate-application-fee-waiver ; https://www.colorado.edu/bme/masters-program
