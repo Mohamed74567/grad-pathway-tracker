@@ -639,3 +639,4 @@
 - [x] Add and validate RIT Biomedical Engineering M.S. current-student/alumni fee exemption with standard-fee boundary; focused directory suite (147 tests) passed with extended timeout and production build succeeded.
 - [x] Reconcile Syracuse Biomedical Engineering M.S./Bioengineering Ph.D. fee treatment from current ECS sources; retained the official US$75 fee and added no unsupported waiver route across either degree.
 - [x] Reconcile CCNY Biomedical Engineering M.S./Ph.D. fee treatment against current central and BME sources; documented the central veteran exception versus department-level doctoral conflict and retained conservative no-transfer treatment.
+- [x] Add and validate NJIT Biomedical Engineering M.S./joint Ph.D. military-veteran fee-waiver guidance with no-separate-application workflow and published eligibility boundary.

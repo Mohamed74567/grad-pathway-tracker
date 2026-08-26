@@ -2544,6 +2544,23 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns NJIT Biomedical Engineering M.S. and joint Ph.D. with shared military/veteran fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "njit-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "njit-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          destinationUrl: "https://www.njit.edu/veterans/admissions-office",
+          details: expect.stringContaining("no separate waiver application"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
+
   it("preserves CCNY Biomedical Engineering fee treatment when central and department waiver statements conflict", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const doctorate = await caller.tracker.directory.bySlug({ slug: "ccny-biomedical-engineering-phd" });
