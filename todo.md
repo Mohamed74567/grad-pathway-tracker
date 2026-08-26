@@ -602,3 +602,5 @@
 - [x] Re-audit Virginia Tech–Wake Forest Biomedical Engineering M.S. and Ph.D. waiver coverage. Existing profiles already carry the shared Graduate School request route and BME departmental contact route; verified 5–7 business-day timing, pre-submission approval, no-refund, category, and no-reuse boundaries with no duplicate update.
 
 - [x] Re-audit Washington University in St. Louis Biomedical Engineering M.S./Ph.D. fee-waiver session coverage. Existing shared session entries remain accurate for current WashU student/employee and eligible-session routes, the Admissions Cram Session exclusion, and no-code/no-guarantee boundaries; closed 2025–26 master’s session dates were not promoted as current Fall 2027 guidance.
+
+- [x] Re-audit Virginia Commonwealth University Biomedical Engineering M.S./Ph.D. fee-waiver form coverage. Existing degree-separated entries match the current official form URL, no-email rule, five-business-day portal timing, denial boundary, and no-duplicate-request rule; no duplicate update was made.
