@@ -1,0 +1,7 @@
+# Northwestern University Biomedical Engineering M.S. fee-waiver review — August 26, 2026
+
+The current official Northwestern BME M.S. admissions page lists current deadlines through Fall 2027 and says the BME department does not issue fee waivers through its own office; fee waivers are handled entirely through The Graduate School. It also says The Graduate School is unable to offer fee waivers to international applicants at this time. The current official Graduate School fee page says the 2025–26 waiver allocation was exhausted on December 2, 2025 and that 2026–27 criteria will be posted in September 2026. Its currently displayed domestic criteria are limited to applicants who started a TGS PhD or MFA application, are U.S. citizens/permanent residents, and meet listed first-generation, military, Pell, or named-program criteria. Those displayed criteria do not fit the BME M.S. application and should not be transferred from Ph.D. scope.
+
+The published Northwestern BME M.S. profile is currently in the no-guidance queue. Because the active 2026–27 criteria are not yet posted and the current BME page says the department does not issue waivers, no current-cycle M.S. waiver entry should be added. The BME page’s current Fall 2027 deadlines must not be paired with the stale 2025–26 waiver text.
+
+Sources: https://www.mccormick.northwestern.edu/biomedical/academics/graduate/masters/admissions.html ; https://www.tgs.northwestern.edu/admission/application-procedures/application-requirements/fee.html
