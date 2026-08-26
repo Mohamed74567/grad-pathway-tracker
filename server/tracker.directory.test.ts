@@ -268,6 +268,44 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns UC Davis BME Graduate Group guidance without transferring its mechanics to Medical Device Development M.Eng.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "uc-davis-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "uc-davis-biomedical-engineering-ms" });
+    const meng = await caller.tracker.directory.bySlug({ slug: "uc-davis-medical-device-development-meng" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          destinationUrl: "https://grad.ucdavis.edu/graduate-preparation-programs-eligible-fee-waivers",
+          details: expect.stringContaining("preparation-program coordinator’s name and contact information"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          details: expect.stringContaining("Additional hardship waivers are not available"),
+        }),
+      ]));
+    }
+
+    expect(meng?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://grad.ucdavis.edu/graduate-preparation-programs-eligible-fee-waivers",
+        details: expect.stringContaining("does not publish a fee amount"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(meng?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        details: expect.stringContaining("preparation-program coordinator’s name and contact information"),
+      }),
+    ]));
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
