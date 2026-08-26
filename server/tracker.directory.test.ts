@@ -2544,6 +2544,20 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns New York Tech Bioengineering MS with advisor-issued fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "new-york-tech-bioengineering-ms" });
+
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://catalog.nyit.edu/general_information/admissions_graduate/",
+        details: expect.stringContaining("official waiver from the applicant’s college advisor"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UTSA Biomedical Engineering PhD with McNair-only fee-waiver form guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "ut-san-antonio-biomedical-engineering-phd" });

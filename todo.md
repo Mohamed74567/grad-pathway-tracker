@@ -644,3 +644,4 @@
 - [x] Reconcile Drexel Biomedical Engineering M.S./Ph.D. fee treatment from current School of Engineering and BME sources; documented the no-waiver versus academic-partner conflict and retained conservative no-transfer treatment.
 - [x] Reconcile UT Southwestern Biomedical Engineering Ph.D. fee treatment from current Graduate School and BME sources; recorded the official no-application-fee status and added no unnecessary waiver guidance.
 - [x] Add and validate UTSA Biomedical Engineering Ph.D. McNair-only fee-waiver form guidance with the official no-general-waiver boundary and three-pass provenance.
+- [x] Add and validate New York Tech Bioengineering M.S. advisor-issued fee-waiver guidance with the official US$50 fee and non-automatic boundary.

@@ -2134,3 +2134,6 @@ UT Southwestern’s current Graduate School admissions page states there is no a
 
 ## UT San Antonio Biomedical Engineering Ph.D. fee-waiver expansion, August 26, 2026
 UTSA’s current Graduate Admissions page states that graduate applicants pay a non-refundable processing fee ($50 domestic/$90 international) and that there are no general graduate-level fee waivers, except that approved McNair program waiver forms may be provided by the applicant’s institution McNair office. The current UTSA Biomedical Engineering Ph.D. page confirms the in-scope joint doctoral program and its non-refundable-fee requirement. The McNair-only form route was added to the Ph.D. profile with no broader hardship, veteran, code, or session waiver inferred.
+
+## New York Institute of Technology Bioengineering M.S. fee-waiver expansion, August 26, 2026
+New York Tech’s current Graduate Admissions Catalog lists a US$50 non-refundable graduate application fee and states that the fee may be waived with an official waiver from the applicant’s college advisor or a New York Tech advisor. The current 2026–27 Bioengineering M.S. catalog confirms the in-scope medical-device-focused degree and separately lists the US$50 fee. The guidance added to the M.S. profile is advisor-issued and non-automatic; no universal code or unsupported doctoral transfer was added.
