@@ -234,6 +234,28 @@ describe("tracker.directory", () => {
     }
   });
 
+  it("returns Vanderbilt Engineering's qualified Fall 2027 Biomedical Engineering Ph.D. fee-waiver contact without transferring it to the no-fee M.S.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "vanderbilt-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "vanderbilt-biomedical-engineering-ms" });
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "mailto:gradengineering@vanderbilt.edu",
+        details: expect.stringContaining("December 1, 2026"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationFeeDisplay).toBe("No application fee for the M.S.");
+    expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        title: "Vanderbilt Engineering Fall 2027 Ph.D. application-fee waiver",
+      }),
+    ]));
+  });
+
   it("returns the separately verified UH Mānoa MBBE doctorate with its own master’s sibling option", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
