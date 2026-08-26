@@ -2544,6 +2544,18 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Miami University Biomedical Engineering M.Eng. with limited-category waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "miami-university-biomedical-engineering-meng" });
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: "https://miamioh.edu/admission-aid/apply/graduate-students/index.html",
+        details: expect.stringContaining("Ronald E. McNair Scholars"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
