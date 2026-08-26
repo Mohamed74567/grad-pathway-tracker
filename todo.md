@@ -586,3 +586,5 @@
 - [x] Add USF Biomedical Engineering M.S. and Ph.D. financial-hardship application-fee-waiver form guidance from the current official Office of Admissions source. Added separate degree records, direct form link, nonrefundable-fee and no-guarantee boundaries, regression coverage, and validated the public Ph.D. profile.
 
 - [x] Re-audit UW–Madison Biomedical Engineering fee-grant coverage against the current College of Engineering and Graduate School sources. Existing Ph.D. and M.S. entries remain accurate for eligibility, five-business-day timing, coupon-code issuance, no-refund, one-grant, and Graduate School application limits; no duplicate update was made.
+
+- [x] Reconcile Illinois Bioengineering’s current M.S./Ph.D. waiver pages. Confirmed the departmental route is explicitly doctoral in substance despite its repeated block on the M.S. page; retained it only on the Ph.D. profile and preserved the M.S. central route, with the official conflict documented.
