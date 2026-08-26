@@ -2527,6 +2527,23 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UT Arlington Biomedical Engineering M.S. and Ph.D. with department-request fee-waiver code guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "ut-arlington-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "ut-arlington-biomedical-engineering-ms" }),
+    ]);
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_code",
+          destinationUrl: "https://www.uta.edu/admissions/apply/fee-waivers",
+          details: expect.stringContaining("contact their academic department"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+  });
   it("returns UMass Lowell’s direct Biomedical Engineering Ph.D. with qualified doctoral support", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "umass-lowell-biomedical-engineering-phd" });
