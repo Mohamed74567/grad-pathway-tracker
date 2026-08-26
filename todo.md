@@ -628,3 +628,5 @@
 - [x] Reconcile University of South Carolina Biomedical Engineering Ph.D. and M.Eng. fee treatment. Retained the reinstated US$50 paid fee and no-waiver guidance because the Graduate School does not grant individual waiver requests and no BME exception is published.
 
 - [x] Reconcile Villanova Biomedical Engineering M.S. fee treatment. Retained the no-application-fee status from the current College of Engineering source; no unnecessary waiver guidance was added.
+
+- [x] Reconcile Cleveland State Biomedical Engineering M.S. fee treatment. Documented conflicting/ambiguous official waiver wording and retained existing treatment without adding an unsupported graduate BME route.
