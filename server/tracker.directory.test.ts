@@ -861,11 +861,19 @@ describe("tracker.directory", () => {
     expect(scm?.applicationFeeDisplay).toBeNull();
     expect(meng?.applicationFeeDisplay).toBeNull();
     expect(meng?.duolingoPolicy).toBe("Duolingo is not listed on Brown Graduate School’s current TOEFL-or-IELTS proficiency policy.");
-    expect(scm?.applicationGuidance).not.toEqual(expect.arrayContaining([
-      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
+    expect(scm?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Brown needs-based application fee waiver request",
+        verificationPasses: 3,
+      }),
     ]));
-    expect(meng?.applicationGuidance).not.toEqual(expect.arrayContaining([
-      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
+    expect(meng?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Brown needs-based application fee waiver request",
+        verificationPasses: 3,
+      }),
     ]));
   });
 
@@ -3122,6 +3130,29 @@ describe("tracker.directory", () => {
     expect(program?.deadlines).toEqual([]);
     expect(program?.degreeOptions).toEqual(expect.arrayContaining([
       expect.objectContaining({ slug: "umass-lowell-biomedical-engineering-phd", degreeType: "phd" }),
+    ]));
+  });
+
+  it("returns Brown Biomedical Engineering master’s profiles with central needs-based fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const scm = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-scm" });
+    const meng = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-meng" });
+    const phd = await caller.tracker.directory.bySlug({ slug: "brown-biomedical-engineering-phd" });
+
+    for (const program of [scm, meng]) {
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_form",
+          title: "Brown needs-based application fee waiver request",
+          destinationUrl: "https://apply.graduateschool.brown.edu/apply/",
+          details: expect.stringContaining("Needs-Based Application Fee Waiver section"),
+          verificationPasses: 3,
+        }),
+      ]));
+    }
+    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
     ]));
   });
 

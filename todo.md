@@ -805,3 +805,7 @@
 - [x] Re-audit Arizona State Biomedical Engineering M.S. and Ph.D. fee treatment against current ASU Graduate Admission and SBHSE/BME sources; preserve the existing fee displays and empty guidance arrays, excluding the unrelated SSEBE no-waiver page.
 - [x] Add and pass Arizona State regression coverage; focused directory suite reached 183 passing tests with the extended timeout.
 - [x] Record Arizona State official-source evidence and continue the fee-waiver queue.
+- [x] Add Brown Graduate School’s needs-based application-fee waiver form guidance separately to the Biomedical Engineering Sc.M. and M.Eng. profiles, preserving the accepted-document list and no-code boundary.
+- [x] Correct Brown’s legacy M.S./M.Eng. regression assertions to reflect the newly verified master’s route while keeping the Ph.D. path separate.
+- [x] Add and pass Brown regression coverage; focused directory suite reached 184 passing tests with the extended timeout.
+- [x] Record Brown official-source evidence and continue the fee-waiver queue.
