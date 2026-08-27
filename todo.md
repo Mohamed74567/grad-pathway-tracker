@@ -891,3 +891,5 @@
 - [x] Strengthen UNC Chapel Hill regression coverage for the current fee and central waiver workflow; focused directory suite passed with 191 tests.
 - [x] Refresh University of South Carolina Biomedical Engineering Ph.D., M.S., and M.E. fee treatment against current Graduate School and program sources, preserving the US$50 fee effective August 1, 2026, additional vendor-fee caveat, no-individual-waiver policy, and degree boundaries.
 - [x] Document the South Carolina official no-waiver finding and confirm existing regression coverage across all three published profiles.
+- [x] Refresh Ohio State Biomedical Engineering M.S. and Ph.D. fee-waiver opportunity guidance against current BME admissions sources, preserving US$60 domestic / US$70 international fees, domestic-only program/event opportunities, no BME-issued code or automatic waiver, and shared degree scope.
+- [x] Strengthen Ohio State regression coverage for the current fee schedule, domestic opportunity categories, no-code boundary, and shared M.S./Ph.D. treatment; focused directory suite passed with 191 tests.

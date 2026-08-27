@@ -730,8 +730,7 @@ describe("tracker.directory", () => {
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
-          destinationUrl: "https://gpadmissions.osu.edu/grad/apply-online.html",
-          details: expect.stringContaining("does not issue fee waivers directly"),
+          details: expect.stringMatching(/does not issue fee waivers directly[\s\S]*domestic applicants[\s\S]*Open House[\s\S]*SROP[\s\S]*McNair[\s\S]*Buckeye REU/),
         }),
       ]));
     }
@@ -1754,7 +1753,7 @@ describe("tracker.directory", () => {
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://gpadmissions.osu.edu/resources/fee-waivers.html",
-          details: expect.stringContaining("one waiver is permitted per academic year"),
+          details: expect.stringMatching(/domestic applicants[\s\S]*Big Ten Academic Alliance FreeApp[\s\S]*no separate BME-issued code/),
           verificationPasses: 3,
         }),
       ]));
