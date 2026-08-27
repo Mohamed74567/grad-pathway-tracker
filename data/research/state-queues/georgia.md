@@ -63,3 +63,11 @@ Georgia State University’s identified graduate neuroscience offerings are not 
 3. Official degree, curriculum, or departmental research source.
 4. Official funding or financial-support treatment, if stated.
 5. Credited official or clearly licensed university imagery.
+
+## University of Georgia Biomedical Engineering Ph.D. fee-waiver refresh — August 27, 2026
+
+The current UGA Graduate School application-fee page confirms US$75 for the first application and US$25 for each additional application. A limited number of fee waivers are available only to applicants who participated in qualifying programs; applicants must upload supporting documentation within the application. The request is one-time and applies to one admissions cycle. Selecting a waiver without eligibility can cause the application to be cancelled, and the fee is non-refundable; an application without payment or an approved waiver is not processed. UGA College of Engineering directs applicants to the Graduate School policy, and the reviewed Biomedical Engineering Ph.D. sources publish no program-specific code or automatic waiver. The guidance was refreshed on the Ph.D. profile only; no policy was transferred to a separate M.S. or Biological Engineering profile.
+
+Sources reviewed: [UGA Graduate School application fee](https://grad.uga.edu/admissions/application-fee/), [UGA Graduate School FAQ](https://grad.uga.edu/admissions/faq/), [UGA College of Engineering Biomedical Engineering Ph.D.](https://engineering.uga.edu/degree/phd-biomedical-engineering/), and [UGA Graduate School Biomedical Engineering Ph.D.](https://grad.uga.edu/degree/phd-biomedical-engineering/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the current fee schedule, one-cycle rule, cancellation warning, three-pass provenance, and Ph.D.-only scope.

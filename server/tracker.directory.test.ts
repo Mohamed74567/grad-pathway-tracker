@@ -2758,11 +2758,12 @@ describe("tracker.directory", () => {
         guidanceType: "fee_waiver_form",
         title: "Graduate School qualifying-program fee-waiver request",
         destinationUrl: "https://grad.uga.edu/admissions/application-fee/",
-        details: expect.stringContaining("qualifying programs"),
+        details: expect.stringMatching(/qualifying programs[\s\S]*one admissions cycle[\s\S]*application to be cancelled[\s\S]*not transferred to any separate M\.S\./),
         verificationPasses: 3,
       }),
     ]));
     expect(program?.applicationFeeDisplay).toContain("US$75 first application");
+    expect(program?.applicationFeeDisplay).toContain("US$25 each additional application");
   });
 
   it("preserves University of Arkansas Biomedical Engineering fee treatment without an unsupported new-degree waiver route", async () => {

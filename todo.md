@@ -885,3 +885,5 @@
 - [x] Strengthen UW regression coverage for the current fee, MFI boundary, seven-day timing, and three-pass provenance; focused directory suite passed with 191 tests.
 - [x] Refresh UT Knoxville Biomedical Engineering Ph.D.-only fee-waiver code guidance against current BME admissions sources, preserving first-time domestic eligibility, Change-of-Program exclusion, department contact route, unpublished-code boundary, and no transfer to the M.S.
 - [x] Strengthen UT Knoxville regression coverage for the Ph.D.-only transfer boundary and M.S. exclusion; focused directory suite passed with 191 tests.
+- [x] Refresh University of Georgia Biomedical Engineering Ph.D. fee-waiver guidance against current Graduate School and College of Engineering sources, preserving the US$75/$25 fee schedule, qualifying-program documentation, one-cycle rule, cancellation warning, no automatic code, and Ph.D.-only scope.
+- [x] Strengthen UGA regression coverage for the current fee schedule, one-cycle rule, cancellation warning, three-pass provenance, and Ph.D.-only boundary; focused directory suite passed with 191 tests.
