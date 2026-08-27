@@ -2534,6 +2534,19 @@ describe("tracker.directory", () => {
         destinationUrl: "https://www.eng.ufl.edu/graduate/mswaiver/",
       }),
     ]));
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Fall 2026 Ph.D. fee-waiver application",
+        verificationPasses: 3,
+      }),
+      expect.objectContaining({
+        guidanceType: "cross_degree_consideration",
+        title: "Ph.D. application is also considered for the master’s program",
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance.some((guide) => guide.guidanceType === "cross_degree_consideration")).toBe(false);
   });
   it("returns Texas A&M Biomedical Engineering M.S. and Ph.D. with selected-faculty coupon guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());

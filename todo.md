@@ -838,3 +838,6 @@
 - [x] Re-audit University of Utah Biomedical Engineering Ph.D. and M.S. against current BME and Graduate Admissions sources; preserve the Ph.D.-only BME referral code, degree-neutral McNair guidance, and US$55/US$65 fee displays.
 - [x] Strengthen University of Utah regression coverage to assert degree-separated referral-code and McNair treatment; focused directory suite reached 191 passing tests with the extended timeout.
 - [x] Record University of Utah official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit University of Florida Biomedical Engineering Ph.D. and M.S./M.E. against current BME, College of Engineering, and Graduate Admissions sources; preserve the Ph.D.-only selected-applicant form, M.S.-only College of Engineering request form, US$30 fee, and Ph.D.-only cross-degree consideration.
+- [x] Strengthen UF regression coverage to assert both routes and prevent fee-waiver or cross-degree policy transfer; focused directory suite passed with 191 tests.
+- [x] Record UF official-source evidence and continue the fee-waiver queue.
