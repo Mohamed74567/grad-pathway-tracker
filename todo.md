@@ -868,3 +868,6 @@
 - [x] Refresh UIC Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME, Graduate Admissions, and Graduate College sources; preserve the US$80 fee, central degree-seeking categories, BME session route, Ph.D.-only Research Engagement route, no-hardship/no-deferral boundary, and CAS limits.
 - [x] Strengthen UIC regression coverage to assert current fees and doctoral-only Research Engagement treatment; focused directory suite passed with 191 tests.
 - [x] Record UIC official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Minnesota Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Graduate School sources; preserve the US$75/$95 fee split, limited department form, November 9 request deadline, November 13 decision statement, central GSDO eligibility, and cycle/capacity boundaries.
+- [x] Strengthen Minnesota regression coverage to assert current fees on both degree paths and keep the department route separate from Medical Device Innovation; focused directory suite passed with 191 tests.
+- [x] Record Minnesota official-source evidence and continue the fee-waiver queue.
