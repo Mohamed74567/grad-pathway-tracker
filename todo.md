@@ -826,3 +826,6 @@
 - [x] Re-audit UNLV Biomedical Engineering M.S. against current Graduate Admissions, degree, and College of Engineering sources; preserve the US$60 domestic / US$95 international non-refundable fee display and empty guidance array because no official waiver route was published.
 - [x] Add and pass UNLV regression coverage; focused directory suite reached 188 passing tests with the extended timeout.
 - [x] Record UNLV official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit CSUN Biomedical Engineering M.S. against current department and Graduate Admissions sources; preserve the US$70 non-refundable CSU fee and empty guidance array because no official waiver route was published.
+- [x] Add and pass CSUN regression coverage; focused directory suite reached 189 passing tests with the extended timeout.
+- [x] Record CSUN official-source evidence and continue the fee-waiver queue.

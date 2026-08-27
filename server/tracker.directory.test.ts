@@ -3133,6 +3133,14 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves CSUN Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "csun-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$70");
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("preserves UNLV Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-nevada-las-vegas-biomedical-engineering-ms" });
