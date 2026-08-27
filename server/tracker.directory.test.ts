@@ -2554,6 +2554,31 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UMass Joint Biomedical Engineering and Biotechnology degree-separated fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "umass-joint-biomedical-engineering-biotechnology-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "umass-joint-biomedical-engineering-biotechnology-phd" });
+
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: expect.stringContaining("master-science-biomedical-engineering/application-notes-ms-bme"),
+        details: expect.stringContaining("Five College"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance[0]?.details).not.toContain("current UMass graduate student enrolled in a master’s program applying for a doctoral degree");
+
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        destinationUrl: expect.stringContaining("phd-biomedical-engineering/bme-phd-application-notes"),
+        details: expect.stringContaining("current UMass graduate student enrolled in a master’s program"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UMaine GSBSE Biomedical Engineering Ph.D. with central-category fee-waiver contact guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-of-maine-gsbse-biomedical-engineering-phd" });

@@ -761,3 +761,9 @@
 - [x] Keep UMaine guidance Ph.D.-only because the reviewed GSBSE admissions page publishes Biomedical Engineering as a doctoral program and explicitly says there is no on-campus GSBSE master’s.
 - [x] Add and pass UMaine regression coverage; focused directory suite reached 173 passing tests with the extended timeout.
 - [x] Record UMaine official-source evidence and continue the fee-waiver queue.
+
+- [x] Add UMass Amherst Graduate School limited-category fee-waiver contact guidance separately to the joint Biomedical Engineering and Biotechnology M.S. and Ph.D. profiles, preserving McNair, GRE fee-reduction, recruitment-program, and degree-specific current-student exceptions.
+- [x] Keep the current Five College master’s-only exception on the M.S. path and the current UMass master’s-to-doctoral and URM Engineering exceptions on the Ph.D. path; do not transfer unsupported policy between degrees.
+- [x] Preserve PDF documentation contacts, nonrefundable-fee boundary, no-general-waiver wording, no BME-issued code, domestic recruitment boundary, and one-application limitation where stated by the official sources.
+- [x] Add and pass UMass Amherst regression coverage; focused directory suite reached 174 passing tests with the extended timeout.
+- [x] Record UMass Amherst official-source evidence and continue the fee-waiver queue.
