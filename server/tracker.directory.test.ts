@@ -2554,6 +2554,33 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UWM Biomedical Engineering M.S. and Ph.D. with degree-separated Graduate School fee-waiver routes", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const masters = await caller.tracker.directory.bySlug({ slug: "uw-milwaukee-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "uw-milwaukee-biomedical-engineering-phd" });
+
+    expect(masters?.applicationFeeDisplay).toContain("US$75");
+    expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_session",
+        title: "Graduate School Open House or preparation-pipeline fee grant",
+        details: expect.stringContaining("physically attend the in-person Graduate School Open House"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationGuidance[0]?.details).not.toContain("already holds or will complete a UWM master’s degree");
+
+    expect(doctorate?.applicationFeeDisplay).toContain("US$75");
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_session",
+        title: "Graduate School Open House, pipeline grant, or UWM-master’s doctoral waiver",
+        details: expect.stringContaining("already holds or will complete a UWM master’s degree"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("preserves South Dakota Biomedical Engineering fee treatment without unsupported waivers", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const programs = await Promise.all([

@@ -777,3 +777,8 @@
 - [x] Preserve USD’s explicit no-waiver/no-deferral/non-refundable application-fee rule across the three published degree paths; exclude assistantships and discounted tuition from application-fee guidance.
 - [x] Add and pass South Dakota regression coverage; focused directory suite reached 176 passing tests with the extended timeout.
 - [x] Record South Dakota official-source evidence and continue the fee-waiver queue.
+
+- [x] Add UWM Graduate School Open House and Preparation Pipeline Fee Grant guidance separately to the Biomedical Engineering M.S. and Ph.D. profiles, preserving the US$75 non-refundable fee, November 5, 2026 in-person event, August 15, 2026–March 31, 2027 application window, physical-attendance requirement, named pipeline categories, signed-PDF proof, and ten-business-day timing.
+- [x] Keep the automatic UWM-master’s application-fee waiver Ph.D.-only and do not transfer it to the M.S.; add no unsupported BME code, hardship route, assistantship, or tuition-waiver claim.
+- [x] Add and pass UWM regression coverage; focused directory suite reached 177 passing tests with the extended timeout.
+- [x] Record UWM official-source evidence and continue the fee-waiver queue.
