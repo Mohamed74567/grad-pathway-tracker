@@ -847,3 +847,6 @@
 - [x] Refresh University at Buffalo Biomedical Engineering Ph.D. and M.S. fee-waiver treatment against current BME and Graduate School sources; preserve the US$100 fee, central categorical route on the Ph.D. profile, and no unsupported transfer to the M.S. profile.
 - [x] Strengthen UB regression coverage to assert current fee and M.S. empty guidance; focused directory suite passed with 191 tests.
 - [x] Record University at Buffalo official-source evidence and continue the fee-waiver queue.
+- [x] Refresh UC Davis Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BMEGG and Graduate Studies sources; preserve the US$135/$155 fee split, preparation-program-only waiver, immediate application mechanic, and no-hardship boundary.
+- [x] Strengthen UC Davis regression coverage to assert current fees on both BME paths while keeping the related M.Eng. policy separate; focused directory suite passed with 191 tests.
+- [x] Record UC Davis official-source evidence and continue the fee-waiver queue.

@@ -305,6 +305,8 @@ describe("tracker.directory", () => {
     const masters = await caller.tracker.directory.bySlug({ slug: "uc-davis-biomedical-engineering-ms" });
     const meng = await caller.tracker.directory.bySlug({ slug: "uc-davis-medical-device-development-meng" });
 
+    expect(doctorate?.applicationFeeDisplay).toBe("US$135 for U.S. residents; US$155 for all other applicants; qualified preparation-program waiver only");
+    expect(masters?.applicationFeeDisplay).toBe("US$135 for U.S. residents; US$155 for all other applicants; qualified preparation-program waiver only");
     for (const program of [doctorate, masters]) {
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
