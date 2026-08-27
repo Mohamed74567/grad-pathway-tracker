@@ -881,3 +881,5 @@
 - [x] Strengthen Missouri regression coverage for the one-application limit and three-pass provenance; focused directory suite passed with 191 tests.
 - [x] Reconcile Mississippi State University Biomedical Engineering Ph.D. and M.S. fee treatment against current Graduate School and BME sources; preserve US$60/$80 fees, no-general-waiver boundary, coordinator contact, and strict degree separation.
 - [x] Add three-pass central-policy guidance for both Mississippi State degree profiles and strengthen regression assertions; focused directory suite passed with 191 tests.
+- [x] Refresh University of Washington Bioengineering Ph.D., Master of Applied Bioengineering, and Master of Pharmaceutical Bioengineering fee-waiver guidance against current UW Graduate School and program FAQs; preserve US$90 fee, MFI financial-need route, McNair/PPIA documentation, seven-day timing, no-refund rule, stacked-degree boundary, and degree-scoped copies.
+- [x] Strengthen UW regression coverage for the current fee, MFI boundary, seven-day timing, and three-pass provenance; focused directory suite passed with 191 tests.

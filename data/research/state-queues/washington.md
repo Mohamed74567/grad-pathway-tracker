@@ -69,3 +69,11 @@ UW’s Master of Pharmaceutical Bioengineering (PharBE) is a part-time online pr
 3. Official degree, curriculum, or departmental research source.
 4. Official funding or financial-support treatment, if stated.
 5. Credited official or clearly licensed university imagery.
+
+## University of Washington Bioengineering fee-waiver refresh — August 27, 2026
+
+Current UW Bioengineering Ph.D. and Master of Applied Bioengineering FAQs direct applicants to the UW Graduate School fee-waiver process. The Graduate School page confirms a US$90 nonrefundable application fee, requests at least seven days before the program deadline, and no waiver or refund after payment. The financial-need route is based on the Washington College Grant 100% Median Family Income threshold and is available to U.S. citizens, permanent residents, and undocumented applicants without a Washington-residency requirement. McNair Scholar and PPIA Fellow routes require supporting documentation; F-1/J-1 applicants are excluded from those routes. The separate approved stacked-degree route may apply to domestic or international applicants only when the program is part of an approved pathway. The published Ph.D., Master of Applied Bioengineering, and Master of Pharmaceutical Bioengineering profiles were refreshed with degree-scoped copies of this central guidance; no BME-specific code or unsupported cross-degree exception was added.
+
+Sources reviewed: [UW Graduate School fee waivers](https://grad.uw.edu/prospective-students/how-to-apply/application-fee-waivers/), [UW Graduate School apply now](https://grad.uw.edu/prospective-students/how-to-apply/apply-now/), [UW Bioengineering Ph.D. FAQ](https://bioe.uw.edu/academic-programs/phd/phd-faq/), and [UW Master of Applied Bioengineering FAQ](https://bioe.uw.edu/academic-programs/masters/applied-bioengineering/mab-faq/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$90 fee, MFI boundary, seven-day timing, and three-pass provenance.

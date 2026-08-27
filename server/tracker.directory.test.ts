@@ -1280,11 +1280,12 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$90 application fee");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://grad.uw.edu/prospective-students/how-to-apply/application-fee-waivers/",
-          details: expect.stringContaining("seven days"),
+          details: expect.stringContaining("Washington College Grant 100% Median Family Income"),
           verificationPasses: 3,
         }),
       ]));
