@@ -1358,6 +1358,8 @@ describe("tracker.directory", () => {
       caller.tracker.directory.bySlug({ slug: "uw-madison-biomedical-engineering-accelerated-ms" }),
     ]);
 
+    expect(paths[0]?.applicationFeeDisplay).toBe("US$75 application fee; international applicants pay an additional US$6 processing fee; qualified fee grants may be available");
+    expect(paths[1]?.applicationFeeDisplay).toBe("US$75 application fee; international applicants pay an additional US$6 processing fee; qualified fee grants may be available");
     for (const program of paths) {
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({

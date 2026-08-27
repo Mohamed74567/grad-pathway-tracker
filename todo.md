@@ -853,3 +853,6 @@
 - [x] Refresh University of Maryland Bioengineering Ph.D. and M.S. fee-waiver coverage against current Fischell and Graduate School sources; preserve the US$90 fee, limited individual request-form route, 10–15-business-day review boundary, and Fall 2026 cycle dates without generalization.
 - [x] Strengthen UMD regression coverage to assert current fees on both degree paths; focused directory suite passed with 191 tests.
 - [x] Record UMD official-source evidence and continue the fee-waiver queue.
+- [x] Refresh UW–Madison Biomedical Engineering Ph.D., Research M.S., and explicitly covered related BME paths against current Engineering and Graduate School sources; preserve the US$75/$81 fee treatment, limited fee-grant categories, five-business-day lead time, coupon mechanics, and no-refund/no-deferral boundary.
+- [x] Strengthen UW–Madison regression coverage to assert current fees on the research Ph.D./M.S. paths; focused directory suite passed with 191 tests.
+- [x] Record UW–Madison official-source evidence and continue the fee-waiver queue.
