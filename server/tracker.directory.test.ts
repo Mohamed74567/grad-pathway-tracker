@@ -417,6 +417,7 @@ describe("tracker.directory", () => {
       expect(program?.duolingoPolicy).toContain("Duolingo English Test 105");
       expect(program?.duolingoPolicy).toContain("less than two years old");
       expect(program?.campusImageCredit).toContain("Louisiana Tech University");
+      expect(program?.applicationGuidance).toEqual([]);
     }
 
     expect(doctorate?.degreeOptions).toEqual(expect.arrayContaining([

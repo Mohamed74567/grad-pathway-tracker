@@ -793,3 +793,6 @@
 - [x] Add Wright State’s McNair certification fee-waiver route to the published Biomedical Engineering M.S. profile, preserve the applicant-type fee conflict, and avoid adding an unsupported BME Ph.D. route.
 - [x] Add and pass Wright State regression coverage; focused directory suite reached 180 passing tests with the extended timeout.
 - [x] Record Wright State official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit Louisiana Tech Biomedical Engineering Ph.D. and Biomedical-track M.S. fee treatment against current graduate admissions sources; preserve the US$40 non-refundable display and empty guidance arrays because no current official waiver route was published.
+- [x] Add and pass Louisiana Tech regression coverage; focused directory suite remains at 180 passing tests with the extended timeout.
+- [x] Record Louisiana Tech official-source evidence and continue the fee-waiver queue.
