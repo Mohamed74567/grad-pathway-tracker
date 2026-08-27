@@ -859,3 +859,6 @@
 - [x] Refresh Virginia Tech–Wake Forest Biomedical Engineering Ph.D. and thesis M.S. fee-waiver coverage against current SBES and Graduate School sources; preserve the US$75 fee, central documented-category request, 5–7-business-day review, one-time code, limited program fallback, and no-refund boundary.
 - [x] Strengthen Virginia Tech–Wake Forest regression coverage to assert the current fee on both joint degree paths; focused directory suite passed with 191 tests.
 - [x] Record Virginia Tech–Wake Forest official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Virginia Biomedical Engineering Ph.D., M.S., and M.E. fee treatment against current BME and UVA Engineering sources; preserve the 2027 Engineering-wide automatic no-fee policy and no-code/no-form mechanic.
+- [x] Strengthen UVA regression coverage to assert the no-fee display on all three published degree paths; focused directory suite passed with 191 tests.
+- [x] Record UVA official-source evidence and continue the fee-waiver queue.
