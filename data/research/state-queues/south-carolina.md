@@ -40,3 +40,11 @@ The University of South Carolina officially offers BME Ph.D., thesis M.S., and c
 5. https://www.clemson.edu/cecas/departments/bioe/academics/graduate/faq.html
 6. https://www.clemson.edu/admissions/graduate-admissions/apply/international-applicants/supporting-materials.html
 7. https://www.clemson.edu/cecas/academics/graduate/funding.html
+
+## University of South Carolina Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+Current University of South Carolina Graduate School application guidance confirms that the US$50 graduate application fee is reinstated effective August 1, 2026 and applies to each primary application, with possible additional discipline-vendor fees. The same page explicitly states that the Graduate School does not grant individual student requests for application-fee waivers. The official Biomedical Engineering Ph.D. and M.E. degree pages confirm the direct ApplyWeb route and degree-specific deadlines; no Biomedical Engineering code, form, contact exception, or admissions-session waiver was published. The published Ph.D., M.S., and M.E. profiles retain the standard-fee/no-individual-waiver boundary, with no unsupported transfer between degree levels.
+
+Sources reviewed: [USC Graduate School application page](https://sc.edu/study/colleges_schools/graduate_school/apply/), [USC Biomedical Engineering Ph.D.](https://sc.edu/study/colleges_schools/graduate_school/apply/degree_programs-application-requirements/biomedical-engineering-phd/), and [USC Biomedical Engineering M.E.](http://cms.sc.edu/study/colleges_schools/graduate_school/apply/degree_programs-application-requirements/biomedical-engineering-me/index.php).
+
+Validation: existing focused regression coverage confirms US$50 treatment and no unsupported individual-waiver guidance across all three published profiles.

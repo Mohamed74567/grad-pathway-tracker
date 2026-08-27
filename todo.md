@@ -889,3 +889,5 @@
 - [x] Strengthen UGA regression coverage for the current fee schedule, one-cycle rule, cancellation warning, three-pass provenance, and Ph.D.-only boundary; focused directory suite passed with 191 tests.
 - [x] Refresh UNC Chapel Hill Biomedical Engineering Ph.D. fee-waiver guidance against current Graduate School and BME sources, preserving the US$95 fee, ten published eligibility groups, required documentation, pre-deadline request, denial/payment boundary, and no transfer to the separate MedTech M.S.
 - [x] Strengthen UNC Chapel Hill regression coverage for the current fee and central waiver workflow; focused directory suite passed with 191 tests.
+- [x] Refresh University of South Carolina Biomedical Engineering Ph.D., M.S., and M.E. fee treatment against current Graduate School and program sources, preserving the US$50 fee effective August 1, 2026, additional vendor-fee caveat, no-individual-waiver policy, and degree boundaries.
+- [x] Document the South Carolina official no-waiver finding and confirm existing regression coverage across all three published profiles.
