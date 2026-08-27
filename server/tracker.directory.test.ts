@@ -2656,23 +2656,23 @@ describe("tracker.directory", () => {
     const masters = await caller.tracker.directory.bySlug({ slug: "uw-milwaukee-biomedical-engineering-ms" });
     const doctorate = await caller.tracker.directory.bySlug({ slug: "uw-milwaukee-biomedical-engineering-phd" });
 
-    expect(masters?.applicationFeeDisplay).toContain("US$75");
+    expect(masters?.applicationFeeDisplay).toBe("US$75");
     expect(masters?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_session",
         title: "Graduate School Open House or preparation-pipeline fee grant",
-        details: expect.stringContaining("physically attend the in-person Graduate School Open House"),
+        details: expect.stringMatching(/physically attend the in-person Graduate School Open House[\s\S]*at least 10 business days before the program deadline/),
         verificationPasses: 3,
       }),
     ]));
     expect(masters?.applicationGuidance[0]?.details).not.toContain("already holds or will complete a UWM master’s degree");
 
-    expect(doctorate?.applicationFeeDisplay).toContain("US$75");
+    expect(doctorate?.applicationFeeDisplay).toBe("US$75");
     expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_session",
         title: "Graduate School Open House, pipeline grant, or UWM-master’s doctoral waiver",
-        details: expect.stringContaining("already holds or will complete a UWM master’s degree"),
+        details: expect.stringMatching(/already holds or will complete a UWM master’s degree[\s\S]*No BME-issued code or general hardship waiver/),
         verificationPasses: 3,
       }),
     ]));

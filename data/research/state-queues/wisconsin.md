@@ -32,3 +32,11 @@ Both profiles are now refreshed to six source categories at three passes and wer
 ## Cohort validation
 
 **Expanded August 15, 2026:** all **4 published Wisconsin profiles** now meet the required threshold of at least five source categories, a minimum of three verification passes, and credited official imagery. The state-wide validation produced **4 fully reconciled profiles** and **zero exception rows**. The new UW–Milwaukee doctoral hero was rechecked after normal image delivery and visibly rendered with its source credit.
+
+## University of Wisconsin–Milwaukee Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+The current UWM Graduate School admission page confirms a non-refundable US$75 application fee. It publishes an in-person Graduate School Open House route under which UWM pays the fee for prospective students who start the application between August 15, 2026 and March 31, 2027, physically attend the November 5, 2026 Open House from 5:00–7:00 p.m., and follow the linked instructions. A separate limited Preparation Pipeline Fee Grant is requested inside the UWM application by participants in named programs; applicants must upload signed official-letterhead proof and submit the request at least 10 business days before the program deadline. UWM also states that an applicant to a doctoral program who already holds or will complete a UWM master’s degree before starting the doctorate receives a waiver for one doctoral application. The Open House and pipeline routes are shared central routes for the BME M.S. and Ph.D.; the UWM-master’s doctoral route remains Ph.D.-only. No BME-issued code or general hardship waiver is published.
+
+Sources reviewed: [UWM Graduate School admission](https://uwm.edu/graduateschool/students/admission/), [UWM Preparation Pipeline Fee Grant](https://uwm.edu/graduateschool/students/financial-support/preparation-pipeline-fee-grant/), [UWM Graduate School Open House](https://uwm.edu/graduateschool/openhouse/), and [UWM Biomedical Engineering M.S. catalog page](https://catalog.uwm.edu/engineering-applied-science/engineering-applied-science/engineering-biomedical-ms/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$75 fee, Open House/pipeline timing, doctoral alumni waiver, no-hardship boundary, and strict M.S./Ph.D. separation.
