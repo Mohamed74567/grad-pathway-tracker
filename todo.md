@@ -767,3 +767,8 @@
 - [x] Preserve PDF documentation contacts, nonrefundable-fee boundary, no-general-waiver wording, no BME-issued code, domestic recruitment boundary, and one-application limitation where stated by the official sources.
 - [x] Add and pass UMass Amherst regression coverage; focused directory suite reached 174 passing tests with the extended timeout.
 - [x] Record UMass Amherst official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit University of South Carolina Biomedical Engineering Ph.D., M.S., and M.E. fee treatment against current Graduate School and degree pages; preserve the US$50 fee effective August 1, 2026 and the additional discipline-vendor-fee warning where applicable.
+- [x] Preserve South Carolina’s explicit no-individual-application-fee-waiver statement across all three published degree paths; add no unsupported code, form, session, hardship, tuition, or social-media route.
+- [x] Add and pass South Carolina regression coverage; focused directory suite reached 175 passing tests with the extended timeout.
+- [x] Record South Carolina official-source evidence and continue the fee-waiver queue.

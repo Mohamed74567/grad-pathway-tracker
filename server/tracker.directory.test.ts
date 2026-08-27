@@ -2554,6 +2554,22 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves South Carolina Biomedical Engineering fee treatment without unsupported individual waivers", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-south-carolina-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-south-carolina-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-south-carolina-biomedical-engineering-me" }),
+    ]);
+
+    expect(programs[0]?.applicationFeeDisplay).toContain("US$50");
+    expect(programs[1]?.applicationFeeDisplay).toContain("US$50");
+    expect(programs[2]?.applicationFeeDisplay).toContain("US$50");
+    for (const program of programs) {
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("returns UMass Joint Biomedical Engineering and Biotechnology degree-separated fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const masters = await caller.tracker.directory.bySlug({ slug: "umass-joint-biomedical-engineering-biotechnology-ms" });
