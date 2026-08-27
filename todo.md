@@ -782,3 +782,8 @@
 - [x] Keep the automatic UWM-master’s application-fee waiver Ph.D.-only and do not transfer it to the M.S.; add no unsupported BME code, hardship route, assistantship, or tuition-waiver claim.
 - [x] Add and pass UWM regression coverage; focused directory suite reached 177 passing tests with the extended timeout.
 - [x] Record UWM official-source evidence and continue the fee-waiver queue.
+
+- [x] Add Wayne State Engineering’s current cycle-wide graduate application-fee waiver separately to the Biomedical Engineering M.S. and Ph.D. profiles, preserving the US$50 fee, Spring/Summer/Fall 2026 and Winter 2027 window, no-code mechanics, Graduate School portal workflow, and future-term warning.
+- [x] Correct the legacy Wayne State regression assertion to expect the newly verified guidance rather than an empty guidance state.
+- [x] Add and pass Wayne State regression coverage; focused directory suite reached 178 passing tests with the extended timeout.
+- [x] Record Wayne State official-source evidence and continue the fee-waiver queue.

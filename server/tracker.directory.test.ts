@@ -288,7 +288,13 @@ describe("tracker.directory", () => {
 
     for (const program of [doctorate, masters]) {
       expect(program?.applicationFeeDisplay).toBe("US$50 application fee waived for Spring/Summer/Fall 2026 and Winter 2027 applicants.");
-      expect(program?.applicationGuidance).toEqual([]);
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          title: "Graduate application fee automatically waived for listed 2026–2027 terms",
+          verificationPasses: 3,
+        }),
+      ]));
     }
   });
 
@@ -2554,6 +2560,28 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns Wayne State Biomedical Engineering M.S. and Ph.D. with current-term fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "wayne-state-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "wayne-state-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of programs) {
+      expect(program?.applicationFeeDisplay).toContain("US$50");
+      expect(program?.applicationFeeDisplay).toContain("waived");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_session",
+          title: "Graduate application fee automatically waived for listed 2026–2027 terms",
+          details: expect.stringContaining("No code or separate waiver request is published"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance[0]?.details).toContain("Spring, Summer, and Fall 2026 and Winter 2027");
+    }
+  });
+
   it("returns UWM Biomedical Engineering M.S. and Ph.D. with degree-separated Graduate School fee-waiver routes", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const masters = await caller.tracker.directory.bySlug({ slug: "uw-milwaukee-biomedical-engineering-ms" });
