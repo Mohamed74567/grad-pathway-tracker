@@ -3133,6 +3133,19 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves FAMU-FSU Biomedical Engineering fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const masters = await caller.tracker.directory.bySlug({ slug: "famu-fsu-biomedical-engineering-ms" });
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "famu-fsu-biomedical-engineering-phd" });
+
+    for (const program of [masters, doctorate]) {
+      expect(program?.applicationFeeDisplay).toContain("US$30 FAMU graduate application fee");
+      expect(program?.applicationFeeDisplay).toContain("FSU route has a separate application process and fee");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("preserves Cal Poly San Luis Obispo Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

@@ -812,3 +812,6 @@
 - [x] Re-audit Cal Poly San Luis Obispo Biomedical Engineering’s external M.S. application-fee treatment against current BME, Cal Poly admissions, and catalog sources; preserve the US$70 fee and empty guidance array because no external-program waiver route was published.
 - [x] Add and pass Cal Poly San Luis Obispo regression coverage; focused directory suite reached 185 passing tests with the extended timeout.
 - [x] Record Cal Poly San Luis Obispo official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit FAMU–FSU Biomedical Engineering M.S. and Ph.D. application-fee treatment against current joint-college and university-route sources; preserve the US$30 route-specific fee display and empty guidance arrays under the explicit no-waiver policy.
+- [x] Add and pass FAMU–FSU regression coverage; focused directory suite reached 186 passing tests with the extended timeout.
+- [x] Record FAMU–FSU official-source evidence and continue the fee-waiver queue.
