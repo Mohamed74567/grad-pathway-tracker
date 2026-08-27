@@ -1622,6 +1622,7 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toContain("$95");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
@@ -1630,7 +1631,17 @@ describe("tracker.directory", () => {
           verificationPasses: 3,
         }),
       ]));
+      const details = program?.applicationGuidance.find(
+        guidance => guidance.destinationUrl === "https://gradadm.engineering.upenn.edu/how-to-apply/",
+      )?.details ?? "";
+      expect(details).toContain("Penn or U.S. military affiliation");
+      expect(details).toContain("automatically waived");
+      expect(details).toContain("Event attendance does not qualify");
+      expect(details).toContain("does not publish a code or separate request form");
     }
+
+    expect(paths[0]?.applicationGuidance[0]?.details).toContain("December 15, 2026");
+    expect(paths[1]?.applicationGuidance[0]?.details).toContain("February 1, 2027");
   });
 
   it("returns Yale Biomedical Engineering degree paths with the qualified Graduate School fee-waiver request", async () => {
