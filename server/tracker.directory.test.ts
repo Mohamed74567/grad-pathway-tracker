@@ -2539,10 +2539,11 @@ describe("tracker.directory", () => {
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
         destinationUrl: "https://gradschool.unc.edu/admissions/feewaiver/",
-        details: expect.stringContaining("ten published groups"),
+        details: expect.stringMatching(/ten published groups[\s\S]*before the application deadline[\s\S]*if denied, the fee must be paid/),
         verificationPasses: 3,
       }),
     ]));
+    expect(program?.applicationFeeDisplay).toBe("US$95");
   });
 
   it("returns UF Biomedical Engineering M.S. with College of Engineering fee-waiver form and keeps the Ph.D. route separate", async () => {

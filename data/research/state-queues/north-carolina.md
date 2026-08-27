@@ -19,3 +19,11 @@
 ## Cohort validation
 
 **Completed August 14, 2026:** all **4 published North Carolina profiles** now meet the required threshold of at least five source categories, a minimum of three verification passes, and credited official imagery. The validation produced **4 fully reconciled profiles** and **zero exception rows**.
+
+## UNC Chapel Hill Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+The current UNC Graduate School fee-waiver page confirms a non-refundable US$95 application fee and ten published waiver groups: full-time permanent UNC-Chapel Hill employees with approved HR documentation; active-duty or veteran military applicants; SUP, CCAC, IMSD, MARC, McNair, PREP, U-RISE, or G-RISE participants with the required verification; and U.S. citizens currently enrolled in a degree program who received need-based aid in each term of enrollment immediately preceding the applied-for term. Applicants must check the waiver box in the online application, complete the Application Fee Waiver Request, and upload documentation. Requests must arrive before the deadline; approval removes the need for further action, while denial requires payment before processing. Payment is not reimbursable once made. The published UNC Biomedical Engineering Ph.D. profile retains this central route. The separate MedTech M.S. profile is self-funded and was not given the BME doctoral profile’s policy. No unsupported Ph.D.-to-M.S. transfer was made.
+
+Sources reviewed: [UNC Graduate School fee-waiver page](https://gradschool.unc.edu/admissions/feewaiver/), [UNC Graduate School application instructions](https://gradschool.unc.edu/admissions/instructions/), [UNC Biomedical Engineering admissions FAQ](https://bme.unc.edu/graduate/graduate-admissions-faq/), and [UNC Biomedical Engineering program listing](https://gradschool.sites.unc.edu/biomedical-engineering/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$95 fee, ten-group route, pre-deadline timing, denial/payment boundary, and three-pass provenance.

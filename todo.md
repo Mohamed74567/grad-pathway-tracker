@@ -887,3 +887,5 @@
 - [x] Strengthen UT Knoxville regression coverage for the Ph.D.-only transfer boundary and M.S. exclusion; focused directory suite passed with 191 tests.
 - [x] Refresh University of Georgia Biomedical Engineering Ph.D. fee-waiver guidance against current Graduate School and College of Engineering sources, preserving the US$75/$25 fee schedule, qualifying-program documentation, one-cycle rule, cancellation warning, no automatic code, and Ph.D.-only scope.
 - [x] Strengthen UGA regression coverage for the current fee schedule, one-cycle rule, cancellation warning, three-pass provenance, and Ph.D.-only boundary; focused directory suite passed with 191 tests.
+- [x] Refresh UNC Chapel Hill Biomedical Engineering Ph.D. fee-waiver guidance against current Graduate School and BME sources, preserving the US$95 fee, ten published eligibility groups, required documentation, pre-deadline request, denial/payment boundary, and no transfer to the separate MedTech M.S.
+- [x] Strengthen UNC Chapel Hill regression coverage for the current fee and central waiver workflow; focused directory suite passed with 191 tests.
