@@ -1400,15 +1400,29 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toContain("US$95");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://www.bu.edu/eng/admissions/graduate/graduate-admissions/application-deadlines-requirements/application-fee-waiver-request/",
-          details: expect.stringContaining("McNair Scholars"),
+          details: expect.stringContaining("current BU Engineering students"),
           verificationPasses: 3,
         }),
       ]));
     }
+
+    for (const program of paths) {
+      const details = program?.applicationGuidance[0]?.details ?? "";
+      expect(details).toContain("veterans");
+      expect(details).toContain("McNair Scholars");
+      expect(details).toContain("complete the official fee-waiver request before submitting");
+      expect(details).toContain("enggrad@bu.edu");
+      expect(details).toContain("do not establish a universal waiver guarantee or code");
+    }
+
+    expect(paths[0]?.applicationGuidance[0]?.details).toContain("December 15, 2026");
+    expect(paths[1]?.applicationGuidance[0]?.details).toContain("January 15, 2027");
+    expect(paths[2]?.applicationGuidance[0]?.details).toContain("March 15, 2027");
   });
 
   it("returns Colorado State Bioengineering degree paths with the qualified Graduate School fee-waiver route", async () => {
