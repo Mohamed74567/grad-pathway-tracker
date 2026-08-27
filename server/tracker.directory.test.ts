@@ -2497,6 +2497,8 @@ describe("tracker.directory", () => {
   it("returns University at Buffalo Biomedical Engineering Ph.D. with the program-coordinated fee-waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-buffalo-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "university-buffalo-biomedical-engineering-ms" });
+    expect(program?.applicationFeeDisplay).toBe("US$100 non-refundable application fee for Spring 2025 and later terms");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_contact",
@@ -2505,6 +2507,7 @@ describe("tracker.directory", () => {
         verificationPasses: 3,
       }),
     ]));
+    expect(masters?.applicationGuidance).toEqual([]);
   });
 
   it("returns UNC Chapel Hill Biomedical Engineering Ph.D. with the central Graduate School fee-waiver workflow", async () => {

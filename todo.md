@@ -844,3 +844,6 @@
 - [x] Refresh University of Delaware Biomedical Engineering Ph.D. fee-waiver coverage against current BME and Graduate Admissions sources; preserve the US$75 fee, listed-category form, and BME-director contact fallback without implying a future M.S. route.
 - [x] Correct Delaware regression coverage to assert stable verified guidance fields; focused directory suite passed with 191 tests.
 - [x] Record Delaware official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University at Buffalo Biomedical Engineering Ph.D. and M.S. fee-waiver treatment against current BME and Graduate School sources; preserve the US$100 fee, central categorical route on the Ph.D. profile, and no unsupported transfer to the M.S. profile.
+- [x] Strengthen UB regression coverage to assert current fee and M.S. empty guidance; focused directory suite passed with 191 tests.
+- [x] Record University at Buffalo official-source evidence and continue the fee-waiver queue.
