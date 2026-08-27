@@ -819,3 +819,7 @@
 - [x] Correct Clemson regression coverage to use the verified published profile slugs and detail responses.
 - [x] Add and pass Clemson regression coverage; focused directory suite reached 187 passing tests with the extended timeout.
 - [x] Record Clemson official-source evidence and continue the fee-waiver queue.
+- [x] Reconcile UConn Biomedical Engineering’s central Graduate School waiver categories against the BME-specific rule; remove the unsupported M.S. contact route and retain only the Ph.D.-specific internal UConn BME M.S.-to-Ph.D. exception.
+- [x] Refresh UConn Ph.D. guidance provenance to the current Graduate School fee-waiver page and preserve activation/no-refund warnings.
+- [x] Re-run UConn degree-separation regression coverage; focused directory suite passed with 187 tests.
+- [x] Record UConn correction evidence and continue the fee-waiver queue.
