@@ -3123,4 +3123,30 @@ describe("tracker.directory", () => {
       expect.objectContaining({ slug: "umass-lowell-biomedical-engineering-phd", degreeType: "phd" }),
     ]));
   });
+
+  it("returns WVU Biomedical Engineering fee-waiver contact guidance separately on the Ph.D. and M.S. profiles", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "west-virginia-university-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "west-virginia-university-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toBe("US$75");
+      expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+        expect.objectContaining({
+          guidanceType: "fee_waiver_contact",
+          title: "Contact Graduate Admissions to request an eligible application-fee waiver",
+          destinationUrl: "mailto:graduateadmissions@mail.wvu.edu",
+          details: expect.stringContaining("current active United States military personnel or veterans"),
+          verificationPasses: 3,
+        }),
+      ]));
+      expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+        expect.objectContaining({ guidanceType: "fee_waiver_code" }),
+      ]));
+    }
+
+    expect(doctorate?.fundingStatus).toBe("funded");
+    expect(masters?.fundingStatus).not.toBe("fully_funded");
+  });
 });

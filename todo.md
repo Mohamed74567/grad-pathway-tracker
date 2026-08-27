@@ -787,3 +787,6 @@
 - [x] Correct the legacy Wayne State regression assertion to expect the newly verified guidance rather than an empty guidance state.
 - [x] Add and pass Wayne State regression coverage; focused directory suite reached 178 passing tests with the extended timeout.
 - [x] Record Wayne State official-source evidence and continue the fee-waiver queue.
+- [x] Add WVU Graduate Admissions’ central eligible-category fee-waiver contact route separately to the Biomedical Engineering Ph.D. and M.S. profiles, preserving the US$75 non-refundable fee and no-code/no-form boundary.
+- [x] Add and pass WVU degree-separated regression coverage; focused directory suite reached 179 passing tests with the extended timeout.
+- [x] Record WVU official-source evidence and continue the fee-waiver queue.
