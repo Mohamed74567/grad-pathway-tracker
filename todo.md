@@ -802,3 +802,6 @@
 - [x] Re-audit University of Miami Biomedical Engineering M.S. and Ph.D. fee treatment against current College of Engineering and Graduate School sources; preserve the US$85 non-refundable fee and empty guidance arrays because no official waiver route was published.
 - [x] Add and pass University of Miami regression coverage; focused directory suite reached 182 passing tests with the extended timeout.
 - [x] Record University of Miami official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit Arizona State Biomedical Engineering M.S. and Ph.D. fee treatment against current ASU Graduate Admission and SBHSE/BME sources; preserve the existing fee displays and empty guidance arrays, excluding the unrelated SSEBE no-waiver page.
+- [x] Add and pass Arizona State regression coverage; focused directory suite reached 183 passing tests with the extended timeout.
+- [x] Record Arizona State official-source evidence and continue the fee-waiver queue.

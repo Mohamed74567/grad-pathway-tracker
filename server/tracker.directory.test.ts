@@ -3125,6 +3125,19 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves Arizona State Biomedical Engineering fee treatment without transferring an unrelated school policy", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "arizona-state-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "arizona-state-biomedical-engineering-ms" });
+
+    for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toContain("US$75");
+      expect(program?.applicationFeeDisplay).toContain("US$115 or US$120");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("preserves University of Miami Biomedical Engineering fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
