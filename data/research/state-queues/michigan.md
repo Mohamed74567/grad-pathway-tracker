@@ -31,3 +31,11 @@ The August 13, 2026 validation query found **nine** published Michigan profiles.
 ## Guardrails
 
 The uploaded tracker’s University of Michigan chat URL is retained only as a repair-audit finding and must not be used in any visible program record. Bot-protected 403 responses in the historical link scan are not treated as broken links without current official-source confirmation.
+
+## Michigan State University Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+The current MSU Graduate School application page confirms US$75 for both domestic and international graduate applications. It publishes a Big Ten Academic Alliance FreeApp route for eligible applicants to participating Ph.D. programs, with one waiver per person and first-come, first-served review; a McNair Application Fee Waiver Form requiring the application ID and department; and a Conference Recruitment Fee Waiver Form for participants in listed targeted conferences and events including SACNAS, ABRCMS, AISES, ERN, and SROP. The BME Ph.D. page retains the BTAA route on the doctoral profile only. The McNair and targeted-event forms are central MSU routes shown on both the BME Ph.D. and M.S. profiles. No unsupported BME-specific code or transfer between degree levels was added.
+
+Sources reviewed: [MSU Graduate School application and waiver page](https://grad.msu.edu/admissions/apply), [MSU Biomedical Engineering Ph.D.](http://engineering.msu.edu/academics/majors-degrees/biomedical-engineering-phd), [MSU Biomedical Engineering M.S.](http://engineering.msu.edu/academics/majors-degrees/biomedical-engineering-ms), and [MSU College of Engineering graduate admissions](http://engineering.msu.edu/admissions/graduate).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$75 domestic/international fee, BTAA doctoral-only route, McNair form, targeted-event form, and three-pass provenance.

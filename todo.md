@@ -893,3 +893,5 @@
 - [x] Document the South Carolina official no-waiver finding and confirm existing regression coverage across all three published profiles.
 - [x] Refresh Ohio State Biomedical Engineering M.S. and Ph.D. fee-waiver opportunity guidance against current BME admissions sources, preserving US$60 domestic / US$70 international fees, domestic-only program/event opportunities, no BME-issued code or automatic waiver, and shared degree scope.
 - [x] Strengthen Ohio State regression coverage for the current fee schedule, domestic opportunity categories, no-code boundary, and shared M.S./Ph.D. treatment; focused directory suite passed with 191 tests.
+- [x] Refresh Michigan State Biomedical Engineering Ph.D. and M.S. fee-waiver guidance against current Graduate School and BME sources, preserving US$75 domestic/international fees, BTAA doctoral-only route, McNair form, targeted-event form, first-come limits, and strict degree boundaries.
+- [x] Strengthen Michigan State regression coverage for the current fee, BTAA Ph.D.-only scope, shared McNair/event forms, and three-pass provenance; focused directory suite passed with 191 tests.
