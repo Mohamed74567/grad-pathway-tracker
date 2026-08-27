@@ -829,3 +829,6 @@
 - [x] Re-audit CSUN Biomedical Engineering M.S. against current department and Graduate Admissions sources; preserve the US$70 non-refundable CSU fee and empty guidance array because no official waiver route was published.
 - [x] Add and pass CSUN regression coverage; focused directory suite reached 189 passing tests with the extended timeout.
 - [x] Record CSUN official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit Florida Atlantic Biomedical Engineering M.S. against current program, Graduate Admissions, and EECS sources; preserve the evidence-safe blank fee and empty guidance array because the department explicitly cannot waive admission fees and no graduate amount was verified.
+- [x] Add and pass FAU regression coverage; focused directory suite reached 190 passing tests with the extended timeout.
+- [x] Record FAU official-source evidence and continue the fee-waiver queue.

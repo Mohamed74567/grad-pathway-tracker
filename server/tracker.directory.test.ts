@@ -3133,6 +3133,14 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves FAU Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "florida-atlantic-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBeNull();
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("preserves CSUN Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "csun-biomedical-engineering-ms" });
