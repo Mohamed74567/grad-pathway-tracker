@@ -1508,16 +1508,30 @@ describe("tracker.directory", () => {
       caller.tracker.directory.bySlug({ slug: "rice-master-bioengineering" }),
     ]);
 
-    expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
-      expect.objectContaining({
-        guidanceType: "fee_waiver_form",
-        destinationUrl: "https://bioengineering.rice.edu/academics",
-        details: expect.stringContaining("waived for Ph.D. applicants"),
-        verificationPasses: 3,
-      }),
-    ]));
+    expect(phd?.applicationFeeDisplay).toBe("Waived for Ph.D. applicants");
+    const departmentWaiver = phd?.applicationGuidance.find(
+      guidance => guidance.destinationUrl === "https://bioengineering.rice.edu/academics",
+    );
+    const waiverWeeks = phd?.applicationGuidance.find(
+      guidance => guidance.destinationUrl === "https://gradadmissions.rice.edu/register/?id=e14b182d-0492-463f-abdb-9d09bbfaf96c",
+    );
+
+    expect(departmentWaiver?.guidanceType).toBe("fee_waiver_form");
+    expect(departmentWaiver?.verificationPasses).toBe(3);
+    expect(departmentWaiver?.details).toContain("waived for Ph.D. applicants");
+    expect(departmentWaiver?.details).toContain("December 1");
+    expect(departmentWaiver?.details).toContain("US$85");
+
+    expect(waiverWeeks?.guidanceType).toBe("fee_waiver_form");
+    expect(waiverWeeks?.verificationPasses).toBe(3);
+    expect(waiverWeeks?.details).toContain("between October 14 and November 1");
+    expect(waiverWeeks?.details).toContain("November 27 at 10:59 p.m.");
+    expect(waiverWeeks?.details).toContain("no code");
+    expect(waiverWeeks?.details).toContain("48 hours");
+    expect(waiverWeeks?.details).toContain("cannot be refunded");
+    expect(masters?.applicationFeeDisplay).toBe("US$85 application fee");
     expect(masters?.applicationGuidance).not.toEqual(expect.arrayContaining([
-      expect.objectContaining({ destinationUrl: "https://bioengineering.rice.edu/academics" }),
+      expect.objectContaining({ guidanceType: "fee_waiver_form" }),
     ]));
   });
 
