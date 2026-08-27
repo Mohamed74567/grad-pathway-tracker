@@ -823,3 +823,6 @@
 - [x] Refresh UConn Ph.D. guidance provenance to the current Graduate School fee-waiver page and preserve activation/no-refund warnings.
 - [x] Re-run UConn degree-separation regression coverage; focused directory suite passed with 187 tests.
 - [x] Record UConn correction evidence and continue the fee-waiver queue.
+- [x] Re-audit UNLV Biomedical Engineering M.S. against current Graduate Admissions, degree, and College of Engineering sources; preserve the US$60 domestic / US$95 international non-refundable fee display and empty guidance array because no official waiver route was published.
+- [x] Add and pass UNLV regression coverage; focused directory suite reached 188 passing tests with the extended timeout.
+- [x] Record UNLV official-source evidence and continue the fee-waiver queue.

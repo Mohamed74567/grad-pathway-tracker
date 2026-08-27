@@ -3133,6 +3133,14 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves UNLV Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-nevada-las-vegas-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$60 domestic applicants; US$95 international applicants");
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("preserves Clemson Bioengineering’s no-application-fee treatment without adding waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const slugs = [
