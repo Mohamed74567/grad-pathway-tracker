@@ -850,3 +850,6 @@
 - [x] Refresh UC Davis Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BMEGG and Graduate Studies sources; preserve the US$135/$155 fee split, preparation-program-only waiver, immediate application mechanic, and no-hardship boundary.
 - [x] Strengthen UC Davis regression coverage to assert current fees on both BME paths while keeping the related M.Eng. policy separate; focused directory suite passed with 191 tests.
 - [x] Record UC Davis official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Maryland Bioengineering Ph.D. and M.S. fee-waiver coverage against current Fischell and Graduate School sources; preserve the US$90 fee, limited individual request-form route, 10–15-business-day review boundary, and Fall 2026 cycle dates without generalization.
+- [x] Strengthen UMD regression coverage to assert current fees on both degree paths; focused directory suite passed with 191 tests.
+- [x] Record UMD official-source evidence and continue the fee-waiver queue.

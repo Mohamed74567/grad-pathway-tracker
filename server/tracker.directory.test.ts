@@ -1501,6 +1501,7 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$90 non-refundable application fee for each program");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
