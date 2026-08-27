@@ -3125,6 +3125,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Cleveland State Biomedical Engineering M.S. with current graduate fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "cleveland-state-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$40 normally; currently waived for degree programs on the Graduate Application page");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_session",
+        title: "Cleveland State currently waives the standard graduate application fee",
+        destinationUrl: "https://grad.engagecsu.com/apply",
+        details: expect.stringContaining("US$40 application fee normally required"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_code" }),
+    ]));
+    expect(program?.degreeOptions).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ degreeType: "phd" }),
+    ]));
+  });
+
   it("returns Wright State Biomedical Engineering M.S. with McNair certification fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

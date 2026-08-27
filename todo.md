@@ -796,3 +796,6 @@
 - [x] Re-audit Louisiana Tech Biomedical Engineering Ph.D. and Biomedical-track M.S. fee treatment against current graduate admissions sources; preserve the US$40 non-refundable display and empty guidance arrays because no current official waiver route was published.
 - [x] Add and pass Louisiana Tech regression coverage; focused directory suite remains at 180 passing tests with the extended timeout.
 - [x] Record Louisiana Tech official-source evidence and continue the fee-waiver queue.
+- [x] Add Cleveland State’s current central graduate application-fee waiver statement to the published Biomedical Engineering M.S. profile, preserve the US$40 normal-fee context and no-code/no-expiration boundary, and avoid inventing a doctoral route.
+- [x] Add and pass Cleveland State regression coverage; focused directory suite reached 181 passing tests with the extended timeout.
+- [x] Record Cleveland State official-source evidence and continue the fee-waiver queue.
