@@ -3133,6 +3133,19 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves UAB Biomedical Engineering fee treatment without inventing a separate waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const paths = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-alabama-birmingham-biomedical-engineering-ms" }),
+    ]);
+
+    for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("Domestic: free when complete by the November 30 priority deadline; US$50 after. International: US$60.");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("preserves FAU Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "florida-atlantic-biomedical-engineering-ms" });
