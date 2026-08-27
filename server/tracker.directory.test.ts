@@ -1420,6 +1420,7 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$60 domestic; US$100 international");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",

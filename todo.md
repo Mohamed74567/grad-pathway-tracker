@@ -874,3 +874,6 @@
 - [x] Refresh CU Boulder Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Engineering sources; preserve the US$50/$80 fee split, Fall 2027 Ph.D.-only automatic waiver, 3.4 GPA and November 15 deadline, no-code/24–48-hour mechanics, international contact boundary, and explicit M.S. exclusion.
 - [x] Strengthen CU Boulder regression coverage to assert current fees on both degree paths and retain the doctoral-only route; focused directory suite passed with 191 tests.
 - [x] Record CU Boulder official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Iowa Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Graduate College sources; preserve the US$60/$100 fee split, domestic program-participation and hardship routes, four accepted documentation types, international exclusion, FAFSA boundary, and MyUI upload workflow.
+- [x] Strengthen Iowa regression coverage to assert current fees on both degree paths and preserve the shared central route; focused directory suite passed with 191 tests.
+- [x] Record Iowa official-source evidence and continue the fee-waiver queue.
