@@ -1765,6 +1765,7 @@ describe("tracker.directory", () => {
     const masters = await caller.tracker.directory.bySlug({ slug: "uiuc-bioengineering-ms" });
 
     for (const program of [doctorate, masters]) {
+      expect(program?.applicationFeeDisplay).toContain("US$90");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
@@ -1773,11 +1774,18 @@ describe("tracker.directory", () => {
           verificationPasses: 3,
         }),
       ]));
+      const centralDetails = program?.applicationGuidance.find(
+        guidance => guidance.destinationUrl === "https://grad.illinois.edu/admissions/application-instructions/completing-your-graduate-application",
+      )?.details ?? "";
+      expect(centralDetails).toContain("McNair");
+      expect(centralDetails).toContain("Big Ten Academic Alliance FreeApp");
+      expect(centralDetails).toContain("International applicants are generally ineligible");
+      expect(centralDetails).toContain("separate applications");
     }
     expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         destinationUrl: "https://bioengineering.illinois.edu/admissions/graduate/phd",
-        details: expect.stringContaining("November 15"),
+        details: expect.stringMatching(/U\.S\. citizens or permanent residents[\s\S]*Application Fee Waiver section[\s\S]*departmental fee waiver requested[\s\S]*7–10-day[\s\S]*November 15[\s\S]*does not guarantee approval/),
         verificationPasses: 3,
       }),
     ]));

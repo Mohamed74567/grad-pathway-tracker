@@ -28,3 +28,13 @@ Both profiles are now refreshed to six source categories at three passes and wer
 ## Cohort validation
 
 **Completed August 14, 2026:** all **8 published Illinois profiles** now meet the required threshold of at least five source categories, a minimum of three verification passes, and credited official imagery. The validation produced **8 fully reconciled profiles** and **zero exception rows**.
+
+## UIUC Bioengineering fee-waiver refresh — August 27, 2026
+
+UIUC’s current Bioengineering Ph.D. and thesis M.S. pages publish a US$90 application fee and December 1 fall deadline; applicants seeking both degrees must submit separate applications. The department publishes a limited waiver only for outstanding U.S. citizens or permanent residents pursuing the Bioengineering Ph.D. who can describe experiences and skills supporting the department’s collegial and supportive academic and research environment. In the Application Fee Waiver section, applicants answer “Yes” and enter “departmental fee waiver requested” as the affiliated agency. The department reports an approximately 7–10-day decision window, gives priority to applications submitted by November 15, and does not guarantee approval. The department wording explicitly limits this route to Ph.D. applicants and it is not transferred to the thesis M.S. or M.Eng.
+
+The Graduate College separately lists eligibility-limited central routes for domestic applicants, including University employee, Illinois Promise, BTAA FreeApp, SROP, McNair, U.S. military, and allied-agency categories. McNair applicants select the designation in the online application and upload a verification letter; BTAA applicants complete the FreeApp first and then select the approved designation in the Illinois application. International applicants are generally ineligible unless covered by an approved exchange agreement. This central route is separate from the departmental Ph.D. route and is not a general waiver.
+
+Sources reviewed: [Illinois Bioengineering Ph.D.](https://bioengineering.illinois.edu/admissions/graduate/phd), [Illinois Bioengineering thesis M.S.](https://bioengineering.illinois.edu/admissions/graduate/ms), [Illinois Bioengineering M.Eng.](https://bioengineering.illinois.edu/admissions/graduate/meng), and [Illinois Graduate College application fees](https://grad.illinois.edu/admissions/application-faq/application-fees).
+
+Validation: focused directory suite passed all 192 tests after strengthening the US$90 fee assertions, central-category checks, Ph.D.-only departmental route, exact request phrase, 7–10-day timing, November 15 priority boundary, separate-application rule, and no-transfer assertion.
