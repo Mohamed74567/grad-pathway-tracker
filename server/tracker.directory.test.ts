@@ -1471,6 +1471,11 @@ describe("tracker.directory", () => {
           details: expect.stringContaining("case by case"),
           verificationPasses: 3,
         }),
+        expect.objectContaining({
+          destinationUrl: "https://www.engineering.pitt.edu/academics/graduateadmissions/graduate-applications/",
+          details: expect.stringContaining("unofficial transcripts"),
+          verificationPasses: 3,
+        }),
       ]));
     }
   });

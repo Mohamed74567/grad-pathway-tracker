@@ -862,3 +862,6 @@
 - [x] Refresh University of Virginia Biomedical Engineering Ph.D., M.S., and M.E. fee treatment against current BME and UVA Engineering sources; preserve the 2027 Engineering-wide automatic no-fee policy and no-code/no-form mechanic.
 - [x] Strengthen UVA regression coverage to assert the no-fee display on all three published degree paths; focused directory suite passed with 191 tests.
 - [x] Record UVA official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Pittsburgh Bioengineering Ph.D., Research M.S., and Neural Engineering professional M.S. fee-waiver coverage against current Swanson and Bioengineering sources; preserve case-by-case qualifications/financial-need review, unofficial-transcript and CV preparation, non-guarantee boundary, and unresolved fee amount.
+- [x] Strengthen Pitt regression coverage to assert the official preparation-materials boundary without inventing a fee amount; focused directory suite passed with 191 tests.
+- [x] Record Pitt official-source evidence and continue the fee-waiver queue.
