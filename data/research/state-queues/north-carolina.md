@@ -27,3 +27,11 @@ The current UNC Graduate School fee-waiver page confirms a non-refundable US$95 
 Sources reviewed: [UNC Graduate School fee-waiver page](https://gradschool.unc.edu/admissions/feewaiver/), [UNC Graduate School application instructions](https://gradschool.unc.edu/admissions/instructions/), [UNC Biomedical Engineering admissions FAQ](https://bme.unc.edu/graduate/graduate-admissions-faq/), and [UNC Biomedical Engineering program listing](https://gradschool.sites.unc.edu/biomedical-engineering/).
 
 Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$95 fee, ten-group route, pre-deadline timing, denial/payment boundary, and three-pass provenance.
+
+## Duke University Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+Duke’s current Graduate School application-fee policy provides a limited, first-come-first-served waiver request inside the application for eligible U.S. citizens or permanent residents applying to a Duke degree program. The request covers published low-income, military-service, and qualifying-program participation categories; applicants select the intended program first, complete the Fee Waiver page, and should allow up to five hours for processing before paying. Paid fees are not reimbursed. The official BME M.S. and Ph.D. admissions pages do not publish a separate BME code or degree-specific waiver, so the central route remains shared across the two BME profiles without implying approval or a general waiver. The current fee display remains US$105 with a qualified waiver potentially available.
+
+Sources reviewed: [Duke Graduate School application fee](https://gradschool.duke.edu/admissions/application-fee/), [Duke Pratt master’s application instructions](https://masters.pratt.duke.edu/apply/instructions/), [Duke BME master’s FAQ](https://bme.duke.edu/admissions/masters/faq/), and [Duke BME Ph.D. admissions](https://bme.duke.edu/admissions/phd/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the US$105 fee, central eligibility boundary, five-hour processing window, no-reimbursement rule, and shared M.S./Ph.D. scope.

@@ -1614,11 +1614,12 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$105; qualified fee waiver may be available");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://gradschool.duke.edu/admissions/application-instructions/application-fee/",
-          details: expect.stringContaining("first-come-first-served"),
+          details: expect.stringMatching(/first-come-first-served[\s\S]*U\.S\. citizens or permanent residents[\s\S]*five hours[\s\S]*not reimbursed/),
           verificationPasses: 3,
         }),
       ]));
