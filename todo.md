@@ -756,3 +756,8 @@
 - [x] Keep UGA guidance Ph.D.-only because the reviewed official UGA BME degree page publishes the doctoral program and does not establish a separate BME M.S. application route; no unsupported M.S. transfer was made.
 - [x] Add and pass UGA regression coverage; focused directory suite reached 172 passing tests with the extended timeout.
 - [x] Record UGA official-source evidence and continue the fee-waiver queue.
+
+- [x] Add UMaine Graduate School category-check contact guidance to the published GSBSE Biomedical Engineering Ph.D. profile, preserving the US$65 fee, IRT/McNair/Armed Forces/UMS alumni-or-current-student categories, no-individual-waiver rule, central-contact workflow, and no-department-code boundary.
+- [x] Keep UMaine guidance Ph.D.-only because the reviewed GSBSE admissions page publishes Biomedical Engineering as a doctoral program and explicitly says there is no on-campus GSBSE master’s.
+- [x] Add and pass UMaine regression coverage; focused directory suite reached 173 passing tests with the extended timeout.
+- [x] Record UMaine official-source evidence and continue the fee-waiver queue.

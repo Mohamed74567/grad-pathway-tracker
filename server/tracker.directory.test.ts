@@ -2554,6 +2554,22 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("returns UMaine GSBSE Biomedical Engineering Ph.D. with central-category fee-waiver contact guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const program = await caller.tracker.directory.bySlug({ slug: "university-of-maine-gsbse-biomedical-engineering-phd" });
+
+    expect(program?.applicationFeeDisplay).toContain("US$65");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_contact",
+        title: "Graduate School category check; GSBSE does not provide waivers",
+        destinationUrl: "mailto:graduate@maine.edu",
+        details: expect.stringContaining("McNair scholars"),
+        verificationPasses: 3,
+      }),
+    ]));
+  });
+
   it("returns UGA Biomedical Engineering Ph.D. with limited qualifying-program fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "university-georgia-biomedical-engineering-phd" });
