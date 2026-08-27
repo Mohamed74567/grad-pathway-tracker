@@ -2009,11 +2009,12 @@ describe("tracker.directory", () => {
       caller.tracker.directory.bySlug({ slug: "washington-university-biomedical-engineering-ms" }),
     ]);
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$75; automatic waiver for eligible WashU applicants or eligible information-session attendees");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_session",
           destinationUrl: "https://engineering.washu.edu/academics/graduate-admissions/recruitment-schedule.html",
-          details: expect.stringContaining("Admissions Cram Session"),
+          details: expect.stringMatching(/US\$75[\s\S]*current Washington University students or employees[\s\S]*eligible McKelvey information session[\s\S]*Admissions Cram Session[\s\S]*no code, separate request form/),
           verificationPasses: 3,
         }),
       ]));

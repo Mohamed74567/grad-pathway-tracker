@@ -35,3 +35,9 @@ The current University of Missouri Graduate School application-fee page confirms
 Sources reviewed: [MU Graduate School application fees](https://gradschool.missouri.edu/admissions/apply/application-fees/), [MU Engineering graduate-school FAQ](https://engineering.missouri.edu/admissions/graduate/graduate-school-faqs/), [MU Ph.D. in Biological Engineering catalog](https://catalog.missouri.edu/collegeofengineering/biologicalengineering/phd-biological-engineering/), and [MU M.S. in Biological Engineering catalog](https://catalog.missouri.edu/collegeofengineering/biologicalengineering/ms-biological-engineering/).
 
 Validation: the focused directory suite passed all 191 tests after strengthening the Missouri assertion for the one-application limit and three-pass provenance.
+
+## Washington University in St. Louis Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+WashU McKelvey Engineering’s current application checklist publishes a non-refundable US$75 application fee. Waivers are applied automatically for current Washington University students or employees and for attendees of an eligible information session, as demonstrated in the application. The recruitment schedule states that eligible information-session attendance qualifies for a waiver and that the Admissions Cram Session does not. The reviewed BME and McKelvey pages publish no code, separate request form, processing time, or general hardship route. The central Engineering policy is explicitly used for both the BME Ph.D. and M.S. profiles.
+
+Sources reviewed: [WashU McKelvey application checklist](https://engineering.washu.edu/academics/graduate-admissions/application-checklist.html), [WashU recruitment schedule](https://engineering.washu.edu/academics/graduate-admissions/recruitment-schedule.html), [WashU BME graduate programs](https://bme.washu.edu/academics/graduate-programs/index.html), and [WashU BME Ph.D.](https://bme.washu.edu/academics/graduate-programs/phd/index.html).
