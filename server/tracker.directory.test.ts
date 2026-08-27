@@ -268,7 +268,7 @@ describe("tracker.directory", () => {
       expect.objectContaining({
         guidanceType: "fee_waiver_contact",
         destinationUrl: "mailto:gradengineering@vanderbilt.edu",
-        details: expect.stringContaining("December 1, 2026"),
+        details: expect.stringMatching(/December 1, 2026[\s\S]*currently enrolled in or graduated from U\.S\. institutions[\s\S]*not available after December 1, 2026[\s\S]*a code, form/),
         verificationPasses: 3,
       }),
     ]));

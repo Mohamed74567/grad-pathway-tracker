@@ -37,3 +37,11 @@ The current UT Knoxville Biomedical Engineering graduate-admission page explicit
 Sources reviewed: [UT Knoxville BME graduate admission requirements](https://tickle.utk.edu/bme/academics/graduate/admission-requirements/), [UT Knoxville BME Ph.D. page](https://tickle.utk.edu/bme/academics/graduate/phd-in-biomedical-engineering/), and [UT Knoxville Graduate Admissions](https://gradschool.utk.edu/future-students/office-of-graduate-admissions/applying-to-graduate-school/).
 
 Validation: focused directory suite passed all 191 tests after strengthening the Ph.D.-only code and M.S.-exclusion assertions.
+
+## Vanderbilt University Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+Vanderbilt School of Engineering’s current graduate-admissions page states that for Fall 2027 Biomedical Engineering Ph.D. applicants, the fee-waiver deadline is December 1, 2026; the Ph.D. application deadline is December 15, 2026 for the recommended submission date and January 8, 2027 as the final deadline. Fee waivers are available to students currently enrolled in or graduated from U.S. institutions and students from select international institutions, but the page states that the waiver is not available after December 1. It publishes no code, form, complete list of select international institutions, or approval timeline, so the profile retains the official School of Engineering contact route. The same page explicitly states that the Biomedical Engineering M.S. has no application fee; the doctoral guidance is therefore not transferred to the M.S.
+
+Sources reviewed: [Vanderbilt School of Engineering graduate admissions](https://engineering.vanderbilt.edu/graduate-admissions/), [Vanderbilt BME graduate programs](https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/), [Vanderbilt Graduate School application requirements by program](https://gradschool.vanderbilt.edu/admissions/apply/application-requirements-by-program/), and [Vanderbilt BME master’s/doctoral admissions context](https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/).
+
+Validation: focused directory suite passed all 191 tests after strengthening assertions for the Fall 2027 Ph.D.-only deadline, U.S.-institution eligibility, no-code/no-form boundary, contact mechanic, and M.S. no-fee exclusion.
