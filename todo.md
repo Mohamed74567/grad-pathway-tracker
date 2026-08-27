@@ -799,3 +799,6 @@
 - [x] Add Cleveland State’s current central graduate application-fee waiver statement to the published Biomedical Engineering M.S. profile, preserve the US$40 normal-fee context and no-code/no-expiration boundary, and avoid inventing a doctoral route.
 - [x] Add and pass Cleveland State regression coverage; focused directory suite reached 181 passing tests with the extended timeout.
 - [x] Record Cleveland State official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit University of Miami Biomedical Engineering M.S. and Ph.D. fee treatment against current College of Engineering and Graduate School sources; preserve the US$85 non-refundable fee and empty guidance arrays because no official waiver route was published.
+- [x] Add and pass University of Miami regression coverage; focused directory suite reached 182 passing tests with the extended timeout.
+- [x] Record University of Miami official-source evidence and continue the fee-waiver queue.
