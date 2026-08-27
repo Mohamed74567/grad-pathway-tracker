@@ -1914,11 +1914,12 @@ describe("tracker.directory", () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const program = await caller.tracker.directory.bySlug({ slug: "notre-dame-bioengineering-phd" });
 
+    expect(program?.applicationFeeDisplay).toBe("US$75 per application; Graduate School-administered programs are eligible for fee waivers.");
     expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
         destinationUrl: "https://graduateschool.nd.edu/admissions/application-requirements/application-fee-and-waiver/",
-        details: expect.stringContaining("within 48 hours"),
+        details: expect.stringMatching(/financial need or hardship[\s\S]*active-duty U\.S\. military service or veteran status[\s\S]*national fellowship[\s\S]*uploaded in the application[\s\S]*within 48 hours[\s\S]*Ph\.D\.-only/),
         verificationPasses: 3,
       }),
     ]));
