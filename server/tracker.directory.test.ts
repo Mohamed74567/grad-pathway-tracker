@@ -902,7 +902,24 @@ describe("tracker.directory", () => {
         verificationPasses: 3,
       }),
     ]));
+    const biomedicalMasters = await caller.tracker.directory.bySlug({ slug: "university-utah-biomedical-engineering-ms" });
+
     expect(neuralMasters?.applicationFeeDisplay).toBe("US$55 domestic / US$65 international");
+    expect(biomedicalMasters?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "McNair Scholars graduate application-fee waiver",
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(biomedicalDoctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "McNair Scholars graduate application-fee waiver",
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(biomedicalMasters?.applicationGuidance.some((guide) => guide.guidanceType === "fee_waiver_code")).toBe(false);
 
     for (const program of [biomedicalDoctorate, neuralMasters]) {
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([

@@ -835,3 +835,6 @@
 - [x] Re-audit UAB Biomedical Engineering Ph.D. and M.S. against current UAB Graduate Admissions and BME sources; preserve the deadline-based domestic free period, US$50 post-priority fee, US$60 international fee, and empty guidance arrays because no separate waiver mechanic was published.
 - [x] Add and pass UAB regression coverage; focused directory suite reached 191 passing tests with the extended timeout.
 - [x] Record UAB official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit University of Utah Biomedical Engineering Ph.D. and M.S. against current BME and Graduate Admissions sources; preserve the Ph.D.-only BME referral code, degree-neutral McNair guidance, and US$55/US$65 fee displays.
+- [x] Strengthen University of Utah regression coverage to assert degree-separated referral-code and McNair treatment; focused directory suite reached 191 passing tests with the extended timeout.
+- [x] Record University of Utah official-source evidence and continue the fee-waiver queue.
