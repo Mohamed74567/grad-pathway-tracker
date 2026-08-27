@@ -865,3 +865,6 @@
 - [x] Refresh University of Pittsburgh Bioengineering Ph.D., Research M.S., and Neural Engineering professional M.S. fee-waiver coverage against current Swanson and Bioengineering sources; preserve case-by-case qualifications/financial-need review, unofficial-transcript and CV preparation, non-guarantee boundary, and unresolved fee amount.
 - [x] Strengthen Pitt regression coverage to assert the official preparation-materials boundary without inventing a fee amount; focused directory suite passed with 191 tests.
 - [x] Record Pitt official-source evidence and continue the fee-waiver queue.
+- [x] Refresh UIC Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME, Graduate Admissions, and Graduate College sources; preserve the US$80 fee, central degree-seeking categories, BME session route, Ph.D.-only Research Engagement route, no-hardship/no-deferral boundary, and CAS limits.
+- [x] Strengthen UIC regression coverage to assert current fees and doctoral-only Research Engagement treatment; focused directory suite passed with 191 tests.
+- [x] Record UIC official-source evidence and continue the fee-waiver queue.

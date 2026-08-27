@@ -2171,6 +2171,8 @@ describe("tracker.directory", () => {
     const phd = await caller.tracker.directory.bySlug({ slug: "university-illinois-chicago-biomedical-engineering-phd" });
     const masters = await caller.tracker.directory.bySlug({ slug: "university-illinois-chicago-biomedical-engineering-ms" });
 
+    expect(phd?.applicationFeeDisplay).toBe("Graduate application fee: $80 (effective Fall 2026)");
+    expect(masters?.applicationFeeDisplay).toBe("Graduate application fee: $80 (effective Fall 2026)");
     expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
