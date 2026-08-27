@@ -3133,6 +3133,22 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves Clemson Bioengineering’s no-application-fee treatment without adding waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const slugs = [
+      "clemson-bioengineering-phd",
+      "clemson-biomedical-engineering-meng",
+      "clemson-bioengineering-ms",
+    ];
+    const programs = await Promise.all(slugs.map((slug) => caller.tracker.directory.bySlug({ slug })));
+
+    expect(programs).toHaveLength(3);
+    for (const program of programs) {
+      expect(program?.applicationFeeDisplay).toMatch(/no application fee/i);
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("preserves FAMU-FSU Biomedical Engineering fee treatment without inventing a waiver route", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

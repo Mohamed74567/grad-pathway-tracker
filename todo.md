@@ -815,3 +815,7 @@
 - [x] Re-audit FAMU–FSU Biomedical Engineering M.S. and Ph.D. application-fee treatment against current joint-college and university-route sources; preserve the US$30 route-specific fee display and empty guidance arrays under the explicit no-waiver policy.
 - [x] Add and pass FAMU–FSU regression coverage; focused directory suite reached 186 passing tests with the extended timeout.
 - [x] Record FAMU–FSU official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit Clemson Bioengineering Ph.D., M.S., and M.Eng. profiles against current Clemson Graduate Admissions and Bioengineering sources; preserve the official no-application-fee state and empty guidance arrays.
+- [x] Correct Clemson regression coverage to use the verified published profile slugs and detail responses.
+- [x] Add and pass Clemson regression coverage; focused directory suite reached 187 passing tests with the extended timeout.
+- [x] Record Clemson official-source evidence and continue the fee-waiver queue.
