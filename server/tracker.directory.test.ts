@@ -562,6 +562,24 @@ describe("tracker.directory", () => {
     expect(program?.englishTestPolicy).toContain("DET");
   });
 
+  it("returns Johns Hopkins BME with a School of Medicine fee-waiver route only for the Ph.D.", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const doctorate = await caller.tracker.directory.bySlug({ slug: "johns-hopkins-biomedical-engineering-phd" });
+    const masters = await caller.tracker.directory.bySlug({ slug: "johns-hopkins-biomedical-engineering-mse" });
+
+    expect(doctorate?.applicationFeeDisplay).toBe("US$75 nonrefundable doctoral application fee; reduced-fee and waiver pathways may apply");
+    expect(doctorate?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        destinationUrl: "https://www.hopkinsmedicine.org/som/education-programs/graduate-programs/admissions/on-campus-programs",
+        details: expect.stringMatching(/cannot offer fee waivers beyond those available through the School of Medicine[\s\S]*US\$75[\s\S]*request the waiver directly in the School of Medicine application[\s\S]*supporting documentation[\s\S]*do not publish a code or approval timeline[\s\S]*Do not transfer/),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(masters?.applicationFeeDisplay).toBe("No application fee for Whiting School of Engineering full-time master’s programs");
+    expect(masters?.applicationGuidance).toEqual([]);
+  });
+
   it("returns Cleveland State Biomedical Engineering M.S. with the current central DET minimum", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 
