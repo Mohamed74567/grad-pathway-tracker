@@ -1189,7 +1189,8 @@ describe("tracker.directory", () => {
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
         destinationUrl: "https://gradschool.missouri.edu/admissions/apply/application-fees/",
-        details: expect.stringContaining("Missouri-resident"),
+        details: expect.stringContaining("one graduate application only"),
+        verificationPasses: 3,
       }),
     ]));
   });
@@ -1555,6 +1556,7 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$75 U.S. citizens/permanent residents; US$90 non-U.S. citizens");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",

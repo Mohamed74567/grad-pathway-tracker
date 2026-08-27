@@ -877,3 +877,5 @@
 - [x] Refresh University of Iowa Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Graduate College sources; preserve the US$60/$100 fee split, domestic program-participation and hardship routes, four accepted documentation types, international exclusion, FAFSA boundary, and MyUI upload workflow.
 - [x] Strengthen Iowa regression coverage to assert current fees on both degree paths and preserve the shared central route; focused directory suite passed with 191 tests.
 - [x] Record Iowa official-source evidence and continue the fee-waiver queue.
+- [x] Refresh the University of Missouri Neural Engineering-focused M.S. fee-waiver guidance against current Graduate School and Engineering sources, preserving the US$75/$100 fees, Missouri-resident and service-status eligibility, one-application limit, contact route, and no Engineering-wide waiver boundary.
+- [x] Strengthen Missouri regression coverage for the one-application limit and three-pass provenance; focused directory suite passed with 191 tests.
