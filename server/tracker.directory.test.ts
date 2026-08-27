@@ -3133,6 +3133,15 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("preserves Cal Poly San Luis Obispo Biomedical Engineering M.S. fee treatment without inventing a waiver route", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "cal-poly-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$70 non-refundable per CSU campus");
+    expect(program?.applicationGuidance).toEqual([]);
+  });
+
   it("returns Brown Biomedical Engineering master’s profiles with central needs-based fee-waiver guidance", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

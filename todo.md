@@ -809,3 +809,6 @@
 - [x] Correct Brown’s legacy M.S./M.Eng. regression assertions to reflect the newly verified master’s route while keeping the Ph.D. path separate.
 - [x] Add and pass Brown regression coverage; focused directory suite reached 184 passing tests with the extended timeout.
 - [x] Record Brown official-source evidence and continue the fee-waiver queue.
+- [x] Re-audit Cal Poly San Luis Obispo Biomedical Engineering’s external M.S. application-fee treatment against current BME, Cal Poly admissions, and catalog sources; preserve the US$70 fee and empty guidance array because no external-program waiver route was published.
+- [x] Add and pass Cal Poly San Luis Obispo regression coverage; focused directory suite reached 185 passing tests with the extended timeout.
+- [x] Record Cal Poly San Luis Obispo official-source evidence and continue the fee-waiver queue.
