@@ -2096,7 +2096,7 @@ describe("tracker.directory", () => {
       expect.objectContaining({
         guidanceType: "fee_waiver_code",
         destinationUrl: "https://tickle.utk.edu/bme/academics/graduate/admission-requirements/",
-        details: expect.stringContaining("first-time Ph.D. applicants"),
+        details: expect.stringContaining("must not be transferred to the separate M.S. profile"),
         verificationPasses: 3,
       }),
     ]));

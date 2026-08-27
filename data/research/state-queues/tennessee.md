@@ -29,3 +29,11 @@ Vanderbilt’s official BME materials identify M.Eng., M.S., and Ph.D. degrees. 
 1. https://engineering.vanderbilt.edu/departments/biomedical-engineering/graduate-programs/
 2. https://engineering.vanderbilt.edu/departments/biomedical-engineering/
 3. https://gradschool.vanderbilt.edu/admissions/apply/application-requirements-by-program/
+
+## UT Knoxville Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+The current UT Knoxville Biomedical Engineering graduate-admission page explicitly provides an application-fee waiver only to first-time Ph.D. applicants who are U.S. citizens or U.S. permanent residents. Current UT students applying through a Change of Program are excluded, and qualifying applicants must contact the department to obtain a code. The BME Ph.D. page lists bmeadmin@utk.edu and 865-974-4409 for department questions. The reviewed official department and Graduate School sources do not publish the code itself, a request deadline, fee amount, or approval guarantee. The route remains on the Ph.D. profile only; no policy was transferred to the separate M.S. profile.
+
+Sources reviewed: [UT Knoxville BME graduate admission requirements](https://tickle.utk.edu/bme/academics/graduate/admission-requirements/), [UT Knoxville BME Ph.D. page](https://tickle.utk.edu/bme/academics/graduate/phd-in-biomedical-engineering/), and [UT Knoxville Graduate Admissions](https://gradschool.utk.edu/future-students/office-of-graduate-admissions/applying-to-graduate-school/).
+
+Validation: focused directory suite passed all 191 tests after strengthening the Ph.D.-only code and M.S.-exclusion assertions.

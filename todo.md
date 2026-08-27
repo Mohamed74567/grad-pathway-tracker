@@ -883,3 +883,5 @@
 - [x] Add three-pass central-policy guidance for both Mississippi State degree profiles and strengthen regression assertions; focused directory suite passed with 191 tests.
 - [x] Refresh University of Washington Bioengineering Ph.D., Master of Applied Bioengineering, and Master of Pharmaceutical Bioengineering fee-waiver guidance against current UW Graduate School and program FAQs; preserve US$90 fee, MFI financial-need route, McNair/PPIA documentation, seven-day timing, no-refund rule, stacked-degree boundary, and degree-scoped copies.
 - [x] Strengthen UW regression coverage for the current fee, MFI boundary, seven-day timing, and three-pass provenance; focused directory suite passed with 191 tests.
+- [x] Refresh UT Knoxville Biomedical Engineering Ph.D.-only fee-waiver code guidance against current BME admissions sources, preserving first-time domestic eligibility, Change-of-Program exclusion, department contact route, unpublished-code boundary, and no transfer to the M.S.
+- [x] Strengthen UT Knoxville regression coverage for the Ph.D.-only transfer boundary and M.S. exclusion; focused directory suite passed with 191 tests.
