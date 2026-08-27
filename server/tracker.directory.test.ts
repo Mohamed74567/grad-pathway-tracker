@@ -3124,6 +3124,29 @@ describe("tracker.directory", () => {
     ]));
   });
 
+  it("returns Wright State Biomedical Engineering M.S. with McNair certification fee-waiver guidance", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+
+    const program = await caller.tracker.directory.bySlug({ slug: "wright-state-biomedical-engineering-ms" });
+
+    expect(program?.applicationFeeDisplay).toBe("US$40 non-refundable degree application fee");
+    expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "McNair Scholars may submit Graduate School certification for a fee waiver",
+        destinationUrl: "https://www.wright.edu/graduate-studies/forms-policies-and-resources/graduate-programs-policies-and-procedures",
+        details: expect.stringContaining("Certification of Participation"),
+        verificationPasses: 3,
+      }),
+    ]));
+    expect(program?.applicationGuidance).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ guidanceType: "fee_waiver_code" }),
+    ]));
+    expect(program?.degreeOptions).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ degreeType: "phd" }),
+    ]));
+  });
+
   it("returns WVU Biomedical Engineering fee-waiver contact guidance separately on the Ph.D. and M.S. profiles", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
 

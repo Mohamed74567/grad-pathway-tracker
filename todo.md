@@ -790,3 +790,6 @@
 - [x] Add WVU Graduate Admissions’ central eligible-category fee-waiver contact route separately to the Biomedical Engineering Ph.D. and M.S. profiles, preserving the US$75 non-refundable fee and no-code/no-form boundary.
 - [x] Add and pass WVU degree-separated regression coverage; focused directory suite reached 179 passing tests with the extended timeout.
 - [x] Record WVU official-source evidence and continue the fee-waiver queue.
+- [x] Add Wright State’s McNair certification fee-waiver route to the published Biomedical Engineering M.S. profile, preserve the applicant-type fee conflict, and avoid adding an unsupported BME Ph.D. route.
+- [x] Add and pass Wright State regression coverage; focused directory suite reached 180 passing tests with the extended timeout.
+- [x] Record Wright State official-source evidence and continue the fee-waiver queue.
