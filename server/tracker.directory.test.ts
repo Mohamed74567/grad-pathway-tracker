@@ -1917,11 +1917,12 @@ describe("tracker.directory", () => {
     ]);
 
     for (const program of paths) {
+      expect(program?.applicationFeeDisplay).toBe("US$135 for U.S. citizens/permanent residents; US$155 for international applicants; qualified domestic waiver only");
       expect(program?.applicationGuidance).toEqual(expect.arrayContaining([
         expect.objectContaining({
           guidanceType: "fee_waiver_form",
           destinationUrl: "https://grad.uci.edu/admissions/application-fee-fee-waivers/",
-          details: expect.stringContaining("DACA/AB540"),
+          details: expect.stringMatching(/DACA\/AB540[\s\S]*U\.S\. veterans[\s\S]*published Graduate Preparation program[\s\S]*up to two state-supported programs[\s\S]*at least five days[\s\S]*not automatic[\s\S]*paid fees are final[\s\S]*only one application/),
           verificationPasses: 3,
         }),
       ]));
