@@ -841,3 +841,6 @@
 - [x] Re-audit University of Florida Biomedical Engineering Ph.D. and M.S./M.E. against current BME, College of Engineering, and Graduate Admissions sources; preserve the Ph.D.-only selected-applicant form, M.S.-only College of Engineering request form, US$30 fee, and Ph.D.-only cross-degree consideration.
 - [x] Strengthen UF regression coverage to assert both routes and prevent fee-waiver or cross-degree policy transfer; focused directory suite passed with 191 tests.
 - [x] Record UF official-source evidence and continue the fee-waiver queue.
+- [x] Refresh University of Delaware Biomedical Engineering Ph.D. fee-waiver coverage against current BME and Graduate Admissions sources; preserve the US$75 fee, listed-category form, and BME-director contact fallback without implying a future M.S. route.
+- [x] Correct Delaware regression coverage to assert stable verified guidance fields; focused directory suite passed with 191 tests.
+- [x] Record Delaware official-source evidence and continue the fee-waiver queue.

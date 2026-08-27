@@ -2142,10 +2142,16 @@ describe("tracker.directory", () => {
       expect.objectContaining({
         guidanceType: "fee_waiver_contact",
         destinationUrl: "https://www.udel.edu/academics/colleges/grad/prospective-students/grad-admissions/",
-        details: expect.stringContaining("Ronald E. McNair"),
+        title: "Request a graduate application-fee waiver from the BME graduate director",
+        verificationPasses: 3,
+      }),
+      expect.objectContaining({
+        guidanceType: "fee_waiver_form",
+        title: "Graduate College application-fee waiver categories",
         verificationPasses: 3,
       }),
     ]));
+    expect(phd?.applicationFeeDisplay).toBe("US$75");
   });
 
   it("returns UIC Biomedical Engineering degree paths with the qualified central fee-waiver route while keeping Research Engagement doctoral-only", async () => {
