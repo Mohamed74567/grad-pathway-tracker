@@ -2554,6 +2554,20 @@ describe("tracker.directory", () => {
       ]));
     }
   });
+  it("preserves South Dakota Biomedical Engineering fee treatment without unsupported waivers", async () => {
+    const caller = appRouter.createCaller(createUnauthenticatedContext());
+    const programs = await Promise.all([
+      caller.tracker.directory.bySlug({ slug: "university-south-dakota-biomedical-engineering-ms" }),
+      caller.tracker.directory.bySlug({ slug: "university-south-dakota-biomedical-engineering-phd" }),
+      caller.tracker.directory.bySlug({ slug: "university-south-dakota-medical-product-development-manufacturing-ms" }),
+    ]);
+
+    for (const program of programs) {
+      expect(program?.applicationFeeDisplay).toContain("US$38");
+      expect(program?.applicationGuidance).toEqual([]);
+    }
+  });
+
   it("preserves South Carolina Biomedical Engineering fee treatment without unsupported individual waivers", async () => {
     const caller = appRouter.createCaller(createUnauthenticatedContext());
     const programs = await Promise.all([

@@ -772,3 +772,8 @@
 - [x] Preserve South Carolina’s explicit no-individual-application-fee-waiver statement across all three published degree paths; add no unsupported code, form, session, hardship, tuition, or social-media route.
 - [x] Add and pass South Carolina regression coverage; focused directory suite reached 175 passing tests with the extended timeout.
 - [x] Record South Carolina official-source evidence and continue the fee-waiver queue.
+
+- [x] Re-audit University of South Dakota Biomedical Engineering M.S., Ph.D., and Medical Product Development & Manufacturing M.S. fee treatment against current Graduate Admissions and program pages; preserve the US$38 international fee display and empty guidance state.
+- [x] Preserve USD’s explicit no-waiver/no-deferral/non-refundable application-fee rule across the three published degree paths; exclude assistantships and discounted tuition from application-fee guidance.
+- [x] Add and pass South Dakota regression coverage; focused directory suite reached 176 passing tests with the extended timeout.
+- [x] Record South Dakota official-source evidence and continue the fee-waiver queue.
