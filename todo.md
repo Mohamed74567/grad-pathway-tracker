@@ -871,3 +871,6 @@
 - [x] Refresh University of Minnesota Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Graduate School sources; preserve the US$75/$95 fee split, limited department form, November 9 request deadline, November 13 decision statement, central GSDO eligibility, and cycle/capacity boundaries.
 - [x] Strengthen Minnesota regression coverage to assert current fees on both degree paths and keep the department route separate from Medical Device Innovation; focused directory suite passed with 191 tests.
 - [x] Record Minnesota official-source evidence and continue the fee-waiver queue.
+- [x] Refresh CU Boulder Biomedical Engineering Ph.D. and M.S. fee-waiver coverage against current BME and Engineering sources; preserve the US$50/$80 fee split, Fall 2027 Ph.D.-only automatic waiver, 3.4 GPA and November 15 deadline, no-code/24–48-hour mechanics, international contact boundary, and explicit M.S. exclusion.
+- [x] Strengthen CU Boulder regression coverage to assert current fees on both degree paths and retain the doctoral-only route; focused directory suite passed with 191 tests.
+- [x] Record CU Boulder official-source evidence and continue the fee-waiver queue.

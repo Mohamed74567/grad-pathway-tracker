@@ -2233,6 +2233,8 @@ describe("tracker.directory", () => {
     const phd = await caller.tracker.directory.bySlug({ slug: "cu-boulder-biomedical-engineering-phd" });
     const masters = await caller.tracker.directory.bySlug({ slug: "cu-boulder-biomedical-engineering-ms" });
 
+    expect(phd?.applicationFeeDisplay).toBe("US$50 domestic / US$80 international application fee");
+    expect(masters?.applicationFeeDisplay).toBe("US$50 domestic / US$80 international application fee");
     expect(phd?.applicationGuidance).toEqual(expect.arrayContaining([
       expect.objectContaining({
         guidanceType: "fee_waiver_form",
