@@ -36,3 +36,11 @@ Mississippi State’s official catalog confirms separately awarded Biomedical En
 6. https://www.grad.msstate.edu/students/admissions/test-scores
 
 **Image preparation:** A Mississippi State University campus image from the official University news result was preserved at `/manus-storage/msstate-campus_d698715c.jpg`. Its embedded copyright metadata names Mississippi State University. Before database publication, the image-source record will cite the official University news article, “Busy summer brings new infrastructure, opportunities for Bulldogs,” and the visible profile credit will be “Mississippi State University.”
+
+## Mississippi State University Biomedical Engineering fee-waiver refresh — August 27, 2026
+
+The current Mississippi State Graduate School FAQ confirms a US$60 non-refundable graduate application fee for each application and states that the international application fee will increase to US$80. The official Biomedical Engineering catalog confirms that both the M.S. and Ph.D. degree paths are offered through Agricultural and Biological Engineering and identifies Dr. Steven Elder as graduate coordinator at selder@abe.msstate.edu and 662-325-3282. The reviewed official Graduate School FAQ, application page, catalog, department page, and M.S. page do not publish a general Biomedical Engineering application-fee waiver, code, form, or admissions-session route. The Graduate School FAQ directs applicants to the home academic department for assistantship information, not a guaranteed application-fee waiver. Both degree-specific profiles now display the limited central-policy/no-general-waiver boundary and retain three verification passes; no Ph.D.-only policy was transferred to the M.S. path or vice versa.
+
+Sources reviewed: [MSU Graduate School FAQ/Policies](https://www.grad.msstate.edu/faq-policies), [MSU Biomedical Engineering catalog](https://catalog.msstate.edu/graduate/colleges-degree-programs/engineering/biomedical/), [MSU BME M.S. page](https://www.abe.msstate.edu/academics/graduate/ms-biomedical-engineering/), and [MSU Graduate School application page](https://www.grad.msstate.edu/apply).
+
+Validation: the focused directory suite passed all 191 tests after adding dual-degree fee and no-general-waiver assertions.

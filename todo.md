@@ -879,3 +879,5 @@
 - [x] Record Iowa official-source evidence and continue the fee-waiver queue.
 - [x] Refresh the University of Missouri Neural Engineering-focused M.S. fee-waiver guidance against current Graduate School and Engineering sources, preserving the US$75/$100 fees, Missouri-resident and service-status eligibility, one-application limit, contact route, and no Engineering-wide waiver boundary.
 - [x] Strengthen Missouri regression coverage for the one-application limit and three-pass provenance; focused directory suite passed with 191 tests.
+- [x] Reconcile Mississippi State University Biomedical Engineering Ph.D. and M.S. fee treatment against current Graduate School and BME sources; preserve US$60/$80 fees, no-general-waiver boundary, coordinator contact, and strict degree separation.
+- [x] Add three-pass central-policy guidance for both Mississippi State degree profiles and strengthen regression assertions; focused directory suite passed with 191 tests.
