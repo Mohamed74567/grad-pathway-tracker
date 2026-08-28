@@ -917,3 +917,7 @@
 - [x] Strengthen UIUC regression coverage for current fees, central categories, Ph.D.-only departmental scope, request phrase, timing, separate applications, and three-pass provenance; focused directory suite passed with 192 tests.
 - [x] Refresh University of Pennsylvania Bioengineering Ph.D. and M.S.E. fee-waiver guidance against current Penn Engineering and Bioengineering sources, preserving the $95 nonrefundable fee, automatic low-income/Penn-or-U.S.-military/eligible Accelerated Master’s categories, no-event boundary, no-code/no-form mechanics, Fall 2027 deadlines, and shared central scope.
 - [x] Strengthen Penn regression coverage for fee, automatic eligibility, no-event boundary, deadlines, no-code mechanics, and three-pass provenance; focused directory suite passed with 192 tests.
+- [ ] Prepare a complete GitHub export for Mohamed74567/grad-pathway-tracker, preserving source, tests, research logs, and configuration while excluding secrets and generated deployment artifacts.
+- [ ] Create the repository as private and upload the complete project.
+- [ ] Verify the repository visibility, branch contents, and absence of tracked secret files.
+- [ ] Deliver the private repository link to the user.
