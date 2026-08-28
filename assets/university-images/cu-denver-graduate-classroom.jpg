@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Error 404</title>
+	
+<style>
+	
+body {
+	margin:0;
+	font-family:Arial,sans-serif;
+	background:#fff;
+	color:#000;
+	font-size:1.3em;
+}
+.container {
+	max-width:1200px;
+	margin:0 auto;
+	padding:60px 30px;
+	}
+.logo {
+	max-width:400px;
+	margin-bottom:40px;
+	}
+.diagonalContainer {
+	position:fixed;
+	inset:0;
+	overflow:hidden;
+	z-index:-1;
+	}
+.diagonal {
+	z-index:1;
+	position:absolute;
+	top:0;
+	right:-200px;
+	width:40%;
+	height:100%;
+	background:#e5e5e5;
+	transform:skew(-10deg);
+	}
+.diagonal2 {
+	position:absolute;
+	top:0;
+	right:-130px;
+	width:40%;
+	height:100%;
+	background:#f5f5f5;
+	transform:skew(-10deg);
+	}
+.diagonal3 {
+  background: #f5f5f5;
+  left: -600px;
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  transform: skew(-10deg);
+}
+	.diagonal4 {
+  background: #e5e5e5;
+  left: -670px;
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  transform: skew(-10deg);
+}
+	
+	.logo {
+  max-width: 600px;
+}
+	
+	
+h1{font-size:60px;margin-bottom:10px;}
+h2{margin-top:50px;font-size:40px;}
+h3 {
+  font-family: 'arial thin', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+.rule{width:55%;height:1px;background:#e5e5e5;margin:30px 0}
+a{color:#0056b3}
+@media(max-width:768px){h1{font-size:42px}.logo{max-width:250px}}
+</style>
+</head>
+<body>
+<div class="diagonalContainer">
+<div class="diagonal"></div>
+<div class="diagonal2"></div>
+<div class="diagonal3"></div>
+<div class="diagonal4"></div>
+</div>
+<div class="container">
+	<a href="https://www.cuanschutz.edu/homepage" title="University of Colorado Anschutz Medical Campus">
+		<img class="logo" src="https://www.ucdenver.edu/images/default-source/error-pages/dualcampus_errorLogo.png" alt="CU Denver Anschutz Logo">
+	</a>
+	
+	<h1>Page not found</h1>
+	<h3>Error code 404</h3>
+	<div class="rule"></div>
+	<h2>What can you do?</h2>
+	<p><a href="https://cu-anschutz-denver-oit.statuspage.io/">Check the current status of outages</a></p>
+	<h3 style="margin-top:50px;">Support by Phone</h3>
+	<p><a href="tel:3037244357">303-724-4357</a>&nbsp;(4-HELP from a campus phone)</p>
+	<p>Monday–Thursday: 7:30 a.m. – 6:00 p.m.</p><p>Friday: 7:30 a.m. – 5:00 p.m.</p>
+	<h3 style="margin-top:50px;">Support by Self-Service Portal</h3>
+	<p><a href="https://support.cuanschutz.edu/TDClient/277/Portal/Home/">Submit a Ticket</a></p>
+	<p>The OIT Service Center is available anytime.</p>
+</div>
+</body>
+</html>

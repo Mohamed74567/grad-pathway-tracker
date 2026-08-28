@@ -921,3 +921,7 @@
 - [x] Create the repository as private and upload the complete project.
 - [x] Verify the repository visibility, branch contents, and absence of tracked secret files.
 - [x] Deliver the private repository link to the user.
+- [x] Inventory every image reference, available managed-storage asset, and project data file for the self-contained GitHub export.
+- [x] Copy all available image assets into an organized repository assets directory and preserve live managed-storage URLs in application data.
+- [ ] Verify every application data and research-log file is tracked in the private repository.
+- [ ] Push the self-contained asset/data export and verify privacy, image count, data count, and repository contents.
