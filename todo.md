@@ -925,3 +925,5 @@
 - [x] Copy all available image assets into an organized repository assets directory and preserve live managed-storage URLs in application data.
 - [x] Verify every application data and research-log file is tracked in the private repository.
 - [x] Push the self-contained asset/data export and verify privacy, image count, data count, and repository contents.
+- [ ] Add the original uploaded PHDUniTracker.html source material to the private repository and re-verify the complete export.
+- [ ] Archive all 1,459 available uploaded source/data artifacts from /home/ubuntu/upload in the private repository, excluding only secrets and confirming GitHub file-size compatibility.
